@@ -1,0 +1,4 @@
+[Variables]
+
+; Category
+PageSpecialCategory=Category
