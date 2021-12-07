@@ -1,3 +1,3 @@
-# SA ShapIcon
+# SA ShapIcon+
 
-An icon skin(s) with different shapes.
+Is an expansion pack of SA ShapIcon.
