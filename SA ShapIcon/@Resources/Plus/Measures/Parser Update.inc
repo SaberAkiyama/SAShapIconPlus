@@ -14,10 +14,10 @@ IfFalseAction=[!CommandMeasure LuaInfo "refreshConnect()"]
 
 [MeasureParserCore]
 Measure=WebParser
-Url=https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293
+Url=https://github.com/SaberAkiyama/SAShapIconPlus/releases/latest
 UserAgent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.4664.92 Safari/537.36"
 Flags=Resync | NoCookies
-RegExp=(?siU).*<b>Current Version: (.*)</b>.*
+RegExp=(?siU)"/SaberAkiyama/SAShapIconPlus/releases/tag/(.*)"
 UpdateRate=1
 LogSubstringErrors=0
 OnRegExpErrorAction=[!Log "No connection or timeout." Error]
