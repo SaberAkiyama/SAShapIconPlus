@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Elgato.lua
 UpdateDivider=5
 
 [Variables]
-@include9="#@#Plus\Set Icon\#NameIcon#.inc"
+@include8="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Elgato Page

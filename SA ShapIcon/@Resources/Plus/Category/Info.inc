@@ -8,8 +8,8 @@ ScriptFile=#@#Plus\Scripts\Info.lua
 UpdateDivider=5
 
 [Variables]
-@include9=#@#Plus\Measures\Parser Update.inc
-@include10=#@#Plus\Measures\Parser Variables.inc
+@include8=#@#Plus\Measures\Parser Update.inc
+@include9=#@#Plus\Measures\Parser Variables.inc
 
 ; ============================================================
 ; Info Page
