@@ -512,8 +512,6 @@ function closeSettings()
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OptionPage1 "0" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OptionPage2 "1" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "Settings (Plus).ini"')
 
     SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Plus\\Measures\\Action Timer Settings.inc"')
