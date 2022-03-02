@@ -80,7 +80,7 @@ infoSelect = {
 		infoLink = "https://discord.gg/mQ2BTwK9jD"
 	},
 	["Update Avaiable"] = {
-		infoLink = "https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293"
+		infoLink = "https://github.com/SaberAkiyama/SAShapIconPlus/releases/latest"
 	},
 	["Creative Commons"] = {
 		infoLink = "https://creativecommons.org/licenses/by-nc-sa/4.0"
