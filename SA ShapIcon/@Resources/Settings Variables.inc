@@ -13,8 +13,7 @@ NameIcon=Info
 HiddenLineInfo=1
 
 ; Option Page
-OptionPage1=0
-OptionPage2=1
+; N/A
 
 ; Adobe Page
 AdobePage1=0
