@@ -4,107 +4,107 @@
 
 settingSelect = {
 	["Adobe"] = {
-		pageIcon = "After Effects",
+        pageIcon = "After Effects",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Browsing"] = {
-		pageIcon = "Safari",
+        pageIcon = "Safari",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Elgato"] = {
-		pageIcon = "4K Capture Utility",
+        pageIcon = "4K Capture Utility",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Emulator"] = {
-		pageIcon = "BlueStacks",
+        pageIcon = "BlueStacks",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Gaming"] = {
-		pageIcon = "GameHUB 2",
+        pageIcon = "GameHUB 2",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Media"] = {
-		pageIcon = "AIMP",
+        pageIcon = "AIMP",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Office"] = {
-		pageIcon = "Excel",
+        pageIcon = "Excel",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Social"] = {
-		pageIcon = "Cisco WebEx Teams",
+        pageIcon = "Cisco WebEx Teams",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Other"] = {
-		pageIcon = "Manage Rainmeter",
+        pageIcon = "Manage Rainmeter",
         showPage1 = "1",
         showPage2 = "1",
         showPage3 = "0",
-		hiddenLine = "0",
+        hiddenLine = "0",
         updateDivider = "-1"
 	},
 	["Info"] = {
-		pageIcon = "Info",
+        pageIcon = "Info",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "1",
+        hiddenLine = "1",
         updateDivider = "1"
 	},
 	["Options"] = {
-		pageIcon = "Options",
+        pageIcon = "Options",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "1",
+        hiddenLine = "1",
         updateDivider = "-1"
 	},
 	["Special"] = {
-		pageIcon = "Special",
+        pageIcon = "Special",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "1",
+        hiddenLine = "1",
         updateDivider = "-1"
 	},
 	["Plus"] = {
-		pageIcon = "Plus",
+        pageIcon = "Plus",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
-		hiddenLine = "1",
+        hiddenLine = "1",
         updateDivider = "-1"
 	}
 }
@@ -191,55 +191,55 @@ end
 
 settingCatrgory = {
 	["Adobe"] = {
-		categoryName = "Adobe",
+        categoryName = "Adobe",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
 	},
 	["Browsing"] = {
-		categoryName = "Browsing",
+        categoryName = "Browsing",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
 	},
 	["Elgato"] = {
-		categoryName = "Elgato",
+        categoryName = "Elgato",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
 	},
 	["Emulator"] = {
-		categoryName = "Emulator",
+        categoryName = "Emulator",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
 	},
 	["Gaming"] = {
-		categoryName = "Gaming",
+        categoryName = "Gaming",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
 	},
 	["Media"] = {
-		categoryName = "Media",
+        categoryName = "Media",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
 	},
 	["Office"] = {
-		categoryName = "Office",
+        categoryName = "Office",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
 	},
 	["Social"] = {
-		categoryName = "Social",
+        categoryName = "Social",
         showPage1 = "1",
         showPage2 = "0",
         showPage3 = "1",
 	},
 	["Other"] = {
-		categoryName = "Other",
+        categoryName = "Other",
         showPage1 = "1",
         showPage2 = "1",
         showPage3 = "0",
@@ -352,18 +352,18 @@ end
 
 hoverSettingsTextSelect = {
 	["Over"] = {
-		colorPageInfo = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorOptions = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorSpecial = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPlus = "0 | 0,0,0,1 ; 0.0 | 255,215,0,128 ; 1.0",
-		colorClose = "135 | 225,65,105,128 ; 1.0 | 255,255,255,0 ; 0.0"
+        colorPageInfo = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorOptions = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorSpecial = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPlus = "0 | 0,0,0,1 ; 0.0 | 255,215,0,128 ; 1.0",
+        colorClose = "135 | 225,65,105,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
 	["Leave"] = {
-		colorPageInfo = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorOptions = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorSpecial = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPlus = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorClose = "135 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
+        colorPageInfo = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorOptions = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorSpecial = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPlus = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorClose = "135 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
 }
 
@@ -411,30 +411,30 @@ end
 
 hoverSettingsSelect = {
 	["Over"] = {
-		colorPage1 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage2 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage3 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage4 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage5 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage6 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage7 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
-		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
+        colorPage1 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage2 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage3 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage4 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage5 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage6 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage7 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage8 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPage9 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+        colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
+        colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
 	["Leave"] = {
-		colorPage1 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage2 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage3 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage4 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage5 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage6 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage7 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
-		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
+        colorPage1 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage2 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage3 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage4 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage5 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage6 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage7 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage8 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPage9 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+        colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
+        colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
 }
 
