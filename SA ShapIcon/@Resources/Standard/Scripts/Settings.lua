@@ -4,12 +4,12 @@
 
 settingSelect = {
 	["Adobe"] = {
-        pageIcon = "After Effects",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
-        hiddenLine = "0",
-        updateDivider = "-1"
+		pageIcon = "After Effects",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		hiddenLine = "0",
+		updateDivider = "-1"
 	},
 	["Browsing"] = {
         pageIcon = "Safari",
