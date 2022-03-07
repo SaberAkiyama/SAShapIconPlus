@@ -555,7 +555,3 @@ function closeSettings()
 	SKIN:Bang('!HideMeter ShapeSliderCollapse')
 
 end
-
-
-
-
