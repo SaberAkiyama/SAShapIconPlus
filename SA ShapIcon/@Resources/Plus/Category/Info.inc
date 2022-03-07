@@ -25,16 +25,23 @@ Y=210
 [Version]
 Meter=String
 MeterStyle=InfoVersion
-Text=">>> v#Version# <<<#CRLF#Open Beta"
+Text=">>> v#Version# <<<"
 X=0r
-Y=25R
+Y=0R
+
+[Version2]
+Meter=String
+MeterStyle=InfoVersion
+Text="Open Beta 1"
+X=0r
+Y=10R
 
 [Author]
 Meter=String
 MeterStyle=InfoAuthor
 Text="Author by: Saber Akiyama"
 X=0r
-Y=0R
+Y=10R
 
 [AuthorLinkActive]
 Meter=String
@@ -63,7 +70,7 @@ MouseLeaveAction=[!CommandMeasure LuaInfo "setInfoAuthorDiscord('Leave')"]
 Meter=Shape
 Shape=Line 0,0,320,0 | Stroke Color 255,255,255,128
 X=160
-Y=420
+Y=400
 AntiAlias=1
 UpdateDivider=-1
 
@@ -71,7 +78,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=InfoUpdate
 X=320
-Y=40r
+Y=35r
 Text=#TextUpdate#
 Hidden=0
 
