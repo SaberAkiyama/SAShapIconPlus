@@ -1,2 +1,2 @@
 # SA ShapIcon+
-Is an expansion pack of SA ShapIcon.
+The expansion pack of SA ShapIcon.
