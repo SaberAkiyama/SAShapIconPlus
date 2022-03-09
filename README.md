@@ -208,7 +208,7 @@ Project Link: [https://github.com/SaberAkiyama/SAShapIconPlus](https://github.co
 ## Acknowledgments
 
 * [Eduardo Tunni - Merienda fonts](https://fonts.google.com/specimen/Merienda)
-* [The Northern Block - Borda fonts](https://behance.net/gallery/2967195/Borda-Typeface)
+* [Jonathan Hill - Borda fonts](https://behance.net/gallery/2967195/Borda-Typeface)
 * [Roberto Ierusalimschy - Programming Language (Lua)](https://lua.org)
 * [Socks the Fox - Chameleon plugin](https://github.com/socks-the-fox/Chameleon)
 * [theAzack9 - VectorConverter shapes](https://forum.rainmeter.net/viewtopic.php?f=141&t=25334)
