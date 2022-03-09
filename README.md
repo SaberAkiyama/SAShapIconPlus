@@ -153,10 +153,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [/] Add Gradiant Shapes and Colors
+- [ ] Presets
+    - [ ] Transparency
+    - [ ] Gradient Color
 
 See the [open issues](https://github.com/SaberAkiyama/SAShapIconPlus/issues) for a full list of proposed features (and known issues).
 
@@ -185,7 +185,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Creative Commons Zero License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
