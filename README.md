@@ -7,8 +7,6 @@ To-do lists:
 
 ✔️ Gradient Shape
 
-✅ Transparent
-
-✅ Gradient Color Presets
+✅ Transparent with Gradient Color Presets
 
 Legend: ✔️ Added | ✅ In Progress
