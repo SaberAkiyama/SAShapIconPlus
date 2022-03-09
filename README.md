@@ -111,7 +111,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Installation
+### Install the original SA ShapIcon 
 
 1. Download and install at [Rainmeter official website](https://rainmeter.net).
 2. Download the original of SA ShapIcon on DeviantArt below.
@@ -119,8 +119,16 @@ To get a local copy up and running follow these simple example steps.
     - **(must required the latest version of Rainmeter and Windows 10 or later operating system.)**
     - https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293
 3. Install SA ShapIcon skin installer from Downloads folder.
-4. Go to SA ShapIcon+ at [releases](https://github.com/SaberAkiyama/SAShapIconPlus/releases) page.
-5. Expand "Assets" and click ```SA ShapIcon+ v(version).rmskin``` file.
+
+### Install SA ShapIcon+ expansion pack 
+
+1. Go to SA ShapIcon+ at [releases](https://github.com/SaberAkiyama/SAShapIconPlus/releases) page.
+2. Expand "Assets" and click ```SA.ShapIcon+.v(version).rmskin```
+    - **(must required the latest version of Rainmeter and Windows 10 or later operating system.)**
+    - **(some of this install didn't appear in pre-release version outside of releases page.)**
+3. Install SA ShapIcon+ skin installer from Downloads folder.
+4. Inside installer, click "Advanced", unchecked "Backup skins" and click "Install"
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
