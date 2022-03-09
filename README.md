@@ -9,4 +9,6 @@ To-do lists:
 
 ✅ Transparent with Gradient Color Presets
 
+and more...
+
 Legend: ✔️ Added | ✅ In Progress
