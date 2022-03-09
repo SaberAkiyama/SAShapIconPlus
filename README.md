@@ -64,7 +64,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation-og">Install the original SA ShapIcon</a></li>
+        <li><a href="#installation-plus">Install SA ShapIcon+ expansion pack</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
