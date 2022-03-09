@@ -196,7 +196,7 @@ Distributed under the Creative Commons Zero 1.0 Universal License. See `LICENSE.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@Saber_Akiyama](https://twitter.com/Saber_Akiyama) - email@email_client.com
 
 Project Link: [https://github.com/SaberAkiyama/SAShapIconPlus](https://github.com/SaberAkiyama/SAShapIconPlus)
 
@@ -207,9 +207,13 @@ Project Link: [https://github.com/SaberAkiyama/SAShapIconPlus](https://github.co
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Eduardo Tunni - Merienda fonts](https://fonts.google.com/specimen/Merienda)
+* [The Northern Block - Borda fonts](https://behance.net/gallery/2967195/Borda-Typeface)
+* [Roberto Ierusalimschy - Programming Language (Lua)](https://lua.org)
+* [Socks the Fox - Chameleon plugin](https://github.com/socks-the-fox/Chameleon)
+* [theAzack9 - VectorConverter shapes](https://forum.rainmeter.net/viewtopic.php?f=141&t=25334)
+* [Icons8 - Logo icon](https://icons8.com)
+* [Rainmeter Developer Team](https://github.com/orgs/rainmeter/people)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
