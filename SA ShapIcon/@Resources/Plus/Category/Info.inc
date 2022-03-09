@@ -148,7 +148,7 @@ MouseLeaveAction=[!CommandMeasure LuaInfo "setInfoCC('Leave')"]
 [LicenseText]
 Meter=String
 MeterStyle=InfoLicense
-Text="BY-NC-SA (Attribution-NonCommercial-ShareAlike)#CRLF#4.0 International Public License"
+Text="Zero v1.0 Universal License"
 X=960
 Y=75r
 
