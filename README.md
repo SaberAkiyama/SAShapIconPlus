@@ -153,7 +153,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [/] Add Gradiant Shapes and Colors
+- [x] Add Gradiant Shapes and Colors
 - [ ] Presets
     - [ ] Transparency
     - [ ] Gradient Color
