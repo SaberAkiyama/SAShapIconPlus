@@ -114,7 +114,7 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 
 1. Download and install at [Rainmeter official website](https://rainmeter.net)
-2. Download the original of SA ShapIcon on DeviantArt below **(must require login/signup your DeviantArt account and download again in this skin.)
+2. Download the original of SA ShapIcon on DeviantArt below **(must require login/signup your DeviantArt account and download again in this skin.)**
 * https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293
 3. Install NPM packages
    ```sh
