@@ -21,7 +21,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![CC0-1.0 License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -64,8 +64,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#installation-og">Install the original SA ShapIcon</a></li>
-        <li><a href="#installation-plus">Install SA ShapIcon+ expansion pack</a></li>
+        <li><a href="#install-the-original-sa-shapicon">Install the original SA ShapIcon</a></li>
+        <li><a href="#install-sa-shapicon-expansion-pack">Install SA ShapIcon+ expansion pack</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
