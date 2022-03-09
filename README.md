@@ -158,6 +158,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Transparency
     - [ ] Gradient Color
 
+And more...
+
 See the [open issues](https://github.com/SaberAkiyama/SAShapIconPlus/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
