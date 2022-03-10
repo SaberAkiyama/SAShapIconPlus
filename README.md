@@ -39,13 +39,6 @@
     The expansion pack of SA ShapIcon
     <br />
     <a href="https://github.com/SaberAkiyama/SAShapIconPlus"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/SaberAkiyama/SAShapIconPlus">View Demo</a>
-    ·
-    <a href="https://github.com/SaberAkiyama/SAShapIconPlus/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/SaberAkiyama/SAShapIconPlus/issues">Request Feature</a>
   </p>
 </div>
 
