@@ -115,9 +115,9 @@ To get a local copy up and running follow these simple example steps.
 
 1. Download and install at [Rainmeter official website](https://rainmeter.net).
 2. Download the original of SA ShapIcon on DeviantArt below.
+    - https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293
     - must require login/signup your DeviantArt account and download again in this skin.
     - must require the latest version of Rainmeter and Windows 10 or later operating system.
-    - https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293
 3. Install SA ShapIcon skin installer from Downloads folder.
 
 ### Step 2: Install SA ShapIcon+ expansion pack 
