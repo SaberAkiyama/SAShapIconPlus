@@ -64,8 +64,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#install-the-original-sa-shapicon">Install the original SA ShapIcon</a></li>
-        <li><a href="#install-sa-shapicon-expansion-pack">Install SA ShapIcon+ expansion pack</a></li>
+        <li><a href="#step-1-install-the-original-sa-shapicon">Step 1: Install the original SA ShapIcon</a></li>
+        <li><a href="#install-sa-shapicon-expansion-pack">Step 2: Install SA ShapIcon+ expansion pack</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -111,7 +111,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Install the original SA ShapIcon 
+### Step 1: Install the original SA ShapIcon 
 
 1. Download and install at [Rainmeter official website](https://rainmeter.net).
 2. Download the original of SA ShapIcon on DeviantArt below.
@@ -120,7 +120,7 @@ To get a local copy up and running follow these simple example steps.
     - https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293
 3. Install SA ShapIcon skin installer from Downloads folder.
 
-### Install SA ShapIcon+ expansion pack 
+### Step 2: Install SA ShapIcon+ expansion pack 
 
 1. Go to SA ShapIcon+ at [releases](https://github.com/SaberAkiyama/SAShapIconPlus/releases) page.
 2. Expand "Assets" and click ```SA.ShapIcon+.v(version).rmskin```
