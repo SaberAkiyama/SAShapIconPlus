@@ -36,7 +36,7 @@
 <h3 align="center">SA ShapIcon+</h3>
 
   <p align="center">
-    project_description
+    The expansion pack of SA ShapIcon
     <br />
     <a href="https://github.com/SaberAkiyama/SAShapIconPlus"><strong>Explore the docs »</strong></a>
     <br />
