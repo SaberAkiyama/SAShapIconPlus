@@ -22,7 +22,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![CC0-1.0 License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Discord][discord-shield]][discord-url]
 
 
 
@@ -107,11 +107,10 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-  
+* Rainmeter app
+* SA ShapIcon on DeviantArt
+* SA ShapIcon+ on GitHub
+
 ### Step 1: Install the original SA ShapIcon 
 
 1. Download and install at [Rainmeter official website](https://rainmeter.net).
@@ -225,6 +224,6 @@ Project Link: [https://github.com/SaberAkiyama/SAShapIconPlus](https://github.co
 [issues-url]: https://github.com/SaberAkiyama/SAShapIconPlus/issues
 [license-shield]: https://img.shields.io/github/license/SaberAkiyama/SAShapIconPlus.svg?style=for-the-badge
 [license-url]: https://github.com/SaberAkiyama/SAShapIconPlus/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[discord-shield]: https://img.shields.io/badge/-discord-black.svg?style=for-the-badge&logo=Discord&colorB=555
+[discord-url]: https://discord.gg/mQ2BTwK9jD
 [product-screenshot]: images/screenshot.png
