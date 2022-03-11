@@ -173,9 +173,7 @@ Distributed under the Creative Commons Zero 1.0 Universal License. See `LICENSE`
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Saber_Akiyama](https://twitter.com/Saber_Akiyama) - email@email_client.com
-
-Project Link: [https://github.com/SaberAkiyama/SAShapIconPlus](https://github.com/SaberAkiyama/SAShapIconPlus)
+Discord direct message: click "Add Friend", type ```SaberAkiyama#7001``` (or copy and paste on username) and click/touch "Send Friend Request".
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
