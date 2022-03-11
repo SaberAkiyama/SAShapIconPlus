@@ -8,18 +8,16 @@ assignees: ''
 ---
 
 **Name of skin icon(s) (require):**
-- 
 
 **Issue description (require):**
-- 
 
 **Screenshot/video (optional):**
 
 <details>
-  <summary>"Screenshot or Video"</summary>
+  <summary>Screenshot or Video</summary>
   <ol>
     <li>
-      [drag here]
+      <img src="[drag here]">
     </li>
   </ol>
 </details>

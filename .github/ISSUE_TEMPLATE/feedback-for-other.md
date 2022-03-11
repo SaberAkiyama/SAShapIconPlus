@@ -1,6 +1,6 @@
 ---
 name: Feedback for Other
-about: Create a report to help us improve
+about: Something missing or error
 title: "[Feedback Other]"
 labels: Feedback, Other
 assignees: ''
