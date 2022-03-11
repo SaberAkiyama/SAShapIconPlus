@@ -154,8 +154,9 @@ Don't forget to give the project a star! Thanks again!
 1. Fork the Project
 2. Go to your profile, and click ```SAShapIconPlus``` repository
 3. Press Period button ```.``` to access VS Code on GitHub
-4. Expand ```Request Icons```, right click the ```@YourName``` folder, copy and paste.
-5. Right click the ```@YourName copy``` folder, click ```Rename``` and type your username.
+4. Expand ```Request Icons```, right click the ```@YourName``` folder, copy it
+5. Right click the ```Request Icons``` and paste folder
+6. Right click the ```@YourName copy``` folder, click ```Rename``` and type your username
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
