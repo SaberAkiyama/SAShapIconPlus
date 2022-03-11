@@ -1,8 +1,8 @@
 ---
-name: Feedback Report
+name: Feedback for Icon(s)
 about: Create a report to help us improve
-title: "[Feedback]"
-labels: bug
+title: "[Feedback Icon]"
+labels: Feedback, Icon(s)
 assignees: ''
 
 ---
