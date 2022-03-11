@@ -83,21 +83,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 
 
-### Built With
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -106,7 +91,6 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * Rainmeter app
 * SA ShapIcon on DeviantArt
 * SA ShapIcon+ on GitHub
@@ -164,7 +148,7 @@ See the [open issues](https://github.com/SaberAkiyama/SAShapIconPlus/issues) for
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "Add Icon(s)" and/or "Add Shaps(s)".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
