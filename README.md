@@ -223,7 +223,7 @@ Project Link: [https://github.com/SaberAkiyama/SAShapIconPlus](https://github.co
 [issues-shield]: https://img.shields.io/github/issues/SaberAkiyama/SAShapIconPlus.svg?style=for-the-badge
 [issues-url]: https://github.com/SaberAkiyama/SAShapIconPlus/issues
 [license-shield]: https://img.shields.io/github/license/SaberAkiyama/SAShapIconPlus.svg?style=for-the-badge
-[license-url]: https://github.com/SaberAkiyama/SAShapIconPlus/blob/master/LICENSE.txt
+[license-url]: https://github.com/SaberAkiyama/SAShapIconPlus/blob/master/LICENSE
 [discord-shield]: https://img.shields.io/badge/-discord-black.svg?style=for-the-badge&logo=Discord&colorB=555
 [discord-url]: https://discord.gg/mQ2BTwK9jD
 [product-screenshot]: images/screenshot.png
