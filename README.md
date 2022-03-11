@@ -173,7 +173,9 @@ Distributed under the Creative Commons Zero 1.0 Universal License. See `LICENSE`
 <!-- CONTACT -->
 ## Contact
 
-Discord direct message: click "Add Friend", type ```SaberAkiyama#7001``` (or copy and paste on username) and click/touch "Send Friend Request".
+Contact me on Discord direct message
+
+Click "Home" page, click "Add Friend" (a green dialog box), type ```SaberAkiyama#7001``` (or copy and paste on username) and click/touch "Send Friend Request".
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
