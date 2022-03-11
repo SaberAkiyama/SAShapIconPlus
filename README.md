@@ -158,7 +158,7 @@ Don't forget to give the project a star! Thanks again!
 5. Right click the ```Request Icons``` and paste folder
 6. Right click the ```@YourName copy``` folder, click ```Rename``` and type your username and press ```Enter``` button
 7. Make sure to rename all the files on your folder in the same title.
-8. Once is done, go to ```Source Control```, click ```Create Pull Request```, scroll down to ```Title```, type your username and click ```Create```. And you're done! Your repository is now on ```Pull requests``` tab and waiting for the owner of this repository.
+8. Once it is done, go to ```Source Control```, click ```Create Pull Request```, scroll down to ```Title```, type your username and click ```Create```. And you're done! Your repository is now on the Pull requests tab and waiting for the owner of this repository.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
