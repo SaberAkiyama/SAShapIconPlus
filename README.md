@@ -158,7 +158,7 @@ Don't forget to give the project a star! Thanks again!
 5. Right click the ```Request Icons``` and paste folder
 6. Right click the ```@YourName copy``` folder, click ```Rename``` and type your username and press ```Enter``` button
 7. Make sure to rename all the files on your folder in the same title.
-8. Once is done, go to ```Source Control```, click ```Create Pull Request``` 
+8. Once is done, go to ```Source Control```, click ```Create Pull Request```, scroll down to ```Title```, type your username and click ```Create```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
