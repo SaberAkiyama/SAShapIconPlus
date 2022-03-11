@@ -17,7 +17,7 @@ assignees: ''
   <summary>Screenshot or Video</summary>
   <ol>
     <li>
-      <img src="[drag here]">
+      <img src="[   ]">
     </li>
   </ol>
 </details>
