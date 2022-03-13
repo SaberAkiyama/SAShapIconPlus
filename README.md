@@ -20,7 +20,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+<!--[![Issues][issues-shield]][issues-url]-->
 [![CC0-1.0 License][license-shield]][license-url]
 [![Discord][discord-shield]][discord-url]
 
