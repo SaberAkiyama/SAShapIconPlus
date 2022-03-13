@@ -60,7 +60,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a>/</li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#step-1-install-the-original-sa-shapicon">Step 1: Install the original SA ShapIcon</a></li>
         <li><a href="#step-2-install-sa-shapicon-expansion-pack">Step 2: Install SA ShapIcon+ expansion pack</a></li>
       </ul>
