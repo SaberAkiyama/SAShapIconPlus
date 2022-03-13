@@ -140,8 +140,9 @@ _For more examples, please refer to the [Wiki](https://github.com/SaberAkiyama/S
 
 And more...
 
+<!--
 See the [open issues](https://github.com/SaberAkiyama/SAShapIconPlus/issues) for a full list of proposed features (and known issues).
-
+-->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
