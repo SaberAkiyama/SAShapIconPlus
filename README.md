@@ -28,12 +28,13 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/SaberAkiyama/SAShapIconPlus">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">SA ShapIcon+</h3>
+<!-- *** <div align="center">
+***   <a href="https://github.com/SaberAkiyama/SAShapIconPlus">
+***     <img src="images/logo.png" alt="Logo" width="80" height="80">
+***   </a>
+-->
+ <div align="center">
+ <h3 align="center">SA ShapIcon+</h3>
 
   <p align="center">
     The expansion pack of SA ShapIcon
