@@ -171,7 +171,7 @@ MeterStyle=ShapePlusStyle
 Group=Sliders
 X=0
 Y=50r
-LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Plus')"]
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettingsStandard()"]
 
 ; ============================================================
 ; Page Text
@@ -280,4 +280,4 @@ MeterStyle=SettingActive
 Group=Sliders
 X=55
 Y=50r
-Text=Switch to Plus
+Text=Switch to Standard
