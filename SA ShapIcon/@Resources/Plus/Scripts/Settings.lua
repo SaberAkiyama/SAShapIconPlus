@@ -174,6 +174,11 @@ function setSettingsOther()
 
 end
 
+function setSettingsStandard()
+    SKIN:Bang('!ActivateConfig "#ROOTCONFIG#" "Settings.ini"')
+
+end
+
 --; ============================================================
 
 settingCatrgory = {
