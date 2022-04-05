@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Emulator.lua
 UpdateDivider=5
 
 [Variables]
-@include8="#@#Plus\Set Icon\#NameIcon#.inc"
+@include10="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Emulator Page

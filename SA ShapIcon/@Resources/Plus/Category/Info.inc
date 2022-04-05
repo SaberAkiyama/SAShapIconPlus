@@ -8,8 +8,8 @@ ScriptFile=#@#Plus\Scripts\Info.lua
 UpdateDivider=5
 
 [Variables]
-@include8=#@#Plus\Measures\Parser Update.inc
-@include9=#@#Plus\Measures\Parser Variables.inc
+@include10=#@#Plus\Measures\Parser Update.inc
+@include11=#@#Plus\Measures\Parser Variables.inc
 
 ; ============================================================
 ; Info Page
@@ -32,7 +32,7 @@ Y=0R
 [Version2]
 Meter=String
 MeterStyle=InfoVersion
-Text="Open Beta 1"
+Text="Open Beta 2"
 X=0r
 Y=10R
 
@@ -148,7 +148,7 @@ MouseLeaveAction=[!CommandMeasure LuaInfo "setInfoCC('Leave')"]
 [LicenseText]
 Meter=String
 MeterStyle=InfoLicense
-Text="Zero v1.0 Universal License"
+Text="BY-NC-SA (Attribution-NonCommercial-ShareAlike)#CRLF#4.0 International Public License"
 X=960
 Y=75r
 
@@ -175,7 +175,7 @@ MouseLeaveAction=[!CommandMeasure LuaInfo "setInfoCredit1('Leave')"]
 [Credit2Active]
 Meter=String
 MeterStyle=InfoActive
-Text=Jonathan Hill - Borda fonts
+Text=The Northern Block - Borda fonts
 X=0r
 Y=5R
 LeftMouseUpAction=[!CommandMeasure LuaInfo "setInfo('Credit2')"]

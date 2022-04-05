@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Other.lua
 UpdateDivider=5
 
 [Variables]
-@include8="#@#Plus\Set Icon\#NameIcon#.inc"
+@include10="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Other Page
@@ -187,6 +187,18 @@ MouseLeaveAction=[!SetOption MeterPageEVGAText FontColor "255,255,255"][!UpdateM
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('EVGA Precision X1')"]
 Hidden=#OtherPage2#
 
+[MeterPageFilmoraXText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=OtherPage2
+Text=Filmora X
+X=0r
+Y=25R
+MouseOverAction=[!SetOption MeterPageFilmoraXText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageFilmoraXText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Filmora X')"]
+Hidden=#OtherPage2#
+
 [MeterPageFLStudioText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -202,22 +214,22 @@ Hidden=#OtherPage2#
 [MeterPageGIMPText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage2
+Group=OtherPage3
 Text=GIMP
-X=0r
-Y=25R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageGIMPText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageGIMPText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('GIMP')"]
-Hidden=#OtherPage2#
+Hidden=#OtherPage3#
 
 [MeterPageKritaText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage3
 Text=Krita
-X=320
-Y=100
+X=0r
+Y=25R
 MouseOverAction=[!SetOption MeterPageKritaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageKritaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Krita')"]
@@ -227,12 +239,12 @@ Hidden=#OtherPage3#
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage3
-Text=Libraries (Folder Explorer)
+Text=Libraries
 X=0r
 Y=25R
 MouseOverAction=[!SetOption MeterPageLibrariesText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageLibrariesText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Libraries (Folder Explorer)')"]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Libraries')"]
 Hidden=#OtherPage3#
 
 [MeterPageLogitechText]
@@ -298,22 +310,22 @@ Hidden=#OtherPage3#
 [MeterPageOBSText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage3
+Group=OtherPage4
 Text=Open Broadcaster Software
-X=0r
-Y=25R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageOBSText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOBSText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('OBS')"]
-Hidden=#OtherPage3#
+Hidden=#OtherPage4#
 
 [MeterPageOculusText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage4
 Text=Oculus
-X=320
-Y=100
+X=0r
+Y=25R
 MouseOverAction=[!SetOption MeterPageOculusText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOculusText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Oculus')"]
@@ -394,22 +406,22 @@ Hidden=#OtherPage4#
 [MeterPageStreamLabsText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage4
+Group=OtherPage5
 Text=StreamLabs OBS
-X=0r
-Y=25R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageStreamLabsText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageStreamLabsText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('StreamLabs OBS')"]
-Hidden=#OtherPage4#
+Hidden=#OtherPage5#
 
 [MeterPageThisPCText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage5
 Text=This PC
-X=320
-Y=100
+X=0r
+Y=25R
 MouseOverAction=[!SetOption MeterPageThisPCText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageThisPCText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('This PC')"]
@@ -490,14 +502,14 @@ Hidden=#OtherPage5#
 [MeterPageZbrushText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage5
+Group=OtherPage6
 Text=Zbrush
-X=0r
-Y=25R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageZbrushText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageZbrushText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Zbrush')"]
-Hidden=#OtherPage5#
+Hidden=#OtherPage6#
 
 ; ============================================================
 ; ============================================================
@@ -505,7 +517,7 @@ Hidden=#OtherPage5#
 [MeterPage1Text]
 Meter=String
 MeterStyle=IconPageText
-X=240
+X=220
 Y=500
 Text=1
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOtherPage1()"]
@@ -551,3 +563,13 @@ Text=5
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOtherPage5()"]
 MouseOverAction=[!CommandMeasure LuaCategoryOther "setHoverOtherPage5('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaCategoryOther "setHoverOtherPage5('Leave')"]
+
+[MeterPage6Text]
+Meter=String
+MeterStyle=IconPageText
+X=40r
+Y=0r
+Text=6
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOtherPage6()"]
+MouseOverAction=[!CommandMeasure LuaCategoryOther "setHoverOtherPage6('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaCategoryOther "setHoverOtherPage6('Leave')"]

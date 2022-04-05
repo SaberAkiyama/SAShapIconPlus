@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Media.lua
 UpdateDivider=5
 
 [Variables]
-@include8="#@#Plus\Set Icon\#NameIcon#.inc"
+@include10="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Media Page
@@ -91,15 +91,15 @@ MouseLeaveAction=[!SetOption MeterPageFoobarText FontColor "255,255,255"][!Updat
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('foobar2000')"]
 Hidden=#MediaPage1#
 
-[MeterPageGPMText]
+[MeterPageGPMusicText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Google Play Music
 X=0r
 Y=25R
-MouseOverAction=[!SetOption MeterPageGPMText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageGPMText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+MouseOverAction=[!SetOption MeterPageGPMusicText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageGPMusicText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Google Play Music')"]
 Hidden=#MediaPage1#
 
