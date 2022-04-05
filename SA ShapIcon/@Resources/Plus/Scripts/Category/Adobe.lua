@@ -4,74 +4,88 @@
 
 selectAdobe = {
 	["After Effects"] = {
-        iconName = "After Effects",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "After Effects",
+		iconNamePreset = "AfterEffects",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Animate"] = {
-        iconName = "Animate",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Animate",
+		iconNamePreset = "Animate",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Audition"] = {
-        iconName = "Audition",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Audition",
+		iconNamePreset = "Audition",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Bridge"] = {
-        iconName = "Bridge",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Bridge",
+		iconNamePreset = "Bridge",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Creative Cloud"] = {
-        iconName = "Creative Cloud",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Creative Cloud",
+		iconNamePreset = "Creative",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Dreamweaver"] = {
-        iconName = "Dreamweaver",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Dreamweaver",
+		iconNamePreset = "Dreamweaver",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Framemaker"] = {
-        iconName = "Framemaker",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Framemaker",
+		iconNamePreset = "Framemaker",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Illustrator"] = {
-        iconName = "Illustrator",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Illustrator",
+		iconNamePreset = "Illustrator",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["InDesign"] = {
-        iconName = "InDesign",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "InDesign",
+		iconNamePreset = "InDesign",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Lightroom"] = {
-        iconName = "Lightroom",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "Lightroom",
+		iconNamePreset = "Lightroom",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Photoshop"] = {
-        iconName = "Photoshop",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "Photoshop",
+		iconNamePreset = "Photoshop",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Premiere Pro"] = {
-        iconName = "Premiere Pro",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "Premiere Pro",
+		iconNamePreset = "Premiere",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["XD"] = {
-        iconName = "XD",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "XD",
+		iconNamePreset = "XD",
+		showPage1 = "1",
+		showPage2 = "0"
 	}
 }
 
 function setAdobe(selectedAdobe)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectAdobe[selectedAdobe]['iconName'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectAdobe[selectedAdobe]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables AdobePage1 "' .. selectAdobe[selectedAdobe]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables AdobePage2 "' .. selectAdobe[selectedAdobe]['showPage2'] .. '" "#@#Settings Variables.inc"')
 

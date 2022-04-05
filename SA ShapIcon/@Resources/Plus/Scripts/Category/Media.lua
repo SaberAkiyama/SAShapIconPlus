@@ -4,117 +4,136 @@
 
 selectMedia = {
 	["AIMP"] = {
-        iconName = "AIMP",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "AIMP",
+		iconNamePreset = "AIMP",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
 	["Amazon Music"] = {
-        iconName = "Amazon Music",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "Amazon Music",
+		iconNamePreset = "AmazonMusic",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
-    ["Apple iTunes"] = {
-        iconName = "Apple iTunes",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
-    },
+	["Apple iTunes"] = {
+		iconName = "Apple iTunes",
+		iconNamePreset = "iTunes",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
+	},
 	["Audible"] = {
-        iconName = "Audible",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "Audible",
+		iconNamePreset = "Audible",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
 	["Disney+"] = {
-        iconName = "Disney+",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "Disney+",
+		iconNamePreset = "DisneyPlus",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
 	["foobar2000"] = {
-        iconName = "foobar2000",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "foobar2000",
+		iconNamePreset = "Foobar",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
 	["Google Play Music"] = {
-        iconName = "Google Play Music",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "Google Play Music",
+		iconNamePreset = "GPMusic",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
 	["Hulu"] = {
-        iconName = "Hulu",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1"
+		iconName = "Hulu",
+		iconNamePreset = "Hulu",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1"
 	},
 	["Kodi"] = {
-        iconName = "Kodi",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "Kodi",
+		iconNamePreset = "Kodi",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["MusicBee"] = {
-        iconName = "MusicBee",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "MusicBee",
+		iconNamePreset = "MusicBee",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["Netflix"] = {
-        iconName = "Netflix",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "Netflix",
+		iconNamePreset = "Netflix",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["Plex"] = {
-        iconName = "Plex",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "Plex",
+		iconNamePreset = "Plex",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["Spotify"] = {
-        iconName = "Spotify",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "Spotify",
+		iconNamePreset = "Spotify",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["Twitch"] = {
-        iconName = "Twitch",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "Twitch",
+		iconNamePreset = "Twitch",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["VLC"] = {
-        iconName = "VLC",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "VLC",
+		iconNamePreset = "VLC",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["Wakanim"] = {
-        iconName = "Wakanim",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1"
+		iconName = "Wakanim",
+		iconNamePreset = "Wakanim",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1"
 	},
 	["Winamp"] = {
-        iconName = "Winamp",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0"
+		iconName = "Winamp",
+		iconNamePreset = "Winamp",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0"
 	},
 	["YouTube"] = {
-        iconName = "YouTube",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0"
+		iconName = "YouTube",
+		iconNamePreset = "YouTube",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0"
 	}
 }
 
 function setMedia(selectedMedia)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectMedia[selectedMedia]['iconName'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectMedia[selectedMedia]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MediaPage1 "' .. selectMedia[selectedMedia]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MediaPage2 "' .. selectMedia[selectedMedia]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MediaPage3 "' .. selectMedia[selectedMedia]['showPage3'] .. '" "#@#Settings Variables.inc"')

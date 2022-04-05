@@ -4,59 +4,70 @@
 
 selectSocial = {
 	["Cisco WebEx Teams"] = {
-        iconName = "Cisco WebEx Teams",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Cisco WebEx Teams",
+		iconNamePreset = "WebEx",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Discord"] = {
-        iconName = "Discord",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Discord",
+		iconNamePreset = "Discord",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Guilded"] = {
-        iconName = "Guilded",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Guilded",
+		iconNamePreset = "Guilded",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Reddit"] = {
-        iconName = "Reddit",
-        showPage1 = "0",
-        showPage2 = "1"
-    },
-    ["Signal"] = {
-        iconName = "Signal",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Reddit",
+		iconNamePreset = "Reddit",
+		showPage1 = "0",
+		showPage2 = "1"
+	},
+	["Signal"] = {
+		iconName = "Signal",
+		iconNamePreset = "Signal",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["TeamSpeak"] = {
-        iconName = "TeamSpeak",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "TeamSpeak",
+		iconNamePreset = "TeamSpeak",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Telegram"] = {
-        iconName = "Telegram",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Telegram",
+		iconNamePreset = "Telegram",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Twitter"] = {
-        iconName = "Twitter",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Twitter",
+		iconNamePreset = "Twitter",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["WhatsApp"] = {
-        iconName = "WhatsApp",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "WhatsApp",
+		iconNamePreset = "WhatsApp",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Zoom"] = {
-        iconName = "Zoom",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "Zoom",
+		iconNamePreset = "Zoom",
+		showPage1 = "1",
+		showPage2 = "0"
 	}
 }
 
 function setSocial(selectedSocial)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectSocial[selectedSocial]['iconName'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectSocial[selectedSocial]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SocialPage1 "' .. selectSocial[selectedSocial]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SocialPage2 "' .. selectSocial[selectedSocial]['showPage2'] .. '" "#@#Settings Variables.inc"')
 

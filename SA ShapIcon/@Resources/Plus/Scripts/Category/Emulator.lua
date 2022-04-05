@@ -4,64 +4,76 @@
 
 selectEmulator = {
 	["BlueStacks"] = {
-        iconName = "BlueStacks",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "BlueStacks",
+		iconNamePreset = "BlueStacks",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Cemu"] = {
-        iconName = "Cemu",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Cemu",
+		iconNamePreset = "Cemu",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Citra"] = {
-        iconName = "Citra",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Citra",
+		iconNamePreset = "Citra",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["DeSmuME"] = {
-        iconName = "DeSmuME",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "DeSmuME",
+		iconNamePreset = "DeSmuME",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Dolphin"] = {
-        iconName = "Dolphin",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "Dolphin",
+		iconNamePreset = "Dolphin",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["DuckStation"] = {
-        iconName = "DuckStation",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "DuckStation",
+		iconNamePreset = "DuckStation",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["PCSX2"] = {
-        iconName = "PCSX2",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "PCSX2",
+		iconNamePreset = "PCSX2",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["PPSSPP"] = {
-        iconName = "PPSSPP",
-        showPage1 = "0",
-        showPage2 = "1"
+		iconName = "PPSSPP",
+		iconNamePreset = "PPSSPP",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["RPCS3"] = {
-        iconName = "RPCS3",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "RPCS3",
+		iconNamePreset = "RPCS3",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Vita3K"] = {
-        iconName = "Vita3K",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "Vita3K",
+		iconNamePreset = "Vita3K",
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Xenia"] = {
-        iconName = "Xenia",
-        showPage1 = "1",
-        showPage2 = "0"
+		iconName = "Xenia",
+		iconNamePreset = "Xenia",
+		showPage1 = "1",
+		showPage2 = "0"
 	}
 }
 
 function setEmulator(selectedEmulator)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectEmulator[selectedEmulator]['iconName'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectEmulator[selectedEmulator]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables EmulatorPage1 "' .. selectEmulator[selectedEmulator]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables EmulatorPage2 "' .. selectEmulator[selectedEmulator]['showPage2'] .. '" "#@#Settings Variables.inc"')
 
