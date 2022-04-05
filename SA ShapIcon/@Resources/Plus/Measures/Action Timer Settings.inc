@@ -12,4 +12,5 @@ ActionList1=Repeat Right,1,30
 Right=[!CommandMeasure LuaSettings "setSliderRight()"]#U#
 ActionList2=Repeat Left,1,30
 Left=[!CommandMeasure LuaSettings "setSliderLeft()"]#U#
+IgnoreWarnings=1
 DynamicVariables=1
