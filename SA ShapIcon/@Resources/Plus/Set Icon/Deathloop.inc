@@ -5,38 +5,38 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterFramemakerText]
+[MeterDeathloopText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=Framemaker
+Text=Deathloop
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#FramemakerShape#90
-MyFillGradient=#ShapeGradientAngle# | #FramemakerShapeGradient1Base#,#FramemakerAlphaMask# ; 1.0 | #FramemakerShapeGradient2Base#,#FramemakerAlphaMask# ; 0.0
+MeterStyle=Mask#DeathloopShape#90
+MyFillGradient=#ShapeGradientAngle# | #DeathloopShapeGradient1Base#,#DeathloopAlphaMask# ; 1.0 | #DeathloopShapeGradient2Base#,#DeathloopAlphaMask# ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
 Meter=Image
 ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#FramemakerMask#.png
-ImageTint=#FramemakerMaskBase#
+ImageName=#DeathloopMask#.png
+ImageTint=#DeathloopMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
 UpdateDivider=-1
-Hidden=#FramemakerRegularHidden#
+Hidden=#DeathloopRegularHidden#
 
-[MeterIconImageFramemaker]
+[MeterIconImageDeathloop]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Adobe\Framemaker.png
-ImageTint=#FramemakerMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Deathloop.png
+ImageTint=#DeathloopMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -57,8 +57,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#FramemakerMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Framemaker.ini"]
+Text=#DeathloopMask#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Deathloop.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -74,8 +74,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#FramemakerMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaAdobe "setFramemakerColorManual('Mask')"]
+Text=#DeathloopMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setDeathloopColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -97,8 +97,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#FramemakerShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaAdobe "setFramemakerColorManual('Gradient 1')"]
+Text=#DeathloopShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setDeathloopColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#HiddenGradient#
@@ -118,8 +118,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#FramemakerShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaAdobe "setFramemakerColorManual('Gradient 2')"]
+Text=#DeathloopShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setDeathloopColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#HiddenGradient#
@@ -127,7 +127,7 @@ Hidden=#HiddenGradient#
 ; ============================================================
 ; ============================================================
 
-[MeterSkinFramemaker]
+[MeterSkinDeathloop]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -137,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables FramemakerMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#FramemakerMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables FramemakerShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#FramemakerShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables FramemakerShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#FramemakerShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables DeathloopMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#DeathloopMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables DeathloopShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#DeathloopShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables DeathloopShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#DeathloopShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================
@@ -150,6 +150,6 @@ MeterStyle=IconSkinActive
 X=960
 Y=565
 Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaAdobe "setApply()"]
-MouseOverAction=[!CommandMeasure LuaAdobe "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaAdobe "setSkinApply('Leave')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setApply()"]
+MouseOverAction=[!CommandMeasure LuaGaming "setSkinApply('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaGaming "setSkinApply('Leave')"]

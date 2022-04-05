@@ -18,9 +18,9 @@ Text=Disney+
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#DisneyPlusShape#90
-MyFillGradient=#ShapeGradientAngle# | #DisneyPlusShapeGradient1Base#,255 ; 1.0 | #DisneyPlusShapeGradient2Base#,255 ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #DisneyPlusShapeGradient1Base#,#DisneyPlusAlphaMask# ; 1.0 | #DisneyPlusShapeGradient2Base#,#DisneyPlusAlphaMask# ; 0.0
 X=915
-Y=160
+Y=170
 
 [MeterMaskImage]
 Meter=Image
@@ -49,7 +49,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=320
+Y=50R
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -66,7 +66,7 @@ MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMet
 Meter=String
 MeterStyle=IconText
 X=240r
-Y=320
+Y=310
 Text=Color Mask
 
 [MeterColorMaskActive]
@@ -85,36 +85,44 @@ MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!Upda
 [MeterColorShapeGradient1]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=840
-Y=420
+Y=425
 Text=Color Gradient 1
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
 Text=#DisneyPlusShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaMedia "setDisneyPlusColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=240r
-Y=420
+Y=425
 Text=Color Gradient 2
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
 Text=#DisneyPlusShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaMedia "setDisneyPlusColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -129,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables DisneyPlusMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=342 DefaultValue="#DisneyPlusMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables DisneyPlusShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=442 DefaultValue="#DisneyPlusShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables DisneyPlusShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=442 DefaultValue="#DisneyPlusShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables DisneyPlusMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#DisneyPlusMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables DisneyPlusShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#DisneyPlusShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables DisneyPlusShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#DisneyPlusShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================

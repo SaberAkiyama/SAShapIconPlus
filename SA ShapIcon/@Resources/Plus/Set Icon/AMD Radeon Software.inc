@@ -5,7 +5,7 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterAMDText]
+[MeterAMDRadeonText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
@@ -17,26 +17,26 @@ Text=AMD Radeon Software
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#AMDShape#90
-MyFillGradient=#ShapeGradientAngle# | #AMDShapeGradient1Base#,255 ; 1.0 | #AMDShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#AMDRadeonShape#90
+MyFillGradient=#ShapeGradientAngle# | #AMDRadeonShapeGradient1Base#,#AMDRadeonAlphaMask# ; 1.0 | #AMDRadeonShapeGradient2Base#,#AMDRadeonAlphaMask# ; 0.0
 X=915
-Y=160
+Y=170
 
 [MeterMaskImage]
 Meter=Image
 ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#AMDMask#.png
-ImageTint=#AMDMaskBase#
+ImageName=#AMDRadeonMask#.png
+ImageTint=#AMDRadeonMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
 UpdateDivider=-1
-Hidden=#AMDRegularHidden#
+Hidden=#AMDRadeonRegularHidden#
 
-[MeterIconImageAMD]
+[MeterIconImageAMDRadeon]
 Meter=Image
 ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\AMD Radeon Software.png
-ImageTint=#AMDMaskBase#
+ImageTint=#AMDRadeonMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -49,7 +49,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=320
+Y=50R
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -57,7 +57,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#AMDMask#
+Text=#AMDRadeonMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "AMD Radeon Software.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -66,7 +66,7 @@ MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMet
 Meter=String
 MeterStyle=IconText
 X=240r
-Y=320
+Y=310
 Text=Color Mask
 
 [MeterColorMaskActive]
@@ -74,8 +74,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#AMDMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setAMDColorManual('Mask')"]
+Text=#AMDRadeonMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setAMDRadeonColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -85,41 +85,49 @@ MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!Upda
 [MeterColorShapeGradient1]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=840
-Y=420
+Y=425
 Text=Color Gradient 1
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
-Text=#AMDShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setAMDColorManual('Gradient 1')"]
+Text=#AMDRadeonShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setAMDRadeonColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=240r
-Y=420
+Y=425
 Text=Color Gradient 2
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
-Text=#AMDShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setAMDColorManual('Gradient 2')"]
+Text=#AMDRadeonShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setAMDRadeonColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinAMD]
+[MeterSkinAMDRadeon]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -129,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables AMDMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=342 DefaultValue="#AMDMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables AMDShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=442 DefaultValue="#AMDShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables AMDShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=442 DefaultValue="#AMDShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables AMDRadeonMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#AMDRadeonMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables AMDRadeonShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#AMDRadeonShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables AMDRadeonShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#AMDRadeonShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================
