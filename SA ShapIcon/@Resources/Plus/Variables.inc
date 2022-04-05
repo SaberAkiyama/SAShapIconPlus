@@ -6,6 +6,15 @@ MaskWH=8100
 MaskOffsetXY=45
 ShapeGradientAngle=0
 
+; Presets
+NameIconPreset=AfterEffects
+NameCategoryPreset=Adobe
+HiddenGradient=1
+HiddenPreset=1
+HiddenLRCategory=1
+PresetPage1=1
+PresetPage2=1
+
 ; ============================================================
 ; Adobe
 ; ============================================================
@@ -390,6 +399,13 @@ BTD6ShapeGradient1Base=172,77,64
 BTD6ShapeGradient2Base=64,77,172
 BTD6RegularHidden=1
 
+Borderlands3Shape=Hexagon
+Borderlands3Mask=Regular Hexagon
+Borderlands3MaskBase=255,255,255
+Borderlands3ShapeGradient1Base=172,77,64
+Borderlands3ShapeGradient2Base=64,77,172
+Borderlands3RegularHidden=1
+
 CODMWShape=Hexagon
 CODMWMask=Regular Hexagon
 CODMWMaskBase=255,255,255
@@ -439,6 +455,13 @@ DBDShapeGradient1Base=172,77,64
 DBDShapeGradient2Base=64,77,172
 DBDRegularHidden=1
 
+DeathloopShape=Hexagon
+DeathloopMask=Regular Hexagon
+DeathloopMaskBase=255,255,255
+DeathloopShapeGradient1Base=172,77,64
+DeathloopShapeGradient2Base=64,77,172
+DeathloopRegularHidden=1
+
 Destiny2Shape=Hexagon
 Destiny2Mask=Regular Hexagon
 Destiny2MaskBase=255,255,255
@@ -466,6 +489,13 @@ DotaMaskBase=255,255,255
 DotaShapeGradient1Base=172,77,64
 DotaShapeGradient2Base=64,77,172
 DotaRegularHidden=1
+
+EldenRingShape=Hexagon
+EldenRingMask=Regular Hexagon
+EldenRingMaskBase=255,255,255
+EldenRingShapeGradient1Base=172,77,64
+EldenRingShapeGradient2Base=64,77,172
+EldenRingRegularHidden=1
 
 EFTShape=Hexagon
 EFTMask=Regular Hexagon
@@ -509,6 +539,13 @@ FallGuysShapeGradient1Base=172,77,64
 FallGuysShapeGradient2Base=64,77,172
 FallGuysRegularHidden=1
 
+FNAFSBShape=Hexagon
+FNAFSBMask=Regular Hexagon
+FNAFSBMaskBase=255,255,255
+FNAFSBShapeGradient1Base=172,77,64
+FNAFSBShapeGradient2Base=64,77,172
+FNAFSBRegularHidden=1
+
 FFXIVShape=Hexagon
 FFXIVMask=Regular Hexagon
 FFXIVMaskBase=255,255,255
@@ -530,6 +567,13 @@ FortniteShapeGradient1Base=172,77,64
 FortniteShapeGradient2Base=64,77,172
 FortniteRegularHidden=1
 
+FH3Shape=Hexagon
+FH3Mask=Regular Hexagon
+FH3MaskBase=255,255,255
+FH3ShapeGradient1Base=172,77,64
+FH3ShapeGradient2Base=64,77,172
+FH3RegularHidden=1
+
 FH4Shape=Hexagon
 FH4Mask=Regular Hexagon
 FH4MaskBase=255,255,255
@@ -543,6 +587,13 @@ FH5MaskBase=255,255,255
 FH5ShapeGradient1Base=172,77,64
 FH5ShapeGradient2Base=64,77,172
 FH5RegularHidden=1
+
+FM7Shape=Hexagon
+FM7Mask=Regular Hexagon
+FM7MaskBase=255,255,255
+FM7ShapeGradient1Base=172,77,64
+FM7ShapeGradient2Base=64,77,172
+FM7RegularHidden=1
 
 GameLibrariesShape=Hexagon
 GameLibrariesMask=Regular Hexagon
@@ -592,6 +643,13 @@ GOGMaskBase=255,255,255
 GOGShapeGradient1Base=172,77,64
 GOGShapeGradient2Base=64,77,172
 GOGRegularHidden=1
+
+GPGamesShape=Hexagon
+GPGamesMask=Regular Hexagon
+GPGamesMaskBase=255,255,255
+GPGamesShapeGradient1Base=172,77,64
+GPGamesShapeGradient2Base=64,77,172
+GPGamesRegularHidden=1
 
 GTAVShape=Hexagon
 GTAVMask=Regular Hexagon
@@ -663,6 +721,13 @@ LOLShapeGradient1Base=172,77,64
 LOLShapeGradient2Base=64,77,172
 LOLRegularHidden=1
 
+L4D2Shape=Hexagon
+L4D2Mask=Regular Hexagon
+L4D2MaskBase=255,255,255
+L4D2ShapeGradient1Base=172,77,64
+L4D2ShapeGradient2Base=64,77,172
+L4D2RegularHidden=1
+
 LORShape=Hexagon
 LORMask=Regular Hexagon
 LORMaskBase=255,255,255
@@ -670,12 +735,26 @@ LORShapeGradient1Base=172,77,64
 LORShapeGradient2Base=64,77,172
 LORRegularHidden=1
 
+LostArkShape=Hexagon
+LostArkMask=Regular Hexagon
+LostArkMaskBase=255,255,255
+LostArkShapeGradient1Base=172,77,64
+LostArkShapeGradient2Base=64,77,172
+LostArkRegularHidden=1
+
 LunarShape=Hexagon
 LunarMask=Regular Hexagon
 LunarMaskBase=255,255,255
 LunarShapeGradient1Base=172,77,64
 LunarShapeGradient2Base=64,77,172
 LunarRegularHidden=1
+
+MassEffectLEShape=Hexagon
+MassEffectLEMask=Regular Hexagon
+MassEffectLEMaskBase=255,255,255
+MassEffectLEShapeGradient1Base=172,77,64
+MassEffectLEShapeGradient2Base=64,77,172
+MassEffectLERegularHidden=1
 
 MinecraftShape=Hexagon
 MinecraftMask=Regular Hexagon
@@ -691,12 +770,26 @@ MHWorldShapeGradient1Base=172,77,64
 MHWorldShapeGradient2Base=64,77,172
 MHWorldRegularHidden=1
 
+MuseDashShape=Hexagon
+MuseDashMask=Regular Hexagon
+MuseDashMaskBase=255,255,255
+MuseDashShapeGradient1Base=172,77,64
+MuseDashShapeGradient2Base=64,77,172
+MuseDashRegularHidden=1
+
 NarakaShape=Hexagon
 NarakaMask=Regular Hexagon
 NarakaMaskBase=255,255,255
 NarakaShapeGradient1Base=172,77,64
 NarakaShapeGradient2Base=64,77,172
 NarakaRegularHidden=1
+
+NewWorldShape=Hexagon
+NewWorldMask=Regular Hexagon
+NewWorldMaskBase=255,255,255
+NewWorldShapeGradient1Base=172,77,64
+NewWorldShapeGradient2Base=64,77,172
+NewWorldRegularHidden=1
 
 NierAutomataShape=Hexagon
 NierAutomataMask=Regular Hexagon
@@ -775,6 +868,13 @@ PUBGShapeGradient1Base=172,77,64
 PUBGShapeGradient2Base=64,77,172
 PUBGRegularHidden=1
 
+RSExtractionShape=Hexagon
+RSExtractionMask=Regular Hexagon
+RSExtractionMaskBase=255,255,255
+RSExtractionShapeGradient1Base=172,77,64
+RSExtractionShapeGradient2Base=64,77,172
+RSExtractionRegularHidden=1
+
 RSSiegeShape=Hexagon
 RSSiegeMask=Regular Hexagon
 RSSiegeMaskBase=255,255,255
@@ -788,6 +888,13 @@ RecRoomMaskBase=255,255,255
 RecRoomShapeGradient1Base=172,77,64
 RecRoomShapeGradient2Base=64,77,172
 RecRoomRegularHidden=1
+
+REVillageShape=Hexagon
+REVillageMask=Regular Hexagon
+REVillageMaskBase=255,255,255
+REVillageShapeGradient1Base=172,77,64
+REVillageShapeGradient2Base=64,77,172
+REVillageRegularHidden=1
 
 RiotShape=Hexagon
 RiotMask=Regular Hexagon
@@ -1010,12 +1117,12 @@ FoobarShapeGradient1Base=172,77,64
 FoobarShapeGradient2Base=64,77,172
 FoobarRegularHidden=1
 
-GPMShape=Hexagon
-GPMMask=Regular Hexagon
-GPMMaskBase=255,255,255
-GPMShapeGradient1Base=172,77,64
-GPMShapeGradient2Base=64,77,172
-GPMRegularHidden=1
+GPMusicShape=Hexagon
+GPMusicMask=Regular Hexagon
+GPMusicMaskBase=255,255,255
+GPMusicShapeGradient1Base=172,77,64
+GPMusicShapeGradient2Base=64,77,172
+GPMusicRegularHidden=1
 
 HuluShape=Hexagon
 HuluMask=Regular Hexagon
@@ -1246,12 +1353,12 @@ AbletonShapeGradient1Base=172,77,64
 AbletonShapeGradient2Base=64,77,172
 AbletonRegularHidden=1
 
-AMDShape=Hexagon
-AMDMask=Regular Hexagon
-AMDMaskBase=255,255,255
-AMDShapeGradient1Base=172,77,64
-AMDShapeGradient2Base=64,77,172
-AMDRegularHidden=1
+AMDRadeonShape=Hexagon
+AMDRadeonMask=Regular Hexagon
+AMDRadeonMaskBase=255,255,255
+AMDRadeonShapeGradient1Base=172,77,64
+AMDRadeonShapeGradient2Base=64,77,172
+AMDRadeonRegularHidden=1
 
 AMDRyzenShape=Hexagon
 AMDRyzenMask=Regular Hexagon
@@ -1329,6 +1436,13 @@ EVGAMaskBase=255,255,255
 EVGAShapeGradient1Base=172,77,64
 EVGAShapeGradient2Base=64,77,172
 EVGARegularHidden=1
+
+FilmoraXShape=Hexagon
+FilmoraXMask=Regular Hexagon
+FilmoraXMaskBase=255,255,255
+FilmoraXShapeGradient1Base=172,77,64
+FilmoraXShapeGradient2Base=64,77,172
+FilmoraXRegularHidden=1
 
 FLStudioShape=Hexagon
 FLStudioMask=Regular Hexagon

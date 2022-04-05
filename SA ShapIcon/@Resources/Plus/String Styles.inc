@@ -94,6 +94,38 @@ FontColor=255,255,255
 FontSize=18
 AntiAlias=1
 
+[ShapePresetLeftBlankStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,128 | StrokeWidth 0
+Path1=32.808,36.847 | LineTo 30.697,35 | LineTo 18.028,49.077 | LineTo 17.192,50 | LineTo 18.028,50.923 | LineTo 30.697,65 | LineTo 32.808,63.153 | LineTo 20.976,50 | LineTo 32.808,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#HiddenLRCategory#
+
+[ShapePresetLeftStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Path1=32.808,36.847 | LineTo 30.697,35 | LineTo 18.028,49.077 | LineTo 17.192,50 | LineTo 18.028,50.923 | LineTo 30.697,65 | LineTo 32.808,63.153 | LineTo 20.976,50 | LineTo 32.808,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#HiddenLRCategory#
+
+[ShapePresetRightStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50 | LineTo 31.972,50.923 | LineTo 19.303,65 | LineTo 17.192,63.153 | LineTo 29.024,50 | LineTo 17.192,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#HiddenLRCategory#
+
+[ShapePresetRightBlankStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,128 | StrokeWidth 0
+Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50 | LineTo 31.972,50.923 | LineTo 19.303,65 | LineTo 17.192,63.153 | LineTo 29.024,50 | LineTo 17.192,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#HiddenLRCategory#
+
 ; =============================================================
 ; =============================================================
 ; SHAPE STYLES
@@ -248,6 +280,44 @@ Path1=11.847,17.192 | LineTo 10,19.303 | LineTo 24.077,31.972 | LineTo 25,32.808
 DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage3#
+
+[ShapeLeftBlankStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255,128 | StrokeWidth 0
+Path1=32.808,36.847 | LineTo 30.697,35 | LineTo 18.028,49.077 | LineTo 17.192,50 | LineTo 18.028,50.923 | LineTo 30.697,65 | LineTo 32.808,63.153 | LineTo 20.976,50 | LineTo 32.808,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#PresetPage1#
+
+[ShapeLeftPage1Style]
+Shape=Rectangle 0,0,50,100 | Extend MyFillColor | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Path1=32.808,36.847 | LineTo 30.697,35 | LineTo 18.028,49.077 | LineTo 17.192,50 | LineTo 18.028,50.923 | LineTo 30.697,65 | LineTo 32.808,63.153 | LineTo 20.976,50 | LineTo 32.808,36.847 | ClosePath 1
+MyFillColor=Fill Color 0,0,0,128
+MouseOverAction=[!SetOption ShapeLeftPage1 MyFillColor "Fill Color 255,215,0,64"][!UpdateMeter ShapeLeftPage1][!Redraw]
+MouseLeaveAction=[!SetOption ShapeLeftPage1 MyFillColor "Fill Color 0,0,0,128"][!UpdateMeter ShapeLeftPage1][!Redraw]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#PresetPage2#
+
+[ShapeRightPage2Style]
+Shape=Rectangle 0,0,50,100 | Extend MyFillColor | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50 | LineTo 31.972,50.923 | LineTo 19.303,65 | LineTo 17.192,63.153 | LineTo 29.024,50 | LineTo 17.192,36.847 | ClosePath 1
+MyFillColor=Fill Color 0,0,0,128
+MouseOverAction=[!SetOption ShapeRightPage2 MyFillColor "Fill Color 255,215,0,64"][!UpdateMeter ShapeRightPage2][!Redraw]
+MouseLeaveAction=[!SetOption ShapeRightPage2 MyFillColor "Fill Color 0,0,0,128"][!UpdateMeter ShapeRightPage2][!Redraw]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#PresetPage1#
+
+[ShapeRightBlankStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255,128 | StrokeWidth 0
+Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50 | LineTo 31.972,50.923 | LineTo 19.303,65 | LineTo 17.192,63.153 | LineTo 29.024,50 | LineTo 17.192,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#PresetPage2#
 
 ; =============================================================
 ; =============================================================
