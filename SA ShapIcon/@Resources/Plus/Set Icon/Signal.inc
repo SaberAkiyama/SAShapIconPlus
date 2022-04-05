@@ -5,38 +5,38 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterSignalText]
+[MeterDiscordText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=Signal
+Text=Discord
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#SignalShape#90
-MyFillGradient=#ShapeGradientAngle# | #SignalShapeGradient1Base#,255 ; 1.0 | #SignalShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#DiscordShape#90
+MyFillGradient=#ShapeGradientAngle# | #DiscordShapeGradient1Base#,#DiscordAlphaMask# ; 1.0 | #DiscordShapeGradient2Base#,#DiscordAlphaMask# ; 0.0
 X=915
-Y=160
+Y=170
 
 [MeterMaskImage]
 Meter=Image
 ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#SignalMask#.png
-ImageTint=#SignalMaskBase#
+ImageName=#DiscordMask#.png
+ImageTint=#DiscordMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
 UpdateDivider=-1
-Hidden=#SignalRegularHidden#
+Hidden=#DiscordRegularHidden#
 
-[MeterIconImageSignal]
+[MeterIconImageDiscord]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Social\Signal.png
-ImageTint=#SignalMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Social\Discord.png
+ImageTint=#DiscordMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -49,7 +49,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=320
+Y=50R
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -57,8 +57,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#SignalMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Signal.ini"]
+Text=#DiscordMask#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Discord.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -66,7 +66,7 @@ MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMet
 Meter=String
 MeterStyle=IconText
 X=240r
-Y=320
+Y=310
 Text=Color Mask
 
 [MeterColorMaskActive]
@@ -74,8 +74,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#SignalMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaSocial "setSignalColorManual('Mask')"]
+Text=#DiscordMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaSocial "setDiscordColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -85,41 +85,49 @@ MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!Upda
 [MeterColorShapeGradient1]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=840
-Y=420
+Y=425
 Text=Color Gradient 1
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
-Text=#SignalShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaSocial "setSignalColorManual('Gradient 1')"]
+Text=#DiscordShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaSocial "setDiscordColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=240r
-Y=420
+Y=425
 Text=Color Gradient 2
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
-Text=#SignalShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaSocial "setSignalColorManual('Gradient 2')"]
+Text=#DiscordShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaSocial "setDiscordColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinSignal]
+[MeterSkinDiscord]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -129,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables SignalMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=342 DefaultValue="#SignalMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables SignalShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=442 DefaultValue="#SignalShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables SignalShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=442 DefaultValue="#SignalShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables DiscordMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#DiscordMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables DiscordShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#DiscordShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables DiscordShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#DiscordShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================

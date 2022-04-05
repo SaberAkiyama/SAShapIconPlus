@@ -5,7 +5,7 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterAbletonText]
+[MeterMSIText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
@@ -17,26 +17,26 @@ Text=MSI Afterburner
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#AbletonShape#90
-MyFillGradient=#ShapeGradientAngle# | #AbletonShapeGradient1Base#,255 ; 1.0 | #AbletonShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#MSIShape#90
+MyFillGradient=#ShapeGradientAngle# | #MSIShapeGradient1Base#,#MSIAlphaMask# ; 1.0 | #MSIShapeGradient2Base#,#MSIAlphaMask# ; 0.0
 X=915
-Y=160
+Y=170
 
 [MeterMaskImage]
 Meter=Image
 ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#AbletonMask#.png
-ImageTint=#AbletonMaskBase#
+ImageName=#MSIMask#.png
+ImageTint=#MSIMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
 UpdateDivider=-1
-Hidden=#AbletonRegularHidden#
+Hidden=#MSIRegularHidden#
 
-[MeterIconImageAbleton]
+[MeterIconImageMSI]
 Meter=Image
 ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\MSI Afterburner.png
-ImageTint=#AbletonMaskBase#
+ImageTint=#MSIMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -49,7 +49,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=320
+Y=50R
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -57,7 +57,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#AbletonMask#
+Text=#MSIMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "MSI Afterburner.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -66,7 +66,7 @@ MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMet
 Meter=String
 MeterStyle=IconText
 X=240r
-Y=320
+Y=310
 Text=Color Mask
 
 [MeterColorMaskActive]
@@ -74,8 +74,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#AbletonMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setAbletonColorManual('Mask')"]
+Text=#MSIMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setMSIColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -85,41 +85,49 @@ MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!Upda
 [MeterColorShapeGradient1]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=840
-Y=420
+Y=425
 Text=Color Gradient 1
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
-Text=#AbletonShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setAbletonColorManual('Gradient 1')"]
+Text=#MSIShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setMSIColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=240r
-Y=420
+Y=425
 Text=Color Gradient 2
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
-Text=#AbletonShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setAbletonColorManual('Gradient 2')"]
+Text=#MSIShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setMSIColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinAbleton]
+[MeterSkinMSI]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -129,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables AbletonMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=342 DefaultValue="#AbletonMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables AbletonShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=442 DefaultValue="#AbletonShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables AbletonShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=442 DefaultValue="#AbletonShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables MSIMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#MSIMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables MSIShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#MSIShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables MSIShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#MSIShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================

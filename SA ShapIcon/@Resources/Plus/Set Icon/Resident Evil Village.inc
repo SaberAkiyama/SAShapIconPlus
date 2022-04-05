@@ -5,38 +5,38 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterSlackText]
+[MeterREVillageText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=Slack
+Text=Resident Evil Village
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#SlackShape#90
-MyFillGradient=#ShapeGradientAngle# | #SlackShapeGradient1Base#,#SlackAlphaMask# ; 1.0 | #SlackShapeGradient2Base#,#SlackAlphaMask# ; 0.0
+MeterStyle=Mask#REVillageShape#90
+MyFillGradient=#ShapeGradientAngle# | #REVillageShapeGradient1Base#,#REVillageAlphaMask# ; 1.0 | #REVillageShapeGradient2Base#,#REVillageAlphaMask# ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
 Meter=Image
 ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#SlackMask#.png
-ImageTint=#SlackMaskBase#
+ImageName=#REVillageMask#.png
+ImageTint=#REVillageMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
 UpdateDivider=-1
-Hidden=#SlackRegularHidden#
+Hidden=#REVillageRegularHidden#
 
-[MeterIconImageSlack]
+[MeterIconImageREVillage]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\Slack.png
-ImageTint=#SlackMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Resident Evil Village.png
+ImageTint=#REVillageMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -57,8 +57,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#SlackMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Slack.ini"]
+Text=#REVillageMask#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Resident Evil Village.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -74,8 +74,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#SlackMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setSlackColorManual('Mask')"]
+Text=#REVillageMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setREVillageColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -97,8 +97,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#SlackShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setSlackColorManual('Gradient 1')"]
+Text=#REVillageShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setREVillageColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#HiddenGradient#
@@ -118,8 +118,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#SlackShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setSlackColorManual('Gradient 2')"]
+Text=#REVillageShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setREVillageColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#HiddenGradient#
@@ -127,7 +127,7 @@ Hidden=#HiddenGradient#
 ; ============================================================
 ; ============================================================
 
-[MeterSkinSlack]
+[MeterSkinREVillage]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -137,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables SlackMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#SlackMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables SlackShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#SlackShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables SlackShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#SlackShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables REVillageMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#REVillageMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables REVillageShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#REVillageShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables REVillageShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#REVillageShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================
@@ -150,6 +150,6 @@ MeterStyle=IconSkinActive
 X=960
 Y=565
 Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaOther "setApply()"]
-MouseOverAction=[!CommandMeasure LuaOther "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaOther "setSkinApply('Leave')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setApply()"]
+MouseOverAction=[!CommandMeasure LuaGaming "setSkinApply('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaGaming "setSkinApply('Leave')"]

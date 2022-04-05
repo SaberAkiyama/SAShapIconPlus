@@ -5,38 +5,38 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterSlackText]
+[MeterL4D2Text]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=Slack
+Text=Left 4 Dead 2
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#SlackShape#90
-MyFillGradient=#ShapeGradientAngle# | #SlackShapeGradient1Base#,#SlackAlphaMask# ; 1.0 | #SlackShapeGradient2Base#,#SlackAlphaMask# ; 0.0
+MeterStyle=Mask#L4D2Shape#90
+MyFillGradient=#ShapeGradientAngle# | #L4D2ShapeGradient1Base#,#L4D2AlphaMask# ; 1.0 | #L4D2ShapeGradient2Base#,#L4D2AlphaMask# ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
 Meter=Image
 ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#SlackMask#.png
-ImageTint=#SlackMaskBase#
+ImageName=#L4D2Mask#.png
+ImageTint=#L4D2MaskBase#
 X=0r
 Y=0r
 AntiAlias=1
 UpdateDivider=-1
-Hidden=#SlackRegularHidden#
+Hidden=#L4D2RegularHidden#
 
-[MeterIconImageSlack]
+[MeterIconImageL4D2]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\Slack.png
-ImageTint=#SlackMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Left 4 Dead 2.png
+ImageTint=#L4D2MaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -57,8 +57,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#SlackMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Slack.ini"]
+Text=#L4D2Mask#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Left 4 Dead 2.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -74,8 +74,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#SlackMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setSlackColorManual('Mask')"]
+Text=#L4D2MaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setL4D2ColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -97,8 +97,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#SlackShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setSlackColorManual('Gradient 1')"]
+Text=#L4D2ShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setL4D2ColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#HiddenGradient#
@@ -118,8 +118,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#SlackShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setSlackColorManual('Gradient 2')"]
+Text=#L4D2ShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setL4D2ColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#HiddenGradient#
@@ -127,7 +127,7 @@ Hidden=#HiddenGradient#
 ; ============================================================
 ; ============================================================
 
-[MeterSkinSlack]
+[MeterSkinL4D2]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -137,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables SlackMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#SlackMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables SlackShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#SlackShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables SlackShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#SlackShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables L4D2MaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#L4D2MaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables L4D2ShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#L4D2ShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables L4D2ShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#L4D2ShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================
@@ -150,6 +150,6 @@ MeterStyle=IconSkinActive
 X=960
 Y=565
 Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaOther "setApply()"]
-MouseOverAction=[!CommandMeasure LuaOther "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaOther "setSkinApply('Leave')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setApply()"]
+MouseOverAction=[!CommandMeasure LuaGaming "setSkinApply('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaGaming "setSkinApply('Leave')"]
