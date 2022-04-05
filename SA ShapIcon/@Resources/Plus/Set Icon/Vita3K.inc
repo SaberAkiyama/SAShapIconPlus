@@ -18,9 +18,9 @@ Text=Vita3K
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#Vita3KShape#90
-MyFillGradient=#ShapeGradientAngle# | #Vita3KShapeGradient1Base#,255 ; 1.0 | #Vita3KShapeGradient2Base#,255 ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #Vita3KShapeGradient1Base#,#Vita3KAlphaMask# ; 1.0 | #Vita3KShapeGradient2Base#,#Vita3KAlphaMask# ; 0.0
 X=915
-Y=160
+Y=170
 
 [MeterMaskImage]
 Meter=Image
@@ -49,7 +49,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=320
+Y=50R
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -66,7 +66,7 @@ MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMet
 Meter=String
 MeterStyle=IconText
 X=240r
-Y=320
+Y=310
 Text=Color Mask
 
 [MeterColorMaskActive]
@@ -85,36 +85,44 @@ MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!Upda
 [MeterColorShapeGradient1]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=840
-Y=420
+Y=425
 Text=Color Gradient 1
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
 Text=#Vita3KShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setVita3KColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=240r
-Y=420
+Y=425
 Text=Color Gradient 2
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
 Text=#Vita3KShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setVita3KColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -129,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables Vita3KMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=342 DefaultValue="#Vita3KMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables Vita3KShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=442 DefaultValue="#Vita3KShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables Vita3KShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=442 DefaultValue="#Vita3KShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables Vita3KMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#Vita3KMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables Vita3KShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#Vita3KShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables Vita3KShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#Vita3KShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================

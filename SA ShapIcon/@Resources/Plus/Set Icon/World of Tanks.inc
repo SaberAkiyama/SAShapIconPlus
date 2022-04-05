@@ -18,9 +18,9 @@ Text=World of Tanks
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#WOTanksShape#90
-MyFillGradient=#ShapeGradientAngle# | #WOTanksShapeGradient1Base#,255 ; 1.0 | #WOTanksShapeGradient2Base#,255 ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #WOTanksShapeGradient1Base#,#WOTanksAlphaMask# ; 1.0 | #WOTanksShapeGradient2Base#,#WOTanksAlphaMask# ; 0.0
 X=915
-Y=160
+Y=170
 
 [MeterMaskImage]
 Meter=Image
@@ -49,7 +49,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=320
+Y=50R
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -66,7 +66,7 @@ MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMet
 Meter=String
 MeterStyle=IconText
 X=240r
-Y=320
+Y=310
 Text=Color Mask
 
 [MeterColorMaskActive]
@@ -85,36 +85,44 @@ MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!Upda
 [MeterColorShapeGradient1]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=840
-Y=420
+Y=425
 Text=Color Gradient 1
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
 Text=#WOTanksShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setWOTanksColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
 MeterStyle=IconText
+Group=PageGradient
 X=240r
-Y=420
+Y=425
 Text=Color Gradient 2
+Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
 MeterStyle=IconActive
+Group=PageGradient
 X=0r
 Y=5R
 Text=#WOTanksShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setWOTanksColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -129,9 +137,9 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables WOTanksMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=342 DefaultValue="#WOTanksMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables WOTanksShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=442 DefaultValue="#WOTanksShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables WOTanksShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=442 DefaultValue="#WOTanksShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables WOTanksMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#WOTanksMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables WOTanksShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#WOTanksShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables WOTanksShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#WOTanksShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
 
 ; ============================================================
 ; ============================================================
