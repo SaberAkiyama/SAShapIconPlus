@@ -152,6 +152,30 @@ See the [open issues](https://github.com/SaberAkiyama/SAShapIconPlus/issues) for
 
 
 
+<!-- CONTRIBUTING -->
+## Contributing
+<!--
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+You can also simply open an issue with the tag "Add Icon(s)" and/or "Add Shaps(s)".
+Don't forget to give the project a star! Thanks again!
+-->
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
+
+1. Fork the Project
+2. Go to your profile, and click ```SAShapIconPlus``` repository
+3. Press Period button ```.``` to access VS Code on GitHub
+4. Expand ```Request Icons```, right click the ```@YourName``` folder, copy it
+5. Right click the ```Request Icons``` and paste folder
+6. Right click the ```@YourName copy``` folder, click ```Rename``` and type your username and press ```Enter``` button
+7. Make sure to rename all the files on your folder in the same title.
+8. Once it is done, go to ```Source Control```, click ```Create Pull Request```, scroll down to ```Title```, type ```Title Name by YourName``` and click ```Create```. And you're done! Your repository is now on the Pull requests tab and waiting for the owner of this repository.
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
 <!-- LICENSE -->
 ## License
 
