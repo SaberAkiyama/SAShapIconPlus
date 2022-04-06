@@ -136,9 +136,12 @@ _For more examples, please refer to the [Wiki](https://github.com/SaberAkiyama/S
 ## Roadmap
 
 - [x] Add Gradiant Shapes and Colors
-- [ ] Presets
-    - [ ] Transparency
-    - [ ] Gradient Color
+- [x] Presets
+    - [x] Transparency
+    - [x] Gradient Color
+- [ ] [REDACTED]
+- [ ] [REDACTED]
+- [ ] [REDACTED]
 
 And more...
 
