@@ -200,5 +200,5 @@ Click "Home" page, click "Add Friend" (a green dialog box), type ```SaberAkiyama
 [license-shield]: https://img.shields.io/github/license/SaberAkiyama/SAShapIconPlus.svg?style=for-the-badge
 [license-url]: https://github.com/SaberAkiyama/SAShapIconPlus/blob/master/LICENSE
 [discord-shield]: https://img.shields.io/badge/-discord-black.svg?style=for-the-badge&logo=Discord&colorB=555
-[discord-url]: https://discord.gg/mQ2BTwK9jD
+[discord-url]: https://discord.gg/7Qhy7BKsub
 [product-screenshot]: images/screenshot.png
