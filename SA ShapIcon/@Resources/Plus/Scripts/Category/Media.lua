@@ -5,138 +5,120 @@
 selectMedia = {
 	["AIMP"] = {
 		iconName = "AIMP",
-		iconNamePreset = "AIMP",
+		iconMask = "AIMP",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Amazon Music"] = {
 		iconName = "Amazon Music",
-		iconNamePreset = "AmazonMusic",
+		iconMask = "AmazonMusic",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Apple iTunes"] = {
 		iconName = "Apple iTunes",
-		iconNamePreset = "iTunes",
+		iconMask = "iTunes",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Audible"] = {
 		iconName = "Audible",
-		iconNamePreset = "Audible",
+		iconMask = "Audible",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Disney+"] = {
 		iconName = "Disney+",
-		iconNamePreset = "DisneyPlus",
+		iconMask = "DisneyPlus",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["foobar2000"] = {
 		iconName = "foobar2000",
-		iconNamePreset = "Foobar",
+		iconMask = "Foobar",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Google Play Music"] = {
 		iconName = "Google Play Music",
-		iconNamePreset = "GPMusic",
+		iconMask = "GPMusic",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Hulu"] = {
 		iconName = "Hulu",
-		iconNamePreset = "Hulu",
+		iconMask = "Hulu",
 		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1"
+		showPage2 = "1"
 	},
 	["Kodi"] = {
 		iconName = "Kodi",
-		iconNamePreset = "Kodi",
-		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		iconMask = "Kodi",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["MusicBee"] = {
 		iconName = "MusicBee",
-		iconNamePreset = "MusicBee",
-		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		iconMask = "MusicBee",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Netflix"] = {
 		iconName = "Netflix",
-		iconNamePreset = "Netflix",
+		iconMask = "Netflix",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		showPage2 = "0"
 	},
 	["Plex"] = {
 		iconName = "Plex",
-		iconNamePreset = "Plex",
+		iconMask = "Plex",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		showPage2 = "0"
 	},
 	["Spotify"] = {
 		iconName = "Spotify",
-		iconNamePreset = "Spotify",
+		iconMask = "Spotify",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		showPage2 = "0"
 	},
 	["Twitch"] = {
 		iconName = "Twitch",
-		iconNamePreset = "Twitch",
+		iconMask = "Twitch",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		showPage2 = "0"
 	},
 	["VLC"] = {
 		iconName = "VLC",
-		iconNamePreset = "VLC",
+		iconMask = "VLC",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		showPage2 = "0"
 	},
 	["Wakanim"] = {
 		iconName = "Wakanim",
-		iconNamePreset = "Wakanim",
+		iconMask = "Wakanim",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1"
+		showPage2 = "0"
 	},
 	["Winamp"] = {
 		iconName = "Winamp",
-		iconNamePreset = "Winamp",
+		iconMask = "Winamp",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0"
+		showPage2 = "0"
 	},
 	["YouTube"] = {
 		iconName = "YouTube",
-		iconNamePreset = "YouTube",
+		iconMask = "YouTube",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0"
+		showPage2 = "0"
 	}
 }
 
 function setMedia(selectedMedia)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectMedia[selectedMedia]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectMedia[selectedMedia]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MediaPage1 "' .. selectMedia[selectedMedia]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MediaPage2 "' .. selectMedia[selectedMedia]['showPage2'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MediaPage3 "' .. selectMedia[selectedMedia]['showPage3'] .. '" "#@#Settings Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectMedia[selectedMedia]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -146,7 +128,6 @@ end
 function setMediaPage1()
 	SKIN:Bang('!ShowMeterGroup MediaPage1')
 	SKIN:Bang('!HideMeterGroup MediaPage2')
-	SKIN:Bang('!HideMeterGroup MediaPage3')
 
 	SKIN:Bang('!Update')
 
@@ -155,16 +136,6 @@ end
 function setMediaPage2()
 	SKIN:Bang('!ShowMeterGroup MediaPage2')
 	SKIN:Bang('!HideMeterGroup MediaPage1')
-	SKIN:Bang('!HideMeterGroup MediaPage3')
-
-	SKIN:Bang('!Update')
-
-end
-
-function setMediaPage3()
-	SKIN:Bang('!ShowMeterGroup MediaPage3')
-	SKIN:Bang('!HideMeterGroup MediaPage1')
-	SKIN:Bang('!HideMeterGroup MediaPage2')
 
 	SKIN:Bang('!Update')
 
@@ -176,13 +147,11 @@ end
 hoverMediaSelect = {
 	["Over"] = {
 		colorPage1 = "255,215,0",
-		colorPage2 = "255,215,0",
-		colorPage3 = "255,215,0"
+		colorPage2 = "255,215,0"
 	},
 	["Leave"] = {
 		colorPage1 = "255,255,255",
-		colorPage2 = "255,255,255",
-		colorPage3 = "255,255,255"
+		colorPage2 = "255,255,255"
 	}
 }
 
@@ -195,13 +164,6 @@ end
 
 function setHoverMediaPage2(selectedHover)
 	SKIN:Bang('!SetOption MeterPage2Text FontColor "' .. hoverMediaSelect[selectedHover]['colorPage2'] .. '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverMediaPage3(selectedHover)
-	SKIN:Bang('!SetOption MeterPage3Text FontColor "' .. hoverMediaSelect[selectedHover]['colorPage3'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 

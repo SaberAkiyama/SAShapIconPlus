@@ -24,6 +24,11 @@ function setGuildedColorManual(selectedCode)
 
 end
 
+function setMetaMessagerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMetaMessager" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setRedditColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinReddit" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -65,6 +70,261 @@ function setZoomColorManual(selectedCode)
 end
 
 --; ============================================================
+
+--; ============================================================
+--; Lua Mask (Social)
+--; ============================================================
+
+maskSocialSelect = {
+	["Alter Celtic Knot"] = {
+		socialMaskMeter = "Image",
+		socialMaskStyle = "AlterCelticKnot",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Alter Chain"] = {
+		socialMaskMeter = "Image",
+		socialMaskStyle = "AlterChain",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Alter Circle"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "AlterCircle",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Alter Hexagon"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "AlterHexagon",
+		socialMaskShape = "Hexagon",
+		socialRegularHidden = "0"
+	},
+	["Alter Square"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "AlterSquare",
+		socialMaskShape = "Square",
+		socialRegularHidden = "0"
+	},
+	["Alter Circle V2"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "AlterCircleV2",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Alter Hexagon V2"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "AlterHexagonV2",
+		socialMaskShape = "Hexagon",
+		socialRegularHidden = "0"
+	},
+	["Alter Square V2"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "AlterSquareV2",
+		socialMaskShape = "Square",
+		socialRegularHidden = "0"
+	},
+	["Dashed Circle"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "DashedCircle",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Dashed Hexagon"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "DashedHexagon",
+		socialMaskShape = "Hexagon",
+		socialRegularHidden = "0"
+	},
+	["Inline Circle"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "InlineCircle",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Inline Hexagon"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "InlineHexagon",
+		socialMaskShape = "Hexagon",
+		socialRegularHidden = "0"
+	},
+	["Inline Square"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "InlineSquare",
+		socialMaskShape = "Square",
+		socialRegularHidden = "0"
+	},
+	["Regular Celtic Knot"] = {
+		socialMaskMeter = "Image",
+		socialMaskStyle = "CelticKnot",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Regular Chain"] = {
+		socialMaskMeter = "Image",
+		socialMaskStyle = "Chain",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Regular Circle"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "Blank",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "1"
+	},
+	["Regular Hexagon"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "Blank",
+		socialMaskShape = "Hexagon",
+		socialRegularHidden = "1"
+	},
+	["Regular Square"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "Blank",
+		socialMaskShape = "Square",
+		socialRegularHidden = "1"
+	},
+	["Split Circle"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "SplitCircle",
+		socialMaskShape = "Circle",
+		socialRegularHidden = "0"
+	},
+	["Split Hexagon"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "SplitHexagon",
+		socialMaskShape = "Hexagon",
+		socialRegularHidden = "0"
+	},
+	["Split Square"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "SplitSquare",
+		socialMaskShape = "Square",
+		socialRegularHidden = "0"
+	}
+}
+
+function setDiscordMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables DiscordMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DiscordMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DiscordShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DiscordMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DiscordRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setGuildedMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables GuildedMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GuildedMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GuildedShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GuildedMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GuildedRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMetaMessagerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MetaMessagerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessagerMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessagerShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessagerMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessagerRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setRedditMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables RedditMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RedditMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RedditShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RedditMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RedditRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setSignalMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SignalMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SignalMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SignalShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SignalMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SignalRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTeamSpeakMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTelegramMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TelegramMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TelegramMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TelegramShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TelegramMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TelegramRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTwitterMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables FramemakerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FramemakerMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FramemakerShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FramemakerMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FramemakerRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWebExMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WebExMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WebExMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WebExShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WebExMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WebExRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWhatsAppMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setZoomMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ZoomMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZoomMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZoomShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZoomMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZoomRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 --; ============================================================
 
 hoverCategorySelect = {
@@ -85,756 +345,5 @@ end
 
 function setApply()
 	SKIN:Bang('!RefreshGroup SISocial')
-
-end
-
---; ============================================================
---; ============================================================
-
---; ============================================================
---; Lua Color Presets (Social)
---; ============================================================
-
-colorSocialPresetSelect = {
-	["Transparent"] = {
-		colorGradient1 = "0,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "1",
-		alphaMaskInterval = "0",
-		alphaMaskLow = "1",
-		alphaMaskHigh = "1"
-	},
-	["Red and Blue"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "0,0,255",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Green"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "0,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Yellow"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "255,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Yellow"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "255,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Yellow"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "255,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Orange"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Orange"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Orange"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Purple"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Purple"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Purple"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Black"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Black"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Black"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Yellow and Orange"] = {
-		colorGradient1 = "255,255,0",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Yellow and Purple"] = {
-		colorGradient1 = "255,255,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Yellow and Black"] = {
-		colorGradient1 = "255,255,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Orange and Purple"] = {
-		colorGradient1 = "255,165,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Orange and Black"] = {
-		colorGradient1 = "255,165,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Purple and Black"] = {
-		colorGradient1 = "128,0,128",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Black"] = {
-		colorGradient1 = "0,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Blue"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "0,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Green"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "0,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Yellow"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "128,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Yellow"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "128,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Yellow"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "128,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Orange"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Orange"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Orange"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Purple"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Purple"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Purple"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Black"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Black"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Black"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Yellow and Orange"] = {
-		colorGradient1 = "128,128,0",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Yellow and Purple"] = {
-		colorGradient1 = "128,128,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Yellow and Black"] = {
-		colorGradient1 = "128,128,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Orange and Purple"] = {
-		colorGradient1 = "128,83,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Orange and Black"] = {
-		colorGradient1 = "128,83,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Purple and Black"] = {
-		colorGradient1 = "64,0,64",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	}
-}
-
-function setPresetDiscord(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables DiscordShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DiscordShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DiscordAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DiscordAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DiscordAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DiscordAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetGuilded(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables GuildedShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GuildedShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GuildedAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GuildedAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GuildedAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GuildedAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetReddit(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables RedditShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RedditShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RedditAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RedditAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RedditAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RedditAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetSignal(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SignalAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SignalAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SignalAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SignalAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetTeamSpeak(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TeamSpeakAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TeamSpeakAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TeamSpeakAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TeamSpeakAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetTelegram(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables TelegramShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TelegramShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TelegramAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TelegramAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TelegramAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TelegramAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetTwitter(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables TwitterShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TwitterShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TwitterAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TwitterAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TwitterAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables TwitterAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetWhatsApp(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables WhatsAppShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WhatsAppShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WhatsAppAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WhatsAppAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WhatsAppAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WhatsAppAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetZoom(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables ZoomShapeGradient1Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZoomShapeGradient2Base "' .. colorSocialPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZoomAlphaMask "' .. colorSocialPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZoomAlphaMaskInterval "' .. colorSocialPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZoomAlphaMaskLow "' .. colorSocialPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZoomAlphaMaskHigh "' .. colorSocialPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
---; ============================================================
---; ============================================================
-
-hoverSocialPresetSelect = {
-	["Over"] = {
-		strokeColor = "255,255,255,255"
-	},
-	["Leave"] = {
-		strokeColor = "0,0,0,255"
-	}
-}
-
-function setHoverTransparent(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetTransparent MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedBlue(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedBlue MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedGreen(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedGreen MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedYellow MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenYellow MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlueYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlueYellow MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlueOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlueOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedPurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenPurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBluePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBluePurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlueBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlueBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverYellowOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetYellowOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverYellowPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetYellowPurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverYellowBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetYellowBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverOrangePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetOrangePurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverOrangeBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetOrangeBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverPurpleBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetPurpleBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedBlue(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedBlue MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedGreen(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedGreen MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedYellow MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenYellow MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBlueYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBlueYellow MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBlueOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBlueOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedPurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenPurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBluePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBluePurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBlueBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBlueBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkYellowOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkYellowOrange MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkYellowPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkYellowPurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkYellowBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkYellowBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkOrangePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkOrangePurple MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkOrangeBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkOrangeBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkPurpleBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkPurpleBlack MyColorStroke "Stroke Color ' .. hoverSocialPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
 
 end

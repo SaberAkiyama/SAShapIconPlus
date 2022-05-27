@@ -5,67 +5,73 @@
 selectEmulator = {
 	["BlueStacks"] = {
 		iconName = "BlueStacks",
-		iconNamePreset = "BlueStacks",
+		iconMask = "BlueStacks",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Cemu"] = {
 		iconName = "Cemu",
-		iconNamePreset = "Cemu",
+		iconMask = "Cemu",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Citra"] = {
 		iconName = "Citra",
-		iconNamePreset = "Citra",
+		iconMask = "Citra",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["DeSmuME"] = {
 		iconName = "DeSmuME",
-		iconNamePreset = "DeSmuME",
+		iconMask = "DeSmuME",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Dolphin"] = {
 		iconName = "Dolphin",
-		iconNamePreset = "Dolphin",
+		iconMask = "Dolphin",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["DuckStation"] = {
 		iconName = "DuckStation",
-		iconNamePreset = "DuckStation",
+		iconMask = "DuckStation",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["PCSX2"] = {
 		iconName = "PCSX2",
-		iconNamePreset = "PCSX2",
+		iconMask = "PCSX2",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["PPSSPP"] = {
 		iconName = "PPSSPP",
-		iconNamePreset = "PPSSPP",
+		iconMask = "PPSSPP",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["RPCS3"] = {
 		iconName = "RPCS3",
-		iconNamePreset = "RPCS3",
-		showPage1 = "1",
-		showPage2 = "0"
+		iconMask = "RPCS3",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Vita3K"] = {
 		iconName = "Vita3K",
-		iconNamePreset = "Vita3K",
-		showPage1 = "1",
-		showPage2 = "0"
+		iconMask = "Vita3K",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Xenia"] = {
 		iconName = "Xenia",
-		iconNamePreset = "Xenia",
+		iconMask = "Xenia",
+		showPage1 = "1",
+		showPage2 = "0"
+	},
+	["Yuzu"] = {
+		iconName = "Yuzu",
+		iconMask = "Yuzu",
 		showPage1 = "1",
 		showPage2 = "0"
 	}
@@ -73,9 +79,10 @@ selectEmulator = {
 
 function setEmulator(selectedEmulator)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectEmulator[selectedEmulator]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectEmulator[selectedEmulator]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables EmulatorPage1 "' .. selectEmulator[selectedEmulator]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables EmulatorPage2 "' .. selectEmulator[selectedEmulator]['showPage2'] .. '" "#@#Settings Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectEmulator[selectedEmulator]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

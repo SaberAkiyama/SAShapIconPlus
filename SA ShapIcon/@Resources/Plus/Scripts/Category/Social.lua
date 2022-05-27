@@ -5,61 +5,67 @@
 selectSocial = {
 	["Cisco WebEx Teams"] = {
 		iconName = "Cisco WebEx Teams",
-		iconNamePreset = "WebEx",
+		iconMask = "WebEx",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Discord"] = {
 		iconName = "Discord",
-		iconNamePreset = "Discord",
+		iconMask = "Discord",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Guilded"] = {
 		iconName = "Guilded",
-		iconNamePreset = "Guilded",
+		iconMask = "Guilded",
+		showPage1 = "0",
+		showPage2 = "1"
+	},
+	["Meta Messager"] = {
+		iconName = "Meta Messager",
+		iconMask = "MetaMessager",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Reddit"] = {
 		iconName = "Reddit",
-		iconNamePreset = "Reddit",
+		iconMask = "Reddit",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Signal"] = {
 		iconName = "Signal",
-		iconNamePreset = "Signal",
+		iconMask = "Signal",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["TeamSpeak"] = {
 		iconName = "TeamSpeak",
-		iconNamePreset = "TeamSpeak",
+		iconMask = "TeamSpeak",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Telegram"] = {
 		iconName = "Telegram",
-		iconNamePreset = "Telegram",
+		iconMask = "Telegram",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Twitter"] = {
 		iconName = "Twitter",
-		iconNamePreset = "Twitter",
+		iconMask = "Twitter",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["WhatsApp"] = {
 		iconName = "WhatsApp",
-		iconNamePreset = "WhatsApp",
-		showPage1 = "1",
-		showPage2 = "0"
+		iconMask = "WhatsApp",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Zoom"] = {
 		iconName = "Zoom",
-		iconNamePreset = "Zoom",
+		iconMask = "Zoom",
 		showPage1 = "1",
 		showPage2 = "0"
 	}
@@ -67,9 +73,10 @@ selectSocial = {
 
 function setSocial(selectedSocial)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectSocial[selectedSocial]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectSocial[selectedSocial]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SocialPage1 "' .. selectSocial[selectedSocial]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SocialPage2 "' .. selectSocial[selectedSocial]['showPage2'] .. '" "#@#Settings Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectSocial[selectedSocial]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -79,7 +86,6 @@ end
 function setSocialPage1()
 	SKIN:Bang('!ShowMeterGroup SocialPage1')
 	SKIN:Bang('!HideMeterGroup SocialPage2')
-
 	SKIN:Bang('!Update')
 
 end

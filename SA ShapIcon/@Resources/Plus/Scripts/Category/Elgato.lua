@@ -5,39 +5,40 @@
 selectElgato = {
 	["4K Capture Utility"] = {
 		iconName = "4K Capture Utility",
-		iconNamePreset = "4KCU"
+		iconMask = "4KCU"
 	},
 	["Camera Hub"] = {
 		iconName = "Camera Hub",
-		iconNamePreset = "CameraHub"
+		iconMask = "CameraHub"
 	},
 	["Control Center"] = {
 		iconName = "Control Center",
-		iconNamePreset = "ControlCenter"
+		iconMask = "ControlCenter"
 	},
 	["Game Capture"] = {
 		iconName = "Game Capture",
-		iconNamePreset = "GameCapture"
+		iconMask = "GameCapture"
 	},
 	["Stream Deck"] = {
 		iconName = "Stream Deck",
-		iconNamePreset = "StreamDeck"
+		iconMask = "StreamDeck"
 	},
 	["Video Capture"] = {
 		iconName = "Video Capture",
-		iconNamePreset = "VideoCapture"
+		iconMask = "VideoCapture"
 	},
 	["Wave Link"] = {
 		iconName = "Wave Link",
-		iconNamePreset = "WaveLink"
+		iconMask = "WaveLink"
 	}
 }
 
 function setElgato(selectedElgato)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectElgato[selectedElgato]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectElgato[selectedElgato]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectElgato[selectedElgato]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
-
+	
 end

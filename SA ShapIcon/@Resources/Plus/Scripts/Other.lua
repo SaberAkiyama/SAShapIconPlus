@@ -1,5 +1,7 @@
 --; ============================================================
 --; Lua Color (Other)
+--; ============================================================
+
 colorSelect = {
 	["Mask"] = {
 		colorCode = "ExecuteBatch 1"
@@ -87,6 +89,11 @@ function setGIMPColorManual(selectedCode)
 
 end
 
+function setInkscapeColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinInkscape" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setKritaColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinKrita" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -104,6 +111,11 @@ end
 
 function setManageRainmeterColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinManageRainmeter" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setMedalColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMedal" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -147,6 +159,11 @@ function setRazerColorManual(selectedCode)
 
 end
 
+function setRemNoteColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinRemNote" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setSlackColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinSlack" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -187,8 +204,8 @@ function setUnrealColorManual(selectedCode)
 
 end
 
-function setVisualStudioCodeColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinVisualStudioCode" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setVSCodeColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVSCode" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -207,12 +224,635 @@ function setWallpaperEngineColorManual(selectedCode)
 
 end
 
+function setWPSColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinWPS" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setZbrushColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinZbrush" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
 --; ============================================================
+
+--; ============================================================
+--; Lua Mask (Other)
+--; ============================================================
+
+maskOtherSelect = {
+	["Alter Celtic Knot"] = {
+		otherMaskMeter = "Image",
+		otherMaskStyle = "AlterCelticKnot",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Alter Chain"] = {
+		otherMaskMeter = "Image",
+		otherMaskStyle = "AlterChain",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Alter Circle"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "AlterCircle",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Alter Hexagon"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "AlterHexagon",
+		otherMaskShape = "Hexagon",
+		otherRegularHidden = "0"
+	},
+	["Alter Square"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "AlterSquare",
+		otherMaskShape = "Square",
+		otherRegularHidden = "0"
+	},
+	["Alter Circle V2"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "AlterCircleV2",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Alter Hexagon V2"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "AlterHexagonV2",
+		otherMaskShape = "Hexagon",
+		otherRegularHidden = "0"
+	},
+	["Alter Square V2"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "AlterSquareV2",
+		otherMaskShape = "Square",
+		otherRegularHidden = "0"
+	},
+	["Dashed Circle"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "DashedCircle",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Dashed Hexagon"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "DashedHexagon",
+		otherMaskShape = "Hexagon",
+		otherRegularHidden = "0"
+	},
+	["Inline Circle"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "InlineCircle",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Inline Hexagon"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "InlineHexagon",
+		otherMaskShape = "Hexagon",
+		otherRegularHidden = "0"
+	},
+	["Inline Square"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "InlineSquare",
+		otherMaskShape = "Square",
+		otherRegularHidden = "0"
+	},
+	["Regular Celtic Knot"] = {
+		otherMaskMeter = "Image",
+		otherMaskStyle = "CelticKnot",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Regular Chain"] = {
+		otherMaskMeter = "Image",
+		otherMaskStyle = "Chain",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Regular Circle"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "Blank",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "1"
+	},
+	["Regular Hexagon"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "Blank",
+		otherMaskShape = "Hexagon",
+		otherRegularHidden = "1"
+	},
+	["Regular Square"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "Blank",
+		otherMaskShape = "Square",
+		otherRegularHidden = "1"
+	},
+	["Split Circle"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "SplitCircle",
+		otherMaskShape = "Circle",
+		otherRegularHidden = "0"
+	},
+	["Split Hexagon"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "SplitHexagon",
+		otherMaskShape = "Hexagon",
+		otherRegularHidden = "0"
+	},
+	["Split Square"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "SplitSquare",
+		otherMaskShape = "Square",
+		otherRegularHidden = "0"
+	}
+}
+
+function setAbletonMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AbletonMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AbletonMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AbletonShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AbletonMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AbletonRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAMDRadeonMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AMDRadeonMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRadeonMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRadeonShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRadeonMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRadeonRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAMDRyzenMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AMDRyzenMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRyzenMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRyzenShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRyzenMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AMDRyzenRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAnkiMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AnkiMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnkiMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnkiShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnkiMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnkiRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setBitDefenderMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables BitDefenderMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitDefenderMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitDefenderShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitDefenderMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitDefenderRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setBitwardenMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables BitwardenMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitwardenMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitwardenShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitwardenMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BitwardenRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setBlenderMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables BlenderMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlenderMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlenderShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlenderMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlenderRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setCSPMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CSPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CSPMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CSPShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CSPMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CSPRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setCorsairMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CorsairMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CorsairMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CorsairShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CorsairMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CorsairRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setDaVinciMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables DaVinciMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaVinciMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaVinciShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaVinciMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaVinciRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setDaviantArtMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables DaviantArtMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaviantArtMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaviantArtShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaviantArtMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DaviantArtRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setEvernoteMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables EvernoteMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EvernoteMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EvernoteShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EvernoteMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EvernoteRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setEVGAMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables EVGAMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVGAMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVGAShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVGAMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVGARegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setFilmoraXMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables FilmoraXMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FilmoraXMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FilmoraXShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FilmoraXMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FilmoraXRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setFLStudioMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables FLStudioMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FLStudioMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FLStudioShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FLStudioMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FLStudioRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setGIMPMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables GIMPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GIMPMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GIMPShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GIMPMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables GIMPRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setInkscapeMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables InkscapeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InkscapeMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InkscapeShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InkscapeMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InkscapeRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setKritaMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables KritaMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KritaMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KritaShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KritaMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KritaRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setLibrariesMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables LibrariesMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LibrariesMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LibrariesShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LibrariesMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LibrariesRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setLogitechMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables LogitechMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LogitechMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LogitechShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LogitechMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LogitechRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setManageRainmeterMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ManageRainmeterMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ManageRainmeterMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ManageRainmeterShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ManageRainmeterMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ManageRainmeterRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMedalMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MedalMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MedalMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MedalShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MedalMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MedalRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMSIMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MSIMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MSIMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MSIShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MSIMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MSIRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setNotepadPPMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables NotepadPPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotepadPPMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotepadPPShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotepadPPMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotepadPPRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setNVIDIAMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables NVIDIAMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIAMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIAShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIAMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIARegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setOBSMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables OBSMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OBSMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OBSShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OBSMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OBSRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setOculusMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables OculusMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OculusMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OculusShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OculusMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OculusRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setOutplayedMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables OutplayedMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OutplayedMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OutplayedShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OutplayedMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OutplayedRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setProtonVPNMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ProtonVPNMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonVPNMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonVPNShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonVPNMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonVPNRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setRazerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables RazerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setRemNoteMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables RemNoteMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RemNoteMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RemNoteShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RemNoteMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RemNoteRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setSlackMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SlackMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setSoulseekQtMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SoulseekQtShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SoulseekQtRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setSpaceSnifferMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setStreamLabsMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables StreamLabsMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StreamLabsMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StreamLabsShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StreamLabsMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StreamLabsRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setThisPCMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ThisPCMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ThisPCMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ThisPCShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ThisPCMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ThisPCRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setUnityMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables UnityMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnityMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnityShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnityMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnityRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setUnrealMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables UnrealMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrealMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrealShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrealMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrealRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVisualStudioMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VisualStudioMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VisualStudioMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VisualStudioShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VisualStudioMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VisualStudioRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVSCodeMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VSCodeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodeMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodeShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodeMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodeRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVMwareMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VMwareMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VMwareMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VMwareShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VMwareMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VMwareRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWallpaperEngineMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWPSMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WPSMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WPSMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WPSShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WPSMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WPSRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setZbrushMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ZbrushMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZbrushMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZbrushShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZbrushMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ZbrushRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 --; ============================================================
 
 hoverCategorySelect = {
@@ -233,1097 +873,5 @@ end
 
 function setApply()
 	SKIN:Bang('!RefreshGroup SIOther')
-
-end
-
---; ============================================================
---; ============================================================
-
---; ============================================================
---; Lua Color Presets (Other)
---; ============================================================
-
-colorOtherPresetSelect = {
-	["Transparent"] = {
-		colorGradient1 = "0,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "1",
-		alphaMaskInterval = "0",
-		alphaMaskLow = "1",
-		alphaMaskHigh = "1"
-	},
-	["Red and Blue"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "0,0,255",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Green"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "0,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Yellow"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "255,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Yellow"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "255,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Yellow"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "255,255,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Orange"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Orange"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Orange"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Purple"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Purple"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Purple"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Red and Black"] = {
-		colorGradient1 = "255,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Green and Black"] = {
-		colorGradient1 = "0,255,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Blue and Black"] = {
-		colorGradient1 = "0,0,255",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Yellow and Orange"] = {
-		colorGradient1 = "255,255,0",
-		colorGradient2 = "255,165,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Yellow and Purple"] = {
-		colorGradient1 = "255,255,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Yellow and Black"] = {
-		colorGradient1 = "255,255,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Orange and Purple"] = {
-		colorGradient1 = "255,165,0",
-		colorGradient2 = "128,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Orange and Black"] = {
-		colorGradient1 = "255,165,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Purple and Black"] = {
-		colorGradient1 = "128,0,128",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Black"] = {
-		colorGradient1 = "0,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Blue"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "0,0,128",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Green"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "0,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Yellow"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "128,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Yellow"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "128,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Yellow"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "128,128,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Orange"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Orange"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Orange"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Purple"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Purple"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Purple"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Red and Black"] = {
-		colorGradient1 = "128,0,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Green and Black"] = {
-		colorGradient1 = "0,128,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Blue and Black"] = {
-		colorGradient1 = "0,0,128",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Yellow and Orange"] = {
-		colorGradient1 = "128,128,0",
-		colorGradient2 = "128,83,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Yellow and Purple"] = {
-		colorGradient1 = "128,128,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Yellow and Black"] = {
-		colorGradient1 = "128,128,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Orange and Purple"] = {
-		colorGradient1 = "128,83,0",
-		colorGradient2 = "64,0,64",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Orange and Black"] = {
-		colorGradient1 = "128,83,0",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	},
-	["Dark Purple and Black"] = {
-		colorGradient1 = "64,0,64",
-		colorGradient2 = "0,0,0",
-		currentAlphaMask = "255",
-		alphaMaskInterval = "15",
-		alphaMaskLow = "128",
-		alphaMaskHigh = "255"
-	}
-}
-
-function setPresetAbleton(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables AbletonShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AbletonShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AbletonAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AbletonAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AbletonAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AbletonAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetAMDRadeon(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables AMDRadeonShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRadeonShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRadeonAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRadeonAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRadeonAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRadeonAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetAMDRyzen(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables AMDRyzenShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRyzenShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRyzenAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRyzenAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRyzenAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AMDRyzenAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetAnki(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables AnkiShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AnkiShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AnkiAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AnkiAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AnkiAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AnkiAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetBitDefender(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables BitDefenderShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitDefenderShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitDefenderAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitDefenderAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitDefenderAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitDefenderAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetBitwarden(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables BitwardenShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitwardenShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitwardenAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitwardenAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitwardenAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BitwardenAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetBlender(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables BlenderShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BlenderShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BlenderAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BlenderAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BlenderAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables BlenderAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetCSP(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables CSPShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CSPShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CSPAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CSPAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CSPAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CSPAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetCorsair(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables CorsairShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CorsairShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CorsairAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CorsairAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CorsairAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables CorsairAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetDaVinci(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables DaVinciShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DaVinciShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DaVinciAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DaVinciAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DaVinciAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DaVinciAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetDeviantArt(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables DeviantArtShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DeviantArtShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DeviantArtAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DeviantArtAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DeviantArtAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables DeviantArtAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetEvernote(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables EvernoteShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EvernoteShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EvernoteAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EvernoteAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EvernoteAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EvernoteAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetEVGA(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables EVGAShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EVGAShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EVGAAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EVGAAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EVGAAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables EVGAAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetFilmoraX(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables FilmoraXShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FilmoraXShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FilmoraXAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FilmoraXAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FilmoraXAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FilmoraXAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetFLStudio(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables FLStudioShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FLStudioShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FLStudioAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FLStudioAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FLStudioAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables FLStudioAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetGIMP(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables GIMPShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GIMPShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GIMPAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GIMPAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GIMPAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GIMPAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetKrita(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables KritaShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables KritaShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables KritaAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables KritaAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables KritaAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables KritaAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetLibraries(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables LibrariesShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LibrariesShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LibrariesAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LibrariesAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LibrariesAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LibrariesAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetLogitech(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables LogitechShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LogitechShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LogitechAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LogitechAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LogitechAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables LogitechAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetMSI(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables MSIShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MSIShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MSIAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MSIAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MSIAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MSIAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetNotepadPP(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables NotepadPPShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NotepadPPShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NotepadPPAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NotepadPPAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NotepadPPAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NotepadPPAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetNVIDIA(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables NVIDIAShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NVIDIAShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NVIDIAAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NVIDIAAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NVIDIAAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NVIDIAAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetOBS(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables OBSShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OBSShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OBSAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OBSAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OBSAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OBSAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetOculus(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables OculusShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OculusShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OculusAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OculusAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OculusAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OculusAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetOutplayed(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables OutplayedShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OutplayedShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OutplayedAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OutplayedAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OutplayedAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OutplayedAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetProtonVPN(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables ProtonVPNShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ProtonVPNShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ProtonVPNAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ProtonVPNAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ProtonVPNAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ProtonVPNAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetRazer(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables RazerShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RazerShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RazerAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RazerAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RazerAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables RazerAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetSlack(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetSoulseekQt(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables SoulseekQtShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SoulseekQtShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SoulseekQtAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SoulseekQtAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SoulseekQtAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SoulseekQtAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetSpaceSniffer(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SpaceSnifferAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetStreamLabs(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables StreamLabsShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables StreamLabsShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables StreamLabsAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables StreamLabsAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables StreamLabsAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables StreamLabsAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetThisPC(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables ThisPCShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThisPCShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThisPCAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThisPCAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThisPCAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThisPCAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetThunderbird(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables ThunderbirdShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThunderbirdShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThunderbirdAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThunderbirdAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThunderbirdAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ThunderbirdAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetUnity(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables UnityShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnityShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnityAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnityAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnityAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnityAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetUnreal(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables UnrealShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnrealShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnrealAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnrealAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnrealAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables UnrealAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetVisualStudio(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetVisualStudioCode(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioCodeShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioCodeShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioCodeAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioCodeAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioCodeAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VisualStudioCodeAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetVMware(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables VMwareShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VMwareShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VMwareAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VMwareAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VMwareAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables VMwareAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetWallpaperEngine(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setPresetZbrush(selectedColor)
-	SKIN:Bang('!WriteKeyValue Variables ZbrushShapeGradient1Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient1'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZbrushShapeGradient2Base "' .. colorOtherPresetSelect[selectedColor]['colorGradient2'] ..  '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZbrushAlphaMask "' .. colorOtherPresetSelect[selectedColor]['currentAlphaMask'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZbrushAlphaMaskInterval "' .. colorOtherPresetSelect[selectedColor]['alphaMaskInterval'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZbrushAlphaMaskLow "' .. colorOtherPresetSelect[selectedColor]['alphaMaskLow'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ZbrushAlphaMaskHigh "' .. colorOtherPresetSelect[selectedColor]['alphaMaskHigh'] ..  '" "#@#Plus\\Measures\\Action Timer Icon.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
---; ============================================================
---; ============================================================
-
-hoverOtherPresetSelect = {
-	["Over"] = {
-		strokeColor = "255,255,255,255"
-	},
-	["Leave"] = {
-		strokeColor = "0,0,0,255"
-	}
-}
-
-function setHoverTransparent(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetTransparent MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedBlue(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedBlue MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedGreen(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedGreen MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedYellow MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenYellow MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlueYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlueYellow MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlueOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlueOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedPurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenPurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBluePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBluePurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverRedBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetRedBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGreenBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetGreenBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlueBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlueBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverYellowOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetYellowOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverYellowPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetYellowPurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverYellowBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetYellowBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverOrangePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetOrangePurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverOrangeBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetOrangeBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverPurpleBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetPurpleBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedBlue(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedBlue MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedGreen(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedGreen MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedYellow MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenYellow MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBlueYellow(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBlueYellow MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBlueOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBlueOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedPurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenPurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBluePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBluePurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkRedBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkRedBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkGreenBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkGreenBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkBlueBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkBlueBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkYellowOrange(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkYellowOrange MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkYellowPurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkYellowPurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkYellowBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkYellowBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkOrangePurple(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkOrangePurple MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkOrangeBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkOrangeBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverDarkPurpleBlack(selectedStroke)
-	SKIN:Bang('!SetOption MeterColorPresetDarkPurpleBlack MyColorStroke "Stroke Color ' .. hoverOtherPresetSelect[selectedStroke]['strokeColor'] ..  '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
 
 end

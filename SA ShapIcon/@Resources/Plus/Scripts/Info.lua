@@ -77,7 +77,7 @@ infoSelect = {
 		infoLink = "https://www.deviantart.com/akiyama4809"
 	},
 	["Author Discord"] = {
-		infoLink = "https://discord.gg/mQ2BTwK9jD"
+		infoLink = "https://discord.gg/7Qhy7BKsub"
 	},
 	["Update Avaiable"] = {
 		infoLink = "https://github.com/SaberAkiyama/SAShapIconPlus/releases/latest"

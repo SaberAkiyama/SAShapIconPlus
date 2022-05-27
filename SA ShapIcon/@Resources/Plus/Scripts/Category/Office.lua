@@ -5,43 +5,44 @@
 selectOffice = {
 	["Excel"] = {
 		iconName = "Excel",
-		iconNamePreset = "Excel"
+		iconMask = "Excel"
 	},
 	["OneNote"] = {
 		iconName = "OneNote",
-		iconNamePreset = "OneNote"
+		iconMask = "OneNote"
 	},
 	["Outlook"] = {
 		iconName = "Outlook",
-		iconNamePreset = "Outlook"
+		iconMask = "Outlook"
 	},
 	["PowerPoint"] = {
 		iconName = "PowerPoint",
-		iconNamePreset = "PowerPoint"
+		iconMask = "PowerPoint"
 	},
 	["SharePoint"] = {
 		iconName = "SharePoint",
-		iconNamePreset = "SharePoint"
+		iconMask = "SharePoint"
 	},
 	["Teams"] = {
 		iconName = "Teams",
-		iconNamePreset = "Teams"
+		iconMask = "Teams"
 	},
 	["Word"] = {
 		iconName = "Word",
-		iconNamePreset = "Word"
+		iconMask = "Word"
 	},
 	["Yammer"] = {
 		iconName = "Yammer",
-		iconNamePreset = "Yammer"
+		iconMask = "Yammer"
 	}
 }
 
 function setOffice(selectedOffice)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectOffice[selectedOffice]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectOffice[selectedOffice]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectOffice[selectedOffice]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
-
+	
 end

@@ -18,6 +18,189 @@ end
 --; ============================================================
 --; ============================================================
 
+function setOptionsActionIconOn()
+	SKIN:Bang('!WriteKeyValue Variables ToggleActionIcon "Off" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIcon "255" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIconInterval "0" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIconLow "255" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIconHigh "255" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransIconDP "1" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!RefreshGroup SITransparent')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionsActionIconOff()
+	SKIN:Bang('!WriteKeyValue Variables ToggleActionIcon "On" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIconInterval "15" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransIconDP "0" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!RefreshGroup SITransparent')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionsActionMaskOn()
+	SKIN:Bang('!WriteKeyValue Variables ToggleActionMask "Off" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMask "255" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMaskInterval "0" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMaskLow "255" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMaskHigh "255" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransMaskDP "1" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!RefreshGroup SITransparent')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionsActionMaskOff()
+	SKIN:Bang('!WriteKeyValue Variables ToggleActionMask "On" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMaskInterval "15" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransMaskDP "0" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!RefreshGroup SITransparent')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+--; ============================================================
+
+function setFadeSwitchPM()
+	SKIN:Bang('!WriteKeyValue Variables FadeActiveToggle1 "Active" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FadeActiveToggle2 "NotActive" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FadeTextPM "255,215,0" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FadeTextMP "255,255,255" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIcon "#ShapeAlphaIconHigh#" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMask "#ShapeAlphaMaskHigh#" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeFade1 "+" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeFade2 "-" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransMaskInput "High" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup SITransparent')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setFadeSwitchMP()
+	SKIN:Bang('!WriteKeyValue Variables FadeActiveToggle1 "NotActive" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FadeActiveToggle2 "Active" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FadeTextPM "255,255,255" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FadeTextMP "255,215,0" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaIcon "#ShapeAlphaIconLow#" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeAlphaMask "#ShapeAlphaMaskLow#" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeFade1 "-" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ShapeFade2 "+" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransMaskInput "Low" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup SITransparent')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function hoverOverFadePlusMinusActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix "Switch to ShapeFade1 = + | ShapeFade2 = -"')
+	SKIN:Bang('!SetOption MeterFadePlusMinusActive FontColor "255,255,255"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function hoverLeaveFadePlusMinusActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix ""')
+	SKIN:Bang('!SetOption MeterFadePlusMinusActive FontColor "255,215,0"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function hoverOverFadeMinusPlusActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix "Switch to ShapeFade1 = - | ShapeFade2 = +"')
+	SKIN:Bang('!SetOption MeterFadeMinusPlusActive FontColor "255,255,255"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function hoverLeaveFadeMinusPlusActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix ""')
+	SKIN:Bang('!SetOption MeterFadeMinusPlusActive FontColor "255,215,0"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+--; ============================================================
+
+function hoverOverFadePlusMinusNotActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix "Switch to ShapeFade1 = + | ShapeFade2 = -"')
+	SKIN:Bang('!SetOption MeterFadePlusMinusActive FontColor "255,215,0"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function hoverLeaveFadePlusMinusNotActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix ""')
+	SKIN:Bang('!SetOption MeterFadePlusMinusActive FontColor "255,255,255"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function hoverOverFadeMinusPlusNotActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix "Switch to ShapeFade1 = - | ShapeFade2 = +"')
+	SKIN:Bang('!SetOption MeterFadeMinusPlusActive FontColor "255,215,0"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function hoverLeaveFadeMinusPlusNotActive()
+	SKIN:Bang('!SetOption MeterToolTipText Prefix ""')
+	SKIN:Bang('!SetOption MeterFadeMinusPlusActive FontColor "255,255,255"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+--; ============================================================
+--; ============================================================
+
+function setTransLeftPage1()
+	SKIN:Bang('!WriteKeyValue Variables TransIconHidden "0" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransMaskHidden "1" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+
+	SKIN:Bang('!ShowMeterGroup TransparentIcon')
+	SKIN:Bang('!HideMeterGroup TransparentMask')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+end
+
+function setTransRightPage2()
+	SKIN:Bang('!WriteKeyValue Variables TransIconHidden "1" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TransMaskHidden "0" "#@#Plus\\Measures\\Action Timer Icon.inc"')
+
+	SKIN:Bang('!ShowMeterGroup TransparentMask')
+	SKIN:Bang('!HideMeterGroup TransparentIcon')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+end
+
+--; ============================================================
+--; ============================================================
+
 hoverOptionSelect = {
 	["Over"] = {
 		colorHeightIcon = "65,105,225",
@@ -121,58 +304,38 @@ end
 
 heightSelect = {
 	["64"] = {
-		iconHeight = "64",
-        maskWH = "4096",
-        maskOffsetXY = "32"
+		iconHeight = "64"
 	},
 	["68"] = {
-		iconHeight = "68",
-        maskWH = "4624",
-        maskOffsetXY = "34"
+		iconHeight = "68"
 	},
 	["72"] = {
-		iconHeight = "72",
-        maskWH = "5184",
-        maskOffsetXY = "36"
+		iconHeight = "72"
 	},
 	["78"] = {
-		iconHeight = "78",
-        maskWH = "6084",
-        maskOffsetXY = "39"
+		iconHeight = "78"
 	},
 	["84"] = {
-		iconHeight = "84",
-        maskWH = "7056",
-        maskOffsetXY = "42"
+		iconHeight = "84"
 	},
 	["90"] = {
-		iconHeight = "90",
-        maskWH = "8100",
-        maskOffsetXY = "45"
+		iconHeight = "90"
 	},
 	["96"] = {
-		iconHeight = "96",
-        maskWH = "9216",
-        maskOffsetXY = "48"
+		iconHeight = "96"
 	},
 	["102"] = {
-		iconHeight = "102",
-        maskWH = "10404",
-        maskOffsetXY = "51"
+		iconHeight = "102"
 	},
 	["108"] = {
-		iconHeight = "108",
-        maskWH = "11664",
-        maskOffsetXY = "54"
+		iconHeight = "108"
 	}
 }
 
 function setIcon(selectedHeight)
 	SKIN:Bang('!WriteKeyValue Variables IconHeight "' .. heightSelect[selectedHeight]['iconHeight'] .. '" "#@#Plus\\Variables.inc"')
-    SKIN:Bang('!WriteKeyValue Variables MaskWH "' .. heightSelect[selectedHeight]['maskWH'] .. '" "#@#Plus\\Variables.inc"')
-    SKIN:Bang('!WriteKeyValue Variables MaskOffsetXY "' .. heightSelect[selectedHeight]['maskOffsetXY'] .. '" "#@#Plus\\Variables.inc"')
 
-    SKIN:Bang('!RefreshGroup SIHeightIcon')
+    SKIN:Bang('!RefreshGroup SIIconSize')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end

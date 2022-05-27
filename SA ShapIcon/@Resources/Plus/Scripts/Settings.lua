@@ -6,197 +6,133 @@ function setAutoRefresh()
 	SKIN:Bang('!FadeDuration "100"')
 	SKIN:Bang('!Move "(#ScreenAreaWidth#/2)-640" "(#ScreenAreaHeight#/2)-320"')
 	SKIN:Bang('!Draggable "0"')
+	SKIN:Bang('!UpdateGroup ShapeSettings')
 
 end
 
 settingSelect = {
 	["Adobe"] = {
 		pageIcon = "After Effects",
-		pageIconPreset = "AfterEffects",
+		pageIconMask = "AfterEffects",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	},
 	["Browsing"] = {
 		pageIcon = "Apple Safari",
-		pageIconPreset = "Safari",
+		pageIconMask = "Safari",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	},
 	["Elgato"] = {
 		pageIcon = "4K Capture Utility",
-		pageIconPreset = "4KCU",
+		pageIconMask = "4KCU",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	},
 	["Emulator"] = {
 		pageIcon = "BlueStacks",
-		pageIconPreset = "BlueStacks",
+		pageIconMask = "BlueStacks",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	},
 	["Gaming"] = {
 		pageIcon = "GameHUB 2",
-		pageIconPreset = "GameHUB2",
+		pageIconMask = "GameHUB2",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	},
 	["Media"] = {
 		pageIcon = "AIMP",
-		pageIconPreset = "AIMP",
+		pageIconMask = "AIMP",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
+		updateDivider = "-1"
+	},
+	["Minecraft"] = {
+		pageIcon = "Minecraft",
+		pageIconMask = "Minecraft",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		hiddenLine = "0",
 		updateDivider = "-1"
 	},
 	["Office"] = {
 		pageIcon = "Excel",
-		pageIconPreset = "Excel",
+		pageIconMask = "Excel",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	},
 	["Social"] = {
 		pageIcon = "Cisco WebEx Teams",
-		pageIconPreset = "WebEx",
-		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
-		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
-		updateDivider = "-1"
-	},
-	["Other"] = {
-		pageIcon = "Manage Rainmeter",
-		pageIconPreset = "ManageRainmeter",
+		pageIconMask = "WebEx",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
 		hiddenLine = "0",
-		hiddenLRCategory = "0",
-		hiddenGradient = "0",
-		hiddenPreset = "1",
-		presetPage1 = "0",
-		presetPage2 = "1",
+		updateDivider = "-1"
+	},
+	["Other"] = {
+		pageIcon = "Manage Rainmeter",
+		pageIconMask = "ManageRainmeter",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		hiddenLine = "0",
 		updateDivider = "-1"
 	},
 	["Info"] = {
 		pageIcon = "Info",
-		pageIconPreset = "AfterEffects",
+		pageIconMask = "AfterEffects",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
 		hiddenLine = "1",
-		hiddenLRCategory = "1",
-		hiddenGradient = "1",
-		hiddenPreset = "1",
-		presetPage1 = "1",
-		presetPage2 = "1",
 		updateDivider = "1"
-	},
-	["Options"] = {
-		pageIcon = "Options",
-		pageIconPreset = "AfterEffects",
-		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1",
-		hiddenLine = "1",
-		hiddenLRCategory = "1",
-		hiddenGradient = "1",
-		hiddenPreset = "1",
-		presetPage1 = "1",
-		presetPage2 = "1",
-		updateDivider = "-1"
 	},
 	["Plus"] = {
 		pageIcon = "Plus",
-		pageIconPreset = "AfterEffects",
+		pageIconMask = "AfterEffects",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
 		hiddenLine = "1",
-		hiddenLRCategory = "1",
-		hiddenGradient = "1",
-		hiddenPreset = "1",
-		presetPage1 = "1",
-		presetPage2 = "1",
 		updateDivider = "-1"
 	}
 }
 
 function setSettings(selectedSettings)
 	SKIN:Bang('!WriteKeyValue Variables PageCategory "' .. selectedSettings .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameCategoryPreset "' .. selectedSettings .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingSelect[selectedSettings]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingSelect[selectedSettings]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingSelect[selectedSettings]['showPage3'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "' .. settingSelect[selectedSettings]['hiddenLine'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "' .. settingSelect[selectedSettings]['updateDivider'] .. '" "#@#Plus\\Variables.inc"')
 
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. settingSelect[selectedSettings]['pageIconPreset'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables HiddenGradient "' .. settingSelect[selectedSettings]['hiddenGradient'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables HiddenPreset "' .. settingSelect[selectedSettings]['hiddenPreset'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables HiddenLRCategory "' .. settingSelect[selectedSettings]['hiddenLRCategory'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables PresetPage1 "' .. settingSelect[selectedSettings]['presetPage1'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables PresetPage2 "' .. settingSelect[selectedSettings]['presetPage2'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "' .. selectedSettings .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. settingSelect[selectedSettings]['pageIconMask'] .. '" "#@#Plus\\Variables.inc"')
 
-	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "' .. settingSelect[selectedSettings]['updateDivider'] .. '" "Settings (Plus).ini"')
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
@@ -245,6 +181,13 @@ function setSettingsMedia()
 
 end
 
+function setSettingsMinecraft()
+	SKIN:Bang('!WriteKeyValue Variables MinecraftType "Clients" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftPage1 "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftPage2 "1" "#@#Settings Variables.inc"')
+
+end
+
 --;function setSettingsOffice()
 --;end
 
@@ -266,6 +209,60 @@ end
 
 function setSettingsStandard()
 	SKIN:Bang('!ActivateConfig "#ROOTCONFIG#" "Settings.ini"')
+	SKIN:Bang('!WriteKeyValue Variables PageCategory "Info" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Adobe" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Plus\\Measures\\Action Timer Settings.inc"')
+	SKIN:Bang('!WriteKeyValue Variables W1 "50" "#@#Plus\\Measures\\Action Timer Settings.inc"')
+	SKIN:Bang('!WriteKeyValue Variables X1 "0" "#@#Plus\\Measures\\Action Timer Settings.inc"')
+	SKIN:Bang('!WriteKeyValue Variables StayExpand "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables StayCollapse "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!ShowMeter ShapeSliderExpand')
+	SKIN:Bang('!HideMeter ShapeSliderCollapse')
+
+end
+
+--; ============================================================
+
+function setOptionMiscellaneous()
+	SKIN:Bang('!WriteKeyValue Variables PageCategory "Options (Miscellaneous)" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIcon "Options (Miscellaneous)" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "-1" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Options (Miscellaneous)" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionTransparent()
+	SKIN:Bang('!WriteKeyValue Variables PageCategory "Options (Transparent)" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIcon "Options (Transparent)" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Options (Transparent)" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
 
@@ -308,6 +305,12 @@ settingCatrgory = {
 		showPage2 = "0",
 		showPage3 = "1",
 	},
+	["Minecraft"] = {
+		categoryName = "Minecraft",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+	},
 	["Office"] = {
 		categoryName = "Office",
 		showPage1 = "1",
@@ -317,8 +320,8 @@ settingCatrgory = {
 	["Social"] = {
 		categoryName = "Social",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 	},
 	["Other"] = {
 		categoryName = "Other",
@@ -528,6 +531,7 @@ hoverSettingsSelect = {
 		colorPage7 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
@@ -541,6 +545,7 @@ hoverSettingsSelect = {
 		colorPage7 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
@@ -594,15 +599,23 @@ function setPageMedia(selectedHover)
 
 end
 
+function setPageMinecraft(selectedHover)
+	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
 function setPageOffice(selectedHover)
-	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
+	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageSocial(selectedHover)
-	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
+	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
 
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
@@ -610,7 +623,7 @@ function setPageSocial(selectedHover)
 end
 
 function setPageOther(selectedHover)
-	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
+	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
 
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
@@ -638,20 +651,16 @@ end
 function closeSettings()
 	SKIN:Bang('!DeactivateConfig "#ROOTCONFIG#" "Settings (Plus).ini"')
 	SKIN:Bang('!WriteKeyValue Variables PageCategory "Info" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftType "Clients" "#@#Settings Variables.inc"')
 
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "AfterEffects" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameCategoryPreset "Adobe" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables HiddenGradient "1" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables HiddenPreset "1" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables HiddenLRCategory "1" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables PresetPage1 "1" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables PresetPage2 "1" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "Settings (Plus).ini"')
+	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Adobe" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Plus\\Measures\\Action Timer Settings.inc"')
 	SKIN:Bang('!WriteKeyValue Variables W1 "50" "#@#Plus\\Measures\\Action Timer Settings.inc"')

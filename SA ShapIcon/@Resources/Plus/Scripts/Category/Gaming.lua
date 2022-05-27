@@ -5,7 +5,7 @@
 selectGaming = {
 	["GameHUB 2"] = {
 		iconName = "GameHUB 2",
-		iconNamePreset = "GameHUB2",
+		iconMask = "GameHUB2",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -16,14 +16,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Game Libraries"] = {
 		iconName = "Game Libraries",
-		iconNamePreset = "GameLibraries",
+		iconMask = "GameLibraries",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -34,14 +31,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Among Us"] = {
 		iconName = "Among Us",
-		iconNamePreset = "AmongUs",
+		iconMask = "AmongUs",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -52,14 +46,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Apex Legends"] = {
 		iconName = "Apex Legends",
-		iconNamePreset = "Apex",
+		iconMask = "Apex",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -70,14 +61,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Ark Survival Evolved"] = {
 		iconName = "Ark Survival Evolved",
-		iconNamePreset = "Ark",
+		iconMask = "Ark",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -88,14 +76,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Assetto Corsa Competizione"] = {
 		iconName = "Assetto Corsa Competizione",
-		iconNamePreset = "Assetto",
+		iconMask = "Assetto",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -106,32 +91,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Badlion Client"] = {
-		iconName = "Badlion Client",
-		iconNamePreset = "Badlion",
-		showPage1 = "0",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Battle Net"] = {
 		iconName = "Battle Net",
-		iconNamePreset = "BattleNet",
+		iconMask = "BattleNet",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -142,16 +106,13 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Battlefield 1"] = {
 		iconName = "Battlefield 1",
-		iconNamePreset = "BF1",
-		showPage1 = "1",
-		showPage2 = "0",
+		iconMask = "BF1",
+		showPage1 = "0",
+		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
@@ -160,16 +121,13 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Battlefield 4"] = {
 		iconName = "Battlefield 4",
-		iconNamePreset = "BF4",
-		showPage1 = "1",
-		showPage2 = "0",
+		iconMask = "BF4",
+		showPage1 = "0",
+		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
@@ -178,16 +136,13 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Battlefield 2042"] = {
 		iconName = "Battlefield 2042",
-		iconNamePreset = "BF2042",
-		showPage1 = "1",
-		showPage2 = "0",
+		iconMask = "BF2042",
+		showPage1 = "0",
+		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
@@ -196,14 +151,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Battlefield V"] = {
 		iconName = "Battlefield V",
-		iconNamePreset = "BFV",
+		iconMask = "BFV",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
@@ -214,32 +166,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Bethesda Launcher"] = {
-		iconName = "Bethesda Launcher",
-		iconNamePreset = "Bethesda",
-		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Black Desert Online"] = {
 		iconName = "Black Desert Online",
-		iconNamePreset = "BDO",
+		iconMask = "BDO",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
@@ -250,14 +181,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Bloons TD6"] = {
 		iconName = "Bloons TD6",
-		iconNamePreset = "BTD6",
+		iconMask = "BTD6",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
@@ -268,14 +196,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Borderlands 3"] = {
 		iconName = "Borderlands 3",
-		iconNamePreset = "Borderlands3",
+		iconMask = "Borderlands3",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
@@ -286,17 +211,14 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Call of Duty: Modern Warfare (2019)"] = {
 		iconName = "Call of Duty Modern Warfare (2019)",
-		iconNamePreset = "CODMW",
+		iconMask = "CODMW",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0",
+		showPage2 = "0",
+		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
@@ -304,17 +226,14 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Call of Duty: Vanguard"] = {
 		iconName = "Call of Duty Vanguard",
-		iconNamePreset = "CODVanguard",
+		iconMask = "CODVanguard",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0",
+		showPage2 = "0",
+		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
@@ -322,17 +241,14 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Clone Hero"] = {
 		iconName = "Clone Hero",
-		iconNamePreset = "CloneHero",
+		iconMask = "CloneHero",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0",
+		showPage2 = "0",
+		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
@@ -340,17 +256,14 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["CSGO"] = {
 		iconName = "CSGO",
-		iconNamePreset = "CSGO",
+		iconMask = "CSGO",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0",
+		showPage2 = "0",
+		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
@@ -358,17 +271,14 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Cyberpunk 2077"] = {
 		iconName = "Cyberpunk 2077",
-		iconNamePreset = "Cyberpunk",
+		iconMask = "Cyberpunk",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0",
+		showPage2 = "0",
+		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
@@ -376,17 +286,14 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Dauntless"] = {
 		iconName = "Dauntless",
-		iconNamePreset = "Dauntless",
+		iconMask = "Dauntless",
 		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "0",
+		showPage2 = "0",
+		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
@@ -394,14 +301,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Dead by Daylight"] = {
 		iconName = "Dead by Daylight",
-		iconNamePreset = "DBD",
+		iconMask = "DBD",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
@@ -412,14 +316,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Deathloop"] = {
 		iconName = "Deathloop",
-		iconNamePreset = "Deathloop",
+		iconMask = "Deathloop",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
@@ -430,140 +331,131 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
+	},
+	["Deep Rock Galactic"] = {
+		iconName = "Deep Rock Galactic",
+		iconMask = "DRG",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
 	},
 	["Destiny 2"] = {
 		iconName = "Destiny 2",
-		iconNamePreset = "Destiny2",
+		iconMask = "Destiny2",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["DOOM (2016)"] = {
 		iconName = "DOOM (2016)",
-		iconNamePreset = "DOOM",
+		iconMask = "DOOM",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["DOOM: Eternal"] = {
 		iconName = "DOOM Eternal",
-		iconNamePreset = "DOOMEternal",
+		iconMask = "DOOMEternal",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Dota 2"] = {
 		iconName = "Dota 2",
-		iconNamePreset = "Dota",
+		iconMask = "Dota",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Origin"] = {
 		iconName = "Origin",
-		iconNamePreset = "Origin",
+		iconMask = "Origin",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Elden Ring"] = {
 		iconName = "Elden Ring",
-		iconNamePreset = "EldenRing",
+		iconMask = "EldenRing",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Elder Scrolls Online"] = {
 		iconName = "Elder Scrolls Online",
-		iconNamePreset = "ESO",
+		iconMask = "ESO",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "0",
+		showPage3 = "0",
+		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Elder Scrolls V: Skyrim"] = {
 		iconName = "Elder Scrolls V Skyrim",
-		iconNamePreset = "ESVSkyrim",
+		iconMask = "ESVSkyrim",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -574,140 +466,236 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
-	["Epic Games Store"] = {
-		iconName = "Epic Games Store",
-		iconNamePreset = "EGStore",
+	["Epic Games Launcher"] = {
+		iconName = "Epic Games Launcher",
+		iconMask = "EGLauncher",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Escape From Tarkov"] = {
 		iconName = "Escape From Tarkov",
-		iconNamePreset = "EFT",
+		iconMask = "EFT",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Factorio"] = {
 		iconName = "Factorio",
-		iconNamePreset = "Factorio",
+		iconMask = "Factorio",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Fall Guys"] = {
 		iconName = "Fall Guys",
-		iconNamePreset = "FallGuys",
+		iconMask = "FallGuys",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Five Nights at Freddys: Security Breach"] = {
 		iconName = "Five Nights at Freddy's Security Breach",
-		iconNamePreset = "FNAFSB",
+		iconMask = "FNAFSB",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Final Fantasy XIV Online"] = {
 		iconName = "Final Fantasy XIV Online",
-		iconNamePreset = "FFXIV",
+		iconMask = "FFXIV",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Fortnite"] = {
 		iconName = "Fortnite",
-		iconNamePreset = "Fortnite",
+		iconMask = "Fortnite",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "0",
+		showPage4 = "0",
+		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Forza Horizon 3"] = {
 		iconName = "Forza Horizon 3",
-		iconNamePreset = "FH3",
+		iconMask = "FH3",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Forza Horizon 4"] = {
+		iconName = "Forza Horizon 4",
+		iconMask = "FH4",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Forza Horizon 5"] = {
+		iconName = "Forza Horizon 5",
+		iconMask = "FH5",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Forza Motorsport 7"] = {
+		iconName = "Forza Motorsport 7",
+		iconMask = "FM7",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Friday Night Funkin"] = {
+		iconName = "Friday Night Funkin'",
+		iconMask = "FNF",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Garrys Mod"] = {
+		iconName = "Garry's Mod",
+		iconMask = "Gmod",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Genshin Impact"] = {
+		iconName = "Genshin Impact",
+		iconMask = "Genshin",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Ghostrunner"] = {
+		iconName = "Ghostrunner",
+		iconMask = "Ghostrunner",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["God of War (2018)"] = {
+		iconName = "God of War (2018)",
+		iconMask = "GOW",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -719,139 +707,56 @@ selectGaming = {
 		showPage9 = "1",
 		showPage10 = "1",
 		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Forza Horizon 4"] = {
-		iconName = "Forza Horizon 4",
-		iconNamePreset = "FH4",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Forza Horizon 5"] = {
-		iconName = "Forza Horizon 5",
-		iconNamePreset = "FH5",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Forza Motorsport 7"] = {
-		iconName = "Forza Motorsport 7",
-		iconNamePreset = "FM7",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Friday Night Funkin"] = {
-		iconName = "Friday Night Funkin'",
-		iconNamePreset = "FNF",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Garrys Mod"] = {
-		iconName = "Garry's Mod",
-		iconNamePreset = "Gmod",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Genshin Impact"] = {
-		iconName = "Genshin Impact",
-		iconNamePreset = "Genshin",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Ghostrunner"] = {
-		iconName = "Ghostrunner",
-		iconNamePreset = "Ghostrunner",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage12 = "1"
 	},
 	["Godfall"] = {
 		iconName = "Godfall",
-		iconNamePreset = "Godfall",
+		iconMask = "Godfall",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["GOG Galaxy"] = {
+		iconName = "GOG Galaxy",
+		iconMask = "GOG",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Google Play Games"] = {
+		iconName = "Google Play Games",
+		iconMask = "GPGames",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Grand Theft Auto V"] = {
+		iconName = "Grand Theft Auto V",
+		iconMask = "GTAV",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -862,140 +767,146 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["GOG Galaxy"] = {
-		iconName = "GOG Galaxy",
-		iconNamePreset = "GOG",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Google Play Games"] = {
-		iconName = "Google Play Games",
-		iconNamePreset = "GPGames",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Grand Theft Auto V"] = {
-		iconName = "Grand Theft Auto V",
-		iconNamePreset = "GTAV",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Guild Wars 2"] = {
 		iconName = "Guild Wars 2",
-		iconNamePreset = "GW2",
+		iconMask = "GW2",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
+		showPage6 = "0",
+		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Guilty Gear Strive"] = {
 		iconName = "Guilty Gear Strive",
-		iconNamePreset = "GuiltyGear",
+		iconMask = "GuiltyGear",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
+		showPage6 = "0",
+		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Halo Infinite"] = {
 		iconName = "Halo Infinite",
-		iconNamePreset = "HaloInfinite",
+		iconMask = "HaloInfinite",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
+		showPage6 = "0",
+		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Hearthstone"] = {
 		iconName = "Hearthstone",
-		iconNamePreset = "Hearthstone",
+		iconMask = "Hearthstone",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "0",
+		showPage6 = "0",
+		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Hearts of Iron IV"] = {
 		iconName = "Hearts of Iron IV",
-		iconNamePreset = "HOI4",
+		iconMask = "HOI4",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Heroes of the Storm"] = {
+		iconName = "Heroes of the Storm",
+		iconMask = "HOTS",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Honkai Impact 3rd"] = {
+		iconName = "Honkai Impact 3rd",
+		iconMask = "HonkaiImpact",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Hunt: Showdown"] = {
+		iconName = "Hunt Showdown",
+		iconMask = "HuntShowdown",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["League of Legends"] = {
+		iconName = "League of Legends",
+		iconMask = "LOL",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Left 4 Dead 2"] = {
+		iconName = "Left 4 Dead 2",
+		iconMask = "L4D2",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1006,284 +917,296 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Heroes of the Storm"] = {
-		iconName = "Heroes of the Storm",
-		iconNamePreset = "HOTS",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Honkai Impact 3rd"] = {
-		iconName = "Honkai Impact 3rd",
-		iconNamePreset = "Honkai",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Hunt: Showdown"] = {
-		iconName = "Hunt Showdown",
-		iconNamePreset = "HuntShowdown",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Left 4 Dead 2"] = {
-		iconName = "Left 4 Dead 2",
-		iconNamePreset = "L4D2",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["League of Legends"] = {
-		iconName = "League of Legends",
-		iconNamePreset = "LOL",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Legends of Runeterra"] = {
 		iconName = "Legends of Runeterra",
-		iconNamePreset = "LOR",
+		iconMask = "LOR",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
+		showPage7 = "0",
+		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Lost Ark"] = {
 		iconName = "Lost Ark",
-		iconNamePreset = "LostArk",
+		iconMask = "LostArk",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
+		showPage7 = "0",
+		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Lunar Client"] = {
-		iconName = "Lunar Client",
-		iconNamePreset = "Lunar",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Mass Effect Legendary Edition"] = {
 		iconName = "Mass Effect Legendary Edition",
-		iconNamePreset = "MassEffectLE",
+		iconMask = "MassEffectLE",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
+		showPage7 = "0",
 		showPage8 = "1",
-		showPage9 = "0",
+		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Minecraft"] = {
-		iconName = "Minecraft",
-		iconNamePreset = "Minecraft",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "0",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Monster Hunter: World"] = {
 		iconName = "Monster Hunter World",
-		iconNamePreset = "MHWorld",
+		iconMask = "MHWorld",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
+		showPage7 = "0",
 		showPage8 = "1",
-		showPage9 = "0",
+		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Muse Dash"] = {
 		iconName = "Muse Dash",
-		iconNamePreset = "MuseDash",
+		iconMask = "MuseDash",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
+		showPage7 = "0",
 		showPage8 = "1",
-		showPage9 = "0",
+		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Naraka: Bladepoint"] = {
 		iconName = "Naraka Bladepoint",
-		iconNamePreset = "Naraka",
+		iconMask = "Naraka",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
+		showPage7 = "0",
 		showPage8 = "1",
-		showPage9 = "0",
+		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["New World"] = {
 		iconName = "New World",
-		iconNamePreset = "NewWorld",
+		iconMask = "NewWorld",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
+		showPage7 = "0",
 		showPage8 = "1",
-		showPage9 = "0",
+		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Nier Automata"] = {
 		iconName = "Nier Automata",
-		iconNamePreset = "NierAutomata",
+		iconMask = "NierAutomata",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "1",
+		showPage7 = "0",
 		showPage8 = "1",
-		showPage9 = "0",
+		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["No Mans Sky"] = {
 		iconName = "No Mans Sky",
-		iconNamePreset = "NMS",
+		iconMask = "NMS",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "0",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Ori and the Blind Forest"] = {
+		iconName = "Ori and the Blind Forest",
+		iconMask = "OriBF",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Ori and the Will of the Wisp"] = {
+		iconName = "Ori and the Will of the Wisp",
+		iconMask = "OriWW",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Osu"] = {
+		iconName = "Osu",
+		iconMask = "Osu",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Outriders"] = {
+		iconName = "Outriders",
+		iconMask = "Outriders",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Overwatch"] = {
+		iconName = "Overwatch",
+		iconMask = "Overwatch",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Paladins"] = {
+		iconName = "Paladins",
+		iconMask = "Paladins",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Path of Exile"] = {
+		iconName = "Path of Exile",
+		iconMask = "POE",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["PlayerUnknowns Battlegrounds"] = {
+		iconName = "PlayerUnknowns Battlegrounds",
+		iconMask = "PUBG",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Rainbow Six Extraction"] = {
+		iconName = "Rainbow Six Extraction",
+		iconMask = "RSExtraction",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Rainbow Six Siege"] = {
+		iconName = "Rainbow Six Siege",
+		iconMask = "RSSiege",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "1"
+	},
+	["Rec Room"] = {
+		iconName = "Rec Room",
+		iconMask = "RecRoom",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1294,212 +1217,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Ori and the Blind Forest"] = {
-		iconName = "Ori and the Blind Forest",
-		iconNamePreset = "OriBF",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Ori and the Will of the Wisp"] = {
-		iconName = "Ori and the Will of the Wisp",
-		iconNamePreset = "OriWW",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Osu"] = {
-		iconName = "Osu",
-		iconNamePreset = "Osu",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Outriders"] = {
-		iconName = "Outriders",
-		iconNamePreset = "Outriders",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Overwatch"] = {
-		iconName = "Overwatch",
-		iconNamePreset = "Overwatch",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Paladins"] = {
-		iconName = "Paladins",
-		iconNamePreset = "Paladins",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Path of Exile"] = {
-		iconName = "Path of Exile",
-		iconNamePreset = "POE",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["PlayerUnknowns Battlegrounds"] = {
-		iconName = "PlayerUnknowns Battlegrounds",
-		iconNamePreset = "PUBG",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "0",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Rainbow Six Extraction"] = {
-		iconName = "Rainbow Six Extraction",
-		iconNamePreset = "RSExtraction",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Rainbow Six Siege"] = {
-		iconName = "Rainbow Six Siege",
-		iconNamePreset = "RSSiege",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
-	},
-	["Rec Room"] = {
-		iconName = "Rec Room",
-		iconNamePreset = "RecRoom",
-		showPage1 = "1",
-		showPage2 = "1",
-		showPage3 = "1",
-		showPage4 = "1",
-		showPage5 = "1",
-		showPage6 = "1",
-		showPage7 = "1",
-		showPage8 = "1",
-		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Resident Evil Village"] = {
 		iconName = "Resident Evil Village",
-		iconNamePreset = "REVillage",
+		iconMask = "REVillage",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1508,16 +1230,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Riot Client"] = {
 		iconName = "Riot Client",
-		iconNamePreset = "Riot",
+		iconMask = "Riot",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1526,16 +1245,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Roblox"] = {
 		iconName = "Roblox",
-		iconNamePreset = "Roblox",
+		iconMask = "Roblox",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1544,16 +1260,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Roblox Studio"] = {
 		iconName = "Roblox Studio",
-		iconNamePreset = "RobloxStudio",
+		iconMask = "RobloxStudio",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1562,16 +1275,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Rocket League"] = {
 		iconName = "Rocket League",
-		iconNamePreset = "RocketLeague",
+		iconMask = "RocketLeague",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1580,16 +1290,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "0",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Rockstar Games Launcher"] = {
 		iconName = "Rockstar Games Launcher",
-		iconNamePreset = "Rockstar",
+		iconMask = "Rockstar",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1598,16 +1305,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["RSI Launcher"] = {
 		iconName = "RSI Launcher",
-		iconNamePreset = "RSI",
+		iconMask = "RSI",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1616,16 +1320,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["RuneScape"] = {
 		iconName = "RuneScape",
-		iconNamePreset = "RuneScape",
+		iconMask = "RuneScape",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1634,16 +1335,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Rust"] = {
 		iconName = "Rust",
-		iconNamePreset = "Rust",
+		iconMask = "Rust",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1652,16 +1350,13 @@ selectGaming = {
 		showPage6 = "1",
 		showPage7 = "1",
 		showPage8 = "1",
-		showPage9 = "1",
+		showPage9 = "0",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage11 = "1"
 	},
 	["Satisfactory"] = {
 		iconName = "Satisfactory",
-		iconNamePreset = "Satisfactory",
+		iconMask = "Satisfactory",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1671,15 +1366,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Sea of Thieves"] = {
 		iconName = "Sea of Thieves",
-		iconNamePreset = "SoT",
+		iconMask = "SoT",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1689,15 +1381,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Slay the Spire"] = {
 		iconName = "Slay the Spire",
-		iconNamePreset = "StS",
+		iconMask = "StS",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1707,15 +1396,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Smite"] = {
 		iconName = "Smite",
-		iconNamePreset = "Smite",
+		iconMask = "Smite",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1725,15 +1411,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "0",
-		showPage13 = "1",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Star Citizen"] = {
 		iconName = "Star Citizen",
-		iconNamePreset = "StarCitizen",
+		iconMask = "StarCitizen",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1743,15 +1426,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Steam"] = {
 		iconName = "Steam",
-		iconNamePreset = "Steam",
+		iconMask = "Steam",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1761,15 +1441,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Super Auto Pets"] = {
 		iconName = "Super Auto Pets",
-		iconNamePreset = "SAP",
+		iconMask = "SAP",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1779,15 +1456,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Team Fortress 2"] = {
 		iconName = "Team Fortress 2",
-		iconNamePreset = "TF2",
+		iconMask = "TF2",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1797,15 +1471,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["The Witcher 3: Wild Hunt"] = {
 		iconName = "The Witcher 3 Wild Hunt",
-		iconNamePreset = "TW3",
+		iconMask = "TW3",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1815,15 +1486,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Ubisoft Connect"] = {
 		iconName = "Ubisoft Connect",
-		iconNamePreset = "Ubisoft",
+		iconMask = "Ubisoft",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1833,15 +1501,12 @@ selectGaming = {
 		showPage7 = "1",
 		showPage8 = "1",
 		showPage9 = "1",
-		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage10 = "0",
+		showPage11 = "1"
 	},
 	["Valorant"] = {
 		iconName = "Valorant",
-		iconNamePreset = "Valorant",
+		iconMask = "Valorant",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1852,14 +1517,26 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage11 = "0"
+	},
+	["Vampire Survivors"] = {
+		iconName = "Vampire Survivors",
+		iconMask = "VampireSurvivors",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "0"
 	},
 	["Vortex"] = {
 		iconName = "Vortex",
-		iconNamePreset = "Vortex",
+		iconMask = "Vortex",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1870,14 +1547,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "0",
-		showPage14 = "1"
+		showPage11 = "0"
 	},
 	["War Thunder"] = {
 		iconName = "War Thunder",
-		iconNamePreset = "WarThunder",
+		iconMask = "WarThunder",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1888,14 +1562,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "0"
+		showPage11 = "0"
 	},
 	["Warframe"] = {
 		iconName = "Warframe",
-		iconNamePreset = "Warframe",
+		iconMask = "Warframe",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1906,14 +1577,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "0"
+		showPage11 = "0"
 	},
 	["World of Tanks"] = {
 		iconName = "World of Tanks",
-		iconNamePreset = "WOTanks",
+		iconMask = "WOTanks",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1924,14 +1592,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "0"
+		showPage11 = "0"
 	},
 	["World of Warcraft"] = {
 		iconName = "World of Warcraft",
-		iconNamePreset = "WOW",
+		iconMask = "WOW",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1942,14 +1607,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "0"
+		showPage11 = "0"
 	},
 	["World of Warships"] = {
 		iconName = "World of Warships",
-		iconNamePreset = "WOWarships",
+		iconMask = "WOWarships",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1960,14 +1622,11 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "0"
+		showPage11 = "0"
 	},
 	["Xbox"] = {
 		iconName = "Xbox",
-		iconNamePreset = "Xbox",
+		iconMask = "Xbox",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -1978,16 +1637,12 @@ selectGaming = {
 		showPage8 = "1",
 		showPage9 = "1",
 		showPage10 = "1",
-		showPage11 = "1",
-		showPage12 = "1",
-		showPage13 = "1",
-		showPage14 = "0"
+		showPage11 = "0"
 	}
 }
 
 function setGaming(selectedGaming)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectGaming[selectedGaming]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectGaming[selectedGaming]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage1 "' .. selectGaming[selectedGaming]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage2 "' .. selectGaming[selectedGaming]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage3 "' .. selectGaming[selectedGaming]['showPage3'] .. '" "#@#Settings Variables.inc"')
@@ -1999,9 +1654,9 @@ function setGaming(selectedGaming)
 	SKIN:Bang('!WriteKeyValue Variables GamingPage9 "' .. selectGaming[selectedGaming]['showPage9'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage10 "' .. selectGaming[selectedGaming]['showPage10'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage11 "' .. selectGaming[selectedGaming]['showPage11'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GamingPage12 "' .. selectGaming[selectedGaming]['showPage12'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GamingPage13 "' .. selectGaming[selectedGaming]['showPage13'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GamingPage14 "' .. selectGaming[selectedGaming]['showPage14'] .. '" "#@#Settings Variables.inc"')
+--;	SKIN:Bang('!WriteKeyValue Variables GamingPage12 "' .. selectGaming[selectedGaming]['showPage12'] .. '" "#@#Settings Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectGaming[selectedGaming]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -2020,9 +1675,7 @@ function setGamingPage1()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2040,9 +1693,7 @@ function setGamingPage2()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2060,9 +1711,7 @@ function setGamingPage3()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2080,9 +1729,7 @@ function setGamingPage4()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2100,9 +1747,7 @@ function setGamingPage5()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2120,9 +1765,7 @@ function setGamingPage6()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2140,9 +1783,7 @@ function setGamingPage7()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2160,9 +1801,7 @@ function setGamingPage8()
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2180,9 +1819,7 @@ function setGamingPage9()
 	SKIN:Bang('!HideMeterGroup GamingPage8')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2200,9 +1837,7 @@ function setGamingPage10()
 	SKIN:Bang('!HideMeterGroup GamingPage8')
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
@@ -2220,73 +1855,29 @@ function setGamingPage11()
 	SKIN:Bang('!HideMeterGroup GamingPage8')
 	SKIN:Bang('!HideMeterGroup GamingPage9')
 	SKIN:Bang('!HideMeterGroup GamingPage10')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;	SKIN:Bang('!HideMeterGroup GamingPage12')
 
 	SKIN:Bang('!Update')
 
 end
 
-function setGamingPage12()
-	SKIN:Bang('!ShowMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage1')
-	SKIN:Bang('!HideMeterGroup GamingPage2')
-	SKIN:Bang('!HideMeterGroup GamingPage3')
-	SKIN:Bang('!HideMeterGroup GamingPage4')
-	SKIN:Bang('!HideMeterGroup GamingPage5')
-	SKIN:Bang('!HideMeterGroup GamingPage6')
-	SKIN:Bang('!HideMeterGroup GamingPage7')
-	SKIN:Bang('!HideMeterGroup GamingPage8')
-	SKIN:Bang('!HideMeterGroup GamingPage9')
-	SKIN:Bang('!HideMeterGroup GamingPage10')
-	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
+--;function setGamingPage12()
+--;	SKIN:Bang('!ShowMeterGroup GamingPage12')
+--;	SKIN:Bang('!HideMeterGroup GamingPage1')
+--;	SKIN:Bang('!HideMeterGroup GamingPage2')
+--;	SKIN:Bang('!HideMeterGroup GamingPage3')
+--;	SKIN:Bang('!HideMeterGroup GamingPage4')
+--;	SKIN:Bang('!HideMeterGroup GamingPage5')
+--;	SKIN:Bang('!HideMeterGroup GamingPage6')
+--;	SKIN:Bang('!HideMeterGroup GamingPage7')
+--;	SKIN:Bang('!HideMeterGroup GamingPage8')
+--;	SKIN:Bang('!HideMeterGroup GamingPage9')
+--;	SKIN:Bang('!HideMeterGroup GamingPage10')
+--;	SKIN:Bang('!HideMeterGroup GamingPage11')
 
-	SKIN:Bang('!Update')
+--;	SKIN:Bang('!Update')
 
-end
-
-function setGamingPage13()
-	SKIN:Bang('!ShowMeterGroup GamingPage13')
-	SKIN:Bang('!HideMeterGroup GamingPage1')
-	SKIN:Bang('!HideMeterGroup GamingPage2')
-	SKIN:Bang('!HideMeterGroup GamingPage3')
-	SKIN:Bang('!HideMeterGroup GamingPage4')
-	SKIN:Bang('!HideMeterGroup GamingPage5')
-	SKIN:Bang('!HideMeterGroup GamingPage6')
-	SKIN:Bang('!HideMeterGroup GamingPage7')
-	SKIN:Bang('!HideMeterGroup GamingPage8')
-	SKIN:Bang('!HideMeterGroup GamingPage9')
-	SKIN:Bang('!HideMeterGroup GamingPage10')
-	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage14')
-
-	SKIN:Bang('!Update')
-
-end
-
-function setGamingPage14()
-	SKIN:Bang('!ShowMeterGroup GamingPage14')
-	SKIN:Bang('!HideMeterGroup GamingPage1')
-	SKIN:Bang('!HideMeterGroup GamingPage2')
-	SKIN:Bang('!HideMeterGroup GamingPage3')
-	SKIN:Bang('!HideMeterGroup GamingPage4')
-	SKIN:Bang('!HideMeterGroup GamingPage5')
-	SKIN:Bang('!HideMeterGroup GamingPage6')
-	SKIN:Bang('!HideMeterGroup GamingPage7')
-	SKIN:Bang('!HideMeterGroup GamingPage8')
-	SKIN:Bang('!HideMeterGroup GamingPage9')
-	SKIN:Bang('!HideMeterGroup GamingPage10')
-	SKIN:Bang('!HideMeterGroup GamingPage11')
-	SKIN:Bang('!HideMeterGroup GamingPage12')
-	SKIN:Bang('!HideMeterGroup GamingPage13')
-
-	SKIN:Bang('!Update')
-
-end
+--;end
 
 --; ============================================================
 --; ============================================================
@@ -2304,9 +1895,7 @@ hoverGamingSelect = {
 		colorPage9 = "255,215,0",
 		colorPage10 = "255,215,0",
 		colorPage11 = "255,215,0",
-		colorPage12 = "255,215,0",
-		colorPage13 = "255,215,0",
-		colorPage14 = "255,215,0"
+		colorPage12 = "255,215,0"
 	},
 	["Leave"] = {
 		colorPage1 = "255,255,255",
@@ -2320,9 +1909,7 @@ hoverGamingSelect = {
 		colorPage9 = "255,255,255",
 		colorPage10 = "255,255,255",
 		colorPage11 = "255,255,255",
-		colorPage12 = "255,255,255",
-		colorPage13 = "255,255,255",
-		colorPage14 = "255,255,255"
+		colorPage12 = "255,255,255"
 	}
 }
 
@@ -2405,20 +1992,6 @@ end
 
 function setHoverGamingPage12(selectedHover)
 	SKIN:Bang('!SetOption MeterPage12Text FontColor "' .. hoverGamingSelect[selectedHover]['colorPage12'] .. '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGamingPage13(selectedHover)
-	SKIN:Bang('!SetOption MeterPage13Text FontColor "' .. hoverGamingSelect[selectedHover]['colorPage13'] .. '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverGamingPage14(selectedHover)
-	SKIN:Bang('!SetOption MeterPage14Text FontColor "' .. hoverGamingSelect[selectedHover]['colorPage14'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 

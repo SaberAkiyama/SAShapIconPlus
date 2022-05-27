@@ -5,41 +5,42 @@
 selectBrowsing = {
 	["Apple Safari"] = {
 		iconName = "Apple Safari",
-		iconNamePreset = "Safari"
+		iconMask = "Safari"
 	},
 	["Brave Browser"] = {
 		iconName = "Brave Browser",
-		iconNamePreset = "Brave"
+		iconMask = "Brave"
 	},
 	["Google Chrome"] = {
 		iconName = "Google Chrome",
-		iconNamePreset = "Chrome"
+		iconMask = "Chrome"
 	},
 	["Mozilla Firefox"] = {
 		iconName = "Mozilla Firefox",
-		iconNamePreset = "Firefox"
+		iconMask = "Firefox"
 	},
 	["Microsoft Edge"] = {
 		iconName = "Microsoft Edge",
-		iconNamePreset = "Edge"
+		iconMask = "Edge"
 	},
 	["Opera Browser"] = {
 		iconName = "Opera Browser",
-		iconNamePreset = "Opera"
+		iconMask = "Opera"
 	},
 	["Opera GX"] = {
 		iconName = "Opera GX",
-		iconNamePreset = "OperaGX"
+		iconMask = "OperaGX"
 	},
 	["Vivaldi Browser"] = {
 		iconName = "Vivaldi Browser",
-		iconNamePreset = "Vivaldi"
+		iconMask = "Vivaldi"
 	}
 }
 
 function setBrowsing(selectedBrowsing)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectBrowsing[selectedBrowsing]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectBrowsing[selectedBrowsing]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectBrowsing[selectedBrowsing]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -5,79 +5,79 @@
 selectAdobe = {
 	["After Effects"] = {
 		iconName = "After Effects",
-		iconNamePreset = "AfterEffects",
+		iconMask = "AfterEffects",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Animate"] = {
 		iconName = "Animate",
-		iconNamePreset = "Animate",
+		iconMask = "Animate",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Audition"] = {
 		iconName = "Audition",
-		iconNamePreset = "Audition",
+		iconMask = "Audition",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Bridge"] = {
 		iconName = "Bridge",
-		iconNamePreset = "Bridge",
+		iconMask = "Bridge",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Creative Cloud"] = {
 		iconName = "Creative Cloud",
-		iconNamePreset = "Creative",
+		iconMask = "Creative",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Dreamweaver"] = {
 		iconName = "Dreamweaver",
-		iconNamePreset = "Dreamweaver",
+		iconMask = "Dreamweaver",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Framemaker"] = {
 		iconName = "Framemaker",
-		iconNamePreset = "Framemaker",
+		iconMask = "Framemaker",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["Illustrator"] = {
 		iconName = "Illustrator",
-		iconNamePreset = "Illustrator",
+		iconMask = "Illustrator",
 		showPage1 = "0",
 		showPage2 = "1"
 	},
 	["InDesign"] = {
 		iconName = "InDesign",
-		iconNamePreset = "InDesign",
-		showPage1 = "1",
-		showPage2 = "0"
+		iconMask = "InDesign",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Lightroom"] = {
 		iconName = "Lightroom",
-		iconNamePreset = "Lightroom",
-		showPage1 = "1",
-		showPage2 = "0"
+		iconMask = "Lightroom",
+		showPage1 = "0",
+		showPage2 = "1"
 	},
 	["Photoshop"] = {
 		iconName = "Photoshop",
-		iconNamePreset = "Photoshop",
+		iconMask = "Photoshop",
 		showPage1 = "1",
 		showPage2 = "0"
 	},
 	["Premiere Pro"] = {
 		iconName = "Premiere Pro",
-		iconNamePreset = "Premiere",
+		iconMask = "Premiere",
 		showPage1 = "1",
 		showPage2 = "0"
 	},
 	["XD"] = {
 		iconName = "XD",
-		iconNamePreset = "XD",
+		iconMask = "XD",
 		showPage1 = "1",
 		showPage2 = "0"
 	}
@@ -85,9 +85,10 @@ selectAdobe = {
 
 function setAdobe(selectedAdobe)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectAdobe[selectedAdobe]['iconName'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconPreset "' .. selectAdobe[selectedAdobe]['iconNamePreset'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables AdobePage1 "' .. selectAdobe[selectedAdobe]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables AdobePage2 "' .. selectAdobe[selectedAdobe]['showPage2'] .. '" "#@#Settings Variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectAdobe[selectedAdobe]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
