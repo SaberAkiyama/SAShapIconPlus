@@ -5,36 +5,36 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterTeamsText]
+[MeterWPSText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=Teams
+Text=WPS
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#TeamsShape#90
-MyFillGradient=#ShapeGradientAngle# | #TeamsShapeGradient1Base#,255 ; 1.0 | #TeamsShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#WPSShape#90
+MyFillGradient=#ShapeGradientAngle# | #WPSShapeGradient1Base#,255 ; 1.0 | #WPSShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=#TeamsMaskMeter#
-MeterStyle=Mask#TeamsMaskStyle#90
-MaskFillColorSetting=Fill Color #TeamsMaskBase#
-ImageTint=#TeamsMaskBase#
+Meter=#WPSMaskMeter#
+MeterStyle=Mask#WPSMaskStyle#90
+MaskFillColorSetting=Fill Color #WPSMaskBase#
+ImageTint=#WPSMaskBase#
 X=0r
 Y=0r
-Hidden=#TeamsRegularHidden#
+Hidden=#WPSRegularHidden#
 
-[MeterIconImageTeams]
+[MeterIconImageWPS]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Office\Teams.png
-ImageTint=#TeamsMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\WPS Office.png
+ImageTint=#WPSMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -55,7 +55,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#TeamsMask#
+Text=#WPSMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -72,8 +72,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#TeamsMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOffice "setTeamsColorManual('Mask')"]
+Text=#WPSMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setWPSColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -94,8 +94,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#TeamsShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOffice "setTeamsColorManual('Gradient 1')"]
+Text=#WPSShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setWPSColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -113,15 +113,15 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#TeamsShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOffice "setTeamsColorManual('Gradient 2')"]
+Text=#WPSShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setWPSColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinTeams]
+[MeterSkinWPS]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -131,6 +131,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables TeamsMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#TeamsMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables TeamsShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#TeamsShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables TeamsShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#TeamsShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables WPSMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#WPSMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables WPSShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#WPSShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables WPSShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#WPSShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
