@@ -5,36 +5,36 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterOriginText]
+[MeterRLCraftText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=EA Origin
+Text=RLCraft
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#OriginShape#90
-MyFillGradient=#ShapeGradientAngle# | #OriginShapeGradient1Base#,255 ; 1.0 | #OriginShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#RLCraftShape#90
+MyFillGradient=#ShapeGradientAngle# | #RLCraftShapeGradient1Base#,255 ; 1.0 | #RLCraftShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=#OriginMaskMeter#
-MeterStyle=Mask#OriginMaskStyle#90
-MaskFillColorSetting=Fill Color #OriginMaskBase#
-ImageTint=#OriginMaskBase#
+Meter=#RLCraftMaskMeter#
+MeterStyle=Mask#RLCraftMaskStyle#90
+MaskFillColorSetting=Fill Color #RLCraftMaskBase#
+ImageTint=#RLCraftMaskBase#
 X=0r
 Y=0r
-Hidden=#OriginRegularHidden#
+Hidden=#RLCraftRegularHidden#
 
-[MeterIconImageOrigin]
+[MeterIconImageRLCraft]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Origin.png
-ImageTint=#OriginMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Minecraft\RLCraft.png
+ImageTint=#RLCraftMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -55,7 +55,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMask#
+Text=#RLCraftMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -72,8 +72,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Mask')"]
+Text=#RLCraftMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraft "setRLCraftColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -94,8 +94,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 1')"]
+Text=#RLCraftShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraft "setRLCraftColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -113,15 +113,15 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 2')"]
+Text=#RLCraftShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraft "setRLCraftColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinOrigin]
+[MeterSkinRLCraft]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -131,6 +131,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables OriginMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#OriginMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables OriginShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#OriginShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables OriginShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#OriginShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables RLCraftMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#RLCraftMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables RLCraftShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#RLCraftShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables RLCraftShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#RLCraftShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]

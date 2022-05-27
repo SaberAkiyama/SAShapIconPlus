@@ -18,19 +18,17 @@ Text=Lost Ark
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#LostArkShape#90
-MyFillGradient=#ShapeGradientAngle# | #LostArkShapeGradient1Base#,#LostArkAlphaMask# ; 1.0 | #LostArkShapeGradient2Base#,#LostArkAlphaMask# ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #LostArkShapeGradient1Base#,255 ; 1.0 | #LostArkShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=Image
-ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#LostArkMask#.png
+Meter=#LostArkMaskMeter#
+MeterStyle=Mask#LostArkMaskStyle#90
+MaskFillColorSetting=Fill Color #LostArkMaskBase#
 ImageTint=#LostArkMaskBase#
 X=0r
 Y=0r
-AntiAlias=1
-UpdateDivider=-1
 Hidden=#LostArkRegularHidden#
 
 [MeterIconImageLostArk]
@@ -58,7 +56,7 @@ MeterStyle=IconActive
 X=0r
 Y=5R
 Text=#LostArkMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Lost Ark.ini"]
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -89,7 +87,6 @@ Group=PageGradient
 X=840
 Y=425
 Text=Color Gradient 1
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
@@ -101,7 +98,6 @@ Text=#LostArkShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setLostArkColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -110,7 +106,6 @@ Group=PageGradient
 X=240r
 Y=425
 Text=Color Gradient 2
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
@@ -122,7 +117,6 @@ Text=#LostArkShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setLostArkColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -140,16 +134,3 @@ FocusDismiss=1
 Command1=[!WriteKeyValue Variables LostArkMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#LostArkMaskBase#" [!RefreshGroup "ShapeSettings"]
 Command2=[!WriteKeyValue Variables LostArkShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#LostArkShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
 Command3=[!WriteKeyValue Variables LostArkShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#LostArkShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
-
-; ============================================================
-; ============================================================
-
-[MeterApplyButton]
-Meter=String
-MeterStyle=IconSkinActive
-X=960
-Y=565
-Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setApply()"]
-MouseOverAction=[!CommandMeasure LuaGaming "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaGaming "setSkinApply('Leave')"]

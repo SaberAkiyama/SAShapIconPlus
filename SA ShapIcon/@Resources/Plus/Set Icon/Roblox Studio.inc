@@ -18,19 +18,17 @@ Text=Roblox Studio
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#RobloxStudioShape#90
-MyFillGradient=#ShapeGradientAngle# | #RobloxStudioShapeGradient1Base#,#RobloxStudioAlphaMask# ; 1.0 | #RobloxStudioShapeGradient2Base#,#RobloxStudioAlphaMask# ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #RobloxStudioShapeGradient1Base#,255 ; 1.0 | #RobloxStudioShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=Image
-ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#RobloxStudioMask#.png
+Meter=#RobloxStudioMaskMeter#
+MeterStyle=Mask#RobloxStudioMaskStyle#90
+MaskFillColorSetting=Fill Color #RobloxStudioMaskBase#
 ImageTint=#RobloxStudioMaskBase#
 X=0r
 Y=0r
-AntiAlias=1
-UpdateDivider=-1
 Hidden=#RobloxStudioRegularHidden#
 
 [MeterIconImageRobloxStudio]
@@ -58,7 +56,7 @@ MeterStyle=IconActive
 X=0r
 Y=5R
 Text=#RobloxStudioMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Roblox Studio.ini"]
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -89,7 +87,6 @@ Group=PageGradient
 X=840
 Y=425
 Text=Color Gradient 1
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
@@ -101,7 +98,6 @@ Text=#RobloxStudioShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setRobloxStudioColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -110,7 +106,6 @@ Group=PageGradient
 X=240r
 Y=425
 Text=Color Gradient 2
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
@@ -122,7 +117,6 @@ Text=#RobloxStudioShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setRobloxStudioColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -140,16 +134,3 @@ FocusDismiss=1
 Command1=[!WriteKeyValue Variables RobloxStudioMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#RobloxStudioMaskBase#" [!RefreshGroup "ShapeSettings"]
 Command2=[!WriteKeyValue Variables RobloxStudioShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#RobloxStudioShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
 Command3=[!WriteKeyValue Variables RobloxStudioShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#RobloxStudioShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
-
-; ============================================================
-; ============================================================
-
-[MeterApplyButton]
-Meter=String
-MeterStyle=IconSkinActive
-X=960
-Y=565
-Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setApply()"]
-MouseOverAction=[!CommandMeasure LuaGaming "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaGaming "setSkinApply('Leave')"]

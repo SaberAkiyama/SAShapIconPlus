@@ -18,19 +18,17 @@ Text=Smite
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#SmiteShape#90
-MyFillGradient=#ShapeGradientAngle# | #SmiteShapeGradient1Base#,#SmiteAlphaMask# ; 1.0 | #SmiteShapeGradient2Base#,#SmiteAlphaMask# ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #SmiteShapeGradient1Base#,255 ; 1.0 | #SmiteShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=Image
-ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#SmiteMask#.png
+Meter=#SmiteMaskMeter#
+MeterStyle=Mask#SmiteMaskStyle#90
+MaskFillColorSetting=Fill Color #SmiteMaskBase#
 ImageTint=#SmiteMaskBase#
 X=0r
 Y=0r
-AntiAlias=1
-UpdateDivider=-1
 Hidden=#SmiteRegularHidden#
 
 [MeterIconImageSmite]
@@ -58,7 +56,7 @@ MeterStyle=IconActive
 X=0r
 Y=5R
 Text=#SmiteMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Smite.ini"]
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -89,7 +87,6 @@ Group=PageGradient
 X=840
 Y=425
 Text=Color Gradient 1
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
@@ -101,7 +98,6 @@ Text=#SmiteShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setSmiteColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -110,7 +106,6 @@ Group=PageGradient
 X=240r
 Y=425
 Text=Color Gradient 2
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
@@ -122,7 +117,6 @@ Text=#SmiteShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setSmiteColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -140,16 +134,3 @@ FocusDismiss=1
 Command1=[!WriteKeyValue Variables SmiteMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#SmiteMaskBase#" [!RefreshGroup "ShapeSettings"]
 Command2=[!WriteKeyValue Variables SmiteShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#SmiteShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
 Command3=[!WriteKeyValue Variables SmiteShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#SmiteShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
-
-; ============================================================
-; ============================================================
-
-[MeterApplyButton]
-Meter=String
-MeterStyle=IconSkinActive
-X=960
-Y=565
-Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setApply()"]
-MouseOverAction=[!CommandMeasure LuaGaming "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaGaming "setSkinApply('Leave')"]

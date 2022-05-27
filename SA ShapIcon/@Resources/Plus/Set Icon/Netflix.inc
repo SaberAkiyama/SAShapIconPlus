@@ -18,19 +18,17 @@ Text=Netflix
 [MeterMaskShape]
 Meter=Shape
 MeterStyle=Mask#NetflixShape#90
-MyFillGradient=#ShapeGradientAngle# | #NetflixShapeGradient1Base#,#NetflixAlphaMask# ; 1.0 | #NetflixShapeGradient2Base#,#NetflixAlphaMask# ; 0.0
+MyFillGradient=#ShapeGradientAngle# | #NetflixShapeGradient1Base#,255 ; 1.0 | #NetflixShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=Image
-ImagePath=#@#Plus\Image Shapes\Settings\Mask
-ImageName=#NetflixMask#.png
+Meter=#NetflixMaskMeter#
+MeterStyle=Mask#NetflixMaskStyle#90
+MaskFillColorSetting=Fill Color #NetflixMaskBase#
 ImageTint=#NetflixMaskBase#
 X=0r
 Y=0r
-AntiAlias=1
-UpdateDivider=-1
 Hidden=#NetflixRegularHidden#
 
 [MeterIconImageNetflix]
@@ -58,7 +56,7 @@ MeterStyle=IconActive
 X=0r
 Y=5R
 Text=#NetflixMask#
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Mask Shapes" "Netflix.ini"]
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -89,7 +87,6 @@ Group=PageGradient
 X=840
 Y=425
 Text=Color Gradient 1
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient1Active]
 Meter=String
@@ -101,7 +98,6 @@ Text=#NetflixShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaMedia "setNetflixColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -110,7 +106,6 @@ Group=PageGradient
 X=240r
 Y=425
 Text=Color Gradient 2
-Hidden=#HiddenGradient#
 
 [MeterColorShapeGradient2Active]
 Meter=String
@@ -122,7 +117,6 @@ Text=#NetflixShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaMedia "setNetflixColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-Hidden=#HiddenGradient#
 
 ; ============================================================
 ; ============================================================
@@ -140,16 +134,3 @@ FocusDismiss=1
 Command1=[!WriteKeyValue Variables NetflixMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#NetflixMaskBase#" [!RefreshGroup "ShapeSettings"]
 Command2=[!WriteKeyValue Variables NetflixShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#NetflixShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
 Command3=[!WriteKeyValue Variables NetflixShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#NetflixShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
-
-; ============================================================
-; ============================================================
-
-[MeterApplyButton]
-Meter=String
-MeterStyle=IconSkinActive
-X=960
-Y=565
-Text="Apply Changes"
-LeftMouseUpAction=[!CommandMeasure LuaMedia "setApply()"]
-MouseOverAction=[!CommandMeasure LuaMedia "setSkinApply('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaMedia "setSkinApply('Leave')"]

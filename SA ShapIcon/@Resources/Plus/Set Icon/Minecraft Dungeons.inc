@@ -5,36 +5,36 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterOriginText]
+[MeterMinecraftDungeonsText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=EA Origin
+Text=Minecraft Dungeons
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#OriginShape#90
-MyFillGradient=#ShapeGradientAngle# | #OriginShapeGradient1Base#,255 ; 1.0 | #OriginShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#MinecraftDungeonsShape#90
+MyFillGradient=#ShapeGradientAngle# | #MinecraftDungeonsShapeGradient1Base#,255 ; 1.0 | #MinecraftDungeonsShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=#OriginMaskMeter#
-MeterStyle=Mask#OriginMaskStyle#90
-MaskFillColorSetting=Fill Color #OriginMaskBase#
-ImageTint=#OriginMaskBase#
+Meter=#MinecraftDungeonsMaskMeter#
+MeterStyle=Mask#MinecraftDungeonsMaskStyle#90
+MaskFillColorSetting=Fill Color #MinecraftDungeonsMaskBase#
+ImageTint=#MinecraftDungeonsMaskBase#
 X=0r
 Y=0r
-Hidden=#OriginRegularHidden#
+Hidden=#MinecraftDungeonsRegularHidden#
 
-[MeterIconImageOrigin]
+[MeterIconImageMinecraftDungeons]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Origin.png
-ImageTint=#OriginMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Minecraft\Minecraft Dungeons.png
+ImageTint=#MinecraftDungeonsMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -55,7 +55,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMask#
+Text=#MinecraftDungeonsMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -72,8 +72,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Mask')"]
+Text=#MinecraftDungeonsMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraftDungeons "setMinecraftDungeonsColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -94,8 +94,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 1')"]
+Text=#MinecraftDungeonsShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraftDungeons "setMinecraftDungeonsColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -113,15 +113,15 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 2')"]
+Text=#MinecraftDungeonsShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraftDungeons "setMinecraftDungeonsColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinOrigin]
+[MeterSkinMinecraftDungeons]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -131,6 +131,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables OriginMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#OriginMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables OriginShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#OriginShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables OriginShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#OriginShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables MinecraftDungeonsMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#MinecraftDungeonsMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables MinecraftDungeonsShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#MinecraftDungeonsShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables MinecraftDungeonsShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#MinecraftDungeonsShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]

@@ -5,36 +5,36 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterOriginText]
+[MeterMedalText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=EA Origin
+Text=Medal
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#OriginShape#90
-MyFillGradient=#ShapeGradientAngle# | #OriginShapeGradient1Base#,255 ; 1.0 | #OriginShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#MedalShape#90
+MyFillGradient=#ShapeGradientAngle# | #MedalShapeGradient1Base#,255 ; 1.0 | #MedalShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=#OriginMaskMeter#
-MeterStyle=Mask#OriginMaskStyle#90
-MaskFillColorSetting=Fill Color #OriginMaskBase#
-ImageTint=#OriginMaskBase#
+Meter=#MedalMaskMeter#
+MeterStyle=Mask#MedalMaskStyle#90
+MaskFillColorSetting=Fill Color #MedalMaskBase#
+ImageTint=#MedalMaskBase#
 X=0r
 Y=0r
-Hidden=#OriginRegularHidden#
+Hidden=#MedalRegularHidden#
 
-[MeterIconImageOrigin]
+[MeterIconImageMedal]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Origin.png
-ImageTint=#OriginMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\Medal.png
+ImageTint=#MedalMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -55,7 +55,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMask#
+Text=#MedalMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -72,8 +72,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Mask')"]
+Text=#MedalMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setMedalColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -94,8 +94,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 1')"]
+Text=#MedalShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setMedalColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -113,15 +113,15 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 2')"]
+Text=#MedalShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setMedalColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinOrigin]
+[MeterSkinMedal]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -131,6 +131,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables OriginMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#OriginMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables OriginShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#OriginShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables OriginShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#OriginShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables MedalMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#MedalMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables MedalShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#MedalShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables MedalShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#MedalShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]

@@ -5,36 +5,36 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterOriginText]
+[MeterMultiMCText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=EA Origin
+Text=MultiMC
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#OriginShape#90
-MyFillGradient=#ShapeGradientAngle# | #OriginShapeGradient1Base#,255 ; 1.0 | #OriginShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#MultiMCShape#90
+MyFillGradient=#ShapeGradientAngle# | #MultiMCShapeGradient1Base#,255 ; 1.0 | #MultiMCShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=#OriginMaskMeter#
-MeterStyle=Mask#OriginMaskStyle#90
-MaskFillColorSetting=Fill Color #OriginMaskBase#
-ImageTint=#OriginMaskBase#
+Meter=#MultiMCMaskMeter#
+MeterStyle=Mask#MultiMCMaskStyle#90
+MaskFillColorSetting=Fill Color #MultiMCMaskBase#
+ImageTint=#MultiMCMaskBase#
 X=0r
 Y=0r
-Hidden=#OriginRegularHidden#
+Hidden=#MultiMCRegularHidden#
 
-[MeterIconImageOrigin]
+[MeterIconImageMultiMC]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Origin.png
-ImageTint=#OriginMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Minecraft\MultiMC.png
+ImageTint=#MultiMCMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -55,7 +55,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMask#
+Text=#MultiMCMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -72,8 +72,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#OriginMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Mask')"]
+Text=#MultiMCMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraft "setMultiMCColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -94,8 +94,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 1')"]
+Text=#MultiMCShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraft "setMultiMCColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -113,15 +113,15 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#OriginShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setOriginColorManual('Gradient 2')"]
+Text=#MultiMCShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaMinecraft "setMultiMCColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinOrigin]
+[MeterSkinMultiMC]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -131,6 +131,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables OriginMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#OriginMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables OriginShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#OriginShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables OriginShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#OriginShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables MultiMCMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#MultiMCMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables MultiMCShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#MultiMCShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables MultiMCShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#MultiMCShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
