@@ -20,7 +20,7 @@ settingSelect = {
         updateDivider = "-1"
 	},
 	["Browsing"] = {
-		pageIcon = "Safari",
+		pageIcon = "Apple Safari",
         showPage1 = "0",
         showPage2 = "1",
         showPage3 = "1",
@@ -59,6 +59,14 @@ settingSelect = {
 		hiddenLine = "0",
         updateDivider = "-1"
 	},
+	["Minecraft"] = {
+		pageIcon = "Minecraft",
+        showPage1 = "1",
+        showPage2 = "0",
+        showPage3 = "1",
+		hiddenLine = "0",
+        updateDivider = "-1"
+	},
 	["Office"] = {
 		pageIcon = "Excel",
         showPage1 = "1",
@@ -70,8 +78,8 @@ settingSelect = {
 	["Social"] = {
 		pageIcon = "Cisco WebEx Teams",
         showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+        showPage2 = "1",
+        showPage3 = "0",
 		hiddenLine = "0",
         updateDivider = "-1"
 	},
@@ -172,6 +180,12 @@ function setSettingsMedia()
 
 end
 
+function setSettingsMinecraft()
+	SKIN:Bang('!WriteKeyValue Variables MinecraftPage1 "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftPage2 "1" "#@#Settings Variables.inc"')
+
+end
+
 --;function setSettingsOffice()
 --;end
 
@@ -187,11 +201,6 @@ function setSettingsOther()
 	SKIN:Bang('!WriteKeyValue Variables OtherPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage4 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage5 "1" "#@#Settings Variables.inc"')
-
-end
-
-function setSettingsPlus()
-    SKIN:Bang('!ActivateConfig "#ROOTCONFIG#" "Settings (Plus).ini"')
 
 end
 
@@ -234,6 +243,12 @@ settingCatrgory = {
         showPage2 = "0",
         showPage3 = "1",
 	},
+	["Minecraft"] = {
+		categoryName = "Minecraft",
+        showPage1 = "1",
+        showPage2 = "0",
+        showPage3 = "1",
+	},
 	["Office"] = {
 		categoryName = "Office",
         showPage1 = "1",
@@ -243,8 +258,8 @@ settingCatrgory = {
 	["Social"] = {
 		categoryName = "Social",
         showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+        showPage2 = "1",
+        showPage3 = "0",
 	},
 	["Other"] = {
 		categoryName = "Other",
@@ -428,6 +443,7 @@ hoverSettingsSelect = {
 		colorPage7 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
@@ -441,6 +457,7 @@ hoverSettingsSelect = {
 		colorPage7 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
@@ -494,15 +511,23 @@ function setPageMedia(selectedHover)
 
 end
 
+function setPageMinecraft(selectedHover)
+	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
+
+    SKIN:Bang('!UpdateMeter *')
+    SKIN:Bang('!Redraw')
+
+end
+
 function setPageOffice(selectedHover)
-	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
+	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageSocial(selectedHover)
-	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
+	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -510,7 +535,7 @@ function setPageSocial(selectedHover)
 end
 
 function setPageOther(selectedHover)
-	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
+	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
