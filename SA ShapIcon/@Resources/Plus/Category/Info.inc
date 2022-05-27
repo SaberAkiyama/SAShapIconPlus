@@ -8,8 +8,8 @@ ScriptFile=#@#Plus\Scripts\Info.lua
 UpdateDivider=5
 
 [Variables]
-@include10=#@#Plus\Measures\Parser Update.inc
-@include11=#@#Plus\Measures\Parser Variables.inc
+@include9=#@#Plus\Measures\Parser Update.inc
+@include10=#@#Plus\Measures\Parser Variables.inc
 
 ; ============================================================
 ; Info Page
@@ -19,21 +19,23 @@ UpdateDivider=5
 Meter=String
 MeterStyle=InfoTitle
 Text=SA ShapIcon+
-X=320
+X=300
 Y=210
+
+[Title2]
+Meter=String
+MeterStyle=InfoTitle
+StringAlign=LeftCenter
+Text="Expansion Pack v1.0"
+FontSize=12
+X=30r
+Y=29r
 
 [Version]
 Meter=String
 MeterStyle=InfoVersion
 Text=">>> v#Version# <<<"
-X=0r
-Y=0R
-
-[Version2]
-Meter=String
-MeterStyle=InfoVersion
-Text="Open Beta 2"
-X=0r
+X=320
 Y=10R
 
 [Author]
@@ -70,7 +72,7 @@ MouseLeaveAction=[!CommandMeasure LuaInfo "setInfoAuthorDiscord('Leave')"]
 Meter=Shape
 Shape=Line 0,0,320,0 | Stroke Color 255,255,255,128
 X=160
-Y=400
+Y=370
 AntiAlias=1
 UpdateDivider=-1
 
@@ -78,7 +80,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=InfoUpdate
 X=320
-Y=35r
+Y=410
 Text=#TextUpdate#
 Hidden=0
 

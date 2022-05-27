@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Office.lua
 UpdateDivider=5
 
 [Variables]
-@include10="#@#Plus\Set Icon\#NameIcon#.inc"
+@include9="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Office Page
@@ -34,7 +34,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=OneNote
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageOneNoteText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOneNoteText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('OneNote')"]
@@ -44,7 +44,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Outlook
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageOutlookText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOutlookText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('Outlook')"]
@@ -54,7 +54,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=PowerPoint
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPagePowerPointText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPagePowerPointText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('PowerPoint')"]
@@ -64,7 +64,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=SharePoint
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageSharePointText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSharePointText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('SharePoint')"]
@@ -74,7 +74,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Teams
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageTeamsText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageTeamsText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('Teams')"]
@@ -84,7 +84,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Word
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageWordText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWordText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('Word')"]
@@ -94,7 +94,20 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Yammer
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageYammerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageYammerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('Yammer')"]
+
+; ============================================================
+; ============================================================
+
+[MeterApplyButton]
+Meter=String
+MeterStyle=IconSkinActive
+X=960
+Y=565
+Text="Apply Changes"
+LeftMouseUpAction=[!CommandMeasure LuaOffice "setApply()"]
+MouseOverAction=[!CommandMeasure LuaOffice "setSkinApply('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaOffice "setSkinApply('Leave')"]

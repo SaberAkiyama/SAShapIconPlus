@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Elgato.lua
 UpdateDivider=5
 
 [Variables]
-@include10="#@#Plus\Set Icon\#NameIcon#.inc"
+@include9="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Elgato Page
@@ -34,7 +34,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Camera Hub
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageCameraHubText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageCameraHubText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryElgato "setElgato('Camera Hub')"]
@@ -44,7 +44,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Control Center
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageControlCenterText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageControlCenterText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryElgato "setElgato('Control Center')"]
@@ -54,7 +54,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Game Capture
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageGameCaptureText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageGameCaptureText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryElgato "setElgato('Game Capture')"]
@@ -64,7 +64,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Stream Deck
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageStreamDeckText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageStreamDeckText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryElgato "setElgato('Stream Deck')"]
@@ -74,7 +74,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Video Capture
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageVideoCaptureText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVideoCaptureText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryElgato "setElgato('Video Capture')"]
@@ -84,7 +84,20 @@ Meter=String
 MeterStyle=IconTextPageName
 Text=Wave Link
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageWaveLinkText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWaveLinkText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryElgato "setElgato('Wave Link')"]
+
+; ============================================================
+; ============================================================
+
+[MeterApplyButton]
+Meter=String
+MeterStyle=IconSkinActive
+X=960
+Y=565
+Text="Apply Changes"
+LeftMouseUpAction=[!CommandMeasure LuaElgato "setApply()"]
+MouseOverAction=[!CommandMeasure LuaElgato "setSkinApply('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaElgato "setSkinApply('Leave')"]

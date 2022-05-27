@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Media.lua
 UpdateDivider=5
 
 [Variables]
-@include10="#@#Plus\Set Icon\#NameIcon#.inc"
+@include9="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Media Page
@@ -37,7 +37,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Amazon Music
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageAmazonMusicText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageAmazonMusicText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Amazon Music')"]
@@ -49,7 +49,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Apple iTunes
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageiTunesText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageiTunesText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Apple iTunes')"]
@@ -61,7 +61,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Audible
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageAudibleText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageAudibleText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Audible')"]
@@ -73,7 +73,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Disney+
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageDisneyPlusText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageDisneyPlusText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Disney+')"]
@@ -85,21 +85,21 @@ MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=foobar2000
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageFoobarText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageFoobarText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('foobar2000')"]
 Hidden=#MediaPage1#
 
-[MeterPageGPMusicText]
+[MeterPageGPMText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Google Play Music
 X=0r
-Y=25R
-MouseOverAction=[!SetOption MeterPageGPMusicText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageGPMusicText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Y=20R
+MouseOverAction=[!SetOption MeterPageGPMText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageGPMText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Google Play Music')"]
 Hidden=#MediaPage1#
 
@@ -109,7 +109,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage1
 Text=Hulu
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageHuluText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageHuluText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Hulu')"]
@@ -118,34 +118,34 @@ Hidden=#MediaPage1#
 [MeterPageKodiText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=MediaPage2
+Group=MediaPage1
 Text=Kodi
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageKodiText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageKodiText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Kodi')"]
-Hidden=#MediaPage2#
+Hidden=#MediaPage1#
 
 [MeterPageMusicBeeText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=MediaPage2
+Group=MediaPage1
 Text=MusicBee
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageMusicBeeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMusicBeeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('MusicBee')"]
-Hidden=#MediaPage2#
+Hidden=#MediaPage1#
 
 [MeterPageNetflixText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=Netflix
-X=0r
-Y=25R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageNetflixText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageNetflixText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Netflix')"]
@@ -157,7 +157,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=Plex
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPagePlexText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPagePlexText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Plex')"]
@@ -169,7 +169,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=Spotify
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageSpotifyText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSpotifyText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Spotify')"]
@@ -181,7 +181,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=Twitch
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageTwitchText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageTwitchText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Twitch')"]
@@ -193,7 +193,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=VLC
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageVLCText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVLCText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('VLC')"]
@@ -205,7 +205,7 @@ MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=Wakanim
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageWakanimText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWakanimText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Wakanim')"]
@@ -214,26 +214,26 @@ Hidden=#MediaPage2#
 [MeterPageWinampText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=MediaPage3
+Group=MediaPage2
 Text=Winamp
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageWinampText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWinampText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Winamp')"]
-Hidden=#MediaPage3#
+Hidden=#MediaPage2#
 
 [MeterPageYouTubeText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=MediaPage3
+Group=MediaPage2
 Text=YouTube
 X=0r
-Y=25R
+Y=20R
 MouseOverAction=[!SetOption MeterPageYouTubeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageYouTubeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('YouTube')"]
-Hidden=#MediaPage3#
+Hidden=#MediaPage2#
 
 ; ============================================================
 ; ============================================================
@@ -241,8 +241,8 @@ Hidden=#MediaPage3#
 [MeterPage1Text]
 Meter=String
 MeterStyle=IconPageText
-X=280
-Y=500
+X=300
+Y=540
 Text=1
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMediaPage1()"]
 MouseOverAction=[!CommandMeasure LuaCategoryMedia "setHoverMediaPage1('Over')"]
@@ -251,19 +251,22 @@ MouseLeaveAction=[!CommandMeasure LuaCategoryMedia "setHoverMediaPage1('Leave')"
 [MeterPage2Text]
 Meter=String
 MeterStyle=IconPageText
-X=320
-Y=500
+X=40r
+Y=0r
 Text=2
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMediaPage2()"]
 MouseOverAction=[!CommandMeasure LuaCategoryMedia "setHoverMediaPage2('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaCategoryMedia "setHoverMediaPage2('Leave')"]
 
-[MeterPage3Text]
+; ============================================================
+; ============================================================
+
+[MeterApplyButton]
 Meter=String
-MeterStyle=IconPageText
-X=360
-Y=500
-Text=3
-LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMediaPage3()"]
-MouseOverAction=[!CommandMeasure LuaCategoryMedia "setHoverMediaPage3('Over')"]
-MouseLeaveAction=[!CommandMeasure LuaCategoryMedia "setHoverMediaPage3('Leave')"]
+MeterStyle=IconSkinActive
+X=960
+Y=565
+Text="Apply Changes"
+LeftMouseUpAction=[!CommandMeasure LuaMedia "setApply()"]
+MouseOverAction=[!CommandMeasure LuaMedia "setSkinApply('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaMedia "setSkinApply('Leave')"]
