@@ -59,6 +59,15 @@ AntiAlias=1
 DynamicVariables=1
 UpdateDivider=-1
 
+[SettingOptionActive]
+StringAlign=LeftCenter
+FontFace=Borda 12
+FontColor=255,255,255
+FontSize=18
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
 ; =============================================================
 ; =============================================================
 ; PAGE ICON CONTEXT
@@ -281,6 +290,8 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage3#
 
+; =============================================================
+
 [ShapeLeftBlankStyle]
 Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255,128 | StrokeWidth 0
@@ -318,6 +329,46 @@ Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50
 DynamicVariables=1
 UpdateDivider=-1
 Hidden=#PresetPage2#
+
+; =============================================================
+
+[ShapeLeftBlankOptionStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255,128 | StrokeWidth 0
+Path1=32.808,36.847 | LineTo 30.697,35 | LineTo 18.028,49.077 | LineTo 17.192,50 | LineTo 18.028,50.923 | LineTo 30.697,65 | LineTo 32.808,63.153 | LineTo 20.976,50 | LineTo 32.808,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#TransIconHidden#
+
+[ShapeLeftPage1OptionStyle]
+Shape=Rectangle 0,0,50,100 | Extend MyFillColor | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Path1=32.808,36.847 | LineTo 30.697,35 | LineTo 18.028,49.077 | LineTo 17.192,50 | LineTo 18.028,50.923 | LineTo 30.697,65 | LineTo 32.808,63.153 | LineTo 20.976,50 | LineTo 32.808,36.847 | ClosePath 1
+MyFillColor=Fill Color 0,0,0,128
+MouseOverAction=[!SetOption ShapeLeftPage1 MyFillColor "Fill Color 255,215,0,64"][!UpdateMeter ShapeLeftPage1][!Redraw]
+MouseLeaveAction=[!SetOption ShapeLeftPage1 MyFillColor "Fill Color 0,0,0,128"][!UpdateMeter ShapeLeftPage1][!Redraw]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#TransMaskHidden#
+
+[ShapeRightPage2OptionStyle]
+Shape=Rectangle 0,0,50,100 | Extend MyFillColor | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50 | LineTo 31.972,50.923 | LineTo 19.303,65 | LineTo 17.192,63.153 | LineTo 29.024,50 | LineTo 17.192,36.847 | ClosePath 1
+MyFillColor=Fill Color 0,0,0,128
+MouseOverAction=[!SetOption ShapeRightPage2 MyFillColor "Fill Color 255,215,0,64"][!UpdateMeter ShapeRightPage2][!Redraw]
+MouseLeaveAction=[!SetOption ShapeRightPage2 MyFillColor "Fill Color 0,0,0,128"][!UpdateMeter ShapeRightPage2][!Redraw]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#TransIconHidden#
+
+[ShapeRightBlankOptionStyle]
+Shape=Rectangle 0,0,50,100 | Fill Color 0,0,0,128 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255,128 | StrokeWidth 0
+Path1=17.192,36.847 | LineTo 19.303,35 | LineTo 31.972,49.077 | LineTo 32.808,50 | LineTo 31.972,50.923 | LineTo 19.303,65 | LineTo 17.192,63.153 | LineTo 29.024,50 | LineTo 17.192,36.847 | ClosePath 1
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#TransMaskHidden#
 
 ; =============================================================
 ; =============================================================
@@ -453,6 +504,30 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage2#
 
+[ShapeMinecraftStyle]
+Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Shape3=Path Path2 | StrokeWidth 0
+Shape4=Path Path3 | StrokeWidth 0
+Shape5=Path Path4 | StrokeWidth 0
+Shape6=Path Path5 | StrokeWidth 0
+Shape7=Path Path6 | StrokeWidth 0
+Shape8=Path Path7 | StrokeWidth 0
+Shape9=Combine Shape2 | XOR Shape3 | XOR Shape4 | XOR Shape5 | XOR Shape6 | XOR Shape7 | XOR Shape8
+Path1=17.054,31.143 | LineTo 17.054,31.143 | LineTo 17.649,29.091 | LineTo 14.091,29.091 | CurveTo 13.82,28.955,13.984,29.09,13.884,29.04 | CurveTo 13.764,28.657,13.756,28.869,13.735,28.759 | LineTo 15.002,24.318 | LineTo 13.697,24.318 | LineTo 11.566,31.136 | LineTo 11.587,31.136 | LineTo 11.614,31.166 | LineTo 11.616,31.166 | LineTo 11.587,31.136 | LineTo 17.047,31.136 | LineTo 17.054,31.143 | ClosePath 1
+Path2=25.746,31.136 | LineTo 27.538,23.636 | LineTo 25.346,23.636 | LineTo 24.425,27.045 | LineTo 24.377,27.045 | LineTo 20.557,27.045 | LineTo 20.499,27.045 | LineTo 21.423,23.636 | LineTo 19.231,23.636 | LineTo 18.637,25.682 | LineTo 15.322,25.682 | LineTo 15.782,24.071 | CurveTo 15.726,23.772,15.811,23.968,15.791,23.857 | CurveTo 15.455,23.636,15.662,23.687,15.561,23.637 | LineTo 13.91,23.636 | LineTo 16.04,16.818 | LineTo 23.154,16.818 | LineTo 22.23,20.227 | LineTo 34.16,20.227 | LineTo 31.693,31.136 | LineTo 25.746,31.136 | ClosePath 1
+Path3=29.999,14.091 | LineTo 35.544,14.091 | LineTo 34.311,19.545 | LineTo 31.751,19.545 | LineTo 32.492,16.544 | CurveTo 32.422,16.261,32.512,16.444,32.487,16.34 | CurveTo 32.159,16.136,32.358,16.182,32.261,16.136 | LineTo 29.496,16.136 | LineTo 29.999,14.091 | LineTo 29.999,14.091 | ClosePath 1
+Path4=27.386,16.76 | LineTo 27.386,16.818 | LineTo 31.743,16.818 | LineTo 31.054,19.545 | LineTo 26.566,19.545 | LineTo 27.307,17.05 | LineTo 27.386,16.76 | LineTo 27.386,16.76 | ClosePath 1
+Path5=21.514,16.136 | LineTo 16.254,16.136 | LineTo 16.893,14.091 | LineTo 22.134,14.091 | LineTo 21.514,16.136 | LineTo 21.514,16.136 | ClosePath 1
+Path6=15.127,26.364 | LineTo 18.44,26.364 | LineTo 17.846,28.409 | LineTo 14.544,28.409 | LineTo 15.127,26.364 | LineTo 15.127,26.364 | ClosePath 1
+Path7=36.423,12.727 | LineTo 29.27,12.727 | LineTo 28.462,16.136 | LineTo 26.5,16.136 | LineTo 26.154,17.401 | LineTo 22.808,12.727 | LineTo 15.886,12.727 | LineTo 10,31.136 | LineTo 16.072,37.273 | LineTo 23.037,37.273 | LineTo 24.076,33.065 | LineTo 24.795,33.864 | LineTo 26.579,33.864 | LineTo 29.379,37.273 | LineTo 36.538,37.273 | LineTo 40,20.227 | LineTo 36.423,12.727 | LineTo 36.423,12.727 | ClosePath 1
+MyFillGradient=0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0
+MouseOverAction=[!CommandMeasure LuaSettings "setPageMinecraft('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaSettings "setPageMinecraft('Leave')"]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#CategoryPage2#
+
 [ShapeOfficeStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -478,7 +553,7 @@ MouseOverAction=[!CommandMeasure LuaSettings "setPageSocial('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaSettings "setPageSocial('Leave')"]
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage2#
+Hidden=#CategoryPage3#
 
 [ShapeOtherStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -650,6 +725,41 @@ StringAlign=CenterCenter
 FontFace=Merienda
 FontColor=255,255,255
 FontSize=18
+AntiAlias=1
+
+[OptionIconMaskText]
+StringAlign=CenterCenter
+FontFace=Merienda
+FontColor=255,255,255
+FontSize=18
+AntiAlias=1
+
+[OptionIconMaskActive]
+StringAlign=CenterCenter
+FontFace=Borda 12
+FontColor=255,255,255
+FontSize=18
+AntiAlias=1
+
+[OptionFadeSwitchActive]
+StringAlign=CenterCenter
+FontFace=Borda 9
+FontSize=18
+AntiAlias=1
+
+[OptionsActionText]
+StringAlign=LeftTop
+FontFace=Borda 12
+FontColor=255,255,255
+FontSize=18
+AntiAlias=1
+
+[OptionsActionActive]
+StringAlign=LeftTop
+FontFace=Borda 12
+FontColor=255,255,255
+FontSize=18
+SolidColor=0,0,0,1
 AntiAlias=1
 
 [OptionActive]
