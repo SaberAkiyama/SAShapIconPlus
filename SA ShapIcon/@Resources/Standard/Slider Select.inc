@@ -1,5 +1,5 @@
 [Variables]
-@include8=#@#Standard\Measures\Action Timer Settings.inc
+@include9=#@#Standard\Measures\Action Timer Settings.inc
 
 [MeterSlideBox]
 Meter=Shape
@@ -108,6 +108,14 @@ X=0
 Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Media')"][!CommandMeasure LuaSettings "setSettingsMedia()"]
 
+[ShapeMinecraft]
+Meter=Shape
+MeterStyle=ShapeMinecraftStyle
+Group=CategoryPage2
+X=0
+Y=50r
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Minecraft')"][!CommandMeasure LuaSettings "setSettingsMinecraft()"]
+
 [ShapeOffice]
 Meter=Shape
 MeterStyle=ShapeOfficeStyle
@@ -119,9 +127,9 @@ LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Office')"]
 [ShapeSocial]
 Meter=Shape
 MeterStyle=ShapeSocialStyle
-Group=CategoryPage2
+Group=CategoryPage3
 X=0
-Y=50r
+Y=200
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Social')"][!CommandMeasure LuaSettings "setSettingsSocial()"]
 
 [ShapeOther]
@@ -129,7 +137,7 @@ Meter=Shape
 MeterStyle=ShapeOtherStyle
 Group=CategoryPage3
 X=0
-Y=200
+Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Other')"][!CommandMeasure LuaSettings "setSettingsOther()"]
 
 ; ============================================================
@@ -255,7 +263,7 @@ MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
 X=55
 Y=50r
-Text=Office
+Text=Minecraft
 Hidden=#CategoryPage2#
 
 [MeterPage8]
@@ -264,7 +272,7 @@ MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
 X=55
 Y=50r
-Text=Social
+Text=Office
 Hidden=#CategoryPage2#
 
 [MeterPage9]
@@ -273,6 +281,15 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=55
 Y=225
+Text=Social
+Hidden=#CategoryPage3#
+
+[MeterPage10]
+Meter=String
+MeterStyle=SettingActive
+Group=CategoryPage3 | Sliders
+X=55
+Y=50r
 Text=Other
 Hidden=#CategoryPage3#
 
