@@ -186,13 +186,6 @@ Click "Home" page, click "Add Friend" (a green dialog box), type ```SaberAkiyama
 
 
 
-<!-- DISCORD -->
-## Join me on the Discord server below!
-
-<iframe src="https://discord.com/widget?id=963623439137132544&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/SaberAkiyama/SAShapIconPlus.svg?style=for-the-badge
