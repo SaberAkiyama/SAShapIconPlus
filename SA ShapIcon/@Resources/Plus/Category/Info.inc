@@ -177,7 +177,7 @@ MouseLeaveAction=[!CommandMeasure LuaInfo "setInfoCredit1('Leave')"]
 [Credit2Active]
 Meter=String
 MeterStyle=InfoActive
-Text=The Northern Block - Borda fonts
+Text=Jonathan Hill - Borda fonts
 X=0r
 Y=5R
 LeftMouseUpAction=[!CommandMeasure LuaInfo "setInfo('Credit2')"]
