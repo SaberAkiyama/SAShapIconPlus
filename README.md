@@ -39,7 +39,7 @@
   <p align="center">
     The expansion pack of SA ShapIcon
     <br />
-    <a href="https://github.com/SaberAkiyama/SAShapIconPlus"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SaberAkiyama/SAShapIconPlus/wiki"><strong>Explore the docs »</strong></a>
   </p>
 </div>
 
