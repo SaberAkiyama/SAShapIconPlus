@@ -1504,6 +1504,21 @@ selectGaming = {
 		showPage10 = "0",
 		showPage11 = "1"
 	},
+	["V Rising"] = {
+		iconName = "V Rising",
+		iconMask = "VRising",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1",
+		showPage10 = "1",
+		showPage11 = "0"
+	},
 	["Valorant"] = {
 		iconName = "Valorant",
 		iconMask = "Valorant",

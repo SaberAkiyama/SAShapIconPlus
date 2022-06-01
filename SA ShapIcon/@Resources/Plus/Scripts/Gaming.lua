@@ -529,6 +529,11 @@ function setUbisoftColorManual(selectedCode)
 
 end
 
+function setVRisingColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVRising" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setValorantColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinValorant" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -1837,6 +1842,17 @@ function setUbisoftMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables UbisoftShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UbisoftMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UbisoftRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVRisingMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VRisingMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRisingMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRisingShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRisingMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRisingRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -1296,6 +1296,15 @@ UbisoftShapeGradient1Base=225,65,105
 UbisoftShapeGradient2Base=65,105,225
 UbisoftRegularHidden=1
 
+VRisingShape=Hexagon
+VRisingMaskMeter=Shape
+VRisingMask=Regular Hexagon
+VRisingMaskStyle=Blank
+VRisingMaskBase=255,255,255
+VRisingShapeGradient1Base=225,65,105
+VRisingShapeGradient2Base=65,105,225
+VRisingRegularHidden=1
+
 ValorantShape=Hexagon
 ValorantMaskMeter=Shape
 ValorantMask=Regular Hexagon
