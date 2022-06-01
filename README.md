@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SaberAkiyama/SAShapIconPlus">
-    <img src="%40GitHub_Resouces/SIPXP.svg" alt="Logo" height="100">
+    <img src="%40GitHub_Resouces/SIPXP.svg" alt="Logo" Width="720">
   </a>
 
   <p align="center">
