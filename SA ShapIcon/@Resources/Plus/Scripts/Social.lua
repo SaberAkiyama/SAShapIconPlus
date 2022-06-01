@@ -24,8 +24,8 @@ function setGuildedColorManual(selectedCode)
 
 end
 
-function setMetaMessagerColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinMetaMessager" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setMetaMessengerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMetaMessenger" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -226,12 +226,12 @@ function setGuildedMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
-function setMetaMessagerMask(selectedMask)
-	SKIN:Bang('!WriteKeyValue Variables MetaMessagerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MetaMessagerMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MetaMessagerShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MetaMessagerMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MetaMessagerRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+function setMetaMessengerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -55,16 +55,16 @@ MouseLeaveAction=[!SetOption MeterPageGuildedText FontColor "255,255,255"][!Upda
 LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('Guilded')"]
 Hidden=#SocialPage1#
 
-[MeterPageMetaMessagerText]
+[MeterPageMetaMessengerText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=SocialPage1
-Text=Meta Messager
+Text=Meta Messenger
 X=0r
 Y=20R
-MouseOverAction=[!SetOption MeterPageMetaMessagerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageMetaMessagerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('Meta Messager')"]
+MouseOverAction=[!SetOption MeterPageMetaMessengerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageMetaMessengerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('Meta Messenger')"]
 Hidden=#SocialPage1#
 
 [MeterPageRedditText]

@@ -21,9 +21,9 @@ selectSocial = {
 		showPage1 = "0",
 		showPage2 = "1"
 	},
-	["Meta Messager"] = {
-		iconName = "Meta Messager",
-		iconMask = "MetaMessager",
+	["Meta Messenger"] = {
+		iconName = "Meta Messenger",
+		iconMask = "MetaMessenger",
 		showPage1 = "0",
 		showPage2 = "1"
 	},

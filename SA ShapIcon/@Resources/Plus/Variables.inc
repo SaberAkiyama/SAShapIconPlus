@@ -1771,14 +1771,14 @@ GuildedShapeGradient1Base=225,65,105
 GuildedShapeGradient2Base=65,105,225
 GuildedRegularHidden=1
 
-MetaMessagerShape=Hexagon
-MetaMessagerMaskMeter=Shape
-MetaMessagerMask=Regular Hexagon
-MetaMessagerMaskStyle=Blank
-MetaMessagerMaskBase=255,255,255
-MetaMessagerShapeGradient1Base=225,65,105
-MetaMessagerShapeGradient2Base=65,105,225
-MetaMessagerRegularHidden=1
+MetaMessengerShape=Hexagon
+MetaMessengerMaskMeter=Shape
+MetaMessengerMask=Regular Hexagon
+MetaMessengerMaskStyle=Blank
+MetaMessengerMaskBase=255,255,255
+MetaMessengerShapeGradient1Base=225,65,105
+MetaMessengerShapeGradient2Base=65,105,225
+MetaMessengerRegularHidden=1
 
 RedditShape=Hexagon
 RedditMaskMeter=Shape
