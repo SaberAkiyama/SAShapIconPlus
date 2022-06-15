@@ -29,6 +29,16 @@ MouseOverAction=[!SetOption MeterPageExcelText FontColor "255,215,0"][!UpdateMet
 MouseLeaveAction=[!SetOption MeterPageExcelText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('Excel')"]
 
+[MeterPageOneDriveText]
+Meter=String
+MeterStyle=IconTextPageName
+Text=OneDrive
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageOneDriveText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageOneDriveText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOffice "setOffice('OneDrive')"]
+
 [MeterPageOneNoteText]
 Meter=String
 MeterStyle=IconTextPageName

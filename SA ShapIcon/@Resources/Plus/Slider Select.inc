@@ -1,5 +1,5 @@
 [Variables]
-@include9=#@#Plus\Measures\Action Timer Settings.inc
+@include8=#@#Plus\Measures\Action Timer Settings.inc
 
 [MeterSlideBox]
 Meter=Shape
@@ -100,6 +100,14 @@ X=0
 Y=200
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Gaming')"][!CommandMeasure LuaSettings "setSettingsGaming()"]
 
+[ShapeGoogle]
+Meter=Shape
+MeterStyle=ShapeGoogleStyle
+Group=CategoryPage2
+X=0
+Y=50r
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Google')"]
+
 [ShapeMedia]
 Meter=Shape
 MeterStyle=ShapeMediaStyle
@@ -119,9 +127,9 @@ LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Minecraft')"][!Comm
 [ShapeOffice]
 Meter=Shape
 MeterStyle=ShapeOfficeStyle
-Group=CategoryPage2
+Group=CategoryPage3
 X=0
-Y=50r
+Y=200
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Office')"]
 
 [ShapeSocial]
@@ -129,7 +137,7 @@ Meter=Shape
 MeterStyle=ShapeSocialStyle
 Group=CategoryPage3
 X=0
-Y=200
+Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Social')"][!CommandMeasure LuaSettings "setSettingsSocial()"]
 
 [ShapeOther]
@@ -164,6 +172,8 @@ MeterStyle=ShapeDownBlankStyle
 Group=CategoryPage3 | Sliders
 X=#X1#
 Y=0r
+
+; ============================================================
 
 [ShapeOptions]
 Meter=Shape
@@ -244,7 +254,7 @@ MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
 X=55
 Y=50r
-Text=Media
+Text=Google
 Hidden=#CategoryPage2#
 
 [MeterPage7]
@@ -253,7 +263,7 @@ MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
 X=55
 Y=50r
-Text=Minecraft
+Text=Media
 Hidden=#CategoryPage2#
 
 [MeterPage8]
@@ -262,7 +272,7 @@ MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
 X=55
 Y=50r
-Text=Office
+Text=Minecraft
 Hidden=#CategoryPage2#
 
 [MeterPage9]
@@ -271,7 +281,7 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=55
 Y=225
-Text=Social
+Text=Office
 Hidden=#CategoryPage3#
 
 [MeterPage10]
@@ -280,8 +290,25 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=55
 Y=50r
+Text=Social
+Hidden=#CategoryPage3#
+
+[MeterPage11]
+Meter=String
+MeterStyle=SettingActive
+Group=CategoryPage3 | Sliders
+X=55
+Y=50r
 Text=Other
 Hidden=#CategoryPage3#
+
+[MeterSpecialText]
+Meter=String
+MeterStyle=SettingActive
+Group=Sliders
+X=55
+Y=515
+Text=Special
 
 [MeterOptionsText]
 Meter=String

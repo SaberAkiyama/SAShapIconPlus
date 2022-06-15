@@ -5,6 +5,8 @@ SetUpdateDivider=1
 ; Options
 IconHeight=90
 ShapeGradientAngle=0
+ChromePFText=x64
+ChromePF=
 
 ; Masks
 NameCategoryMask=Adobe
@@ -1098,6 +1100,15 @@ PUBGShapeGradient1Base=225,65,105
 PUBGShapeGradient2Base=65,105,225
 PUBGRegularHidden=1
 
+ProjectZomboidShape=Hexagon
+ProjectZomboidMaskMeter=Shape
+ProjectZomboidMask=Regular Hexagon
+ProjectZomboidMaskStyle=Blank
+ProjectZomboidMaskBase=255,255,255
+ProjectZomboidShapeGradient1Base=225,65,105
+ProjectZomboidShapeGradient2Base=65,105,225
+ProjectZomboidRegularHidden=1
+
 RSExtractionShape=Hexagon
 RSExtractionMaskMeter=Shape
 RSExtractionMask=Regular Hexagon
@@ -1385,6 +1396,73 @@ XboxMaskBase=255,255,255
 XboxShapeGradient1Base=225,65,105
 XboxShapeGradient2Base=65,105,225
 XboxRegularHidden=1
+
+; ============================================================
+; Google
+; ============================================================
+
+DocsShape=Hexagon
+DocsMaskMeter=Shape
+DocsMask=Regular Hexagon
+DocsMaskStyle=Blank
+DocsMaskBase=255,255,255
+DocsShapeGradient1Base=225,65,105
+DocsShapeGradient2Base=65,105,225
+DocsRegularHidden=1
+
+DriveShape=Hexagon
+DriveMaskMeter=Shape
+DriveMask=Regular Hexagon
+DriveMaskStyle=Blank
+DriveMaskBase=255,255,255
+DriveShapeGradient1Base=225,65,105
+DriveShapeGradient2Base=65,105,225
+DriveRegularHidden=1
+
+GmailShape=Hexagon
+GmailMaskMeter=Shape
+GmailMask=Regular Hexagon
+GmailMaskStyle=Blank
+GmailMaskBase=255,255,255
+GmailShapeGradient1Base=225,65,105
+GmailShapeGradient2Base=65,105,225
+GmailRegularHidden=1
+
+MapsShape=Hexagon
+MapsMaskMeter=Shape
+MapsMask=Regular Hexagon
+MapsMaskStyle=Blank
+MapsMaskBase=255,255,255
+MapsShapeGradient1Base=225,65,105
+MapsShapeGradient2Base=65,105,225
+MapsRegularHidden=1
+
+PhotosShape=Hexagon
+PhotosMaskMeter=Shape
+PhotosMask=Regular Hexagon
+PhotosMaskStyle=Blank
+PhotosMaskBase=255,255,255
+PhotosShapeGradient1Base=225,65,105
+PhotosShapeGradient2Base=65,105,225
+PhotosRegularHidden=1
+
+SheetsShape=Hexagon
+SheetsMaskMeter=Shape
+SheetsMask=Regular Hexagon
+SheetsMaskStyle=Blank
+SheetsMaskBase=255,255,255
+SheetsShapeGradient1Base=225,65,105
+SheetsShapeGradient2Base=65,105,225
+SheetsRegularHidden=1
+
+SlidesShape=Hexagon
+SlidesMaskMeter=Shape
+SlidesMask=Regular Hexagon
+SlidesMaskStyle=Blank
+SlidesMaskBase=255,255,255
+SlidesShapeGradient1Base=225,65,105
+SlidesShapeGradient2Base=65,105,225
+SlidesRegularHidden=1
 
 ; ============================================================
 ; Minecraft
@@ -1686,6 +1764,15 @@ ExcelShapeGradient1Base=225,65,105
 ExcelShapeGradient2Base=65,105,225
 ExcelRegularHidden=1
 
+OneDriveShape=Hexagon
+OneDriveMaskMeter=Shape
+OneDriveMask=Regular Hexagon
+OneDriveMaskStyle=Blank
+OneDriveMaskBase=255,255,255
+OneDriveShapeGradient1Base=225,65,105
+OneDriveShapeGradient2Base=65,105,225
+OneDriveRegularHidden=1
+
 OneNoteShape=Hexagon
 OneNoteMaskMeter=Shape
 OneNoteMask=Regular Hexagon
@@ -1771,14 +1858,14 @@ GuildedShapeGradient1Base=225,65,105
 GuildedShapeGradient2Base=65,105,225
 GuildedRegularHidden=1
 
-MetaMessengerShape=Hexagon
-MetaMessengerMaskMeter=Shape
-MetaMessengerMask=Regular Hexagon
-MetaMessengerMaskStyle=Blank
-MetaMessengerMaskBase=255,255,255
-MetaMessengerShapeGradient1Base=225,65,105
-MetaMessengerShapeGradient2Base=65,105,225
-MetaMessengerRegularHidden=1
+MetaMessagerShape=Hexagon
+MetaMessagerMaskMeter=Shape
+MetaMessagerMask=Regular Hexagon
+MetaMessagerMaskStyle=Blank
+MetaMessagerMaskBase=255,255,255
+MetaMessagerShapeGradient1Base=225,65,105
+MetaMessagerShapeGradient2Base=65,105,225
+MetaMessagerRegularHidden=1
 
 RedditShape=Hexagon
 RedditMaskMeter=Shape
@@ -1891,6 +1978,24 @@ AnkiMaskBase=255,255,255
 AnkiShapeGradient1Base=225,65,105
 AnkiShapeGradient2Base=65,105,225
 AnkiRegularHidden=1
+
+Autodesk3dsMaxShape=Hexagon
+Autodesk3dsMaxMaskMeter=Shape
+Autodesk3dsMaxMask=Regular Hexagon
+Autodesk3dsMaxMaskStyle=Blank
+Autodesk3dsMaxMaskBase=255,255,255
+Autodesk3dsMaxShapeGradient1Base=225,65,105
+Autodesk3dsMaxShapeGradient2Base=65,105,225
+Autodesk3dsMaxRegularHidden=1
+
+AutodeskMayaShape=Hexagon
+AutodeskMayaMaskMeter=Shape
+AutodeskMayaMask=Regular Hexagon
+AutodeskMayaMaskStyle=Blank
+AutodeskMayaMaskBase=255,255,255
+AutodeskMayaShapeGradient1Base=225,65,105
+AutodeskMayaShapeGradient2Base=65,105,225
+AutodeskMayaRegularHidden=1
 
 BitDefenderShape=Hexagon
 BitDefenderMaskMeter=Shape
@@ -2045,6 +2150,15 @@ ManageRainmeterShapeGradient1Base=225,65,105
 ManageRainmeterShapeGradient2Base=65,105,225
 ManageRainmeterRegularHidden=1
 
+MatlabShape=Hexagon
+MatlabMaskMeter=Shape
+MatlabMask=Regular Hexagon
+MatlabMaskStyle=Blank
+MatlabMaskBase=255,255,255
+MatlabShapeGradient1Base=225,65,105
+MatlabShapeGradient2Base=65,105,225
+MatlabRegularHidden=1
+
 MedalShape=Hexagon
 MedalMaskMeter=Shape
 MedalMask=Regular Hexagon
@@ -2134,6 +2248,15 @@ RemNoteMaskBase=255,255,255
 RemNoteShapeGradient1Base=225,65,105
 RemNoteShapeGradient2Base=65,105,225
 RemNoteRegularHidden=1
+
+ScrivenerShape=Hexagon
+ScrivenerMaskMeter=Shape
+ScrivenerMask=Regular Hexagon
+ScrivenerMaskStyle=Blank
+ScrivenerMaskBase=255,255,255
+ScrivenerShapeGradient1Base=225,65,105
+ScrivenerShapeGradient2Base=65,105,225
+ScrivenerRegularHidden=1
 
 SlackShape=Hexagon
 SlackMaskMeter=Shape
