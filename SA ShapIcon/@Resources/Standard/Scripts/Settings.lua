@@ -51,6 +51,14 @@ settingSelect = {
 		hiddenLine = "0",
         updateDivider = "-1"
 	},
+	["Google"] = {
+		pageIcon = "Docs",
+        showPage1 = "1",
+        showPage2 = "0",
+        showPage3 = "1",
+		hiddenLine = "0",
+        updateDivider = "-1"
+	},
 	["Media"] = {
 		pageIcon = "AIMP",
         showPage1 = "1",
@@ -70,8 +78,8 @@ settingSelect = {
 	["Office"] = {
 		pageIcon = "Excel",
         showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+        showPage2 = "1",
+        showPage3 = "0",
 		hiddenLine = "0",
         updateDivider = "-1"
 	},
@@ -127,6 +135,8 @@ settingSelect = {
 
 function setSettings(selectedSettings)
 	SKIN:Bang('!WriteKeyValue Variables PageCategory "' .. selectedSettings .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMC "' .. selectedSettings .. '" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMC "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingSelect[selectedSettings]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingSelect[selectedSettings]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingSelect[selectedSettings]['showPage3'] .. '" "#@#Settings Variables.inc"')
@@ -173,6 +183,9 @@ function setSettingsGaming()
 
 end
 
+--;function setSettingsGoogle()
+--;end
+
 function setSettingsMedia()
     SKIN:Bang('!WriteKeyValue Variables MediaPage1 "0" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables MediaPage2 "1" "#@#Settings Variables.inc"')
@@ -181,9 +194,9 @@ function setSettingsMedia()
 end
 
 function setSettingsMinecraft()
-	SKIN:Bang('!WriteKeyValue Variables MinecraftPage1 "0" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MinecraftPage2 "1" "#@#Settings Variables.inc"')
-
+    SKIN:Bang('!WriteKeyValue Variables MinecraftPage1 "0" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables MinecraftPage2 "1" "#@#Settings Variables.inc"')
+	
 end
 
 --;function setSettingsOffice()
@@ -201,6 +214,11 @@ function setSettingsOther()
 	SKIN:Bang('!WriteKeyValue Variables OtherPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage4 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage5 "1" "#@#Settings Variables.inc"')
+
+end
+
+function setSettingsPlus()
+    SKIN:Bang('!ActivateConfig "#ROOTCONFIG#" "Settings (Plus).ini"')
 
 end
 
@@ -237,6 +255,12 @@ settingCatrgory = {
         showPage2 = "0",
         showPage3 = "1",
 	},
+	["Google"] = {
+		categoryName = "Google",
+        showPage1 = "1",
+        showPage2 = "0",
+        showPage3 = "1",
+	},
 	["Media"] = {
 		categoryName = "Media",
         showPage1 = "1",
@@ -252,8 +276,8 @@ settingCatrgory = {
 	["Office"] = {
 		categoryName = "Office",
         showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+        showPage2 = "1",
+        showPage3 = "0",
 	},
 	["Social"] = {
 		categoryName = "Social",
@@ -270,7 +294,7 @@ settingCatrgory = {
 }
 
 function setCategory(selectedCatrgory)
-	SKIN:Bang('!WriteKeyValue Variables PageCategory "' .. settingCatrgory[selectedCatrgory]['categoryName'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PageCategory "' .. selectedCatrgory .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingCatrgory[selectedCatrgory]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingCatrgory[selectedCatrgory]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingCatrgory[selectedCatrgory]['showPage3'] .. '" "#@#Settings Variables.inc"')
@@ -444,6 +468,7 @@ hoverSettingsSelect = {
 		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
@@ -458,6 +483,7 @@ hoverSettingsSelect = {
 		colorPage8 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
@@ -503,8 +529,15 @@ function setPageGaming(selectedHover)
 
 end
 
+function setPageGoogle(selectedHover)
+	SKIN:Bang('!SetOption ShapeGoogle MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage6'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
 function setPageMedia(selectedHover)
-	SKIN:Bang('!SetOption ShapeMedia MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage6'] .. '"')
+	SKIN:Bang('!SetOption ShapeMedia MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -512,7 +545,7 @@ function setPageMedia(selectedHover)
 end
 
 function setPageMinecraft(selectedHover)
-	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
+	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -520,14 +553,14 @@ function setPageMinecraft(selectedHover)
 end
 
 function setPageOffice(selectedHover)
-	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
+	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageSocial(selectedHover)
-	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
+	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -535,7 +568,7 @@ function setPageSocial(selectedHover)
 end
 
 function setPageOther(selectedHover)
-	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
+	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage11'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -568,8 +601,6 @@ function closeSettings()
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OptionPage1 "0" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables OptionPage2 "1" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "Settings.ini"')
 
 	SKIN:Bang('!WriteKeyValue Variables NameShape "Alter Hexagon" "#@#Standard\\Special Variables.inc"')
