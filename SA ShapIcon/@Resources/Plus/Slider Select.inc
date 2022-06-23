@@ -302,14 +302,6 @@ Y=50r
 Text=Other
 Hidden=#CategoryPage3#
 
-[MeterSpecialText]
-Meter=String
-MeterStyle=SettingActive
-Group=Sliders
-X=55
-Y=515
-Text=Special
-
 [MeterOptionsText]
 Meter=String
 MeterStyle=SettingActive
