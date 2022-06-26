@@ -796,12 +796,12 @@ GameLibrariesRegularHidden=1
 
 GameHUB2Shape=Hexagon
 GameHUB2MaskMeter=Shape
-GameHUB2Mask=Split Hexagon
-GameHUB2MaskStyle=SplitHexagon
+GameHUB2Mask=Regular Hexagon
+GameHUB2MaskStyle=Blank
 GameHUB2MaskBase=255,255,255
 GameHUB2ShapeGradient1Base=225,65,105
 GameHUB2ShapeGradient2Base=65,105,225
-GameHUB2RegularHidden=0
+GameHUB2RegularHidden=1
 
 GModShape=Hexagon
 GModMaskMeter=Shape
