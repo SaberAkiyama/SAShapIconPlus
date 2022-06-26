@@ -34,6 +34,16 @@ function setAnkiColorManual(selectedCode)
 
 end
 
+function setAutodesk3dsMaxColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAutodesk3dsMax" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setAutodeskMayaColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAutodeskMaya" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setBitDefenderColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinBitDefender" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -114,6 +124,11 @@ function setManageRainmeterColorManual(selectedCode)
 
 end
 
+function setMatlabColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMatlab" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setMedalColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMedal" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -121,6 +136,11 @@ end
 
 function setMSIColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMSI" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setNiceHashColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinNiceHash" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -159,8 +179,18 @@ function setRazerColorManual(selectedCode)
 
 end
 
+function setRecycleBinColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinRecycleBin" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setRemNoteColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinRemNote" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setScrivenerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinScrivener" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -413,6 +443,28 @@ function setAnkiMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setAutodesk3dsMaxMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables Autodesk3dsMaxMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Autodesk3dsMaxMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Autodesk3dsMaxShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Autodesk3dsMaxMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Autodesk3dsMaxRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAutodeskMayaMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AutodeskMayaMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AutodeskMayaMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AutodeskMayaShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AutodeskMayaMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AutodeskMayaRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setBitDefenderMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables BitDefenderMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables BitDefenderMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -600,6 +652,17 @@ function setManageRainmeterMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setMatlabMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MatlabMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MatlabMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MatlabShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MatlabMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MatlabRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setMedalMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MedalMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MedalMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -617,6 +680,17 @@ function setMSIMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MSIShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MSIMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MSIRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setNiceHashMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables NiceHashMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NiceHashMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NiceHashShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NiceHashMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NiceHashRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -699,12 +773,34 @@ function setRazerMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setRecycleBinMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables RecycleBinMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RecycleBinMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RecycleBinShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RecycleBinMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RecycleBinRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setRemNoteMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables RemNoteMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables RemNoteMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables RemNoteShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables RemNoteMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables RemNoteRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setScrivenerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ScrivenerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ScrivenerMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ScrivenerShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ScrivenerMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ScrivenerRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -398,6 +398,15 @@ YuzuRegularHidden=1
 ; Gaming
 ; ============================================================
 
+ADFIShape=Hexagon
+ADFIMaskMeter=Shape
+ADFIMask=Regular Hexagon
+ADFIMaskStyle=Blank
+ADFIMaskBase=255,255,255
+ADFIShapeGradient1Base=225,65,105
+ADFIShapeGradient2Base=65,105,225
+ADFIRegularHidden=1
+
 AmongUsShape=Hexagon
 AmongUsMaskMeter=Shape
 AmongUsMask=Regular Hexagon
@@ -686,6 +695,24 @@ FallGuysShapeGradient1Base=225,65,105
 FallGuysShapeGradient2Base=65,105,225
 FallGuysRegularHidden=1
 
+FC3Shape=Hexagon
+FC3MaskMeter=Shape
+FC3Mask=Regular Hexagon
+FC3MaskStyle=Blank
+FC3MaskBase=255,255,255
+FC3ShapeGradient1Base=225,65,105
+FC3ShapeGradient2Base=65,105,225
+FC3RegularHidden=1
+
+FC3BDShape=Hexagon
+FC3BDMaskMeter=Shape
+FC3BDMask=Regular Hexagon
+FC3BDMaskStyle=Blank
+FC3BDMaskBase=255,255,255
+FC3BDShapeGradient1Base=225,65,105
+FC3BDShapeGradient2Base=65,105,225
+FC3BDRegularHidden=1
+
 FNAFSBShape=Hexagon
 FNAFSBMaskMeter=Shape
 FNAFSBMask=Regular Hexagon
@@ -769,12 +796,12 @@ GameLibrariesRegularHidden=1
 
 GameHUB2Shape=Hexagon
 GameHUB2MaskMeter=Shape
-GameHUB2Mask=Regular Hexagon
-GameHUB2MaskStyle=Blank
+GameHUB2Mask=Split Hexagon
+GameHUB2MaskStyle=SplitHexagon
 GameHUB2MaskBase=255,255,255
 GameHUB2ShapeGradient1Base=225,65,105
 GameHUB2ShapeGradient2Base=65,105,225
-GameHUB2RegularHidden=1
+GameHUB2RegularHidden=0
 
 GModShape=Hexagon
 GModMaskMeter=Shape
@@ -1190,6 +1217,15 @@ RockstarShapeGradient1Base=225,65,105
 RockstarShapeGradient2Base=65,105,225
 RockstarRegularHidden=1
 
+RollerChampionsShape=Hexagon
+RollerChampionsMaskMeter=Shape
+RollerChampionsMask=Regular Hexagon
+RollerChampionsMaskStyle=Blank
+RollerChampionsMaskBase=255,255,255
+RollerChampionsShapeGradient1Base=225,65,105
+RollerChampionsShapeGradient2Base=65,105,225
+RollerChampionsRegularHidden=1
+
 RSIShape=Hexagon
 RSIMaskMeter=Shape
 RSIMask=Regular Hexagon
@@ -1252,6 +1288,15 @@ SmiteMaskBase=255,255,255
 SmiteShapeGradient1Base=225,65,105
 SmiteShapeGradient2Base=65,105,225
 SmiteRegularHidden=1
+
+SCBlacklistShape=Hexagon
+SCBlacklistMaskMeter=Shape
+SCBlacklistMask=Regular Hexagon
+SCBlacklistMaskStyle=Blank
+SCBlacklistMaskBase=255,255,255
+SCBlacklistShapeGradient1Base=225,65,105
+SCBlacklistShapeGradient2Base=65,105,225
+SCBlacklistRegularHidden=1
 
 StarCitizenShape=Hexagon
 StarCitizenMaskMeter=Shape
@@ -2177,6 +2222,15 @@ MSIShapeGradient1Base=225,65,105
 MSIShapeGradient2Base=65,105,225
 MSIRegularHidden=1
 
+NiceHashShape=Hexagon
+NiceHashMaskMeter=Shape
+NiceHashMask=Regular Hexagon
+NiceHashMaskStyle=Blank
+NiceHashMaskBase=255,255,255
+NiceHashShapeGradient1Base=225,65,105
+NiceHashShapeGradient2Base=65,105,225
+NiceHashRegularHidden=1
+
 NotepadPPShape=Hexagon
 NotepadPPMaskMeter=Shape
 NotepadPPMask=Regular Hexagon
@@ -2239,6 +2293,15 @@ RazerMaskBase=255,255,255
 RazerShapeGradient1Base=225,65,105
 RazerShapeGradient2Base=65,105,225
 RazerRegularHidden=1
+
+RecycleBinShape=Hexagon
+RecycleBinMaskMeter=Shape
+RecycleBinMask=Regular Hexagon
+RecycleBinMaskStyle=Blank
+RecycleBinMaskBase=255,255,255
+RecycleBinShapeGradient1Base=225,65,105
+RecycleBinShapeGradient2Base=65,105,225
+RecycleBinRegularHidden=1
 
 RemNoteShape=Hexagon
 RemNoteMaskMeter=Shape
@@ -2383,3 +2446,4 @@ ZbrushMaskBase=255,255,255
 ZbrushShapeGradient1Base=225,65,105
 ZbrushShapeGradient2Base=65,105,225
 ZbrushRegularHidden=1
+NameIconMC=Destiny2
