@@ -343,9 +343,19 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1"
 	},
+	["Razer Cortex"] = {
+		iconName = "Razer Cortex",
+		iconMask = "RazerCortex",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
+		showPage5 = "1",
+		showPage6 = "1"
+	},
 	["Razer Synapse"] = {
 		iconName = "Razer Synapse",
-		iconMask = "Razer",
+		iconMask = "RazerSynapse",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -399,8 +409,8 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1"
 	},
 	["SpaceSniffer"] = {
@@ -500,8 +510,8 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1"
+		showPage5 = "1",
+		showPage6 = "0"
 	},
 	["Zbrush"] = {
 		iconName = "Zbrush",

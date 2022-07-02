@@ -174,8 +174,13 @@ function setProtonVPNColorManual(selectedCode)
 
 end
 
-function setRazerColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinRazer" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setRazerCortexColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinRazerCortex" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setRazerSynapseColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinRazerSynapse" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -762,12 +767,23 @@ function setProtonVPNMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
-function setRazerMask(selectedMask)
-	SKIN:Bang('!WriteKeyValue Variables RazerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables RazerMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables RazerShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables RazerMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables RazerRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+function setRazerCortexMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables RazerCortexMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerCortexMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerCortexShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerCortexMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerCortexRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setRazerSynapseMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables RazerSynapseMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerSynapseMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerSynapseShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerSynapseMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables RazerSynapseRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

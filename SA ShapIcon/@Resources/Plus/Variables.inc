@@ -796,12 +796,12 @@ GameLibrariesRegularHidden=1
 
 GameHUB2Shape=Hexagon
 GameHUB2MaskMeter=Shape
-GameHUB2Mask=Split Hexagon
-GameHUB2MaskStyle=SplitHexagon
+GameHUB2Mask=Regular Hexagon
+GameHUB2MaskStyle=Blank
 GameHUB2MaskBase=255,255,255
 GameHUB2ShapeGradient1Base=225,65,105
 GameHUB2ShapeGradient2Base=65,105,225
-GameHUB2RegularHidden=0
+GameHUB2RegularHidden=1
 
 GModShape=Hexagon
 GModMaskMeter=Shape
@@ -2285,14 +2285,23 @@ ProtonVPNShapeGradient1Base=225,65,105
 ProtonVPNShapeGradient2Base=65,105,225
 ProtonVPNRegularHidden=1
 
-RazerShape=Hexagon
-RazerMaskMeter=Shape
-RazerMask=Regular Hexagon
-RazerMaskStyle=Blank
-RazerMaskBase=255,255,255
-RazerShapeGradient1Base=225,65,105
-RazerShapeGradient2Base=65,105,225
-RazerRegularHidden=1
+RazerCortexShape=Hexagon
+RazerCortexMaskMeter=Shape
+RazerCortexMask=Regular Hexagon
+RazerCortexMaskStyle=Blank
+RazerCortexMaskBase=255,255,255
+RazerCortexShapeGradient1Base=225,65,105
+RazerCortexShapeGradient2Base=65,105,225
+RazerCortexRegularHidden=1
+
+RazerSynapseShape=Hexagon
+RazerSynapseMaskMeter=Shape
+RazerSynapseMask=Regular Hexagon
+RazerSynapseMaskStyle=Blank
+RazerSynapseMaskBase=255,255,255
+RazerSynapseShapeGradient1Base=225,65,105
+RazerSynapseShapeGradient2Base=65,105,225
+RazerSynapseRegularHidden=1
 
 RecycleBinShape=Hexagon
 RecycleBinMaskMeter=Shape

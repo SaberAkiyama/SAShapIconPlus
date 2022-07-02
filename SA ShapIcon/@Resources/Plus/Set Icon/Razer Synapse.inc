@@ -5,7 +5,7 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterRazerText]
+[MeterRazerSynapseText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
@@ -17,24 +17,24 @@ Text=Razer Synapse
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#RazerShape#90
-MyFillGradient=#ShapeGradientAngle# | #RazerShapeGradient1Base#,255 ; 1.0 | #RazerShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#RazerSynapseShape#90
+MyFillGradient=#ShapeGradientAngle# | #RazerSynapseShapeGradient1Base#,255 ; 1.0 | #RazerSynapseShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 
 [MeterMaskImage]
-Meter=#RazerMaskMeter#
-MeterStyle=Mask#RazerMaskStyle#90
-MaskFillColorSetting=Fill Color #RazerMaskBase#
-ImageTint=#RazerMaskBase#
+Meter=#RazerSynapseMaskMeter#
+MeterStyle=Mask#RazerSynapseMaskStyle#90
+MaskFillColorSetting=Fill Color #RazerSynapseMaskBase#
+ImageTint=#RazerSynapseMaskBase#
 X=0r
 Y=0r
-Hidden=#RazerRegularHidden#
+Hidden=#RazerSynapseRegularHidden#
 
-[MeterIconImageRazer]
+[MeterIconImageRazerSynapse]
 Meter=Image
 ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\Razer Synapse.png
-ImageTint=#RazerMaskBase#
+ImageTint=#RazerSynapseMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -55,7 +55,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#RazerMask#
+Text=#RazerSynapseMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -72,8 +72,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#RazerMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setRazerColorManual('Mask')"]
+Text=#RazerSynapseMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setRazerSynapseColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -94,8 +94,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#RazerShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setRazerColorManual('Gradient 1')"]
+Text=#RazerSynapseShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setRazerSynapseColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
@@ -113,15 +113,15 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#RazerShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setRazerColorManual('Gradient 2')"]
+Text=#RazerSynapseShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaOther "setRazerSynapseColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 
 ; ============================================================
 ; ============================================================
 
-[MeterSkinRazer]
+[MeterSkinRazerSynapse]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -131,6 +131,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables RazerMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#RazerMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables RazerShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#RazerShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables RazerShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#RazerShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables RazerSynapseMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#RazerSynapseMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables RazerSynapseShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#RazerSynapseShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables RazerSynapseShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#RazerSynapseShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]

@@ -427,15 +427,27 @@ MouseLeaveAction=[!SetOption MeterPageProtonVPNText FontColor "255,255,255"][!Up
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('ProtonVPN')"]
 Hidden=#OtherPage4#
 
-[MeterPageRazerText]
+[MeterPageRazerCortexText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=OtherPage4
+Text=Razer Cortex
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageRazerCortexText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageRazerCortexText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Razer Cortex')"]
+Hidden=#OtherPage4#
+
+[MeterPageRazerSynapseText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage4
 Text=Razer Synapse
 X=0r
 Y=20R
-MouseOverAction=[!SetOption MeterPageRazerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageRazerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+MouseOverAction=[!SetOption MeterPageRazerSynapseText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageRazerSynapseText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Razer Synapse')"]
 Hidden=#OtherPage4#
 
@@ -490,22 +502,22 @@ Hidden=#OtherPage4#
 [MeterPageSoulseekQtText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage4
+Group=OtherPage5
 Text=SoulseekQt
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageSoulseekQtText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSoulseekQtText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('SoulseekQt')"]
-Hidden=#OtherPage4#
+Hidden=#OtherPage5#
 
 [MeterPageSpaceSnifferText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage5
 Text=SpaceSniffer
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageSpaceSnifferText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSpaceSnifferText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('SpaceSniffer')"]
@@ -610,22 +622,22 @@ Hidden=#OtherPage5#
 [MeterPageWPSText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage5
+Group=OtherPage6
 Text=WPS Office
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageWPSText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWPSText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('WPS Office')"]
-Hidden=#OtherPage5#
+Hidden=#OtherPage6#
 
 [MeterPageZbrushText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage6
 Text=Zbrush
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageZbrushText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageZbrushText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Zbrush')"]
