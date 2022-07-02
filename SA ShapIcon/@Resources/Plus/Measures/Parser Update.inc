@@ -15,7 +15,7 @@ IfFalseAction=[!CommandMeasure LuaInfo "refreshConnect()"]
 [MeasureParserCore]
 Measure=WebParser
 Url=https://github.com/SaberAkiyama/SAShapIconPlus/releases/latest
-UserAgent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32"
+UserAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Edg/103.0.1264.37
 Flags=Resync | NoCookies
 RegExp=(?siU)"/SaberAkiyama/SAShapIconPlus/releases/tag/(.*)"
 UpdateRate=1
