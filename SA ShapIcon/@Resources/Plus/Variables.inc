@@ -140,6 +140,100 @@ XDShapeGradient2Base=65,105,225
 XDRegularHidden=1
 
 ; ============================================================
+; Assassin's Creed
+; ============================================================
+
+AssassinsCreedShape=Hexagon
+AssassinsCreedMaskMeter=Shape
+AssassinsCreedMask=Regular Hexagon
+AssassinsCreedMaskStyle=Blank
+AssassinsCreedMaskBase=255,255,255
+AssassinsCreedShapeGradient1Base=225,65,105
+AssassinsCreedShapeGradient2Base=65,105,225
+AssassinsCreedRegularHidden=1
+
+ACRevelationsShape=Hexagon
+ACRevelationsMaskMeter=Shape
+ACRevelationsMask=Regular Hexagon
+ACRevelationsMaskStyle=Blank
+ACRevelationsMaskBase=255,255,255
+ACRevelationsShapeGradient1Base=225,65,105
+ACRevelationsShapeGradient2Base=65,105,225
+ACRevelationsRegularHidden=1
+
+AC3Shape=Hexagon
+AC3MaskMeter=Shape
+AC3Mask=Regular Hexagon
+AC3MaskStyle=Blank
+AC3MaskBase=255,255,255
+AC3ShapeGradient1Base=225,65,105
+AC3ShapeGradient2Base=65,105,225
+AC3RegularHidden=1
+
+ACRogueShape=Hexagon
+ACRogueMaskMeter=Shape
+ACRogueMask=Regular Hexagon
+ACRogueMaskStyle=Blank
+ACRogueMaskBase=255,255,255
+ACRogueShapeGradient1Base=225,65,105
+ACRogueShapeGradient2Base=65,105,225
+ACRogueRegularHidden=1
+
+AC4BlackFlagShape=Hexagon
+AC4BlackFlagMaskMeter=Shape
+AC4BlackFlagMask=Regular Hexagon
+AC4BlackFlagMaskStyle=Blank
+AC4BlackFlagMaskBase=255,255,255
+AC4BlackFlagShapeGradient1Base=225,65,105
+AC4BlackFlagShapeGradient2Base=65,105,225
+AC4BlackFlagRegularHidden=1
+
+ACUnityShape=Hexagon
+ACUnityMaskMeter=Shape
+ACUnityMask=Regular Hexagon
+ACUnityMaskStyle=Blank
+ACUnityMaskBase=255,255,255
+ACUnityShapeGradient1Base=225,65,105
+ACUnityShapeGradient2Base=65,105,225
+ACUnityRegularHidden=1
+
+ACSyndicateShape=Hexagon
+ACSyndicateMaskMeter=Shape
+ACSyndicateMask=Regular Hexagon
+ACSyndicateMaskStyle=Blank
+ACSyndicateMaskBase=255,255,255
+ACSyndicateShapeGradient1Base=225,65,105
+ACSyndicateShapeGradient2Base=65,105,225
+ACSyndicateRegularHidden=1
+
+ACOriginsShape=Hexagon
+ACOriginsMaskMeter=Shape
+ACOriginsMask=Regular Hexagon
+ACOriginsMaskStyle=Blank
+ACOriginsMaskBase=255,255,255
+ACOriginsShapeGradient1Base=225,65,105
+ACOriginsShapeGradient2Base=65,105,225
+ACOriginsRegularHidden=1
+
+ACOdysseyShape=Hexagon
+ACOdysseyMaskMeter=Shape
+ACOdysseyMask=Regular Hexagon
+ACOdysseyMaskStyle=Blank
+ACOdysseyMaskBase=255,255,255
+ACOdysseyShapeGradient1Base=225,65,105
+ACOdysseyShapeGradient2Base=65,105,225
+ACOdysseyRegularHidden=1
+
+ACValhallaShape=Hexagon
+ACValhallaMaskMeter=Shape
+ACValhallaMask=Regular Hexagon
+ACValhallaMaskStyle=Blank
+ACValhallaMaskBase=255,255,255
+ACValhallaShapeGradient1Base=225,65,105
+ACValhallaShapeGradient2Base=65,105,225
+ACValhallaRegularHidden=1
+
+; ============================================================
 ; Browsing
 ; ============================================================
 
@@ -407,6 +501,15 @@ ADFIShapeGradient1Base=225,65,105
 ADFIShapeGradient2Base=65,105,225
 ADFIRegularHidden=1
 
+AimlabShape=Hexagon
+AimlabMaskMeter=Shape
+AimlabMask=Regular Hexagon
+AimlabMaskStyle=Blank
+AimlabMaskBase=255,255,255
+AimlabShapeGradient1Base=225,65,105
+AimlabShapeGradient2Base=65,105,225
+AimlabRegularHidden=1
+
 AmongUsShape=Hexagon
 AmongUsMaskMeter=Shape
 AmongUsMask=Regular Hexagon
@@ -442,6 +545,15 @@ AssettoMaskBase=255,255,255
 AssettoShapeGradient1Base=225,65,105
 AssettoShapeGradient2Base=65,105,225
 AssettoRegularHidden=1
+
+AvenColonyShape=Hexagon
+AvenColonyMaskMeter=Shape
+AvenColonyMask=Regular Hexagon
+AvenColonyMaskStyle=Blank
+AvenColonyMaskBase=255,255,255
+AvenColonyShapeGradient1Base=225,65,105
+AvenColonyShapeGradient2Base=65,105,225
+AvenColonyRegularHidden=1
 
 BattleNetShape=Hexagon
 BattleNetMaskMeter=Shape
@@ -541,6 +653,15 @@ CloneHeroMaskBase=255,255,255
 CloneHeroShapeGradient1Base=225,65,105
 CloneHeroShapeGradient2Base=65,105,225
 CloneHeroRegularHidden=1
+
+CoreGamesShape=Hexagon
+CoreGamesMaskMeter=Shape
+CoreGamesMask=Regular Hexagon
+CoreGamesMaskStyle=Blank
+CoreGamesMaskBase=255,255,255
+CoreGamesShapeGradient1Base=225,65,105
+CoreGamesShapeGradient2Base=65,105,225
+CoreGamesRegularHidden=1
 
 CSGOShape=Hexagon
 CSGOMaskMeter=Shape
@@ -947,6 +1068,24 @@ HuntShowdownShapeGradient1Base=225,65,105
 HuntShowdownShapeGradient2Base=65,105,225
 HuntShowdownRegularHidden=1
 
+JWEvolutionShape=Hexagon
+JWEvolutionMaskMeter=Shape
+JWEvolutionMask=Regular Hexagon
+JWEvolutionMaskStyle=Blank
+JWEvolutionMaskBase=255,255,255
+JWEvolutionShapeGradient1Base=225,65,105
+JWEvolutionShapeGradient2Base=65,105,225
+JWEvolutionRegularHidden=1
+
+JWEvolution2Shape=Hexagon
+JWEvolution2MaskMeter=Shape
+JWEvolution2Mask=Regular Hexagon
+JWEvolution2MaskStyle=Blank
+JWEvolution2MaskBase=255,255,255
+JWEvolution2ShapeGradient1Base=225,65,105
+JWEvolution2ShapeGradient2Base=65,105,225
+JWEvolution2RegularHidden=1
+
 LOLShape=Hexagon
 LOLMaskMeter=Shape
 LOLMask=Regular Hexagon
@@ -982,6 +1121,15 @@ LostArkMaskBase=255,255,255
 LostArkShapeGradient1Base=225,65,105
 LostArkShapeGradient2Base=65,105,225
 LostArkRegularHidden=1
+
+ManeaterShape=Hexagon
+ManeaterMaskMeter=Shape
+ManeaterMask=Regular Hexagon
+ManeaterMaskStyle=Blank
+ManeaterMaskBase=255,255,255
+ManeaterShapeGradient1Base=225,65,105
+ManeaterShapeGradient2Base=65,105,225
+ManeaterRegularHidden=1
 
 MassEffectLEShape=Hexagon
 MassEffectLEMaskMeter=Shape
@@ -1333,6 +1481,15 @@ TF2MaskBase=255,255,255
 TF2ShapeGradient1Base=225,65,105
 TF2ShapeGradient2Base=65,105,225
 TF2RegularHidden=1
+
+TCFShape=Hexagon
+TCFMaskMeter=Shape
+TCFMask=Regular Hexagon
+TCFMaskStyle=Blank
+TCFMaskBase=255,255,255
+TCFShapeGradient1Base=225,65,105
+TCFShapeGradient2Base=65,105,225
+TCFRegularHidden=1
 
 TW3Shape=Hexagon
 TW3MaskMeter=Shape

@@ -155,6 +155,9 @@ function setSettingsAdobe()
 
 end
 
+--;function setSettingsAssassinsCreed()
+--;end
+
 --;function setSettingsBrowsing()
 --;end
 
@@ -224,72 +227,96 @@ end
 
 --; ============================================================
 
+function setSettingsAssassinsCreed()
+	SKIN:Bang('!WriteKeyValue Variables PageCategory "Assassins Creed" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMC "Assassins Creed" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMC "AssassinsCreed" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIcon "Assassins Creed" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "0" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "-1" "Settings.ini"')
+
+    SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 settingCatrgory = {
 	["Adobe"] = {
 		categoryName = "Adobe",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+	},
+	["Assassin's Creed"] = {
+		categoryName = "Assassin's Creed",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
 	},
 	["Browsing"] = {
 		categoryName = "Browsing",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
 	},
 	["Elgato"] = {
 		categoryName = "Elgato",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
 	},
 	["Emulator"] = {
 		categoryName = "Emulator",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
 	},
 	["Gaming"] = {
 		categoryName = "Gaming",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
 	},
 	["Google"] = {
 		categoryName = "Google",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
 	},
 	["Media"] = {
 		categoryName = "Media",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
 	},
 	["Minecraft"] = {
 		categoryName = "Minecraft",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 	},
 	["Office"] = {
 		categoryName = "Office",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 	},
 	["Social"] = {
 		categoryName = "Social",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 	},
 	["Other"] = {
 		categoryName = "Other",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 	}
 }
 
@@ -469,6 +496,7 @@ hoverSettingsSelect = {
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage12 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
@@ -484,6 +512,7 @@ hoverSettingsSelect = {
 		colorPage9 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage12 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
@@ -491,6 +520,14 @@ hoverSettingsSelect = {
 
 function setPageAdobe(selectedHover)
 	SKIN:Bang('!SetOption ShapeAdobe MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage1'] .. '"')
+
+    SKIN:Bang('!UpdateMeter *')
+    SKIN:Bang('!Redraw')
+
+end
+
+function setPageAssassinsCreed(selectedHover)
+	SKIN:Bang('!SetOption ShapeAssassinsCreed MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage1'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
