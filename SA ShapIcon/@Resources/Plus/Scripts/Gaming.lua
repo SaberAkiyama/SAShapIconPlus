@@ -99,6 +99,11 @@ function setCODVanguardColorManual(selectedCode)
 
 end
 
+function setCelesteColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCeleste" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCloneHeroColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCloneHero" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -324,8 +329,13 @@ function setHOTSColorManual(selectedCode)
 
 end
 
-function setHonkaiColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinHonkai" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setHollowKnightColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinHollowKnight" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setHonkaiImpactColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinHonkaiImpact" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -406,6 +416,11 @@ end
 
 function setOriginColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinOrigin" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setOlympusColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinOlympus" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -564,6 +579,11 @@ function setTF2ColorManual(selectedCode)
 
 end
 
+function setTerrariaColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinTerraria" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setTCFColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinTCF" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -708,6 +728,12 @@ maskGamingSelect = {
 		gamingMaskShape = "Hexagon",
 		gamingRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		gamingMaskMeter = "Shape",
+		gamingMaskStyle = "InlineParallelogram",
+		gamingMaskShape = "Parallelogram",
+		gamingRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		gamingMaskMeter = "Shape",
 		gamingMaskStyle = "InlineSquare",
@@ -736,6 +762,12 @@ maskGamingSelect = {
 		gamingMaskMeter = "Shape",
 		gamingMaskStyle = "Blank",
 		gamingMaskShape = "Hexagon",
+		gamingRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		gamingMaskMeter = "Shape",
+		gamingMaskStyle = "Blank",
+		gamingMaskShape = "Parallelogram",
 		gamingRegularHidden = "1"
 	},
 	["Regular Square"] = {
@@ -946,6 +978,17 @@ function setCODVanguardMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables CODVanguardShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CODVanguardMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CODVanguardRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setCelesteMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CelesteMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CelesteMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CelesteShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CelesteMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CelesteRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -1446,6 +1489,17 @@ function setHOTSMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setHollowKnightMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables HollowKnightMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HollowKnightMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HollowKnightShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HollowKnightMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HollowKnightRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setHonkaiImpactMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables HonkaiImpactMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables HonkaiImpactMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -1617,6 +1671,17 @@ function setNMSMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables NMSShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NMSMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NMSRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setOlympusMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables OlympusMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OlympusMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OlympusShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OlympusMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OlympusRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -1969,6 +2034,17 @@ function setTF2Mask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables TF2Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables TF2MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables TF2RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTerrariaMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TerrariaMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TerrariaMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TerrariaShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TerrariaMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TerrariaRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -91,6 +91,18 @@ MouseLeaveAction=[!SetOption MeterPageDuckStationText FontColor "255,255,255"][!
 LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('DuckStation')"]
 Hidden=#EmulatorPage1#
 
+[MeterPageLaunchBoxText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=EmulatorPage1
+Text=LaunchBox
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageLaunchBoxText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageLaunchBoxText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('LaunchBox')"]
+Hidden=#EmulatorPage1#
+
 [MeterPagePCSX2Text]
 Meter=String
 MeterStyle=IconTextPageName
@@ -130,22 +142,22 @@ Hidden=#EmulatorPage1#
 [MeterPageVita3KText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=EmulatorPage1
+Group=EmulatorPage2
 Text=Vita3K
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageVita3KText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVita3KText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('Vita3K')"]
-Hidden=#EmulatorPage1#
+Hidden=#EmulatorPage2#
 
 [MeterPageXeniaText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=EmulatorPage2
 Text=Xenia
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageXeniaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageXeniaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('Xenia')"]

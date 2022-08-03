@@ -434,6 +434,15 @@ DuckStationShapeGradient1Base=225,65,105
 DuckStationShapeGradient2Base=65,105,225
 DuckStationRegularHidden=1
 
+LaunchBoxShape=Hexagon
+LaunchBoxMaskMeter=Shape
+LaunchBoxMask=Regular Hexagon
+LaunchBoxMaskStyle=Blank
+LaunchBoxMaskBase=255,255,255
+LaunchBoxShapeGradient1Base=225,65,105
+LaunchBoxShapeGradient2Base=65,105,225
+LaunchBoxRegularHidden=1
+
 PCSX2Shape=Hexagon
 PCSX2MaskMeter=Shape
 PCSX2Mask=Regular Hexagon
@@ -644,6 +653,15 @@ CODVanguardMaskBase=255,255,255
 CODVanguardShapeGradient1Base=225,65,105
 CODVanguardShapeGradient2Base=65,105,225
 CODVanguardRegularHidden=1
+
+CelesteShape=Hexagon
+CelesteMaskMeter=Shape
+CelesteMask=Regular Hexagon
+CelesteMaskStyle=Blank
+CelesteMaskBase=255,255,255
+CelesteShapeGradient1Base=225,65,105
+CelesteShapeGradient2Base=65,105,225
+CelesteRegularHidden=1
 
 CloneHeroShape=Hexagon
 CloneHeroMaskMeter=Shape
@@ -1050,6 +1068,15 @@ HOTSShapeGradient1Base=225,65,105
 HOTSShapeGradient2Base=65,105,225
 HOTSRegularHidden=1
 
+HollowKnightShape=Hexagon
+HollowKnightMaskMeter=Shape
+HollowKnightMask=Regular Hexagon
+HollowKnightMaskStyle=Blank
+HollowKnightMaskBase=255,255,255
+HollowKnightShapeGradient1Base=225,65,105
+HollowKnightShapeGradient2Base=65,105,225
+HollowKnightRegularHidden=1
+
 HonkaiImpactShape=Hexagon
 HonkaiImpactMaskMeter=Shape
 HonkaiImpactMask=Regular Hexagon
@@ -1202,6 +1229,15 @@ OriginMaskBase=255,255,255
 OriginShapeGradient1Base=225,65,105
 OriginShapeGradient2Base=65,105,225
 OriginRegularHidden=1
+
+OlympusShape=Hexagon
+OlympusMaskMeter=Shape
+OlympusMask=Regular Hexagon
+OlympusMaskStyle=Blank
+OlympusMaskBase=255,255,255
+OlympusShapeGradient1Base=225,65,105
+OlympusShapeGradient2Base=65,105,225
+OlympusRegularHidden=1
 
 OriBFShape=Hexagon
 OriBFMaskMeter=Shape
@@ -1481,6 +1517,15 @@ TF2MaskBase=255,255,255
 TF2ShapeGradient1Base=225,65,105
 TF2ShapeGradient2Base=65,105,225
 TF2RegularHidden=1
+
+TerrariaShape=Hexagon
+TerrariaMaskMeter=Shape
+TerrariaMask=Regular Hexagon
+TerrariaMaskStyle=Blank
+TerrariaMaskBase=255,255,255
+TerrariaShapeGradient1Base=225,65,105
+TerrariaShapeGradient2Base=65,105,225
+TerrariaRegularHidden=1
 
 TCFShape=Hexagon
 TCFMaskMeter=Shape
@@ -2180,6 +2225,15 @@ AnkiMaskBase=255,255,255
 AnkiShapeGradient1Base=225,65,105
 AnkiShapeGradient2Base=65,105,225
 AnkiRegularHidden=1
+
+AsepriteShape=Hexagon
+AsepriteMaskMeter=Shape
+AsepriteMask=Regular Hexagon
+AsepriteMaskStyle=Blank
+AsepriteMaskBase=255,255,255
+AsepriteShapeGradient1Base=225,65,105
+AsepriteShapeGradient2Base=65,105,225
+AsepriteRegularHidden=1
 
 Autodesk3dsMaxShape=Hexagon
 Autodesk3dsMaxMaskMeter=Shape

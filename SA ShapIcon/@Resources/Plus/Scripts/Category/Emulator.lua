@@ -39,6 +39,12 @@ selectEmulator = {
 		showPage1 = "0",
 		showPage2 = "1"
 	},
+	["LaunchBox"] = {
+		iconName = "LaunchBox",
+		iconMask = "LaunchBox",
+		showPage1 = "0",
+		showPage2 = "1"
+	},
 	["PCSX2"] = {
 		iconName = "PCSX2",
 		iconMask = "PCSX2",
@@ -60,8 +66,8 @@ selectEmulator = {
 	["Vita3K"] = {
 		iconName = "Vita3K",
 		iconMask = "Vita3K",
-		showPage1 = "0",
-		showPage2 = "1"
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Xenia"] = {
 		iconName = "Xenia",

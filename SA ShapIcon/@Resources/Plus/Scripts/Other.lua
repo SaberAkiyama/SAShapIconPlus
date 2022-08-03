@@ -34,6 +34,11 @@ function setAnkiColorManual(selectedCode)
 
 end
 
+function setAsepriteColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAseprite" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setAutodesk3dsMaxColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinAutodesk3dsMax" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -348,6 +353,12 @@ maskOtherSelect = {
 		otherMaskShape = "Hexagon",
 		otherRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "InlineParallelogram",
+		otherMaskShape = "Parallelogram",
+		otherRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		otherMaskMeter = "Shape",
 		otherMaskStyle = "InlineSquare",
@@ -376,6 +387,12 @@ maskOtherSelect = {
 		otherMaskMeter = "Shape",
 		otherMaskStyle = "Blank",
 		otherMaskShape = "Hexagon",
+		otherRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		otherMaskMeter = "Shape",
+		otherMaskStyle = "Blank",
+		otherMaskShape = "Parallelogram",
 		otherRegularHidden = "1"
 	},
 	["Regular Square"] = {
@@ -443,6 +460,17 @@ function setAnkiMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AnkiShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AnkiMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AnkiRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAsepriteMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AsepriteMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AsepriteMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AsepriteShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AsepriteMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AsepriteRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -44,6 +44,11 @@ function setDuckStationColorManual(selectedCode)
 
 end
 
+function setLaunchBoxColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinLaunchBox" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setPCSX2ColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinPCSX2" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -153,6 +158,12 @@ maskEmulatorSelect = {
 		emulatorMaskShape = "Hexagon",
 		emulatorRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		emulatorMaskMeter = "Shape",
+		emulatorMaskStyle = "InlineParallelogram",
+		emulatorMaskShape = "Parallelogram",
+		emulatorRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		emulatorMaskMeter = "Shape",
 		emulatorMaskStyle = "InlineSquare",
@@ -181,6 +192,12 @@ maskEmulatorSelect = {
 		emulatorMaskMeter = "Shape",
 		emulatorMaskStyle = "Blank",
 		emulatorMaskShape = "Hexagon",
+		emulatorRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		emulatorMaskMeter = "Shape",
+		emulatorMaskStyle = "Blank",
+		emulatorMaskShape = "Parallelogram",
 		emulatorRegularHidden = "1"
 	},
 	["Regular Square"] = {
@@ -270,6 +287,17 @@ function setDuckStationMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables DuckStationShape "' .. maskEmulatorSelect[selectedMask]['emulatorMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables DuckStationMaskStyle "' .. maskEmulatorSelect[selectedMask]['emulatorMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables DuckStationRegularHidden "' .. maskEmulatorSelect[selectedMask]['emulatorRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setLaunchBoxMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables LaunchBoxMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LaunchBoxMaskMeter "' .. maskEmulatorSelect[selectedMask]['emulatorMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LaunchBoxShape "' .. maskEmulatorSelect[selectedMask]['emulatorMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LaunchBoxMaskStyle "' .. maskEmulatorSelect[selectedMask]['emulatorMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables LaunchBoxRegularHidden "' .. maskEmulatorSelect[selectedMask]['emulatorRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

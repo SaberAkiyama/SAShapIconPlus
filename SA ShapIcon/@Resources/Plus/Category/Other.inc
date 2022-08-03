@@ -79,6 +79,18 @@ MouseLeaveAction=[!SetOption MeterPageAnkiText FontColor "255,255,255"][!UpdateM
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Anki')"]
 Hidden=#OtherPage1#
 
+[MeterPageAsepriteText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=OtherPage1
+Text=Aseprite
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageAsepriteText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageAsepriteText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Aseprite')"]
+Hidden=#OtherPage1#
+
 [MeterPageAutodesk3dsMaxText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -130,22 +142,22 @@ Hidden=#OtherPage1#
 [MeterPageBlenderText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage1
+Group=OtherPage2
 Text=Blender
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageBlenderText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageBlenderText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Blender')"]
-Hidden=#OtherPage1#
+Hidden=#OtherPage2#
 
 [MeterPageCSPText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage2
 Text=Clip Studio Paint
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageCSPText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageCSPText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Clip Studio Paint')"]
@@ -250,22 +262,22 @@ Hidden=#OtherPage2#
 [MeterPageInkscapeText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage2
+Group=OtherPage3
 Text=Inkscape
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageInkscapeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageInkscapeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Inkscape')"]
-Hidden=#OtherPage2#
+Hidden=#OtherPage3#
 
 [MeterPageKritaText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage3
 Text=Krita
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageKritaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageKritaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Krita')"]
@@ -370,22 +382,22 @@ Hidden=#OtherPage3#
 [MeterPageNVIDIAText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage3
+Group=OtherPage4
 Text=NVIDIA GeForce Experience
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageNVIDIAText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageNVIDIAText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('NVIDIA GeForce Experience')"]
-Hidden=#OtherPage3#
+Hidden=#OtherPage4#
 
 [MeterPageOBSText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage4
 Text=Open Broadcaster Software
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageOBSText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOBSText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('OBS')"]
@@ -490,22 +502,22 @@ Hidden=#OtherPage4#
 [MeterPageSlackText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage4
+Group=OtherPage5
 Text=Slack
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageSlackText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSlackText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Slack')"]
-Hidden=#OtherPage4#
+Hidden=#OtherPage5#
 
 [MeterPageSoulseekQtText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage5
 Text=SoulseekQt
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageSoulseekQtText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSoulseekQtText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('SoulseekQt')"]
@@ -610,22 +622,22 @@ Hidden=#OtherPage5#
 [MeterPageWallpaperEngineText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage5
+Group=OtherPage6
 Text=Wallpaper Engine
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageWallpaperEngineText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWallpaperEngineText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Wallpaper Engine')"]
-Hidden=#OtherPage5#
+Hidden=#OtherPage6#
 
 [MeterPageWPSText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage6
 Text=WPS Office
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageWPSText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWPSText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('WPS Office')"]
