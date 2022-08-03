@@ -134,7 +134,7 @@ _For more examples, please refer to the [Wiki](https://github.com/SaberAkiyama/S
 
 - [x] Add Gradiant Shapes and Colors
 - [x] Transparency
-- [ ] [REDACTED]
+- [x] Add Parallelogram Mask Shape
 - [ ] [REDACTED]
 - [ ] [REDACTED]
 
