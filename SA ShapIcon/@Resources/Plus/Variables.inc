@@ -1302,6 +1302,15 @@ POEShapeGradient1Base=225,65,105
 POEShapeGradient2Base=65,105,225
 POERegularHidden=1
 
+Pico8Shape=Hexagon
+Pico8MaskMeter=Shape
+Pico8Mask=Regular Hexagon
+Pico8MaskStyle=Blank
+Pico8MaskBase=255,255,255
+Pico8ShapeGradient1Base=225,65,105
+Pico8ShapeGradient2Base=65,105,225
+Pico8RegularHidden=1
+
 PUBGShape=Hexagon
 PUBGMaskMeter=Shape
 PUBGMask=Regular Hexagon
@@ -1590,6 +1599,15 @@ VortexShapeGradient1Base=225,65,105
 VortexShapeGradient2Base=65,105,225
 VortexRegularHidden=1
 
+VoxatronShape=Hexagon
+VoxatronMaskMeter=Shape
+VoxatronMask=Regular Hexagon
+VoxatronMaskStyle=Blank
+VoxatronMaskBase=255,255,255
+VoxatronShapeGradient1Base=225,65,105
+VoxatronShapeGradient2Base=65,105,225
+VoxatronRegularHidden=1
+
 WarThunderShape=Hexagon
 WarThunderMaskMeter=Shape
 WarThunderMask=Regular Hexagon
@@ -1715,14 +1733,23 @@ SlidesRegularHidden=1
 ; Minecraft
 ; ============================================================
 
-MinecraftShape=Hexagon
-MinecraftMaskMeter=Shape
-MinecraftMask=Regular Hexagon
-MinecraftMaskStyle=Blank
-MinecraftMaskBase=255,255,255
-MinecraftShapeGradient1Base=225,65,105
-MinecraftShapeGradient2Base=65,105,225
-MinecraftRegularHidden=1
+MinecraftBedrockShape=Hexagon
+MinecraftBedrockMaskMeter=Shape
+MinecraftBedrockMask=Regular Hexagon
+MinecraftBedrockMaskStyle=Blank
+MinecraftBedrockMaskBase=255,255,255
+MinecraftBedrockShapeGradient1Base=225,65,105
+MinecraftBedrockShapeGradient2Base=65,105,225
+MinecraftBedrockRegularHidden=1
+
+MinecraftJavaShape=Hexagon
+MinecraftJavaMaskMeter=Shape
+MinecraftJavaMask=Regular Hexagon
+MinecraftJavaMaskStyle=Blank
+MinecraftJavaMaskBase=255,255,255
+MinecraftJavaShapeGradient1Base=225,65,105
+MinecraftJavaShapeGradient2Base=65,105,225
+MinecraftJavaRegularHidden=1
 
 MinecraftDungeonsShape=Hexagon
 MinecraftDungeonsMaskMeter=Shape

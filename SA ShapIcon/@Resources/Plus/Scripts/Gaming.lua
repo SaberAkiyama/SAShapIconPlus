@@ -459,6 +459,11 @@ function setPOEColorManual(selectedCode)
 
 end
 
+function setPico8ColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinPico8" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setPUBGColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinPUBG" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -616,6 +621,11 @@ end
 
 function setVortexColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVortex" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setVoxatronColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVoxatron" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1775,6 +1785,17 @@ function setPOEMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setPico8Mask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables Pico8Mask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Pico8MaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Pico8Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Pico8MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Pico8RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setPUBGMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables PUBGMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables PUBGMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -2122,6 +2143,17 @@ function setVortexMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables VortexShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VortexMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VortexRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVoxatronMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VoxatronMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VoxatronMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VoxatronShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VoxatronMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VoxatronRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -3,12 +3,16 @@
 --; ============================================================
 
 selectMinecraft = {
-	["Minecraft"] = {
-        iconName = "Minecraft",
-		iconMask = "Minecraft"
+	["Minecraft (Bedrock Edition)"] = {
+		iconName = "Minecraft (Bedrock Edition)",
+		iconMask = "MinecraftBedrock"
+	},
+	["Minecraft (Java Edition)"] = {
+		iconName = "Minecraft (Java Edition)",
+		iconMask = "MinecraftJava"
 	},
 	["Minecraft Dungeons"] = {
-        iconName = "Minecraft Dungeons",
+		iconName = "Minecraft Dungeons",
 		iconMask = "MinecraftDungeons"
 	}
 }

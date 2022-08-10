@@ -14,8 +14,13 @@ colorSelect = {
 	}
 }
 
-function setMinecraftColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinMinecraft" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setMinecraftBedrockColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMinecraftBedrock" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setMinecraftJavaColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMinecraftJava" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -133,6 +138,12 @@ maskMinecraftSelect = {
 		minecraftMaskShape = "Hexagon",
 		minecraftRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		minecraftMaskMeter = "Shape",
+		minecraftMaskStyle = "InlineParallelogram",
+		minecraftMaskShape = "Parallelogram",
+		minecraftRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		minecraftMaskMeter = "Shape",
 		minecraftMaskStyle = "InlineSquare",
@@ -163,6 +174,12 @@ maskMinecraftSelect = {
 		minecraftMaskShape = "Hexagon",
 		minecraftRegularHidden = "1"
 	},
+	["Regular Parallelogram"] = {
+		minecraftMaskMeter = "Shape",
+		minecraftMaskStyle = "Blank",
+		minecraftMaskShape = "Parallelogram",
+		minecraftRegularHidden = "1"
+	},
 	["Regular Square"] = {
 		minecraftMaskMeter = "Shape",
 		minecraftMaskStyle = "Blank",
@@ -189,12 +206,23 @@ maskMinecraftSelect = {
 	}
 }
 
-function setMinecraftMask(selectedMask)
-	SKIN:Bang('!WriteKeyValue Variables MinecraftMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MinecraftMaskMeter "' .. maskMinecraftSelect[selectedMask]['minecraftMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MinecraftShape "' .. maskMinecraftSelect[selectedMask]['minecraftMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MinecraftMaskStyle "' .. maskMinecraftSelect[selectedMask]['minecraftMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables MinecraftRegularHidden "' .. maskMinecraftSelect[selectedMask]['minecraftRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+function setMinecraftBedrockMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MinecraftBedrockMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftBedrockMaskMeter "' .. maskMinecraftSelect[selectedMask]['minecraftMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftBedrockShape "' .. maskMinecraftSelect[selectedMask]['minecraftMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftBedrockMaskStyle "' .. maskMinecraftSelect[selectedMask]['minecraftMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftBedrockRegularHidden "' .. maskMinecraftSelect[selectedMask]['minecraftRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMinecraftJavaMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MinecraftJavaMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftJavaMaskMeter "' .. maskMinecraftSelect[selectedMask]['minecraftMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftJavaShape "' .. maskMinecraftSelect[selectedMask]['minecraftMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftJavaMaskStyle "' .. maskMinecraftSelect[selectedMask]['minecraftMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftJavaRegularHidden "' .. maskMinecraftSelect[selectedMask]['minecraftRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

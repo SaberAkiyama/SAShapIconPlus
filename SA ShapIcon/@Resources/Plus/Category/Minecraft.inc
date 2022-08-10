@@ -19,15 +19,25 @@ UpdateDivider=5
 ; Minecraft Page
 ; ============================================================
 
-[MeterPageMinecraftText]
+[MeterPageMinecraftBedrockText]
 Meter=String
 MeterStyle=IconTextPageName
-Text=Minecraft
+Text=Minecraft (Bedrock Edition)
 X=320
 Y=100
-MouseOverAction=[!SetOption MeterPageMinecraftText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageMinecraftText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraft('Minecraft')"]
+MouseOverAction=[!SetOption MeterPageMinecraftBedrockText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageMinecraftBedrockText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraft('Minecraft (Bedrock Edition)')"]
+
+[MeterPageMinecraftJavaText]
+Meter=String
+MeterStyle=IconTextPageName
+Text=Minecraft (Java Edition)
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageMinecraftJavaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageMinecraftJavaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraft('Minecraft (Java Edition)')"]
 
 [MeterPageMinecraftDungeonsText]
 Meter=String
@@ -56,7 +66,7 @@ MeterStyle=IconTextPageName
 Group=MinecraftPage1
 Text=Badlion Client
 X=320
-Y=230
+Y=280
 MouseOverAction=[!SetOption MeterPageBadlionText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageBadlionText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraftClient('Badlion Client')"]
@@ -132,7 +142,7 @@ MeterStyle=IconTextPageName
 Group=MinecraftPage2
 Text=Better Minecraft
 X=320
-Y=230
+Y=280
 MouseOverAction=[!SetOption MeterPageBetterMinecraftText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageBetterMinecraftText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraftModpack('Better Minecraft')"]
