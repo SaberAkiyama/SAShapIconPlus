@@ -203,9 +203,10 @@ end
 
 hoverOptionSelect = {
 	["Over"] = {
+		colorFileLocation = "65,105,225",
+		colorChromeType = "65,105,225",
 		colorHeightIcon = "65,105,225",
 		colorGradientAngleValue = "65,105,225",
-		colorFileLocation = "65,105,225",
 		colorBlenderVersion = "65,105,225",
 		colorDiscordVersion = "65,105,225",
 		colorOperaGXVersion = "65,105,225",
@@ -215,9 +216,10 @@ hoverOptionSelect = {
 		colorWhatsAppVersion = "65,105,225"
 	},
 	["Leave"] = {
+		colorFileLocation = "255,255,255",
+		colorChromeType = "255,255,255",
 		colorHeightIcon = "255,255,255",
 		colorGradientAngleValue = "255,255,255",
-		colorFileLocation = "255,255,255",
 		colorBlenderVersion = "255,255,255",
 		colorDiscordVersion = "255,255,255",
 		colorOperaGXVersion = "255,255,255",
@@ -228,6 +230,20 @@ hoverOptionSelect = {
 	}
 }
 
+function setHoverOptionFileLocation(selectedHover)
+	SKIN:Bang('!SetOption MeterFileLocationActive FontColor "' .. hoverOptionSelect[selectedHover]['colorFileLocation'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setHoverOptionChromeType(selectedHover)
+	SKIN:Bang('!SetOption MeterChromeTypeValue FontColor "' .. hoverOptionSelect[selectedHover]['colorChromeType'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
 function setHoverOptionHeightIcon(selectedHover)
 	SKIN:Bang('!SetOption MeterHeightValue FontColor "' .. hoverOptionSelect[selectedHover]['colorHeightIcon'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
@@ -237,13 +253,6 @@ end
 
 function setHoverOptionGradientAngleValue(selectedHover)
 	SKIN:Bang('!SetOption MeterGradientAngleValue FontColor "' .. hoverOptionSelect[selectedHover]['colorGradientAngleValue'] .. '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverOptionFileLocation(selectedHover)
-	SKIN:Bang('!SetOption MeterFileLocationActive FontColor "' .. hoverOptionSelect[selectedHover]['colorFileLocation'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
@@ -299,7 +308,31 @@ function setHoverOptionWhatsApp(selectedHover)
 end
 
 --; ============================================================
---; Lua Height Icon
+--; Lua Chrome System Type
+--; ============================================================
+
+chromeSTSelect = {
+	["x86"] = {
+		stVersionText = "x86",
+		stVersion = "Program Files (x86)"
+	},
+	["x64"] = {
+		stVersionText = "x64",
+		stVersion = "Program Files"
+	}
+}
+
+function setChromeST(selectedSTVersion)
+	SKIN:Bang('!WriteKeyValue Variables ChromePFText "' .. chromeSTSelect[selectedSTVersion]['stVersionText'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromePF "' .. chromeSTSelect[selectedSTVersion]['stVersion'] .. '" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!RefreshGroup SIChrome')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+--; Lua Icon Size
 --; ============================================================
 
 heightSelect = {

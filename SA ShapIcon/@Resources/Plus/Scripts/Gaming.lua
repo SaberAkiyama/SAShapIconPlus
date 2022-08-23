@@ -119,6 +119,11 @@ function setCSGOColorManual(selectedCode)
 
 end
 
+function setCOTLColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCOTL" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCyberpunkColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCyberpunk" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -354,6 +359,11 @@ function setJWEvolution2ColorManual(selectedCode)
 
 end
 
+function setKovaakColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinKovaak" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setLOLColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinLOL" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -539,6 +549,11 @@ function setRustColorManual(selectedCode)
 
 end
 
+function setSaintsRowColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinSaintsRow" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setSatisfactoryColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinSatisfactory" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -574,6 +589,11 @@ function setSteamColorManual(selectedCode)
 
 end
 
+function setStrayColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinStray" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setSAPColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinSAP" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -589,6 +609,11 @@ function setTerrariaColorManual(selectedCode)
 
 end
 
+function setTETRIOColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinTETRIO" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setTCFColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinTCF" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -601,6 +626,16 @@ end
 
 function setUbisoftColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinUbisoft" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setUltrakillColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinUltrakill" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setUnrailedColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinUnrailed" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -626,6 +661,11 @@ end
 
 function setVoxatronColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVoxatron" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setVRChatColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVRChat" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1032,6 +1072,17 @@ function setCSGOMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables CSGOShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CSGOMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CSGORegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setCOTLMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables COTLMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables COTLMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables COTLShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables COTLMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables COTLRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -1554,6 +1605,17 @@ function setJWEvolution2Mask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setKovaakMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables KovaakMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KovaakMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KovaakShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KovaakMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables KovaakRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setLOLMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables LOLMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables LOLMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -1961,6 +2023,17 @@ function setRustMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setSaintsRowMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SaintsRowMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SaintsRowMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SaintsRowShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SaintsRowMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SaintsRowRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setSatisfactoryMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SatisfactoryMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SatisfactoryMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -2038,6 +2111,17 @@ function setSteamMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setStrayMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables StrayMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StrayMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StrayShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StrayMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StrayRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setSAPMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SAPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SAPMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -2071,6 +2155,17 @@ function setTerrariaMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setTETRIOMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TETRIOMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TETRIOMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TETRIOShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TETRIOMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TETRIORegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setTCFMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables TCFMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables TCFMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -2099,6 +2194,28 @@ function setUbisoftMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables UbisoftShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UbisoftMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UbisoftRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setUltrakillMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables UltrakillMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UltrakillMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UltrakillShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UltrakillMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UltrakillRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setUnrailedMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables UnrailedMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrailedMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrailedShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrailedMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnrailedRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -2154,6 +2271,17 @@ function setVoxatronMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables VoxatronShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VoxatronMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VoxatronRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVRChatMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VRChatMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRChatMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRChatShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRChatMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRChatRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -13,134 +13,181 @@ end
 settingSelect = {
 	["Adobe"] = {
 		pageIcon = "After Effects",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "AfterEffects",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Browsing"] = {
 		pageIcon = "Apple Safari",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "Safari",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Elgato"] = {
 		pageIcon = "4K Capture Utility",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "4KCU",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Emulator"] = {
 		pageIcon = "BlueStacks",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "BlueStacks",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Gaming"] = {
 		pageIcon = "GameHUB 2",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		pageIconMC = "GameHUB2",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Google"] = {
 		pageIcon = "Docs",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		pageIconMC = "Docs",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Media"] = {
 		pageIcon = "AIMP",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		pageIconMC = "AIMP",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Minecraft"] = {
-		pageIcon = "Minecraft",
-        showPage1 = "1",
-        showPage2 = "0",
-        showPage3 = "1",
+		pageIcon = "Minecraft (Bedrock Edition)",
+		pageIconMC = "MinecraftBedrock",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Office"] = {
 		pageIcon = "Excel",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0",
+		pageIconMC = "Excel",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Social"] = {
 		pageIcon = "Cisco WebEx Teams",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0",
+		pageIconMC = "WebEx",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Other"] = {
 		pageIcon = "Manage Rainmeter",
-        showPage1 = "1",
-        showPage2 = "1",
-        showPage3 = "0",
+		pageIconMC = "ManageRainmeter",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Info"] = {
 		pageIcon = "Info",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "Info",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "1",
-        updateDivider = "1"
+		updateDivider = "1"
 	},
 	["Options"] = {
 		pageIcon = "Options",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "Options",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "1",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Special"] = {
 		pageIcon = "Special",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "Special",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "1",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	},
 	["Plus"] = {
 		pageIcon = "Plus",
-        showPage1 = "0",
-        showPage2 = "1",
-        showPage3 = "1",
+		pageIconMC = "Plus",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "1",
-        updateDivider = "-1"
+		updateDivider = "-1"
 	}
 }
 
 function setSettings(selectedSettings)
 	SKIN:Bang('!WriteKeyValue Variables PageCategory "' .. selectedSettings .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMC "' .. selectedSettings .. '" "#@#Standard\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconMC "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMC "' .. settingSelect[selectedSettings]['pageIconMC'] .. '" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingSelect[selectedSettings]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingSelect[selectedSettings]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingSelect[selectedSettings]['showPage3'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "' .. settingSelect[selectedSettings]['gamingPage1Hidden'] .. '" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "' .. settingSelect[selectedSettings]['gamingPage2Hidden'] .. '" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "' .. settingSelect[selectedSettings]['hiddenLine'] .. '" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "' .. settingSelect[selectedSettings]['updateDivider'] .. '" "Settings.ini"')
 
@@ -183,6 +230,8 @@ function setSettingsGaming()
 	SKIN:Bang('!WriteKeyValue Variables GamingPage10 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage11 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage12 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage13 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage14 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -235,6 +284,8 @@ function setSettingsAssassinsCreed()
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Assassins Creed" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "0" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "1" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "0" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "-1" "Settings.ini"')
 
@@ -631,12 +682,15 @@ end
 --; ============================================================
 
 function closeSettings()
-	SKIN:Bang('!DeactivateConfig "#ROOTCONFIG#" "Settings.ini"')
 	SKIN:Bang('!WriteKeyValue Variables PageCategory "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameCategoryMC "Adobe" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMC "AfterEffects" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "0" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "1" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "Settings.ini"')
 
@@ -646,8 +700,11 @@ function closeSettings()
 	SKIN:Bang('!WriteKeyValue Variables SpecNameShape "AlterHexagon" "#@#Standard\\Special Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SpecNumShape "3" "#@#Standard\\Special Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SpecIconNum "1" "#@#Standard\\Special Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SpecHiddenPageToggle "1" "#@#Standard\\Special Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SpecHiddenPage1 "0" "#@#Standard\\Special Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SpecHiddenPage2 "1" "#@#Standard\\Special Variables.inc"')
 
-    SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Standard\\Measures\\Action Timer Settings.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Standard\\Measures\\Action Timer Settings.inc"')
     SKIN:Bang('!WriteKeyValue Variables W1 "50" "#@#Standard\\Measures\\Action Timer Settings.inc"')
     SKIN:Bang('!WriteKeyValue Variables X1 "0" "#@#Standard\\Measures\\Action Timer Settings.inc"')
     SKIN:Bang('!WriteKeyValue Variables StayExpand "0" "#@#Settings Variables.inc"')
@@ -655,4 +712,6 @@ function closeSettings()
     SKIN:Bang('!ShowMeter ShapeSliderExpand')
     SKIN:Bang('!HideMeter ShapeSliderCollapse')
 
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!DeactivateConfig "#ROOTCONFIG#" "Settings.ini"')
 end

@@ -17,6 +17,8 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -26,6 +28,8 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -35,6 +39,8 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -44,6 +50,8 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -53,6 +61,8 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -62,6 +72,8 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -71,15 +83,19 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
 	["Minecraft"] = {
-		pageIcon = "Minecraft",
-		pageIconMask = "Minecraft",
+		pageIcon = "Minecraft (Bedrock Edition)",
+		pageIconMask = "MinecraftBedrock",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -89,6 +105,8 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -98,6 +116,8 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -107,6 +127,8 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -116,6 +138,8 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "1",
 		updateDivider = "1"
 	},
@@ -125,6 +149,8 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
 		hiddenLine = "1",
 		updateDivider = "-1"
 	}
@@ -136,6 +162,8 @@ function setSettings(selectedSettings)
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingSelect[selectedSettings]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingSelect[selectedSettings]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingSelect[selectedSettings]['showPage3'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "' .. settingSelect[selectedSettings]['gamingPage1Hidden'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "' .. settingSelect[selectedSettings]['gamingPage2Hidden'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "' .. settingSelect[selectedSettings]['hiddenLine'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "' .. settingSelect[selectedSettings]['updateDivider'] .. '" "#@#Plus\\Variables.inc"')
 

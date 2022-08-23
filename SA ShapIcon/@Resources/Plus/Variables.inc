@@ -6,7 +6,9 @@ SetUpdateDivider=1
 IconHeight=90
 ShapeGradientAngle=0
 ChromePFText=x64
-ChromePF=
+ChromePF=Program Files
+GamingPG1Hidden=0
+GamingPG2Hidden=1
 
 ; Masks
 NameCategoryMask=Adobe
@@ -690,6 +692,15 @@ CSGOShapeGradient1Base=225,65,105
 CSGOShapeGradient2Base=65,105,225
 CSGORegularHidden=1
 
+COTLShape=Hexagon
+COTLMaskMeter=Shape
+COTLMask=Regular Hexagon
+COTLMaskStyle=Blank
+COTLMaskBase=255,255,255
+COTLShapeGradient1Base=225,65,105
+COTLShapeGradient2Base=65,105,225
+COTLRegularHidden=1
+
 CyberpunkShape=Hexagon
 CyberpunkMaskMeter=Shape
 CyberpunkMask=Regular Hexagon
@@ -1113,6 +1124,15 @@ JWEvolution2ShapeGradient1Base=225,65,105
 JWEvolution2ShapeGradient2Base=65,105,225
 JWEvolution2RegularHidden=1
 
+KovaakShape=Hexagon
+KovaakMaskMeter=Shape
+KovaakMask=Regular Hexagon
+KovaakMaskStyle=Blank
+KovaakMaskBase=255,255,255
+KovaakShapeGradient1Base=225,65,105
+KovaakShapeGradient2Base=65,105,225
+KovaakRegularHidden=1
+
 LOLShape=Hexagon
 LOLMaskMeter=Shape
 LOLMask=Regular Hexagon
@@ -1446,6 +1466,15 @@ RustShapeGradient1Base=225,65,105
 RustShapeGradient2Base=65,105,225
 RustRegularHidden=1
 
+SaintsRowShape=Hexagon
+SaintsRowMaskMeter=Shape
+SaintsRowMask=Regular Hexagon
+SaintsRowMaskStyle=Blank
+SaintsRowMaskBase=255,255,255
+SaintsRowShapeGradient1Base=225,65,105
+SaintsRowShapeGradient2Base=65,105,225
+SaintsRowRegularHidden=1
+
 SatisfactoryShape=Hexagon
 SatisfactoryMaskMeter=Shape
 SatisfactoryMask=Regular Hexagon
@@ -1509,6 +1538,15 @@ SteamShapeGradient1Base=225,65,105
 SteamShapeGradient2Base=65,105,225
 SteamRegularHidden=1
 
+StrayShape=Hexagon
+StrayMaskMeter=Shape
+StrayMask=Regular Hexagon
+StrayMaskStyle=Blank
+StrayMaskBase=255,255,255
+StrayShapeGradient1Base=225,65,105
+StrayShapeGradient2Base=65,105,225
+StrayRegularHidden=1
+
 SAPShape=Hexagon
 SAPMaskMeter=Shape
 SAPMask=Regular Hexagon
@@ -1536,6 +1574,15 @@ TerrariaShapeGradient1Base=225,65,105
 TerrariaShapeGradient2Base=65,105,225
 TerrariaRegularHidden=1
 
+TETRIOShape=Hexagon
+TETRIOMaskMeter=Shape
+TETRIOMask=Regular Hexagon
+TETRIOMaskStyle=Blank
+TETRIOMaskBase=255,255,255
+TETRIOShapeGradient1Base=225,65,105
+TETRIOShapeGradient2Base=65,105,225
+TETRIORegularHidden=1
+
 TCFShape=Hexagon
 TCFMaskMeter=Shape
 TCFMask=Regular Hexagon
@@ -1562,6 +1609,24 @@ UbisoftMaskBase=255,255,255
 UbisoftShapeGradient1Base=225,65,105
 UbisoftShapeGradient2Base=65,105,225
 UbisoftRegularHidden=1
+
+UltrakillShape=Hexagon
+UltrakillMaskMeter=Shape
+UltrakillMask=Regular Hexagon
+UltrakillMaskStyle=Blank
+UltrakillMaskBase=255,255,255
+UltrakillShapeGradient1Base=225,65,105
+UltrakillShapeGradient2Base=65,105,225
+UltrakillRegularHidden=1
+
+UnrailedShape=Hexagon
+UnrailedMaskMeter=Shape
+UnrailedMask=Regular Hexagon
+UnrailedMaskStyle=Blank
+UnrailedMaskBase=255,255,255
+UnrailedShapeGradient1Base=225,65,105
+UnrailedShapeGradient2Base=65,105,225
+UnrailedRegularHidden=1
 
 VRisingShape=Hexagon
 VRisingMaskMeter=Shape
@@ -1607,6 +1672,15 @@ VoxatronMaskBase=255,255,255
 VoxatronShapeGradient1Base=225,65,105
 VoxatronShapeGradient2Base=65,105,225
 VoxatronRegularHidden=1
+
+VRChatShape=Hexagon
+VRChatMaskMeter=Shape
+VRChatMask=Regular Hexagon
+VRChatMaskStyle=Blank
+VRChatMaskBase=255,255,255
+VRChatShapeGradient1Base=225,65,105
+VRChatShapeGradient2Base=65,105,225
+VRChatRegularHidden=1
 
 WarThunderShape=Hexagon
 WarThunderMaskMeter=Shape
