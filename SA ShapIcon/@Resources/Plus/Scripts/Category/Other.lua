@@ -203,6 +203,16 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1"
 	},
+	["HandBrake"] = {
+		iconName = "HandBrake",
+		iconMask = "HandBrake",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1"
+	},
 	["Inkscape"] = {
 		iconName = "Inkscape",
 		iconMask = "Inkscape",
@@ -273,13 +283,43 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1"
 	},
+	["Microsoft Store"] = {
+		iconName = "Microsoft Store",
+		iconMask = "MicrosoftStore",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1"
+	},
+	["Mindomo"] = {
+		iconName = "Mindomo",
+		iconMask = "Mindomo",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1"
+	},
 	["MSI Afterburner"] = {
 		iconName = "MSI Afterburner",
 		iconMask = "MSI",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
+		showPage5 = "1",
+		showPage6 = "1"
+	},
+	["MyPhoneExplorer"] = {
+		iconName = "MyPhoneExplorer",
+		iconMask = "MyPhoneExplorer",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 		showPage5 = "1",
 		showPage6 = "1"
 	},
@@ -288,8 +328,8 @@ selectOther = {
 		iconMask = "NiceHash",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 		showPage5 = "1",
 		showPage6 = "1"
 	},
@@ -298,8 +338,8 @@ selectOther = {
 		iconMask = "NotepadPP",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 		showPage5 = "1",
 		showPage6 = "1"
 	},
@@ -369,8 +409,8 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1"
 	},
 	["Recycle Bin"] = {
@@ -379,8 +419,8 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1"
 	},
     ["RemNote"] = {
@@ -389,8 +429,8 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1"
 	},
 	["Scrivener"] = {
@@ -399,8 +439,8 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1"
 	},
 	["Slack"] = {
@@ -470,8 +510,8 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1"
+		showPage5 = "1",
+		showPage6 = "0"
 	},
 	["Visual Studio"] = {
 		iconName = "Visual Studio",
@@ -480,8 +520,8 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1"
+		showPage5 = "1",
+		showPage6 = "0"
 	},
 	["Visual Studio Code"] = {
 		iconName = "Visual Studio Code",
@@ -490,8 +530,8 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1"
+		showPage5 = "1",
+		showPage6 = "0"
 	},
 	["VMware Workstation Player"] = {
 		iconName = "VMware Workstation Player",
@@ -500,8 +540,8 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1"
+		showPage5 = "1",
+		showPage6 = "0"
 	},
 	["Wallpaper Engine"] = {
 		iconName = "Wallpaper Engine",

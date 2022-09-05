@@ -12,7 +12,7 @@ GamingPG2Hidden=1
 
 ; Masks
 NameCategoryMask=Adobe
-NameIconMask=AfterEffects
+NameIconMask=Acrobat
 
 ; Faders
 FadeActiveToggle1=Active
@@ -23,6 +23,15 @@ FadeTextMP=255,255,255
 ; ============================================================
 ; Adobe
 ; ============================================================
+
+AcrobatShape=Hexagon
+AcrobatMaskMeter=Shape
+AcrobatMask=Regular Hexagon
+AcrobatMaskStyle=Blank
+AcrobatMaskBase=255,255,255
+AcrobatShapeGradient1Base=225,65,105
+AcrobatShapeGradient2Base=65,105,225
+AcrobatRegularHidden=1
 
 AfterEffectsShape=Hexagon
 AfterEffectsMaskMeter=Shape
@@ -60,6 +69,15 @@ BridgeShapeGradient1Base=225,65,105
 BridgeShapeGradient2Base=65,105,225
 BridgeRegularHidden=1
 
+CharacterAnimatorShape=Hexagon
+CharacterAnimatorMaskMeter=Shape
+CharacterAnimatorMask=Regular Hexagon
+CharacterAnimatorMaskStyle=Blank
+CharacterAnimatorMaskBase=255,255,255
+CharacterAnimatorShapeGradient1Base=225,65,105
+CharacterAnimatorShapeGradient2Base=65,105,225
+CharacterAnimatorRegularHidden=1
+
 CreativeShape=Hexagon
 CreativeMaskMeter=Shape
 CreativeMask=Regular Hexagon
@@ -87,6 +105,15 @@ FramemakerShapeGradient1Base=225,65,105
 FramemakerShapeGradient2Base=65,105,225
 FramemakerRegularHidden=1
 
+FrescoShape=Hexagon
+FrescoMaskMeter=Shape
+FrescoMask=Regular Hexagon
+FrescoMaskStyle=Blank
+FrescoMaskBase=255,255,255
+FrescoShapeGradient1Base=225,65,105
+FrescoShapeGradient2Base=65,105,225
+FrescoRegularHidden=1
+
 IllustratorShape=Hexagon
 IllustratorMaskMeter=Shape
 IllustratorMask=Regular Hexagon
@@ -95,6 +122,15 @@ IllustratorMaskBase=255,255,255
 IllustratorShapeGradient1Base=225,65,105
 IllustratorShapeGradient2Base=65,105,225
 IllustratorRegularHidden=1
+
+InCopyShape=Hexagon
+InCopyMaskMeter=Shape
+InCopyMask=Regular Hexagon
+InCopyMaskStyle=Blank
+InCopyMaskBase=255,255,255
+InCopyShapeGradient1Base=225,65,105
+InCopyShapeGradient2Base=65,105,225
+InCopyRegularHidden=1
 
 InDesignShape=Hexagon
 InDesignMaskMeter=Shape
@@ -114,6 +150,15 @@ LightroomShapeGradient1Base=225,65,105
 LightroomShapeGradient2Base=65,105,225
 LightroomRegularHidden=1
 
+MediaEncoderShape=Hexagon
+MediaEncoderMaskMeter=Shape
+MediaEncoderMask=Regular Hexagon
+MediaEncoderMaskStyle=Blank
+MediaEncoderMaskBase=255,255,255
+MediaEncoderShapeGradient1Base=225,65,105
+MediaEncoderShapeGradient2Base=65,105,225
+MediaEncoderRegularHidden=1
+
 PhotoshopShape=Hexagon
 PhotoshopMaskMeter=Shape
 PhotoshopMask=Regular Hexagon
@@ -131,6 +176,42 @@ PremiereMaskBase=255,255,255
 PremiereShapeGradient1Base=225,65,105
 PremiereShapeGradient2Base=65,105,225
 PremiereRegularHidden=1
+
+S3DDesignerShape=Hexagon
+S3DDesignerMaskMeter=Shape
+S3DDesignerMask=Regular Hexagon
+S3DDesignerMaskStyle=Blank
+S3DDesignerMaskBase=255,255,255
+S3DDesignerShapeGradient1Base=225,65,105
+S3DDesignerShapeGradient2Base=65,105,225
+S3DDesignerRegularHidden=1
+
+S3DPainterShape=Hexagon
+S3DPainterMaskMeter=Shape
+S3DPainterMask=Regular Hexagon
+S3DPainterMaskStyle=Blank
+S3DPainterMaskBase=255,255,255
+S3DPainterShapeGradient1Base=225,65,105
+S3DPainterShapeGradient2Base=65,105,225
+S3DPainterRegularHidden=1
+
+S3DSamplerShape=Hexagon
+S3DSamplerMaskMeter=Shape
+S3DSamplerMask=Regular Hexagon
+S3DSamplerMaskStyle=Blank
+S3DSamplerMaskBase=255,255,255
+S3DSamplerShapeGradient1Base=225,65,105
+S3DSamplerShapeGradient2Base=65,105,225
+S3DSamplerRegularHidden=1
+
+S3DStagerShape=Hexagon
+S3DStagerMaskMeter=Shape
+S3DStagerMask=Regular Hexagon
+S3DStagerMaskStyle=Blank
+S3DStagerMaskBase=255,255,255
+S3DStagerShapeGradient1Base=225,65,105
+S3DStagerShapeGradient2Base=65,105,225
+S3DStagerRegularHidden=1
 
 XDShape=Hexagon
 XDMaskMeter=Shape
@@ -1196,6 +1277,15 @@ MHWorldShapeGradient1Base=225,65,105
 MHWorldShapeGradient2Base=65,105,225
 MHWorldRegularHidden=1
 
+MultiVersusShape=Hexagon
+MultiVersusMaskMeter=Shape
+MultiVersusMask=Regular Hexagon
+MultiVersusMaskStyle=Blank
+MultiVersusMaskBase=255,255,255
+MultiVersusShapeGradient1Base=225,65,105
+MultiVersusShapeGradient2Base=65,105,225
+MultiVersusRegularHidden=1
+
 MuseDashShape=Hexagon
 MuseDashMaskMeter=Shape
 MuseDashMask=Regular Hexagon
@@ -1564,6 +1654,15 @@ TF2MaskBase=255,255,255
 TF2ShapeGradient1Base=225,65,105
 TF2ShapeGradient2Base=65,105,225
 TF2RegularHidden=1
+
+TemtemShape=Hexagon
+TemtemMaskMeter=Shape
+TemtemMask=Regular Hexagon
+TemtemMaskStyle=Blank
+TemtemMaskBase=255,255,255
+TemtemShapeGradient1Base=225,65,105
+TemtemShapeGradient2Base=65,105,225
+TemtemRegularHidden=1
 
 TerrariaShape=Hexagon
 TerrariaMaskMeter=Shape
@@ -2462,6 +2561,15 @@ GIMPShapeGradient1Base=225,65,105
 GIMPShapeGradient2Base=65,105,225
 GIMPRegularHidden=1
 
+HandBrakeShape=Hexagon
+HandBrakeMaskMeter=Shape
+HandBrakeMask=Regular Hexagon
+HandBrakeMaskStyle=Blank
+HandBrakeMaskBase=255,255,255
+HandBrakeShapeGradient1Base=225,65,105
+HandBrakeShapeGradient2Base=65,105,225
+HandBrakeRegularHidden=1
+
 InkscapeShape=Hexagon
 InkscapeMaskMeter=Shape
 InkscapeMask=Regular Hexagon
@@ -2525,6 +2633,24 @@ MedalShapeGradient1Base=225,65,105
 MedalShapeGradient2Base=65,105,225
 MedalRegularHidden=1
 
+MicrosoftStoreShape=Hexagon
+MicrosoftStoreMaskMeter=Shape
+MicrosoftStoreMask=Regular Hexagon
+MicrosoftStoreMaskStyle=Blank
+MicrosoftStoreMaskBase=255,255,255
+MicrosoftStoreShapeGradient1Base=225,65,105
+MicrosoftStoreShapeGradient2Base=65,105,225
+MicrosoftStoreRegularHidden=1
+
+MindomoShape=Hexagon
+MindomoMaskMeter=Shape
+MindomoMask=Regular Hexagon
+MindomoMaskStyle=Blank
+MindomoMaskBase=255,255,255
+MindomoShapeGradient1Base=225,65,105
+MindomoShapeGradient2Base=65,105,225
+MindomoRegularHidden=1
+
 MSIShape=Hexagon
 MSIMaskMeter=Shape
 MSIMask=Regular Hexagon
@@ -2533,6 +2659,15 @@ MSIMaskBase=255,255,255
 MSIShapeGradient1Base=225,65,105
 MSIShapeGradient2Base=65,105,225
 MSIRegularHidden=1
+
+MyPhoneExplorerShape=Hexagon
+MyPhoneExplorerMaskMeter=Shape
+MyPhoneExplorerMask=Regular Hexagon
+MyPhoneExplorerMaskStyle=Blank
+MyPhoneExplorerMaskBase=255,255,255
+MyPhoneExplorerShapeGradient1Base=225,65,105
+MyPhoneExplorerShapeGradient2Base=65,105,225
+MyPhoneExplorerRegularHidden=1
 
 NiceHashShape=Hexagon
 NiceHashMaskMeter=Shape

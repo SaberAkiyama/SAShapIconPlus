@@ -104,6 +104,11 @@ function setGIMPColorManual(selectedCode)
 
 end
 
+function setHandBrakeColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinHandBrake" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setInkscapeColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinInkscape" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -139,8 +144,23 @@ function setMedalColorManual(selectedCode)
 
 end
 
+function setMicrosoftStoreColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMicrosoftStore" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setMindomoColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMindomo" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setMSIColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMSI" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setMyPhoneExplorerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMyPhoneExplorer" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -630,6 +650,17 @@ function setGIMPMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setHandBrakeMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables HandBrakeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HandBrakeMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HandBrakeShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HandBrakeMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HandBrakeRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setInkscapeMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables InkscapeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables InkscapeMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -707,12 +738,45 @@ function setMedalMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setMicrosoftStoreMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MicrosoftStoreMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MicrosoftStoreMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MicrosoftStoreShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MicrosoftStoreMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MicrosoftStoreRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMindomoMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MindomoMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MindomoMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MindomoShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MindomoMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MindomoRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setMSIMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MSIMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MSIMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MSIShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MSIMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MSIRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMyPhoneExplorerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MyPhoneExplorerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MyPhoneExplorerMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MyPhoneExplorerShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MyPhoneExplorerMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MyPhoneExplorerRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

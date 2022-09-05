@@ -12,8 +12,8 @@ end
 
 settingSelect = {
 	["Adobe"] = {
-		pageIcon = "After Effects",
-		pageIconMC = "AfterEffects",
+		pageIcon = "Acrobat Reader",
+		pageIconMC = "Acrobat",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -199,6 +199,7 @@ end
 function setSettingsAdobe()
     SKIN:Bang('!WriteKeyValue Variables AdobePage1 "0" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables AdobePage2 "1" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables AdobePage3 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -688,7 +689,7 @@ function closeSettings()
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMC "Adobe" "#@#Standard\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconMC "AfterEffects" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMC "Acrobat" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "0" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "1" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')

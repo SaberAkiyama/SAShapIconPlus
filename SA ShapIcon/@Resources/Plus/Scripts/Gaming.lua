@@ -399,6 +399,11 @@ function setMHWorldColorManual(selectedCode)
 
 end
 
+function setMultiVersusColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMultiVersus" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setMuseDashColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMuseDash" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -601,6 +606,11 @@ end
 
 function setTF2ColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinTF2" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setTemtemColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinTemtem" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1693,6 +1703,17 @@ function setMHWorldMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setMultiVersusMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MultiVersusMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MultiVersusMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MultiVersusShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MultiVersusMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MultiVersusRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setMuseDashMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MuseDashMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MuseDashMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -2139,6 +2160,17 @@ function setTF2Mask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables TF2Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables TF2MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables TF2RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTemtemMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TemtemMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TemtemMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TemtemShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TemtemMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TemtemRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -12,8 +12,8 @@ end
 
 settingSelect = {
 	["Adobe"] = {
-		pageIcon = "After Effects",
-		pageIconMask = "AfterEffects",
+		pageIcon = "Acrobat Reader",
+		pageIconMask = "Acrobat",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -47,8 +47,8 @@ settingSelect = {
 	["Emulator"] = {
 		pageIcon = "BlueStacks",
 		pageIconMask = "BlueStacks",
-		showPage1 = "0",
-		showPage2 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
 		showPage3 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
@@ -92,8 +92,8 @@ settingSelect = {
 		pageIcon = "Minecraft (Bedrock Edition)",
 		pageIconMask = "MinecraftBedrock",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -134,7 +134,7 @@ settingSelect = {
 	},
 	["Info"] = {
 		pageIcon = "Info",
-		pageIconMask = "AfterEffects",
+		pageIconMask = "Acrobat",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -145,7 +145,7 @@ settingSelect = {
 	},
 	["Plus"] = {
 		pageIcon = "Plus",
-		pageIconMask = "AfterEffects",
+		pageIconMask = "Acrobat",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
@@ -176,8 +176,9 @@ function setSettings(selectedSettings)
 end
 
 function setSettingsAdobe()
-	SKIN:Bang('!WriteKeyValue Variables AdobePage1 "0" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables AdobePage2 "1" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables AdobePage1 "0" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables AdobePage2 "1" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables AdobePage3 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -258,7 +259,7 @@ function setSettingsStandard()
 	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Adobe" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "Acrobat" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Plus\\Measures\\Action Timer Settings.inc"')
 	SKIN:Bang('!WriteKeyValue Variables W1 "50" "#@#Plus\\Measures\\Action Timer Settings.inc"')
@@ -299,7 +300,7 @@ function setOptionMiscellaneous()
 	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "-1" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Options (Miscellaneous)" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "Acrobat" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -316,7 +317,7 @@ function setOptionTransparent()
 	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Options (Transparent)" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "Acrobat" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -748,7 +749,7 @@ function closeSettings()
 
 	SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMask "Adobe" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables NameIconMask "AfterEffects" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NameIconMask "Acrobat" "#@#Plus\\Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables TextAlpha "0" "#@#Plus\\Measures\\Action Timer Settings.inc"')
 	SKIN:Bang('!WriteKeyValue Variables W1 "50" "#@#Plus\\Measures\\Action Timer Settings.inc"')

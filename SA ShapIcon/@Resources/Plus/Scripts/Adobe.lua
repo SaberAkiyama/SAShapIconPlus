@@ -14,6 +14,11 @@ colorSelect = {
 	}
 }
 
+function setAcrobatColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAcrobat" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setAfterEffectsColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinAfterEffects" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -34,6 +39,11 @@ function setBridgeColorManual(selectedCode)
 
 end
 
+function setCharacterAnimatorColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCharacterAnimator" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCreativeColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCreative" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -41,6 +51,11 @@ end
 
 function setDreamweaverColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinDreamweaver" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setFrescoColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinFresco" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -54,6 +69,11 @@ function setIllustratorColorManual(selectedCode)
 
 end
 
+function setInCopyColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinInCopy" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setInDesignColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinInDesign" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -64,6 +84,11 @@ function setLightroomColorManual(selectedCode)
 
 end
 
+function setMediaEncoderColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMediaEncoder" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setPhotoshopColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinPhotoshop" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -71,6 +96,26 @@ end
 
 function setPremiereColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinPremiere" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setS3DDesignerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinS3DDesigner" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setS3DPainterColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinS3DPainter" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setS3DSamplerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinS3DSampler" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setS3DStagerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinS3DStager" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -158,6 +203,12 @@ maskAdobeSelect = {
 		adobeMaskShape = "Hexagon",
 		adobeRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		adobeMaskMeter = "Shape",
+		adobeMaskStyle = "InlineParallelogram",
+		adobeMaskShape = "Parallelogram",
+		adobeRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		adobeMaskMeter = "Shape",
 		adobeMaskStyle = "InlineSquare",
@@ -188,6 +239,12 @@ maskAdobeSelect = {
 		adobeMaskShape = "Hexagon",
 		adobeRegularHidden = "1"
 	},
+	["Regular Parallelogram"] = {
+		adobeMaskMeter = "Shape",
+		adobeMaskStyle = "Blank",
+		adobeMaskShape = "Parallelogram",
+		adobeRegularHidden = "1"
+	},
 	["Regular Square"] = {
 		adobeMaskMeter = "Shape",
 		adobeMaskStyle = "Blank",
@@ -213,6 +270,17 @@ maskAdobeSelect = {
 		adobeRegularHidden = "0"
 	}
 }
+
+function setAcrobatMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AcrobatMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AcrobatMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AcrobatShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AcrobatMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AcrobatRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
 
 function setAfterEffectsMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AfterEffectsMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
@@ -258,6 +326,17 @@ function setBridgeMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setCharacterAnimatorMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CharacterAnimatorMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CharacterAnimatorMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CharacterAnimatorShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CharacterAnimatorMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CharacterAnimatorRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setCreativeMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables CreativeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CreativeMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -291,12 +370,34 @@ function setFramemakerMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setFrescoMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables FrescoMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FrescoMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FrescoShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FrescoMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FrescoRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setIllustratorMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables IllustratorMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables IllustratorMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables IllustratorShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables IllustratorMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables IllustratorRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setInCopyMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables InCopyMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InCopyMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InCopyShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InCopyMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables InCopyRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -324,6 +425,17 @@ function setLightroomMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setMediaEncoderMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MediaEncoderMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MediaEncoderMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MediaEncoderShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MediaEncoderMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MediaEncoderRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setPhotoshopMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables PhotoshopMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables PhotoshopMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -341,6 +453,50 @@ function setPremiereMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables PremiereShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables PremiereMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables PremiereRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setS3DDesignerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables S3DDesignerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DDesignerMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DDesignerShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DDesignerMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DDesignerRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setS3DPainterMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables S3DPainterMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DPainterMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DPainterShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DPainterMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DPainterRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setS3DSamplerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables S3DSamplerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DSamplerMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DSamplerShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DSamplerMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DSamplerRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setS3DStagerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables S3DStagerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DStagerMaskMeter "' .. maskAdobeSelect[selectedMask]['adobeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DStagerShape "' .. maskAdobeSelect[selectedMask]['adobeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DStagerMaskStyle "' .. maskAdobeSelect[selectedMask]['adobeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables S3DStagerRegularHidden "' .. maskAdobeSelect[selectedMask]['adobeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
