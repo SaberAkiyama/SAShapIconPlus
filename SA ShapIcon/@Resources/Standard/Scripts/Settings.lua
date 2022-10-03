@@ -17,6 +17,7 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -28,6 +29,19 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
+		hiddenLine = "0",
+		updateDivider = "-1"
+	},
+	["Disk"] = {
+		pageIcon = "Disk A",
+		pageIconMC = "DiskA",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -36,9 +50,10 @@ settingSelect = {
 	["Elgato"] = {
 		pageIcon = "4K Capture Utility",
 		pageIconMC = "4KCU",
-		showPage1 = "0",
-		showPage2 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -50,6 +65,7 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -61,6 +77,7 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -72,6 +89,19 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
+		hiddenLine = "0",
+		updateDivider = "-1"
+	},
+	["LibreOffice"] = {
+		pageIcon = "Base",
+		pageIconMC = "Base",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -81,8 +111,9 @@ settingSelect = {
 		pageIcon = "AIMP",
 		pageIconMC = "AIMP",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -94,6 +125,7 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -105,6 +137,7 @@ settingSelect = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -115,7 +148,8 @@ settingSelect = {
 		pageIconMC = "WebEx",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
+		showPage3 = "1",
+		showPage4 = "0",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -126,7 +160,8 @@ settingSelect = {
 		pageIconMC = "ManageRainmeter",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
+		showPage3 = "1",
+		showPage4 = "0",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -138,6 +173,7 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "1",
@@ -149,6 +185,7 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "1",
@@ -160,6 +197,7 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "1",
@@ -171,6 +209,7 @@ settingSelect = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "1",
@@ -185,6 +224,7 @@ function setSettings(selectedSettings)
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingSelect[selectedSettings]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingSelect[selectedSettings]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingSelect[selectedSettings]['showPage3'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage4 "' .. settingSelect[selectedSettings]['showPage4'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "' .. settingSelect[selectedSettings]['gamingPage1Hidden'] .. '" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "' .. settingSelect[selectedSettings]['gamingPage2Hidden'] .. '" "#@#Standard\\Variables.inc"')
@@ -207,6 +247,9 @@ end
 --;end
 
 --;function setSettingsBrowsing()
+--;end
+
+--;function setSettingsDisk()
 --;end
 
 --;function setSettingsElgato()
@@ -267,6 +310,9 @@ function setSettingsOther()
 	SKIN:Bang('!WriteKeyValue Variables OtherPage3 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage4 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage5 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OtherPage6 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OtherPage7 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OtherPage8 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -303,72 +349,98 @@ settingCatrgory = {
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 	},
 	["Assassin's Creed"] = {
 		categoryName = "Assassin's Creed",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 	},
 	["Browsing"] = {
 		categoryName = "Browsing",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
 	},
-	["Elgato"] = {
-		categoryName = "Elgato",
+	["Disk"] = {
+		categoryName = "Disk",
 		showPage1 = "0",
 		showPage2 = "1",
 		showPage3 = "1",
+		showPage4 = "1",
+	},
+	["Elgato"] = {
+		categoryName = "Elgato",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		showPage4 = "1",
 	},
 	["Emulator"] = {
 		categoryName = "Emulator",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
 	},
 	["Gaming"] = {
 		categoryName = "Gaming",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
 	},
 	["Google"] = {
 		categoryName = "Google",
 		showPage1 = "1",
 		showPage2 = "0",
 		showPage3 = "1",
+		showPage4 = "1",
+	},
+	["LibreOffice"] = {
+		categoryName = "LibreOffice",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
 	},
 	["Media"] = {
 		categoryName = "Media",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
 	},
 	["Minecraft"] = {
 		categoryName = "Minecraft",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		showPage4 = "1",
 	},
 	["Office"] = {
 		categoryName = "Office",
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "0",
+		showPage4 = "1",
 	},
 	["Social"] = {
 		categoryName = "Social",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
+		showPage3 = "1",
+		showPage4 = "0",
 	},
 	["Other"] = {
 		categoryName = "Other",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
+		showPage3 = "1",
+		showPage4 = "0",
 	}
 }
 
@@ -377,6 +449,7 @@ function setCategory(selectedCatrgory)
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "' .. settingCatrgory[selectedCatrgory]['showPage1'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "' .. settingCatrgory[selectedCatrgory]['showPage2'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingCatrgory[selectedCatrgory]['showPage3'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage4 "' .. settingCatrgory[selectedCatrgory]['showPage4'] .. '" "#@#Settings Variables.inc"')
 
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
@@ -450,6 +523,18 @@ function setUpPage2()
 
 end
 
+function setUpPage3()
+    SKIN:Bang('!ShowMeterGroup CategoryPage3')
+    SKIN:Bang('!HideMeterGroup CategoryPage4')
+    SKIN:Bang('!ShowMeter ShapeUpPage2')
+    SKIN:Bang('!HideMeter ShapeUpPage3')
+    SKIN:Bang('!ShowMeter ShapeDownPage4')
+    SKIN:Bang('!HideMeter ShapeDownBlank')
+    SKIN:Bang('!UpdateMeter *')
+    SKIN:Bang('!Redraw')
+
+end
+
 function setDownPage2()
     SKIN:Bang('!ShowMeterGroup CategoryPage2')
     SKIN:Bang('!HideMeterGroup CategoryPage1')
@@ -467,6 +552,18 @@ function setDownPage3()
     SKIN:Bang('!HideMeterGroup CategoryPage2')
     SKIN:Bang('!ShowMeter ShapeUpPage2')
     SKIN:Bang('!HideMeter ShapeUpPage1')
+    SKIN:Bang('!ShowMeter ShapeDownPage4')
+    SKIN:Bang('!HideMeter ShapeDownPage3')
+    SKIN:Bang('!UpdateMeter *')
+    SKIN:Bang('!Redraw')
+
+end
+
+function setDownPage4()
+    SKIN:Bang('!ShowMeterGroup CategoryPage4')
+    SKIN:Bang('!HideMeterGroup CategoryPage3')
+    SKIN:Bang('!ShowMeter ShapeUpPage3')
+    SKIN:Bang('!HideMeter ShapeUpPage2')
     SKIN:Bang('!ShowMeter ShapeDownBlank')
     SKIN:Bang('!HideMeter ShapeDownPage3')
     SKIN:Bang('!UpdateMeter *')
@@ -549,6 +646,8 @@ hoverSettingsSelect = {
 		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage12 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage13 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage14 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
@@ -565,6 +664,8 @@ hoverSettingsSelect = {
 		colorPage10 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage12 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage13 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage14 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
@@ -579,7 +680,7 @@ function setPageAdobe(selectedHover)
 end
 
 function setPageAssassinsCreed(selectedHover)
-	SKIN:Bang('!SetOption ShapeAssassinsCreed MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage1'] .. '"')
+	SKIN:Bang('!SetOption ShapeAssassinsCreed MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage2'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -587,15 +688,23 @@ function setPageAssassinsCreed(selectedHover)
 end
 
 function setPageBrowsing(selectedHover)
-	SKIN:Bang('!SetOption ShapeBrowsing MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage2'] .. '"')
+	SKIN:Bang('!SetOption ShapeBrowsing MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage3'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
 
 end
 
+function setPageDisk(selectedHover)
+	SKIN:Bang('!SetOption ShapeDisk MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage4'] .. '"')
+
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
 function setPageElgato(selectedHover)
-	SKIN:Bang('!SetOption ShapeElgato MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage3'] .. '"')
+	SKIN:Bang('!SetOption ShapeElgato MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage5'] .. '"')
 
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
@@ -603,7 +712,7 @@ function setPageElgato(selectedHover)
 end
 
 function setPageEmulator(selectedHover)
-	SKIN:Bang('!SetOption ShapeEmulator MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage4'] .. '"')
+	SKIN:Bang('!SetOption ShapeEmulator MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage6'] .. '"')
 
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
@@ -611,7 +720,7 @@ function setPageEmulator(selectedHover)
 end
 
 function setPageGaming(selectedHover)
-	SKIN:Bang('!SetOption ShapeGaming MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage5'] .. '"')
+	SKIN:Bang('!SetOption ShapeGaming MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -619,14 +728,21 @@ function setPageGaming(selectedHover)
 end
 
 function setPageGoogle(selectedHover)
-	SKIN:Bang('!SetOption ShapeGoogle MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage6'] .. '"')
+	SKIN:Bang('!SetOption ShapeGoogle MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setPageLibreOffice(selectedHover)
+	SKIN:Bang('!SetOption ShapeLibreOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageMedia(selectedHover)
-	SKIN:Bang('!SetOption ShapeMedia MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage7'] .. '"')
+	SKIN:Bang('!SetOption ShapeMedia MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -634,7 +750,7 @@ function setPageMedia(selectedHover)
 end
 
 function setPageMinecraft(selectedHover)
-	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage8'] .. '"')
+	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage11'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -642,14 +758,14 @@ function setPageMinecraft(selectedHover)
 end
 
 function setPageOffice(selectedHover)
-	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
+	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage12'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageSocial(selectedHover)
-	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
+	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage13'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -657,7 +773,7 @@ function setPageSocial(selectedHover)
 end
 
 function setPageOther(selectedHover)
-	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage11'] .. '"')
+	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage14'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -687,6 +803,7 @@ function closeSettings()
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage4 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Info" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameCategoryMC "Adobe" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIconMC "Acrobat" "#@#Standard\\Variables.inc"')

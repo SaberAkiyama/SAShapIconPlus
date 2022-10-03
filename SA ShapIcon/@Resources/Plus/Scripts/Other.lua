@@ -19,6 +19,21 @@ function setAbletonColorManual(selectedCode)
 
 end
 
+function setAffinityDesignerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAffinityDesigner" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setAffinityPhotoColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAffinityPhoto" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setAffinityPublisherColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAffinityPublisher" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setAMDRadeonColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinAMDRadeon" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -26,6 +41,11 @@ end
 
 function setAMDRadeonRyzenColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinAMDRadeonRyzen" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setAnacondaColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinAnaconda" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -69,6 +89,11 @@ function setCSPColorManual(selectedCode)
 
 end
 
+function setClipchampColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinClipchamp" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCorsairColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCorsair" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -99,6 +124,11 @@ function setFLStudioColorManual(selectedCode)
 
 end
 
+function setFlowLauncherColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinFlowLauncher" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setGIMPColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinGIMP" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -111,6 +141,16 @@ end
 
 function setInkscapeColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinInkscape" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setJBPyCharmColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinJBPyCharm" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setJBRiderColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinJBRider" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -174,6 +214,11 @@ function setNotepadPPColorManual(selectedCode)
 
 end
 
+function setNotionColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinNotion" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setNVIDIAColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinNVIDIA" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -184,6 +229,11 @@ function setOBSColorManual(selectedCode)
 
 end
 
+function setObsidianColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinObsidian" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setOculusColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinOculus" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -191,6 +241,16 @@ end
 
 function setOutplayedColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinOutplayed" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setProtonCalendarColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinProtonCalendar" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setProtonMailColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinProtonMail" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -244,6 +304,11 @@ function setStreamLabsColorManual(selectedCode)
 
 end
 
+function setTeamViewerColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinTeamViewer" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setThisPCColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinThisPC" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -264,13 +329,18 @@ function setUnrealColorManual(selectedCode)
 
 end
 
-function setVSCodeColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinVSCode" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setVirtualBoxColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVirtualBox" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
 function setVisualStudioColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVisualStudio" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+	
+end
+
+function setVSCodeColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVSCode" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -279,8 +349,23 @@ function setVMwareColorManual(selectedCode)
 
 end
 
+function setVTEverythingColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVTEverything" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setWallpaperEngineColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinWallpaperEngine" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setWindowsOSKColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinWindowsOSK" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setWindowsTerminalColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinWindowsTerminal" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -452,6 +537,39 @@ function setAbletonMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setAffinityDesignerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AffinityDesignerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityDesignerMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityDesignerShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityDesignerMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityDesignerRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAffinityPhotoMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AffinityPhotoMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPhotoMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPhotoShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPhotoMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPhotoRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAffinityPublisherMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AffinityPublisherMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPublisherMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPublisherShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPublisherMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AffinityPublisherRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setAMDRadeonMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AMDRadeonMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AMDRadeonMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -469,6 +587,17 @@ function setAMDRyzenMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AMDRyzenShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AMDRyzenMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AMDRyzenRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setAnacondaMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables AnacondaMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnacondaMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnacondaShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnacondaMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AnacondaRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -562,6 +691,17 @@ function setCSPMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setClipchampMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ClipchampMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ClipchampMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ClipchampShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ClipchampMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ClipchampRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setCorsairMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables CorsairMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CorsairMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -639,6 +779,17 @@ function setFLStudioMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setFlowLauncherMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables FlowLauncherMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FlowLauncherMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FlowLauncherShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FlowLauncherMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables FlowLauncherRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setGIMPMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables GIMPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables GIMPMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -667,6 +818,28 @@ function setInkscapeMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables InkscapeShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables InkscapeMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables InkscapeRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setJBPyCharmMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBPyCharmShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBPyCharmRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setJBRiderMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables JBRiderMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBRiderMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBRiderShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBRiderMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables JBRiderRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -804,6 +977,17 @@ function setNotepadPPMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setNotionMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables NotionMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotionMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotionShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotionMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NotionRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setNVIDIAMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables NVIDIAMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NVIDIAMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -826,6 +1010,17 @@ function setOBSMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setObsidianMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ObsidianMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ObsidianMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ObsidianShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ObsidianMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ObsidianRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setOculusMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables OculusMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OculusMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -843,6 +1038,28 @@ function setOutplayedMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables OutplayedShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OutplayedMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OutplayedRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setProtonCalendarMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ProtonCalendarMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonCalendarMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonCalendarShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonCalendarMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonCalendarRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setProtonMailMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ProtonMailMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonMailMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonMailShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonMailMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ProtonMailRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -958,6 +1175,17 @@ function setStreamLabsMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setTeamViewerMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TeamViewerMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamViewerMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamViewerShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamViewerMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TeamViewerRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setThisPCMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ThisPCMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ThisPCMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -986,6 +1214,17 @@ function setUnrealMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables UnrealShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UnrealMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UnrealRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVirtualBoxMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VirtualBoxMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VirtualBoxMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VirtualBoxShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VirtualBoxMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VirtualBoxRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -1024,12 +1263,45 @@ function setVMwareMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setVTEverythingMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VTEverythingMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTEverythingMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTEverythingShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTEverythingMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTEverythingRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setWallpaperEngineMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables WallpaperEngineRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWindowsOSKMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WindowsOSKMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsOSKMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsOSKShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsOSKMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsOSKRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWindowsTerminalMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WindowsTerminalMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsTerminalMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsTerminalShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsTerminalMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WindowsTerminalRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

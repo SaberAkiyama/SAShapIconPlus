@@ -128,6 +128,12 @@ maskElgatoSelect = {
 		elgatoMaskShape = "Hexagon",
 		elgatoRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		elgatoMaskMeter = "Shape",
+		elgatoMaskStyle = "InlineParallelogram",
+		elgatoMaskShape = "Parallelogram",
+		elgatoRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		elgatoMaskMeter = "Shape",
 		elgatoMaskStyle = "InlineSquare",
@@ -156,6 +162,12 @@ maskElgatoSelect = {
 		elgatoMaskMeter = "Shape",
 		elgatoMaskStyle = "Blank",
 		elgatoMaskShape = "Hexagon",
+		elgatoRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		elgatoMaskMeter = "Shape",
+		elgatoMaskStyle = "Blank",
+		elgatoMaskShape = "Parallelogram",
 		elgatoRegularHidden = "1"
 	},
 	["Regular Square"] = {

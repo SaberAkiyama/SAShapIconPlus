@@ -9,6 +9,12 @@ selectEmulator = {
 		showPage1 = "0",
 		showPage2 = "1"
 	},
+	["BlueStacks X"] = {
+		iconName = "BlueStacks X",
+		iconMask = "BlueStacksX",
+		showPage1 = "0",
+		showPage2 = "1"
+	},
 	["Cemu"] = {
 		iconName = "Cemu",
 		iconMask = "Cemu",
@@ -60,8 +66,8 @@ selectEmulator = {
 	["RPCS3"] = {
 		iconName = "RPCS3",
 		iconMask = "RPCS3",
-		showPage1 = "0",
-		showPage2 = "1"
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Vita3K"] = {
 		iconName = "Vita3K",

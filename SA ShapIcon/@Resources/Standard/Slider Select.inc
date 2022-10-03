@@ -58,6 +58,14 @@ X=#X1#
 Y=0r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setUpPage2()"]
 
+[ShapeUpPage3]
+Meter=Shape
+MeterStyle=ShapeUpPage3Style
+Group=CategoryPage4 | Sliders
+X=#X1#
+Y=0r
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setUpPage3()"]
+
 ; ============================================================
 
 [ShapeAdobe]
@@ -84,12 +92,20 @@ X=0
 Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Browsing')"]
 
-[ShapeElgato]
+[ShapeDisk]
 Meter=Shape
-MeterStyle=ShapeElgatoStyle
+MeterStyle=ShapeDiskStyle
 Group=CategoryPage1
 X=0
 Y=50r
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Disk')"]
+
+[ShapeElgato]
+Meter=Shape
+MeterStyle=ShapeElgatoStyle
+Group=CategoryPage2
+X=0
+Y=200
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Elgato')"]
 
 [ShapeEmulator]
@@ -97,7 +113,7 @@ Meter=Shape
 MeterStyle=ShapeEmulatorStyle
 Group=CategoryPage2
 X=0
-Y=200
+Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Emulator')"][!CommandMeasure LuaSettings "setSettingsEmulator()"]
 
 [ShapeGaming]
@@ -116,10 +132,18 @@ X=0
 Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Google')"]
 
+[ShapeLibreOffice]
+Meter=Shape
+MeterStyle=ShapeLibreOfficeStyle
+Group=CategoryPage3
+X=0
+Y=200
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('LibreOffice')"]
+
 [ShapeMedia]
 Meter=Shape
 MeterStyle=ShapeMediaStyle
-Group=CategoryPage2
+Group=CategoryPage3
 X=0
 Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Media')"][!CommandMeasure LuaSettings "setSettingsMedia()"]
@@ -129,7 +153,7 @@ Meter=Shape
 MeterStyle=ShapeMinecraftStyle
 Group=CategoryPage3
 X=0
-Y=200
+Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Minecraft')"][!CommandMeasure LuaSettings "setSettingsMinecraft()"]
 
 [ShapeOffice]
@@ -143,15 +167,15 @@ LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Office')"]
 [ShapeSocial]
 Meter=Shape
 MeterStyle=ShapeSocialStyle
-Group=CategoryPage3
+Group=CategoryPage4
 X=0
-Y=50r
+Y=200
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Social')"][!CommandMeasure LuaSettings "setSettingsSocial()"]
 
 [ShapeOther]
 Meter=Shape
 MeterStyle=ShapeOtherStyle
-Group=CategoryPage3
+Group=CategoryPage4
 X=0
 Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Other')"][!CommandMeasure LuaSettings "setSettingsOther()"]
@@ -174,10 +198,18 @@ X=#X1#
 Y=0r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setDownPage3()"]
 
+[ShapeDownPage4]
+Meter=Shape
+MeterStyle=ShapeDownPage4Style
+Group=CategoryPage3 | Sliders
+X=#X1#
+Y=0r
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setDownPage4()"]
+
 [ShapeDownBlank]
 Meter=Shape
 MeterStyle=ShapeDownBlankStyle
-Group=CategoryPage3 | Sliders
+Group=CategoryPage4 | Sliders
 X=#X1#
 Y=0r
 
@@ -223,7 +255,7 @@ Text=Info
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage1 | Sliders
-X=55
+X=0r
 Y=225
 Text=Adobe
 Hidden=#CategoryPage1#
@@ -232,7 +264,7 @@ Hidden=#CategoryPage1#
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage1 | Sliders
-X=55
+X=0r
 Y=50r
 Text="Assassin's Creed"
 Hidden=#CategoryPage1#
@@ -241,7 +273,7 @@ Hidden=#CategoryPage1#
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage1 | Sliders
-X=55
+X=0r
 Y=50r
 Text=Browsing
 Hidden=#CategoryPage1#
@@ -250,88 +282,106 @@ Hidden=#CategoryPage1#
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage1 | Sliders
-X=55
+X=0r
 Y=50r
-Text=Elgato
+Text=Disk
 Hidden=#CategoryPage1#
 
 [MeterPage5]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
-X=55
+X=0r
 Y=225
-Text=Emulator
+Text=Elgato
 Hidden=#CategoryPage2#
 
 [MeterPage6]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
-X=55
+X=0r
 Y=50r
-Text=Gaming
+Text=Emulator
 Hidden=#CategoryPage2#
 
 [MeterPage7]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
-X=55
+X=0r
 Y=50r
-Text=Google
+Text=Gaming
 Hidden=#CategoryPage2#
 
 [MeterPage8]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage2 | Sliders
-X=55
+X=0r
 Y=50r
-Text=Media
+Text=Google
 Hidden=#CategoryPage2#
 
 [MeterPage9]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
-X=55
+X=0r
 Y=225
-Text=Minecraft
+Text=LibreOffice
 Hidden=#CategoryPage3#
 
 [MeterPage10]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
-X=55
+X=0r
 Y=50r
-Text=Office
+Text=Media
 Hidden=#CategoryPage3#
 
 [MeterPage11]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
-X=55
+X=0r
 Y=50r
-Text=Social
+Text=Minecraft
 Hidden=#CategoryPage3#
 
 [MeterPage12]
 Meter=String
 MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
-X=55
+X=0r
+Y=50r
+Text=Office
+Hidden=#CategoryPage3#
+
+[MeterPage13]
+Meter=String
+MeterStyle=SettingActive
+Group=CategoryPage4 | Sliders
+X=0r
+Y=225
+Text=Social
+Hidden=#CategoryPage4#
+
+[MeterPage14]
+Meter=String
+MeterStyle=SettingActive
+Group=CategoryPage4 | Sliders
+X=0r
 Y=50r
 Text=Other
-Hidden=#CategoryPage3#
+Hidden=#CategoryPage4#
 
 [MeterSpecialText]
 Meter=String
 MeterStyle=SettingActive
 Group=Sliders
-X=55
+X=0r
 Y=515
 Text=Special
 
@@ -339,7 +389,7 @@ Text=Special
 Meter=String
 MeterStyle=SettingActive
 Group=Sliders
-X=55
+X=0r
 Y=50r
 Text=Options
 
@@ -347,6 +397,6 @@ Text=Options
 Meter=String
 MeterStyle=SettingActive
 Group=Sliders
-X=55
+X=0r
 Y=50r
 Text=Switch to Plus

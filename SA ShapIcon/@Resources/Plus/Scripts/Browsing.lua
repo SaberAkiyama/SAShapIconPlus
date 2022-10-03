@@ -49,6 +49,11 @@ function setSafariColorManual(selectedCode)
 
 end
 
+function setTorColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinTor" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setVivaldiColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVivaldi" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -133,6 +138,12 @@ maskBrowsingSelect = {
 		browsingMaskShape = "Hexagon",
 		browsingRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		browsingMaskMeter = "Shape",
+		browsingMaskStyle = "InlineParallelogram",
+		browsingMaskShape = "Parallelogram",
+		browsingRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		browsingMaskMeter = "Shape",
 		browsingMaskStyle = "InlineSquare",
@@ -161,6 +172,12 @@ maskBrowsingSelect = {
 		browsingMaskMeter = "Shape",
 		browsingMaskStyle = "Blank",
 		browsingMaskShape = "Hexagon",
+		browsingRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		browsingMaskMeter = "Shape",
+		browsingMaskStyle = "Blank",
+		browsingMaskShape = "Parallelogram",
 		browsingRegularHidden = "1"
 	},
 	["Regular Square"] = {
@@ -261,6 +278,17 @@ function setSafariMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SafariShape "' .. maskBrowsingSelect[selectedMask]['browsingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SafariMaskStyle "' .. maskBrowsingSelect[selectedMask]['browsingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SafariRegularHidden "' .. maskBrowsingSelect[selectedMask]['browsingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTorMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TorMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TorMaskMeter "' .. maskBrowsingSelect[selectedMask]['browsingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TorShape "' .. maskBrowsingSelect[selectedMask]['browsingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TorMaskStyle "' .. maskBrowsingSelect[selectedMask]['browsingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TorRegularHidden "' .. maskBrowsingSelect[selectedMask]['browsingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -7,6 +7,10 @@ selectOffice = {
 		iconName = "Excel",
 		iconMask = "Excel"
 	},
+	["OneDrive"] = {
+		iconName = "OneDrive",
+		iconMask = "OneDrive"
+	},
 	["OneNote"] = {
 		iconName = "OneNote",
 		iconMask = "OneNote"

@@ -464,6 +464,11 @@ function setOverwatchColorManual(selectedCode)
 
 end
 
+function setOverwatch2ColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinOverwatch2" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setPaladinsColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinPaladins" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -1841,6 +1846,17 @@ function setOverwatchMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables OverwatchShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OverwatchMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OverwatchRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setOverwatch2Mask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables Overwatch2Mask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Overwatch2MaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Overwatch2Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Overwatch2MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Overwatch2RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

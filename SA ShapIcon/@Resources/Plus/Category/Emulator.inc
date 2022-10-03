@@ -31,6 +31,18 @@ MouseLeaveAction=[!SetOption MeterPageBlueStacksText FontColor "255,255,255"][!U
 LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('BlueStacks')"]
 Hidden=#EmulatorPage1#
 
+[MeterPageBlueStacksXText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=EmulatorPage1
+Text=BlueStacks X
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageBlueStacksXText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageBlueStacksXText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('BlueStacks X')"]
+Hidden=#EmulatorPage1#
+
 [MeterPageCemuText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -130,22 +142,22 @@ Hidden=#EmulatorPage1#
 [MeterPageRPCS3Text]
 Meter=String
 MeterStyle=IconTextPageName
-Group=EmulatorPage1
+Group=EmulatorPage2
 Text=RPCS3
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageRPCS3Text FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRPCS3Text FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('RPCS3')"]
-Hidden=#EmulatorPage1#
+Hidden=#EmulatorPage2#
 
 [MeterPageVita3KText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=EmulatorPage2
 Text=Vita3K
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageVita3KText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVita3KText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryEmulator "setEmulator('Vita3K')"]

@@ -7,6 +7,11 @@ function openFileLocation()
 
 end
 
+function openCLIArgument()
+	SKIN:Bang('"#@#CLI Arguments.inc"')
+
+end
+
 function setOption(selectedOption)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectOption[selectedOption]['iconName'] .. '" "#@#Plus\\Settings Variables.inc"')
 
@@ -204,6 +209,7 @@ end
 hoverOptionSelect = {
 	["Over"] = {
 		colorFileLocation = "65,105,225",
+		colorCLIArgument = "65,105,225",
 		colorChromeType = "65,105,225",
 		colorHeightIcon = "65,105,225",
 		colorGradientAngleValue = "65,105,225",
@@ -217,6 +223,7 @@ hoverOptionSelect = {
 	},
 	["Leave"] = {
 		colorFileLocation = "255,255,255",
+		colorCLIArgument = "255,255,255",
 		colorChromeType = "255,255,255",
 		colorHeightIcon = "255,255,255",
 		colorGradientAngleValue = "255,255,255",
@@ -232,6 +239,13 @@ hoverOptionSelect = {
 
 function setHoverOptionFileLocation(selectedHover)
 	SKIN:Bang('!SetOption MeterFileLocationActive FontColor "' .. hoverOptionSelect[selectedHover]['colorFileLocation'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setHoverOptionCLIArgument(selectedHover)
+	SKIN:Bang('!SetOption MeterCLIArgumentActive FontColor "' .. hoverOptionSelect[selectedHover]['colorCLIArgument'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 

@@ -260,6 +260,17 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage3#
 
+[ShapeUpPage3Style]
+Shape=Rectangle 0,0,50,50 | Extend MyFillColor | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
+Path1=11.847,32.808 | LineTo 10,30.697 | LineTo 24.077,18.028 | LineTo 25,17.192 | LineTo 25.923,18.028 | LineTo 40,30.697 | LineTo 38.153,32.808 | LineTo 25,20.976 | LineTo 11.847,32.808 | ClosePath 1
+MyFillColor=Fill Color 0,0,0,1
+MouseOverAction=[!SetOption ShapeUpPage3 MyFillColor "Fill Color 255,255,255,64"][!UpdateMeter ShapeUpPage3][!Redraw]
+MouseLeaveAction=[!SetOption ShapeUpPage3 MyFillColor "Fill Color 0,0,0,1"][!UpdateMeter ShapeUpPage3][!Redraw]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#CategoryPage4#
+
 [ShapeDownPage2Style]
 Shape=Rectangle 0,0,50,50 | Extend MyFillColor | Stroke Color 0,0,0,0 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -282,13 +293,24 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage2#
 
+[ShapeDownPage4Style]
+Shape=Rectangle 0,0,50,50 | Extend MyFillColor | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
+Path1=11.847,17.192 | LineTo 10,19.303 | LineTo 24.077,31.972 | LineTo 25,32.808 | LineTo 25.923,31.972 | LineTo 40,19.303 | LineTo 38.153,17.192 | LineTo 25,29.024 | LineTo 11.847,17.192 | ClosePath 1
+MyFillColor=Fill Color 0,0,0,1
+MouseOverAction=[!SetOption ShapeDownPage4 MyFillColor "Fill Color 255,255,255,64"][!UpdateMeter ShapeDownPage4][!Redraw]
+MouseLeaveAction=[!SetOption ShapeDownPage4 MyFillColor "Fill Color 0,0,0,1"][!UpdateMeter ShapeDownPage4][!Redraw]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#CategoryPage3#
+
 [ShapeDownBlankStyle]
 Shape=Rectangle 0,0,50,50 | Fill Color 0,0,0,0 | Stroke Color 0,0,0,0 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255,128 | Stroke Color 0,0,0,0 | StrokeWidth 0
 Path1=11.847,17.192 | LineTo 10,19.303 | LineTo 24.077,31.972 | LineTo 25,32.808 | LineTo 25.923,31.972 | LineTo 40,19.303 | LineTo 38.153,17.192 | LineTo 25,29.024 | LineTo 11.847,17.192 | ClosePath 1
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage3#
+Hidden=#CategoryPage4#
 
 ; =============================================================
 
@@ -439,6 +461,22 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage1#
 
+[ShapeDiskStyle]
+Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
+Shape3=Path Path2 | StrokeWidth 0
+Shape4=Path Path3 | StrokeWidth 0
+Shape5=Combine Shape2 | XOR Shape3 | XOR Shape4
+Path1=16,10 | CurveTo 13,13,14.347,10,13,11.347 | LineTo 13,37 | CurveTo 16,40,13,38.653,14.347,40 | LineTo 34,40 | CurveTo 37,37,35.653,40,37,38.653 | LineTo 37,13 | CurveTo 34,10,37,11.347,35.653,10 | LineTo 16,10 | ClosePath 1
+Path2=25,14.5 | CurveTo 32.5,22,29.2,14.5,32.5,17.8 | CurveTo 25,29.5,32.5,26.2,29.2,29.5 | CurveTo 21.063,28.375,23.609,29.496,22.246,29.107 | LineTo 22.891,24.718 | CurveTo 22.282,24.109,23.043,24.268,22.732,23.958 | LineTo 18.625,25.938 | CurveTo 17.5,22,17.893,24.754,17.504,23.391 | CurveTo 25,14.5,17.5,17.8,20.8,14.5 | ClosePath 1
+Path3=25,20.5 | CurveTo 23.5,22,24.097,20.5,23.5,21.097 | CurveTo 25,23.5,23.5,22.903,24.097,23.5 | CurveTo 26.5,22,25.903,23.5,26.5,22.903 | CurveTo 25,20.5,26.5,21.097,25.903,20.5 | ClosePath 1
+MyFillGradient=0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0
+MouseOverAction=[!CommandMeasure LuaSettings "setPageDisk('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaSettings "setPageDisk('Leave')"]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#CategoryPage1#
+
 [ShapeElgatoStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
@@ -448,7 +486,7 @@ MouseOverAction=[!CommandMeasure LuaSettings "setPageElgato('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaSettings "setPageElgato('Leave')"]
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage1#
+Hidden=#CategoryPage2#
 
 [ShapeEmulatorStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -515,6 +553,20 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage2#
 
+[ShapeLibreOfficeStyle]
+Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape3=Path Path2 | StrokeWidth 0
+Shape4=Combine Shape2 | XOR Shape3
+Path1=13.75,10 | CurveTo 12.25,11.5,12.921251,10,12.25,10.671251 | LineTo 12.25,38.5 | CurveTo 13.75,40,12.25,39.328749,12.921251,40 | LineTo 36.25,40 | CurveTo 37.75,38.5,37.078749,40,37.75,39.328749 | LineTo 37.75,11.5 | CurveTo 36.25,10,37.75,10.671251,37.078749,10 | LineTo 13.75,10 | ClosePath 1
+Path2=14.5,11.5 | LineTo 28.878906,11.5 | CurveTo 29.939453,11.939453,29.276406,11.5,29.658203,11.658203 | LineTo 35.810547,17.810547 | CurveTo 36.25,18.871094,36.091797,18.091797,36.25,18.473594 | LineTo 36.25,37.75 | CurveTo 35.5,38.5,36.25,38.164,35.914,38.5 | LineTo 14.5,38.5 | CurveTo 13.75,37.75,14.086,38.5,13.75,38.164 | LineTo 13.75,12.25 | CurveTo 14.5,11.5,13.75,11.836,14.086,11.5 | ClosePath 1
+MyFillGradient=0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0
+MouseOverAction=[!CommandMeasure LuaSettings "setPageLibreOffice('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaSettings "setPageLibreOffice('Leave')"]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#CategoryPage3#
+
 [ShapeMediaStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255 | StrokeWidth 0
@@ -527,7 +579,7 @@ MouseOverAction=[!CommandMeasure LuaSettings "setPageMedia('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaSettings "setPageMedia('Leave')"]
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage2#
+Hidden=#CategoryPage3#
 
 [ShapeMinecraftStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -578,7 +630,7 @@ MouseOverAction=[!CommandMeasure LuaSettings "setPageSocial('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaSettings "setPageSocial('Leave')"]
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage3#
+Hidden=#CategoryPage4#
 
 [ShapeOtherStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -598,7 +650,7 @@ MouseOverAction=[!CommandMeasure LuaSettings "setPageOther('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaSettings "setPageOther('Leave')"]
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage3#
+Hidden=#CategoryPage4#
 
 ; =============================================================
 ; =============================================================
@@ -796,6 +848,14 @@ FontSize=20
 AntiAlias=1
 
 [OptionFileLocationActive]
+StringAlign=CenterTop
+FontFace=Borda 12
+FontColor=255,255,255
+SolidColor=0,0,0,1
+FontSize=20
+AntiAlias=1
+
+[OptionCLIArgumentActive]
 StringAlign=CenterTop
 FontFace=Borda 12
 FontColor=255,255,255

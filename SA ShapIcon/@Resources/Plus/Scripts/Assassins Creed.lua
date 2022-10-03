@@ -72,139 +72,151 @@ end
 
 maskAssassinsCreedSelect = {
 	["Alter Celtic Knot"] = {
-		officeMaskMeter = "Image",
-		officeMaskStyle = "AlterCelticKnot",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Image",
+		assassinsCreedMaskStyle = "AlterCelticKnot",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Chain"] = {
-		officeMaskMeter = "Image",
-		officeMaskStyle = "AlterChain",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Image",
+		assassinsCreedMaskStyle = "AlterChain",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Circle"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "AlterCircle",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "AlterCircle",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Hexagon"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "AlterHexagon",
-		officeMaskShape = "Hexagon",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "AlterHexagon",
+		assassinsCreedMaskShape = "Hexagon",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Square"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "AlterSquare",
-		officeMaskShape = "Square",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "AlterSquare",
+		assassinsCreedMaskShape = "Square",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Circle V2"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "AlterCircleV2",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "AlterCircleV2",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Hexagon V2"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "AlterHexagonV2",
-		officeMaskShape = "Hexagon",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "AlterHexagonV2",
+		assassinsCreedMaskShape = "Hexagon",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Alter Square V2"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "AlterSquareV2",
-		officeMaskShape = "Square",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "AlterSquareV2",
+		assassinsCreedMaskShape = "Square",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Dashed Circle"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "DashedCircle",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "DashedCircle",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Dashed Hexagon"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "DashedHexagon",
-		officeMaskShape = "Hexagon",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "DashedHexagon",
+		assassinsCreedMaskShape = "Hexagon",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Inline Circle"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "InlineCircle",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "InlineCircle",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Inline Hexagon"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "InlineHexagon",
-		officeMaskShape = "Hexagon",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "InlineHexagon",
+		assassinsCreedMaskShape = "Hexagon",
+		assassinsCreedRegularHidden = "0"
+	},
+	["Inline Parallelogram"] = {
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "InlineParallelogram",
+		assassinsCreedMaskShape = "Parallelogram",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Inline Square"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "InlineSquare",
-		officeMaskShape = "Square",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "InlineSquare",
+		assassinsCreedMaskShape = "Square",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Regular Celtic Knot"] = {
-		officeMaskMeter = "Image",
-		officeMaskStyle = "CelticKnot",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Image",
+		assassinsCreedMaskStyle = "CelticKnot",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Regular Chain"] = {
-		officeMaskMeter = "Image",
-		officeMaskStyle = "Chain",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Image",
+		assassinsCreedMaskStyle = "Chain",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Regular Circle"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "Blank",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "1"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "Blank",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "1"
 	},
 	["Regular Hexagon"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "Blank",
-		officeMaskShape = "Hexagon",
-		officeRegularHidden = "1"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "Blank",
+		assassinsCreedMaskShape = "Hexagon",
+		assassinsCreedRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "Blank",
+		assassinsCreedMaskShape = "Parallelogram",
+		assassinsCreedRegularHidden = "1"
 	},
 	["Regular Square"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "Blank",
-		officeMaskShape = "Square",
-		officeRegularHidden = "1"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "Blank",
+		assassinsCreedMaskShape = "Square",
+		assassinsCreedRegularHidden = "1"
 	},
 	["Split Circle"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "SplitCircle",
-		officeMaskShape = "Circle",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "SplitCircle",
+		assassinsCreedMaskShape = "Circle",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Split Hexagon"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "SplitHexagon",
-		officeMaskShape = "Hexagon",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "SplitHexagon",
+		assassinsCreedMaskShape = "Hexagon",
+		assassinsCreedRegularHidden = "0"
 	},
 	["Split Square"] = {
-		officeMaskMeter = "Shape",
-		officeMaskStyle = "SplitSquare",
-		officeMaskShape = "Square",
-		officeRegularHidden = "0"
+		assassinsCreedMaskMeter = "Shape",
+		assassinsCreedMaskStyle = "SplitSquare",
+		assassinsCreedMaskShape = "Square",
+		assassinsCreedRegularHidden = "0"
 	}
 }
 
 function setAssassinsCreedMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -212,10 +224,10 @@ end
 
 function setACRevelationsMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRevelationsShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRevelationsRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -223,10 +235,10 @@ end
 
 function setAC3Mask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AC3Mask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC3MaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC3Shape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC3MaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC3RegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC3MaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC3Shape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC3MaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC3RegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -234,10 +246,10 @@ end
 
 function setACRogueMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACRogueMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRogueMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRogueShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRogueMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACRogueRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -245,10 +257,10 @@ end
 
 function setAC4BlackFlagMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -256,10 +268,10 @@ end
 
 function setACUnityMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACUnityMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACUnityMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACUnityShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACUnityMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACUnityRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -267,10 +279,10 @@ end
 
 function setACSyndicateMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACSyndicateShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACSyndicateRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -278,10 +290,10 @@ end
 
 function setACOriginsMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACOriginsMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOriginsMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOriginsShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOriginsMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOriginsRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -289,10 +301,10 @@ end
 
 function setACOdysseyMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOdysseyShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACOdysseyRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -300,10 +312,10 @@ end
 
 function setACValhallaMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACValhallaMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACValhallaShape "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables ACValhallaRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

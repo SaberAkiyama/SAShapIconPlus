@@ -148,6 +148,12 @@ maskSocialSelect = {
 		socialMaskShape = "Hexagon",
 		socialRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "InlineParallelogram",
+		socialMaskShape = "Parallelogram",
+		socialRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		socialMaskMeter = "Shape",
 		socialMaskStyle = "InlineSquare",
@@ -176,6 +182,12 @@ maskSocialSelect = {
 		socialMaskMeter = "Shape",
 		socialMaskStyle = "Blank",
 		socialMaskShape = "Hexagon",
+		socialRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		socialMaskMeter = "Shape",
+		socialMaskStyle = "Blank",
+		socialMaskShape = "Parallelogram",
 		socialRegularHidden = "1"
 	},
 	["Regular Square"] = {

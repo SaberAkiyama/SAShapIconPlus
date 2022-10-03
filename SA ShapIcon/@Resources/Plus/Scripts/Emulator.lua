@@ -19,6 +19,11 @@ function setBlueStacksColorManual(selectedCode)
 
 end
 
+function setBlueStacksXColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinBlueStacksX" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCemuColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCemu" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -232,6 +237,17 @@ function setBlueStacksMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables BlueStacksShape "' .. maskEmulatorSelect[selectedMask]['emulatorMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables BlueStacksMaskStyle "' .. maskEmulatorSelect[selectedMask]['emulatorMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables BlueStacksRegularHidden "' .. maskEmulatorSelect[selectedMask]['emulatorRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setBlueStacksXMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables BlueStacksXMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlueStacksXMaskMeter "' .. maskEmulatorSelect[selectedMask]['emulatorMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlueStacksXShape "' .. maskEmulatorSelect[selectedMask]['emulatorMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlueStacksXMaskStyle "' .. maskEmulatorSelect[selectedMask]['emulatorMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables BlueStacksXRegularHidden "' .. maskEmulatorSelect[selectedMask]['emulatorRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

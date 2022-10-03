@@ -19,6 +19,11 @@ function setExcelColorManual(selectedCode)
 
 end
 
+function setOneDriveColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinOneDrive" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setOneNoteColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinOneNote" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -133,6 +138,12 @@ maskOfficeSelect = {
 		officeMaskShape = "Hexagon",
 		officeRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		officeMaskMeter = "Shape",
+		officeMaskStyle = "InlineParallelogram",
+		officeMaskShape = "Parallelogram",
+		officeRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		officeMaskMeter = "Shape",
 		officeMaskStyle = "InlineSquare",
@@ -161,6 +172,12 @@ maskOfficeSelect = {
 		officeMaskMeter = "Shape",
 		officeMaskStyle = "Blank",
 		officeMaskShape = "Hexagon",
+		officeRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		officeMaskMeter = "Shape",
+		officeMaskStyle = "Blank",
+		officeMaskShape = "Parallelogram",
 		officeRegularHidden = "1"
 	},
 	["Regular Square"] = {
@@ -195,6 +212,17 @@ function setExcelMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ExcelShape "' .. maskOfficeSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ExcelMaskStyle "' .. maskOfficeSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ExcelRegularHidden "' .. maskOfficeSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setOneDriveMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables OneDriveMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveMaskMeter "' .. maskOfficeSelect[selectedMask]['officeMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveShape "' .. maskOfficeSelect[selectedMask]['officeMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveMaskStyle "' .. maskOfficeSelect[selectedMask]['officeMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveRegularHidden "' .. maskOfficeSelect[selectedMask]['officeRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

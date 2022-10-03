@@ -183,6 +183,12 @@ maskMediaSelect = {
 		mediaMaskShape = "Hexagon",
 		mediaRegularHidden = "0"
 	},
+	["Inline Parallelogram"] = {
+		mediaMaskMeter = "Shape",
+		mediaMaskStyle = "InlineParallelogram",
+		mediaMaskShape = "Parallelogram",
+		mediaRegularHidden = "0"
+	},
 	["Inline Square"] = {
 		mediaMaskMeter = "Shape",
 		mediaMaskStyle = "InlineSquare",
@@ -211,6 +217,12 @@ maskMediaSelect = {
 		mediaMaskMeter = "Shape",
 		mediaMaskStyle = "Blank",
 		mediaMaskShape = "Hexagon",
+		mediaRegularHidden = "1"
+	},
+	["Regular Parallelogram"] = {
+		mediaMaskMeter = "Shape",
+		mediaMaskStyle = "Blank",
+		mediaMaskShape = "Parallelogram",
 		mediaRegularHidden = "1"
 	},
 	["Regular Square"] = {

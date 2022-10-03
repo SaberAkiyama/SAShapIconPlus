@@ -31,6 +31,10 @@ selectBrowsing = {
 		iconName = "Opera GX",
 		iconMask = "OperaGX"
 	},
+	["Tor Browser"] = {
+		iconName = "Tor Browser",
+		iconMask = "Tor"
+	},
 	["Vivaldi Browser"] = {
 		iconName = "Vivaldi Browser",
 		iconMask = "Vivaldi"

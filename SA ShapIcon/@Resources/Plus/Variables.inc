@@ -383,6 +383,15 @@ SafariShapeGradient1Base=225,65,105
 SafariShapeGradient2Base=65,105,225
 SafariRegularHidden=1
 
+TorShape=Hexagon
+TorMaskMeter=Shape
+TorMask=Regular Hexagon
+TorMaskStyle=Blank
+TorMaskBase=255,255,255
+TorShapeGradient1Base=225,65,105
+TorShapeGradient2Base=65,105,225
+TorRegularHidden=1
+
 VivaldiShape=Hexagon
 VivaldiMaskMeter=Shape
 VivaldiMask=Regular Hexagon
@@ -391,6 +400,244 @@ VivaldiMaskBase=255,255,255
 VivaldiShapeGradient1Base=225,65,105
 VivaldiShapeGradient2Base=65,105,225
 VivaldiRegularHidden=1
+
+; ============================================================
+; Disk
+; ============================================================
+
+DiskAShape=Hexagon
+DiskAMaskMeter=Shape
+DiskAMask=Regular Hexagon
+DiskAMaskStyle=Blank
+DiskAMaskBase=255,255,255
+DiskAShapeGradient1Base=225,65,105
+DiskAShapeGradient2Base=65,105,225
+DiskARegularHidden=1
+
+DiskBShape=Hexagon
+DiskBMaskMeter=Shape
+DiskBMask=Regular Hexagon
+DiskBMaskStyle=Blank
+DiskBMaskBase=255,255,255
+DiskBShapeGradient1Base=225,65,105
+DiskBShapeGradient2Base=65,105,225
+DiskBRegularHidden=1
+
+DiskCShape=Hexagon
+DiskCMaskMeter=Shape
+DiskCMask=Regular Hexagon
+DiskCMaskStyle=Blank
+DiskCMaskBase=255,255,255
+DiskCShapeGradient1Base=225,65,105
+DiskCShapeGradient2Base=65,105,225
+DiskCRegularHidden=1
+
+DiskDShape=Hexagon
+DiskDMaskMeter=Shape
+DiskDMask=Regular Hexagon
+DiskDMaskStyle=Blank
+DiskDMaskBase=255,255,255
+DiskDShapeGradient1Base=225,65,105
+DiskDShapeGradient2Base=65,105,225
+DiskDRegularHidden=1
+
+DiskEShape=Hexagon
+DiskEMaskMeter=Shape
+DiskEMask=Regular Hexagon
+DiskEMaskStyle=Blank
+DiskEMaskBase=255,255,255
+DiskEShapeGradient1Base=225,65,105
+DiskEShapeGradient2Base=65,105,225
+DiskERegularHidden=1
+
+DiskFShape=Hexagon
+DiskFMaskMeter=Shape
+DiskFMask=Regular Hexagon
+DiskFMaskStyle=Blank
+DiskFMaskBase=255,255,255
+DiskFShapeGradient1Base=225,65,105
+DiskFShapeGradient2Base=65,105,225
+DiskFRegularHidden=1
+
+DiskGShape=Hexagon
+DiskGMaskMeter=Shape
+DiskGMask=Regular Hexagon
+DiskGMaskStyle=Blank
+DiskGMaskBase=255,255,255
+DiskGShapeGradient1Base=225,65,105
+DiskGShapeGradient2Base=65,105,225
+DiskGRegularHidden=1
+
+DiskHShape=Hexagon
+DiskHMaskMeter=Shape
+DiskHMask=Regular Hexagon
+DiskHMaskStyle=Blank
+DiskHMaskBase=255,255,255
+DiskHShapeGradient1Base=225,65,105
+DiskHShapeGradient2Base=65,105,225
+DiskHRegularHidden=1
+
+DiskIShape=Hexagon
+DiskIMaskMeter=Shape
+DiskIMask=Regular Hexagon
+DiskIMaskStyle=Blank
+DiskIMaskBase=255,255,255
+DiskIShapeGradient1Base=225,65,105
+DiskIShapeGradient2Base=65,105,225
+DiskIRegularHidden=1
+
+DiskJShape=Hexagon
+DiskJMaskMeter=Shape
+DiskJMask=Regular Hexagon
+DiskJMaskStyle=Blank
+DiskJMaskBase=255,255,255
+DiskJShapeGradient1Base=225,65,105
+DiskJShapeGradient2Base=65,105,225
+DiskJRegularHidden=1
+
+DiskKShape=Hexagon
+DiskKMaskMeter=Shape
+DiskKMask=Regular Hexagon
+DiskKMaskStyle=Blank
+DiskKMaskBase=255,255,255
+DiskKShapeGradient1Base=225,65,105
+DiskKShapeGradient2Base=65,105,225
+DiskKRegularHidden=1
+
+DiskLShape=Hexagon
+DiskLMaskMeter=Shape
+DiskLMask=Regular Hexagon
+DiskLMaskStyle=Blank
+DiskLMaskBase=255,255,255
+DiskLShapeGradient1Base=225,65,105
+DiskLShapeGradient2Base=65,105,225
+DiskLRegularHidden=1
+
+DiskMShape=Hexagon
+DiskMMaskMeter=Shape
+DiskMMask=Regular Hexagon
+DiskMMaskStyle=Blank
+DiskMMaskBase=255,255,255
+DiskMShapeGradient1Base=225,65,105
+DiskMShapeGradient2Base=65,105,225
+DiskMRegularHidden=1
+
+DiskNShape=Hexagon
+DiskNMaskMeter=Shape
+DiskNMask=Regular Hexagon
+DiskNMaskStyle=Blank
+DiskNMaskBase=255,255,255
+DiskNShapeGradient1Base=225,65,105
+DiskNShapeGradient2Base=65,105,225
+DiskNRegularHidden=1
+
+DiskOShape=Hexagon
+DiskOMaskMeter=Shape
+DiskOMask=Regular Hexagon
+DiskOMaskStyle=Blank
+DiskOMaskBase=255,255,255
+DiskOShapeGradient1Base=225,65,105
+DiskOShapeGradient2Base=65,105,225
+DiskORegularHidden=1
+
+DiskPShape=Hexagon
+DiskPMaskMeter=Shape
+DiskPMask=Regular Hexagon
+DiskPMaskStyle=Blank
+DiskPMaskBase=255,255,255
+DiskPShapeGradient1Base=225,65,105
+DiskPShapeGradient2Base=65,105,225
+DiskPRegularHidden=1
+
+DiskQShape=Hexagon
+DiskQMaskMeter=Shape
+DiskQMask=Regular Hexagon
+DiskQMaskStyle=Blank
+DiskQMaskBase=255,255,255
+DiskQShapeGradient1Base=225,65,105
+DiskQShapeGradient2Base=65,105,225
+DiskQRegularHidden=1
+
+DiskRShape=Hexagon
+DiskRMaskMeter=Shape
+DiskRMask=Regular Hexagon
+DiskRMaskStyle=Blank
+DiskRMaskBase=255,255,255
+DiskRShapeGradient1Base=225,65,105
+DiskRShapeGradient2Base=65,105,225
+DiskRRegularHidden=1
+
+DiskSShape=Hexagon
+DiskSMaskMeter=Shape
+DiskSMask=Regular Hexagon
+DiskSMaskStyle=Blank
+DiskSMaskBase=255,255,255
+DiskSShapeGradient1Base=225,65,105
+DiskSShapeGradient2Base=65,105,225
+DiskSRegularHidden=1
+
+DiskTShape=Hexagon
+DiskTMaskMeter=Shape
+DiskTMask=Regular Hexagon
+DiskTMaskStyle=Blank
+DiskTMaskBase=255,255,255
+DiskTShapeGradient1Base=225,65,105
+DiskTShapeGradient2Base=65,105,225
+DiskTRegularHidden=1
+
+DiskUShape=Hexagon
+DiskUMaskMeter=Shape
+DiskUMask=Regular Hexagon
+DiskUMaskStyle=Blank
+DiskUMaskBase=255,255,255
+DiskUShapeGradient1Base=225,65,105
+DiskUShapeGradient2Base=65,105,225
+DiskURegularHidden=1
+
+DiskVShape=Hexagon
+DiskVMaskMeter=Shape
+DiskVMask=Regular Hexagon
+DiskVMaskStyle=Blank
+DiskVMaskBase=255,255,255
+DiskVShapeGradient1Base=225,65,105
+DiskVShapeGradient2Base=65,105,225
+DiskVRegularHidden=1
+
+DiskWShape=Hexagon
+DiskWMaskMeter=Shape
+DiskWMask=Regular Hexagon
+DiskWMaskStyle=Blank
+DiskWMaskBase=255,255,255
+DiskWShapeGradient1Base=225,65,105
+DiskWShapeGradient2Base=65,105,225
+DiskWRegularHidden=1
+
+DiskXShape=Hexagon
+DiskXMaskMeter=Shape
+DiskXMask=Regular Hexagon
+DiskXMaskStyle=Blank
+DiskXMaskBase=255,255,255
+DiskXShapeGradient1Base=225,65,105
+DiskXShapeGradient2Base=65,105,225
+DiskXRegularHidden=1
+
+DiskYShape=Hexagon
+DiskYMaskMeter=Shape
+DiskYMask=Regular Hexagon
+DiskYMaskStyle=Blank
+DiskYMaskBase=255,255,255
+DiskYShapeGradient1Base=225,65,105
+DiskYShapeGradient2Base=65,105,225
+DiskYRegularHidden=1
+
+DiskZShape=Hexagon
+DiskZMaskMeter=Shape
+DiskZMask=Regular Hexagon
+DiskZMaskStyle=Blank
+DiskZMaskBase=255,255,255
+DiskZShapeGradient1Base=225,65,105
+DiskZShapeGradient2Base=65,105,225
+DiskZRegularHidden=1
 
 ; ============================================================
 ; Elgato
@@ -471,6 +718,15 @@ BlueStacksMaskBase=255,255,255
 BlueStacksShapeGradient1Base=225,65,105
 BlueStacksShapeGradient2Base=65,105,225
 BlueStacksRegularHidden=1
+
+BlueStacksXShape=Hexagon
+BlueStacksXMaskMeter=Shape
+BlueStacksXMask=Regular Hexagon
+BlueStacksXMaskStyle=Blank
+BlueStacksXMaskBase=255,255,255
+BlueStacksXShapeGradient1Base=225,65,105
+BlueStacksXShapeGradient2Base=65,105,225
+BlueStacksXRegularHidden=1
 
 CemuShape=Hexagon
 CemuMaskMeter=Shape
@@ -1394,6 +1650,15 @@ OverwatchShapeGradient1Base=225,65,105
 OverwatchShapeGradient2Base=65,105,225
 OverwatchRegularHidden=1
 
+Overwatch2Shape=Hexagon
+Overwatch2MaskMeter=Shape
+Overwatch2Mask=Regular Hexagon
+Overwatch2MaskStyle=Blank
+Overwatch2MaskBase=255,255,255
+Overwatch2ShapeGradient1Base=225,65,105
+Overwatch2ShapeGradient2Base=65,105,225
+Overwatch2RegularHidden=1
+
 PaladinsShape=Hexagon
 PaladinsMaskMeter=Shape
 PaladinsMask=Regular Hexagon
@@ -1903,6 +2168,64 @@ SlidesShapeGradient2Base=65,105,225
 SlidesRegularHidden=1
 
 ; ============================================================
+; LibreOffice
+; ============================================================
+
+BaseShape=Hexagon
+BaseMaskMeter=Shape
+BaseMask=Regular Hexagon
+BaseMaskStyle=Blank
+BaseMaskBase=255,255,255
+BaseShapeGradient1Base=225,65,105
+BaseShapeGradient2Base=65,105,225
+BaseRegularHidden=1
+
+CalcShape=Hexagon
+CalcMaskMeter=Shape
+CalcMask=Regular Hexagon
+CalcMaskStyle=Blank
+CalcMaskBase=255,255,255
+CalcShapeGradient1Base=225,65,105
+CalcShapeGradient2Base=65,105,225
+CalcRegularHidden=1
+
+DrawShape=Hexagon
+DrawMaskMeter=Shape
+DrawMask=Regular Hexagon
+DrawMaskStyle=Blank
+DrawMaskBase=255,255,255
+DrawShapeGradient1Base=225,65,105
+DrawShapeGradient2Base=65,105,225
+DrawRegularHidden=1
+
+ImpressShape=Hexagon
+ImpressMaskMeter=Shape
+ImpressMask=Regular Hexagon
+ImpressMaskStyle=Blank
+ImpressMaskBase=255,255,255
+ImpressShapeGradient1Base=225,65,105
+ImpressShapeGradient2Base=65,105,225
+ImpressRegularHidden=1
+
+MathShape=Hexagon
+MathMaskMeter=Shape
+MathMask=Regular Hexagon
+MathMaskStyle=Blank
+MathMaskBase=255,255,255
+MathShapeGradient1Base=225,65,105
+MathShapeGradient2Base=65,105,225
+MathRegularHidden=1
+
+WriterShape=Hexagon
+WriterMaskMeter=Shape
+WriterMask=Regular Hexagon
+WriterMaskStyle=Blank
+WriterMaskBase=255,255,255
+WriterShapeGradient1Base=225,65,105
+WriterShapeGradient2Base=65,105,225
+WriterRegularHidden=1
+
+; ============================================================
 ; Minecraft
 ; ============================================================
 
@@ -2399,6 +2722,33 @@ AbletonShapeGradient1Base=225,65,105
 AbletonShapeGradient2Base=65,105,225
 AbletonRegularHidden=1
 
+AffinityDesignerShape=Hexagon
+AffinityDesignerMaskMeter=Shape
+AffinityDesignerMask=Regular Hexagon
+AffinityDesignerMaskStyle=Blank
+AffinityDesignerMaskBase=255,255,255
+AffinityDesignerShapeGradient1Base=225,65,105
+AffinityDesignerShapeGradient2Base=65,105,225
+AffinityDesignerRegularHidden=1
+
+AffinityPhotoShape=Hexagon
+AffinityPhotoMaskMeter=Shape
+AffinityPhotoMask=Regular Hexagon
+AffinityPhotoMaskStyle=Blank
+AffinityPhotoMaskBase=255,255,255
+AffinityPhotoShapeGradient1Base=225,65,105
+AffinityPhotoShapeGradient2Base=65,105,225
+AffinityPhotoRegularHidden=1
+
+AffinityPublisherShape=Hexagon
+AffinityPublisherMaskMeter=Shape
+AffinityPublisherMask=Regular Hexagon
+AffinityPublisherMaskStyle=Blank
+AffinityPublisherMaskBase=255,255,255
+AffinityPublisherShapeGradient1Base=225,65,105
+AffinityPublisherShapeGradient2Base=65,105,225
+AffinityPublisherRegularHidden=1
+
 AMDRadeonShape=Hexagon
 AMDRadeonMaskMeter=Shape
 AMDRadeonMask=Regular Hexagon
@@ -2416,6 +2766,15 @@ AMDRyzenMaskBase=255,255,255
 AMDRyzenShapeGradient1Base=225,65,105
 AMDRyzenShapeGradient2Base=65,105,225
 AMDRyzenRegularHidden=1
+
+AnacondaShape=Hexagon
+AnacondaMaskMeter=Shape
+AnacondaMask=Regular Hexagon
+AnacondaMaskStyle=Blank
+AnacondaMaskBase=255,255,255
+AnacondaShapeGradient1Base=225,65,105
+AnacondaShapeGradient2Base=65,105,225
+AnacondaRegularHidden=1
 
 AnkiShape=Hexagon
 AnkiMaskMeter=Shape
@@ -2489,6 +2848,15 @@ CSPShapeGradient1Base=225,65,105
 CSPShapeGradient2Base=65,105,225
 CSPRegularHidden=1
 
+ClipchampShape=Hexagon
+ClipchampMaskMeter=Shape
+ClipchampMask=Regular Hexagon
+ClipchampMaskStyle=Blank
+ClipchampMaskBase=255,255,255
+ClipchampShapeGradient1Base=225,65,105
+ClipchampShapeGradient2Base=65,105,225
+ClipchampRegularHidden=1
+
 CorsairShape=Hexagon
 CorsairMaskMeter=Shape
 CorsairMask=Regular Hexagon
@@ -2552,6 +2920,15 @@ FLStudioShapeGradient1Base=225,65,105
 FLStudioShapeGradient2Base=65,105,225
 FLStudioRegularHidden=1
 
+FlowLauncherShape=Hexagon
+FlowLauncherMaskMeter=Shape
+FlowLauncherMask=Regular Hexagon
+FlowLauncherMaskStyle=Blank
+FlowLauncherMaskBase=255,255,255
+FlowLauncherShapeGradient1Base=225,65,105
+FlowLauncherShapeGradient2Base=65,105,225
+FlowLauncherRegularHidden=1
+
 GIMPShape=Hexagon
 GIMPMaskMeter=Shape
 GIMPMask=Regular Hexagon
@@ -2578,6 +2955,24 @@ InkscapeMaskBase=255,255,255
 InkscapeShapeGradient1Base=225,65,105
 InkscapeShapeGradient2Base=65,105,225
 InkscapeRegularHidden=1
+
+JBPyCharmShape=Hexagon
+JBPyCharmMaskMeter=Shape
+JBPyCharmMask=Regular Hexagon
+JBPyCharmMaskStyle=Blank
+JBPyCharmMaskBase=255,255,255
+JBPyCharmShapeGradient1Base=225,65,105
+JBPyCharmShapeGradient2Base=65,105,225
+JBPyCharmRegularHidden=1
+
+JBRiderShape=Hexagon
+JBRiderMaskMeter=Shape
+JBRiderMask=Regular Hexagon
+JBRiderMaskStyle=Blank
+JBRiderMaskBase=255,255,255
+JBRiderShapeGradient1Base=225,65,105
+JBRiderShapeGradient2Base=65,105,225
+JBRiderRegularHidden=1
 
 KritaShape=Hexagon
 KritaMaskMeter=Shape
@@ -2687,6 +3082,15 @@ NotepadPPShapeGradient1Base=225,65,105
 NotepadPPShapeGradient2Base=65,105,225
 NotepadPPRegularHidden=1
 
+NotionShape=Hexagon
+NotionMaskMeter=Shape
+NotionMask=Regular Hexagon
+NotionMaskStyle=Blank
+NotionMaskBase=255,255,255
+NotionShapeGradient1Base=225,65,105
+NotionShapeGradient2Base=65,105,225
+NotionRegularHidden=1
+
 NVIDIAShape=Hexagon
 NVIDIAMaskMeter=Shape
 NVIDIAMask=Regular Hexagon
@@ -2705,6 +3109,15 @@ OBSShapeGradient1Base=225,65,105
 OBSShapeGradient2Base=65,105,225
 OBSRegularHidden=1
 
+ObsidianShape=Hexagon
+ObsidianMaskMeter=Shape
+ObsidianMask=Regular Hexagon
+ObsidianMaskStyle=Blank
+ObsidianMaskBase=255,255,255
+ObsidianShapeGradient1Base=225,65,105
+ObsidianShapeGradient2Base=65,105,225
+ObsidianRegularHidden=1
+
 OculusShape=Hexagon
 OculusMaskMeter=Shape
 OculusMask=Regular Hexagon
@@ -2722,6 +3135,24 @@ OutplayedMaskBase=255,255,255
 OutplayedShapeGradient1Base=225,65,105
 OutplayedShapeGradient2Base=65,105,225
 OutplayedRegularHidden=1
+
+ProtonCalendarShape=Hexagon
+ProtonCalendarMaskMeter=Shape
+ProtonCalendarMask=Regular Hexagon
+ProtonCalendarMaskStyle=Blank
+ProtonCalendarMaskBase=255,255,255
+ProtonCalendarShapeGradient1Base=225,65,105
+ProtonCalendarShapeGradient2Base=65,105,225
+ProtonCalendarRegularHidden=1
+
+ProtonMailShape=Hexagon
+ProtonMailMaskMeter=Shape
+ProtonMailMask=Regular Hexagon
+ProtonMailMaskStyle=Blank
+ProtonMailMaskBase=255,255,255
+ProtonMailShapeGradient1Base=225,65,105
+ProtonMailShapeGradient2Base=65,105,225
+ProtonMailRegularHidden=1
 
 ProtonVPNShape=Hexagon
 ProtonVPNMaskMeter=Shape
@@ -2813,6 +3244,15 @@ StreamLabsShapeGradient1Base=225,65,105
 StreamLabsShapeGradient2Base=65,105,225
 StreamLabsRegularHidden=1
 
+TeamViewerShape=Hexagon
+TeamViewerMaskMeter=Shape
+TeamViewerMask=Regular Hexagon
+TeamViewerMaskStyle=Blank
+TeamViewerMaskBase=255,255,255
+TeamViewerShapeGradient1Base=225,65,105
+TeamViewerShapeGradient2Base=65,105,225
+TeamViewerRegularHidden=1
+
 ThisPCShape=Hexagon
 ThisPCMaskMeter=Shape
 ThisPCMask=Regular Hexagon
@@ -2849,6 +3289,15 @@ UnrealShapeGradient1Base=225,65,105
 UnrealShapeGradient2Base=65,105,225
 UnrealRegularHidden=1
 
+VirtualBoxShape=Hexagon
+VirtualBoxMaskMeter=Shape
+VirtualBoxMask=Regular Hexagon
+VirtualBoxMaskStyle=Blank
+VirtualBoxMaskBase=255,255,255
+VirtualBoxShapeGradient1Base=225,65,105
+VirtualBoxShapeGradient2Base=65,105,225
+VirtualBoxRegularHidden=1
+
 VisualStudioShape=Hexagon
 VisualStudioMaskMeter=Shape
 VisualStudioMask=Regular Hexagon
@@ -2876,6 +3325,15 @@ VMwareShapeGradient1Base=225,65,105
 VMwareShapeGradient2Base=65,105,225
 VMwareRegularHidden=1
 
+VTEverythingShape=Hexagon
+VTEverythingMaskMeter=Shape
+VTEverythingMask=Regular Hexagon
+VTEverythingMaskStyle=Blank
+VTEverythingMaskBase=255,255,255
+VTEverythingShapeGradient1Base=225,65,105
+VTEverythingShapeGradient2Base=65,105,225
+VTEverythingRegularHidden=1
+
 WallpaperEngineShape=Hexagon
 WallpaperEngineMaskMeter=Shape
 WallpaperEngineMask=Regular Hexagon
@@ -2884,6 +3342,24 @@ WallpaperEngineMaskBase=255,255,255
 WallpaperEngineShapeGradient1Base=225,65,105
 WallpaperEngineShapeGradient2Base=65,105,225
 WallpaperEngineRegularHidden=1
+
+WindowsOSKShape=Hexagon
+WindowsOSKMaskMeter=Shape
+WindowsOSKMask=Regular Hexagon
+WindowsOSKMaskStyle=Blank
+WindowsOSKMaskBase=255,255,255
+WindowsOSKShapeGradient1Base=225,65,105
+WindowsOSKShapeGradient2Base=65,105,225
+WindowsOSKRegularHidden=1
+
+WindowsTerminalShape=Hexagon
+WindowsTerminalMaskMeter=Shape
+WindowsTerminalMask=Regular Hexagon
+WindowsTerminalMaskStyle=Blank
+WindowsTerminalMaskBase=255,255,255
+WindowsTerminalShapeGradient1Base=225,65,105
+WindowsTerminalShapeGradient2Base=65,105,225
+WindowsTerminalRegularHidden=1
 
 WPSShape=Hexagon
 WPSMaskMeter=Shape

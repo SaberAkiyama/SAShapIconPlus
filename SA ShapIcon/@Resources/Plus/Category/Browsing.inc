@@ -89,6 +89,16 @@ MouseOverAction=[!SetOption MeterPageOperaGXText FontColor "255,215,0"][!UpdateM
 MouseLeaveAction=[!SetOption MeterPageOperaGXText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryBrowsing "setBrowsing('Opera GX')"]
 
+[MeterPageTorText]
+Meter=String
+MeterStyle=IconTextPageName
+Text=Tor Browser
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageTorText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageTorText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryBrowsing "setBrowsing('Tor Browser')"]
+
 [MeterPageVivaldiText]
 Meter=String
 MeterStyle=IconTextPageName
