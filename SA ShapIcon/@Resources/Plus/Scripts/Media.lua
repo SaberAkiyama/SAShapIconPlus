@@ -74,8 +74,8 @@ function setPlexColorManual(selectedCode)
 
 end
 
-function setSpotiyColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinSpotiy" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+function setSpotifyColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinSpotify" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
