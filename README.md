@@ -132,7 +132,7 @@ _For more examples, please refer to the [Wiki](https://github.com/SaberAkiyama/S
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Gradiant Shapes and Colors
+- [x] Add Gradiant Shapes and Colors (Deprecated)
 - [x] Transparency
 - [x] Add Parallelogram Mask Shape
 - [ ] [REDACTED]
