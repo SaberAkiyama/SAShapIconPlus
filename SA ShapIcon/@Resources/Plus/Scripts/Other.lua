@@ -244,6 +244,11 @@ function setOutplayedColorManual(selectedCode)
 
 end
 
+function setPaintToolSAIColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinPaintToolSAI" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setProtonCalendarColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinProtonCalendar" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -1038,6 +1043,17 @@ function setOutplayedMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables OutplayedShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OutplayedMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables OutplayedRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setPaintToolSAIMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables PaintToolSAIMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables PaintToolSAIMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables PaintToolSAIShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables PaintToolSAIMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables PaintToolSAIRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

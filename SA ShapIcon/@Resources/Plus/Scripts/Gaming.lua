@@ -94,6 +94,11 @@ function setCODMWColorManual(selectedCode)
 
 end
 
+function setCODMW2ColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCODMW2" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCODVanguardColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCODVanguard" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -191,6 +196,11 @@ end
 
 function setEFTColorManual(selectedCode)
     SKIN:Bang('!CommandMeasure "MeterSkinEFT" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setEVEOnlineColorManual(selectedCode)
+    SKIN:Bang('!CommandMeasure "MeterSkinEVEOnline" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -391,6 +401,11 @@ end
 
 function setMassEffectLEColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMassEffectLE" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setMirrorsEdgeColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMirrorsEdge" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1037,6 +1052,17 @@ function setCODMWMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setCODMW2Mask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CODMW2Mask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CODMW2MaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CODMW2Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CODMW2MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CODMW2RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setCODVanguardMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables CODVanguardMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CODVanguardMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -1252,6 +1278,17 @@ function setEFTMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables EFTShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables EFTMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables EFTRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setEVEOnlineMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables EVEOnlineMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVEOnlineMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVEOnlineShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVEOnlineMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables EVEOnlineRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -1692,6 +1729,17 @@ function setMassEffectLEMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MassEffectLEShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MassEffectLEMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MassEffectLERegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMirrorsEdgeMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MirrorsEdgeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MirrorsEdgeMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MirrorsEdgeShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MirrorsEdgeMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MirrorsEdgeRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

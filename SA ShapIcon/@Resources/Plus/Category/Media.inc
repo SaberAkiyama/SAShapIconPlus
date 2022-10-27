@@ -223,6 +223,18 @@ MouseLeaveAction=[!SetOption MeterPageWinampText FontColor "255,255,255"][!Updat
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Winamp')"]
 Hidden=#MediaPage2#
 
+[MeterPageWMPText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=MediaPage2
+Text=Windows Media Player
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageWMPText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageWMPText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Windows Media Player')"]
+Hidden=#MediaPage2#
+
 [MeterPageYouTubeText]
 Meter=String
 MeterStyle=IconTextPageName

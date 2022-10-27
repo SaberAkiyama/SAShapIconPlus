@@ -105,6 +105,12 @@ selectMedia = {
 		showPage1 = "1",
 		showPage2 = "0"
 	},
+	["Windows Media Player"] = {
+		iconName = "Windows Media Player",
+		iconMask = "WMP",
+		showPage1 = "1",
+		showPage2 = "0"
+	},
 	["YouTube"] = {
 		iconName = "YouTube",
 		iconMask = "YouTube",

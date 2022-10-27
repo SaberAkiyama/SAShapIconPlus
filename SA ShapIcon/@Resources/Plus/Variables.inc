@@ -984,6 +984,15 @@ CODMWShapeGradient1Base=225,65,105
 CODMWShapeGradient2Base=65,105,225
 CODMWRegularHidden=1
 
+CODMW2Shape=Hexagon
+CODMW2MaskMeter=Shape
+CODMW2Mask=Regular Hexagon
+CODMW2MaskStyle=Blank
+CODMW2MaskBase=255,255,255
+CODMW2ShapeGradient1Base=225,65,105
+CODMW2ShapeGradient2Base=65,105,225
+CODMW2RegularHidden=1
+
 CODVanguardShape=Hexagon
 CODVanguardMaskMeter=Shape
 CODVanguardMask=Regular Hexagon
@@ -1163,6 +1172,15 @@ ESVSkyrimMaskBase=255,255,255
 ESVSkyrimShapeGradient1Base=225,65,105
 ESVSkyrimShapeGradient2Base=65,105,225
 ESVSkyrimRegularHidden=1
+
+EVEOnlineShape=Hexagon
+EVEOnlineMaskMeter=Shape
+EVEOnlineMask=Regular Hexagon
+EVEOnlineMaskStyle=Blank
+EVEOnlineMaskBase=255,255,255
+EVEOnlineShapeGradient1Base=225,65,105
+EVEOnlineShapeGradient2Base=65,105,225
+EVEOnlineRegularHidden=1
 
 FactorioShape=Hexagon
 FactorioMaskMeter=Shape
@@ -1523,6 +1541,15 @@ MassEffectLEMaskBase=255,255,255
 MassEffectLEShapeGradient1Base=225,65,105
 MassEffectLEShapeGradient2Base=65,105,225
 MassEffectLERegularHidden=1
+
+MirrorsEdgeShape=Hexagon
+MirrorsEdgeMaskMeter=Shape
+MirrorsEdgeMask=Regular Hexagon
+MirrorsEdgeMaskStyle=Blank
+MirrorsEdgeMaskBase=255,255,255
+MirrorsEdgeShapeGradient1Base=225,65,105
+MirrorsEdgeShapeGradient2Base=65,105,225
+MirrorsEdgeRegularHidden=1
 
 MHWorldShape=Hexagon
 MHWorldMaskMeter=Shape
@@ -2512,6 +2539,15 @@ WinampShapeGradient1Base=225,65,105
 WinampShapeGradient2Base=65,105,225
 WinampRegularHidden=1
 
+WMPShape=Hexagon
+WMPMaskMeter=Shape
+WMPMask=Regular Hexagon
+WMPMaskStyle=Blank
+WMPMaskBase=255,255,255
+WMPShapeGradient1Base=225,65,105
+WMPShapeGradient2Base=65,105,225
+WMPRegularHidden=1
+
 YouTubeShape=Hexagon
 YouTubeMaskMeter=Shape
 YouTubeMask=Regular Hexagon
@@ -3135,6 +3171,15 @@ OutplayedMaskBase=255,255,255
 OutplayedShapeGradient1Base=225,65,105
 OutplayedShapeGradient2Base=65,105,225
 OutplayedRegularHidden=1
+
+PaintToolSAIShape=Hexagon
+PaintToolSAIMaskMeter=Shape
+PaintToolSAIMask=Regular Hexagon
+PaintToolSAIMaskStyle=Blank
+PaintToolSAIMaskBase=255,255,255
+PaintToolSAIShapeGradient1Base=225,65,105
+PaintToolSAIShapeGradient2Base=65,105,225
+PaintToolSAIRegularHidden=1
 
 ProtonCalendarShape=Hexagon
 ProtonCalendarMaskMeter=Shape

@@ -99,6 +99,11 @@ function setWinampColorManual(selectedCode)
 
 end
 
+function setWMPColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinWMP" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setYouTubeColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinYouTube" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -433,6 +438,17 @@ function setWinampMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables WinampShape "' .. maskMediaSelect[selectedMask]['mediaMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables WinampMaskStyle "' .. maskMediaSelect[selectedMask]['mediaMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables WinampRegularHidden "' .. maskMediaSelect[selectedMask]['mediaRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setWMPMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables WMPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WMPMaskMeter "' .. maskMediaSelect[selectedMask]['mediaMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WMPShape "' .. maskMediaSelect[selectedMask]['mediaMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WMPMaskStyle "' .. maskMediaSelect[selectedMask]['mediaMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables WMPRegularHidden "' .. maskMediaSelect[selectedMask]['mediaRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -579,6 +579,18 @@ selectOther = {
 		showPage7 = "1",
 		showPage8 = "1"
 	},
+	["PaintTool SAI"] = {
+		iconName = "PaintTool SAI",
+		iconMask = "PaintToolSAI",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1"
+	},
 	["ProtonCalendar"] = {
 		iconName = "ProtonCalendar",
 		iconMask = "ProtonCalendar",
@@ -598,8 +610,8 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
 		showPage7 = "1",
 		showPage8 = "1"
 	},
@@ -719,8 +731,8 @@ selectOther = {
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
+		showPage6 = "1",
+		showPage7 = "0",
 		showPage8 = "1"
 	},
 	["TeamViewer"] = {
@@ -840,8 +852,8 @@ selectOther = {
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1"
+		showPage7 = "1",
+		showPage8 = "0"
 	},
 	["Windows On-Screen Keyboard"] = {
 		iconName = "Windows On-Screen Keyboard",

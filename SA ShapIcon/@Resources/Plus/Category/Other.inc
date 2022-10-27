@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Other.lua
 UpdateDivider=5
 
 [Variables]
-@include9="#@#Plus\Set Icon\#NameIcon#.inc"
+@include8="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Other Page
@@ -144,7 +144,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage2
 Text=Autodesk 3ds Max
-X=320
+X=0r
 Y=100
 MouseOverAction=[!SetOption MeterPageAutodesk3dsMaxText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageAutodesk3dsMaxText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -264,7 +264,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage3
 Text=Evernote
-X=320
+X=0r
 Y=100
 MouseOverAction=[!SetOption MeterPageEvernoteText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageEvernoteText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -384,7 +384,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage4
 Text=Krita
-X=320
+X=0r
 Y=100
 MouseOverAction=[!SetOption MeterPageKritaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageKritaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -504,7 +504,7 @@ Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage5
 Text=NiceHash
-X=320
+X=0r
 Y=100
 MouseOverAction=[!SetOption MeterPageNiceHashText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageNiceHashText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -595,6 +595,18 @@ MouseLeaveAction=[!SetOption MeterPageOutplayedText FontColor "255,255,255"][!Up
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Outplayed')"]
 Hidden=#OtherPage5#
 
+[MeterPagePaintToolSAIText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=OtherPage5
+Text=PaintTool SAI
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPagePaintToolSAIText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPagePaintToolSAIText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('PaintTool SAI')"]
+Hidden=#OtherPage5#
+
 [MeterPageProtonCalendarText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -610,22 +622,22 @@ Hidden=#OtherPage5#
 [MeterPageProtonMailText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage5
+Group=OtherPage6
 Text=ProtonMail
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageProtonMailText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageProtonMailText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('ProtonMail')"]
-Hidden=#OtherPage5#
+Hidden=#OtherPage6#
 
 [MeterPageProtonVPNText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage6
 Text=ProtonVPN
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageProtonVPNText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageProtonVPNText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('ProtonVPN')"]
@@ -730,22 +742,22 @@ Hidden=#OtherPage6#
 [MeterPageStreamLabsText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage6
+Group=OtherPage7
 Text=StreamLabs Desktop
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageStreamLabsText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageStreamLabsText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('StreamLabs Desktop')"]
-Hidden=#OtherPage6#
+Hidden=#OtherPage7#
 
 [MeterPageTeamViewerText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage7
 Text=TeamViewer
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageTeamViewerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageTeamViewerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('TeamViewer')"]
@@ -850,22 +862,22 @@ Hidden=#OtherPage7#
 [MeterPageWallpaperEngineText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage7
+Group=OtherPage8
 Text=Wallpaper Engine
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageWallpaperEngineText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWallpaperEngineText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Wallpaper Engine')"]
-Hidden=#OtherPage7#
+Hidden=#OtherPage8#
 
 [MeterPageWindowsOSKText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage8
 Text=Windows On-Screen Keyboard
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageWindowsOSKText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWindowsOSKText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Windows On-Screen Keyboard')"]
