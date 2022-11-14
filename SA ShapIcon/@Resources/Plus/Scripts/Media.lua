@@ -29,6 +29,11 @@ function setAudibleColorManual(selectedCode)
 
 end
 
+function setCrunchyrollColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCrunchyroll" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setDisneyPlusColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinDisneyPlus" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -284,6 +289,17 @@ function setAudibleMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables AudibleShape "' .. maskMediaSelect[selectedMask]['mediaMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AudibleMaskStyle "' .. maskMediaSelect[selectedMask]['mediaMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables AudibleRegularHidden "' .. maskMediaSelect[selectedMask]['mediaRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setCrunchyrollMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollMaskMeter "' .. maskMediaSelect[selectedMask]['mediaMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollShape "' .. maskMediaSelect[selectedMask]['mediaMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollMaskStyle "' .. maskMediaSelect[selectedMask]['mediaMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollRegularHidden "' .. maskMediaSelect[selectedMask]['mediaRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

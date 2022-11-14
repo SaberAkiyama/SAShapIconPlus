@@ -13,7 +13,7 @@ ScriptFile=#@#Plus\Scripts\Category\Disk.lua
 UpdateDivider=5
 
 [Variables]
-@include9="#@#Plus\Set Icon\Disk\#NameIcon#.inc"
+@include8="#@#Plus\Set Icon\Disk\#NameIcon#.inc"
 
 ; ============================================================
 ; Disk Page

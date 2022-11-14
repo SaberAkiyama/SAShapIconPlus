@@ -1542,6 +1542,15 @@ MassEffectLEShapeGradient1Base=225,65,105
 MassEffectLEShapeGradient2Base=65,105,225
 MassEffectLERegularHidden=1
 
+MFSShape=Hexagon
+MFSMaskMeter=Shape
+MFSMask=Regular Hexagon
+MFSMaskStyle=Blank
+MFSMaskBase=255,255,255
+MFSShapeGradient1Base=225,65,105
+MFSShapeGradient2Base=65,105,225
+MFSRegularHidden=1
+
 MirrorsEdgeShape=Hexagon
 MirrorsEdgeMaskMeter=Shape
 MirrorsEdgeMask=Regular Hexagon
@@ -2413,6 +2422,15 @@ AudibleShapeGradient1Base=225,65,105
 AudibleShapeGradient2Base=65,105,225
 AudibleRegularHidden=1
 
+CrunchyrollShape=Hexagon
+CrunchyrollMaskMeter=Shape
+CrunchyrollMask=Regular Hexagon
+CrunchyrollMaskStyle=Blank
+CrunchyrollMaskBase=255,255,255
+CrunchyrollShapeGradient1Base=225,65,105
+CrunchyrollShapeGradient2Base=65,105,225
+CrunchyrollRegularHidden=1
+
 DisneyPlusShape=Hexagon
 DisneyPlusMaskMeter=Shape
 DisneyPlusMask=Regular Hexagon
@@ -2875,6 +2893,15 @@ BlenderShapeGradient1Base=225,65,105
 BlenderShapeGradient2Base=65,105,225
 BlenderRegularHidden=1
 
+CDSShape=Hexagon
+CDSMaskMeter=Shape
+CDSMask=Regular Hexagon
+CDSMaskStyle=Blank
+CDSMaskBase=255,255,255
+CDSShapeGradient1Base=225,65,105
+CDSShapeGradient2Base=65,105,225
+CDSRegularHidden=1
+
 CSPShape=Hexagon
 CSPMaskMeter=Shape
 CSPMask=Regular Hexagon
@@ -2901,6 +2928,15 @@ CorsairMaskBase=255,255,255
 CorsairShapeGradient1Base=225,65,105
 CorsairShapeGradient2Base=65,105,225
 CorsairRegularHidden=1
+
+CrealityShape=Hexagon
+CrealityMaskMeter=Shape
+CrealityMask=Regular Hexagon
+CrealityMaskStyle=Blank
+CrealityMaskBase=255,255,255
+CrealityShapeGradient1Base=225,65,105
+CrealityShapeGradient2Base=65,105,225
+CrealityRegularHidden=1
 
 DaVinciShape=Hexagon
 DaVinciMaskMeter=Shape
@@ -3028,6 +3064,15 @@ LibrariesShapeGradient1Base=225,65,105
 LibrariesShapeGradient2Base=65,105,225
 LibrariesRegularHidden=1
 
+Live2DShape=Hexagon
+Live2DMaskMeter=Shape
+Live2DMask=Regular Hexagon
+Live2DMaskStyle=Blank
+Live2DMaskBase=255,255,255
+Live2DShapeGradient1Base=225,65,105
+Live2DShapeGradient2Base=65,105,225
+Live2DRegularHidden=1
+
 LogitechShape=Hexagon
 LogitechMaskMeter=Shape
 LogitechMask=Regular Hexagon
@@ -3135,6 +3180,15 @@ NVIDIAMaskBase=255,255,255
 NVIDIAShapeGradient1Base=225,65,105
 NVIDIAShapeGradient2Base=65,105,225
 NVIDIARegularHidden=1
+
+NVIDIABroadcastShape=Hexagon
+NVIDIABroadcastMaskMeter=Shape
+NVIDIABroadcastMask=Regular Hexagon
+NVIDIABroadcastMaskStyle=Blank
+NVIDIABroadcastMaskBase=255,255,255
+NVIDIABroadcastShapeGradient1Base=225,65,105
+NVIDIABroadcastShapeGradient2Base=65,105,225
+NVIDIABroadcastRegularHidden=1
 
 OBSShape=Hexagon
 OBSMaskMeter=Shape
@@ -3378,6 +3432,33 @@ VTEverythingMaskBase=255,255,255
 VTEverythingShapeGradient1Base=225,65,105
 VTEverythingShapeGradient2Base=65,105,225
 VTEverythingRegularHidden=1
+
+VRoidStudioShape=Hexagon
+VRoidStudioMaskMeter=Shape
+VRoidStudioMask=Regular Hexagon
+VRoidStudioMaskStyle=Blank
+VRoidStudioMaskBase=255,255,255
+VRoidStudioShapeGradient1Base=225,65,105
+VRoidStudioShapeGradient2Base=65,105,225
+VRoidStudioRegularHidden=1
+
+VSeeFaceShape=Hexagon
+VSeeFaceMaskMeter=Shape
+VSeeFaceMask=Regular Hexagon
+VSeeFaceMaskStyle=Blank
+VSeeFaceMaskBase=255,255,255
+VSeeFaceShapeGradient1Base=225,65,105
+VSeeFaceShapeGradient2Base=65,105,225
+VSeeFaceRegularHidden=1
+
+VTubeStudioShape=Hexagon
+VTubeStudioMaskMeter=Shape
+VTubeStudioMask=Regular Hexagon
+VTubeStudioMaskStyle=Blank
+VTubeStudioMaskBase=255,255,255
+VTubeStudioShapeGradient1Base=225,65,105
+VTubeStudioShapeGradient2Base=65,105,225
+VTubeStudioRegularHidden=1
 
 WallpaperEngineShape=Hexagon
 WallpaperEngineMaskMeter=Shape

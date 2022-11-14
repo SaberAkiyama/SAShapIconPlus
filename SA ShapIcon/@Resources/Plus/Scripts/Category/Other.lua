@@ -13,7 +13,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Ableton Live"] = {
 		iconName = "Ableton Live",
@@ -25,7 +26,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Affinity Designer"] = {
 		iconName = "Affinity Designer",
@@ -37,7 +39,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Affinity Photo"] = {
 		iconName = "Affinity Photo",
@@ -49,7 +52,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Affinity Publisher"] = {
 		iconName = "Affinity Publisher",
@@ -61,7 +65,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["AMD Radeon Software"] = {
 		iconName = "AMD Radeon Software",
@@ -73,7 +78,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["AMD Ryzen Master"] = {
 		iconName = "AMD Ryzen Master",
@@ -85,7 +91,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Anaconda Navigator"] = {
 		iconName = "Anaconda Navigator",
@@ -97,7 +104,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Anki"] = {
 		iconName = "Anki",
@@ -109,19 +117,21 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Aseprite"] = {
 		iconName = "Aseprite",
 		iconMask = "Aseprite",
-		showPage1 = "1",
-		showPage2 = "0",
+		showPage1 = "0",
+		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Autodesk 3ds Max"] = {
 		iconName = "Autodesk 3ds Max",
@@ -133,7 +143,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Autodesk Maya"] = {
 		iconName = "Autodesk Maya",
@@ -145,19 +156,21 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["BitDefender"] = {
 		iconName = "BitDefender",
 		iconMask = "BitDefender",
-		showPage1 = "0",
-		showPage2 = "1",
+		showPage1 = "1",
+		showPage2 = "0",
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Bitwarden"] = {
 		iconName = "Bitwarden",
@@ -169,7 +182,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Blender"] = {
 		iconName = "Blender",
@@ -181,7 +195,21 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
+	},
+	["Circut Design Space"] = {
+		iconName = "Circut Design Space",
+		iconMask = "CDS",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Clip Studio Paint"] = {
 		iconName = "Clip Studio Paint",
@@ -193,7 +221,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Clipchamp"] = {
 		iconName = "Clipchamp",
@@ -205,7 +234,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Corsair iCUE"] = {
 		iconName = "Corsair iCUE",
@@ -217,31 +247,47 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
+	},
+	["Creality Slicer"] = {
+		iconName = "Creality Slicer",
+		iconMask = "Creality",
+		showPage1 = "1",
+		showPage2 = "0",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["DaVinci Resolve"] = {
 		iconName = "DaVinci Resolve",
 		iconMask = "DaVinci",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["DeviantArt"] = {
 		iconName = "DeviantArt",
 		iconMask = "DeviantArt",
 		showPage1 = "1",
-		showPage2 = "0",
-		showPage3 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Evernote"] = {
 		iconName = "Evernote",
@@ -253,7 +299,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["EVGA Precision X1"] = {
 		iconName = "EVGA Precision X1",
@@ -265,7 +312,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Filmora X"] = {
 		iconName = "Filmora X",
@@ -277,7 +325,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["FL Studio"] = {
 		iconName = "FL Studio",
@@ -289,7 +338,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Flow Launcher"] = {
 		iconName = "Flow Launcher",
@@ -301,7 +351,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["GIMP"] = {
 		iconName = "GIMP",
@@ -313,7 +364,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["HandBrake"] = {
 		iconName = "HandBrake",
@@ -325,7 +377,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Inkscape"] = {
 		iconName = "Inkscape",
@@ -337,31 +390,34 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["JetBrains PyCharm"] = {
 		iconName = "JetBrains PyCharm",
 		iconMask = "JBPyCharm",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["JetBrains Rider"] = {
 		iconName = "JetBrains Rider",
 		iconMask = "JBRider",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Krita"] = {
 		iconName = "Krita",
@@ -373,7 +429,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Libraries (File Explorer)"] = {
 		iconName = "Libraries (File Explorer)",
@@ -385,7 +442,21 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
+	},
+	["Live2D Cubism"] = {
+		iconName = "Live2D Cubism",
+		iconMask = "Live2D",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Logitech G HUB"] = {
 		iconName = "Logitech G HUB",
@@ -397,7 +468,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Mozilla Thunderbird"] = {
 		iconName = "Mozilla Thunderbird",
@@ -409,7 +481,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Matlab"] = {
 		iconName = "Matlab",
@@ -421,7 +494,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Medal"] = {
 		iconName = "Medal",
@@ -433,7 +507,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Microsoft Store"] = {
 		iconName = "Microsoft Store",
@@ -445,7 +520,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Mindomo"] = {
 		iconName = "Mindomo",
@@ -453,11 +529,12 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["MSI Afterburner"] = {
 		iconName = "MSI Afterburner",
@@ -465,11 +542,12 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["MyPhoneExplorer"] = {
 		iconName = "MyPhoneExplorer",
@@ -477,11 +555,12 @@ selectOther = {
 		showPage1 = "1",
 		showPage2 = "1",
 		showPage3 = "1",
-		showPage4 = "0",
-		showPage5 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["NiceHash"] = {
 		iconName = "NiceHash",
@@ -493,7 +572,8 @@ selectOther = {
 		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Notepad++"] = {
 		iconName = "Notepad++",
@@ -505,7 +585,8 @@ selectOther = {
 		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Notion"] = {
 		iconName = "Notion",
@@ -517,7 +598,21 @@ selectOther = {
 		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
+	},
+	["NVIDIA Broadcast"] = {
+		iconName = "NVIDIA Broadcast",
+		iconMask = "NVIDIABroadcast",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "0",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["NVIDIA GeForce Experience"] = {
 		iconName = "NVIDIA GeForce Experience",
@@ -529,7 +624,8 @@ selectOther = {
 		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["OBS Studio"] = {
 		iconName = "OBS Studio",
@@ -541,7 +637,8 @@ selectOther = {
 		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Obsidian"] = {
 		iconName = "Obsidian",
@@ -553,7 +650,8 @@ selectOther = {
 		showPage5 = "0",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Oculus"] = {
 		iconName = "Oculus",
@@ -562,10 +660,11 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Outplayed"] = {
 		iconName = "Outplayed",
@@ -574,10 +673,11 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["PaintTool SAI"] = {
 		iconName = "PaintTool SAI",
@@ -586,10 +686,11 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["ProtonCalendar"] = {
 		iconName = "ProtonCalendar",
@@ -598,10 +699,11 @@ selectOther = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		showPage5 = "0",
-		showPage6 = "1",
+		showPage5 = "1",
+		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["ProtonMail"] = {
 		iconName = "ProtonMail",
@@ -613,7 +715,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["ProtonVPN"] = {
 		iconName = "ProtonVPN",
@@ -625,7 +728,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Razer Cortex"] = {
 		iconName = "Razer Cortex",
@@ -637,7 +741,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Razer Synapse"] = {
 		iconName = "Razer Synapse",
@@ -649,7 +754,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Recycle Bin"] = {
 		iconName = "Recycle Bin",
@@ -661,7 +767,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["RemNote"] = {
 		iconName = "RemNote",
@@ -673,7 +780,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "0",
 		showPage7 = "1",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Scrivener"] = {
 		iconName = "Scrivener",
@@ -683,9 +791,10 @@ selectOther = {
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1"
+		showPage6 = "1",
+		showPage7 = "0",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Slack"] = {
 		iconName = "Slack",
@@ -695,9 +804,10 @@ selectOther = {
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1"
+		showPage6 = "1",
+		showPage7 = "0",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["SoulseekQt"] = {
 		iconName = "SoulseekQt",
@@ -707,9 +817,10 @@ selectOther = {
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1"
+		showPage6 = "1",
+		showPage7 = "0",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["SpaceSniffer"] = {
 		iconName = "SpaceSniffer",
@@ -719,9 +830,10 @@ selectOther = {
 		showPage3 = "1",
 		showPage4 = "1",
 		showPage5 = "1",
-		showPage6 = "0",
-		showPage7 = "1",
-		showPage8 = "1"
+		showPage6 = "1",
+		showPage7 = "0",
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["StreamLabs Desktop"] = {
 		iconName = "StreamLabs Desktop",
@@ -733,7 +845,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "0",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["TeamViewer"] = {
 		iconName = "TeamViewer",
@@ -745,7 +858,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "0",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["This PC"] = {
 		iconName = "This PC",
@@ -757,7 +871,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "0",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Unity"] = {
 		iconName = "Unity",
@@ -769,7 +884,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "0",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Unreal Engine"] = {
 		iconName = "Unreal Engine",
@@ -781,7 +897,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "0",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["VirtualBox"] = {
 		iconName = "VirtualBox",
@@ -793,7 +910,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "0",
-		showPage8 = "1"
+		showPage8 = "1",
+		showPage9 = "1"
 	},
 	["Visual Studio"] = {
 		iconName = "Visual Studio",
@@ -804,8 +922,9 @@ selectOther = {
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1"
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["Visual Studio Code"] = {
 		iconName = "Visual Studio Code",
@@ -816,8 +935,9 @@ selectOther = {
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1"
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["VMware Workstation Player"] = {
 		iconName = "VMware Workstation Player",
@@ -828,8 +948,9 @@ selectOther = {
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1"
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["VoidTools Everything"] = {
 		iconName = "VoidTools Everything",
@@ -840,8 +961,48 @@ selectOther = {
 		showPage4 = "1",
 		showPage5 = "1",
 		showPage6 = "1",
-		showPage7 = "0",
-		showPage8 = "1"
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
+	},
+	["VRoid Studio"] = {
+		iconName = "VRoid Studio",
+		iconMask = "VRoidStudio",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
+	},
+	["VSeeFace"] = {
+		iconName = "VSeeFace",
+		iconMask = "VSeeFace",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
+	},
+	["VTube Studio"] = {
+		iconName = "VTube Studio",
+		iconMask = "VTubeStudio",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["Wallpaper Engine"] = {
 		iconName = "Wallpaper Engine",
@@ -853,7 +1014,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "0"
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["Windows On-Screen Keyboard"] = {
 		iconName = "Windows On-Screen Keyboard",
@@ -865,7 +1027,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "0"
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["Windows Terminal"] = {
 		iconName = "Windows Terminal",
@@ -877,7 +1040,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "0"
+		showPage8 = "0",
+		showPage9 = "1"
 	},
 	["WPS Office"] = {
 		iconName = "WPS Office",
@@ -889,7 +1053,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "0"
+		showPage8 = "1",
+		showPage9 = "0"
 	},
 	["Zbrush"] = {
 		iconName = "Zbrush",
@@ -901,7 +1066,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "0"
+		showPage8 = "1",
+		showPage9 = "0"
 	}
 }
 
@@ -915,6 +1081,7 @@ function setOther(selectedOther)
 	SKIN:Bang('!WriteKeyValue Variables OtherPage6 "' .. selectOther[selectedOther]['showPage6'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage7 "' .. selectOther[selectedOther]['showPage7'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage8 "' .. selectOther[selectedOther]['showPage8'] .. '" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OtherPage9 "' .. selectOther[selectedOther]['showPage9'] .. '" "#@#Settings Variables.inc"')
 
 	SKIN:Bang('!WriteKeyValue Variables NameIconMask "' .. selectOther[selectedOther]['iconMask'] .. '" "#@#Plus\\Variables.inc"')
 
@@ -932,6 +1099,7 @@ function setOtherPage1()
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -946,6 +1114,7 @@ function setOtherPage2()
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -960,6 +1129,7 @@ function setOtherPage3()
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -974,6 +1144,7 @@ function setOtherPage4()
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -988,6 +1159,7 @@ function setOtherPage5()
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -1002,6 +1174,7 @@ function setOtherPage6()
 	SKIN:Bang('!HideMeterGroup OtherPage5')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -1016,6 +1189,7 @@ function setOtherPage7()
 	SKIN:Bang('!HideMeterGroup OtherPage5')
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage8')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
 
 	SKIN:Bang('!Update')
 
@@ -1030,6 +1204,22 @@ function setOtherPage8()
 	SKIN:Bang('!HideMeterGroup OtherPage5')
 	SKIN:Bang('!HideMeterGroup OtherPage6')
 	SKIN:Bang('!HideMeterGroup OtherPage7')
+	SKIN:Bang('!HideMeterGroup OtherPage9')
+
+	SKIN:Bang('!Update')
+
+end
+
+function setOtherPage9()
+	SKIN:Bang('!ShowMeterGroup OtherPage9')
+	SKIN:Bang('!HideMeterGroup OtherPage1')
+	SKIN:Bang('!HideMeterGroup OtherPage2')
+	SKIN:Bang('!HideMeterGroup OtherPage3')
+	SKIN:Bang('!HideMeterGroup OtherPage4')
+	SKIN:Bang('!HideMeterGroup OtherPage5')
+	SKIN:Bang('!HideMeterGroup OtherPage6')
+	SKIN:Bang('!HideMeterGroup OtherPage7')
+	SKIN:Bang('!HideMeterGroup OtherPage8')
 
 	SKIN:Bang('!Update')
 
@@ -1047,7 +1237,8 @@ hoverOtherSelect = {
 		colorPage5 = "255,215,0",
 		colorPage6 = "255,215,0",
 		colorPage7 = "255,215,0",
-		colorPage8 = "255,215,0"
+		colorPage8 = "255,215,0",
+		colorPage9 = "255,215,0"
 	},
     ["Leave"] = {
 		colorPage1 = "255,255,255",
@@ -1057,7 +1248,8 @@ hoverOtherSelect = {
 		colorPage5 = "255,255,255",
 		colorPage6 = "255,255,255",
 		colorPage7 = "255,255,255",
-		colorPage8 = "255,255,255"
+		colorPage8 = "255,255,255",
+		colorPage9 = "255,255,255"
 	}
 }
 
@@ -1112,6 +1304,13 @@ end
 
 function setHoverOtherPage8(selectedHover)
 	SKIN:Bang('!SetOption MeterPage8Text FontColor "' .. hoverOtherSelect[selectedHover]['colorPage8'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setHoverOtherPage9(selectedHover)
+	SKIN:Bang('!SetOption MeterPage9Text FontColor "' .. hoverOtherSelect[selectedHover]['colorPage9'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 

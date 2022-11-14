@@ -84,6 +84,11 @@ function setBlenderColorManual(selectedCode)
 
 end
 
+function setCDSColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCDS" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setCSPColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCSP" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -96,6 +101,11 @@ end
 
 function setCorsairColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinCorsair" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setCrealityColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinCreality" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -164,6 +174,11 @@ function setLibrariesColorManual(selectedCode)
 
 end
 
+function setLive2DColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinLive2D" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setLogitechColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinLogitech" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -221,6 +236,11 @@ end
 
 function setNVIDIAColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinNVIDIA" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setNVIDIABroadcastColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinNVIDIABroadcast" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -356,6 +376,21 @@ end
 
 function setVTEverythingColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVTEverything" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setVRoidStudioColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVRoidStudio" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setVSeeFaceColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVSeeFace" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setVTubeStudioColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVTubeStudio" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -685,6 +720,17 @@ function setBlenderMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setCDSMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CDSMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CDSMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CDSShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CDSMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CDSRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setCSPMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables CSPMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables CSPMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -702,6 +748,17 @@ function setClipchampMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ClipchampShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ClipchampMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ClipchampRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setCrealityMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables CrealityMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrealityMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrealityShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrealityMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables CrealityRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -872,6 +929,17 @@ function setLibrariesMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setLive2DMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables Live2DMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Live2DMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Live2DShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Live2DMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Live2DRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setLogitechMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables LogitechMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables LogitechMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -999,6 +1067,17 @@ function setNVIDIAMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables NVIDIAShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NVIDIAMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NVIDIARegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setNVIDIABroadcastMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables NVIDIABroadcastMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIABroadcastMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIABroadcastShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIABroadcastMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NVIDIABroadcastRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -1285,6 +1364,39 @@ function setVTEverythingMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables VTEverythingShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VTEverythingMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VTEverythingRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVRoidStudioMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VRoidStudioMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRoidStudioMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRoidStudioShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRoidStudioMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VRoidStudioRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVSeeFaceMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VSeeFaceMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSeeFaceMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSeeFaceShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSeeFaceMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSeeFaceRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVTubeStudioMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VTubeStudioMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTubeStudioMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTubeStudioShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTubeStudioMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VTubeStudioRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

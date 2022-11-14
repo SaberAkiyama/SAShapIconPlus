@@ -404,6 +404,11 @@ function setMassEffectLEColorManual(selectedCode)
 
 end
 
+function setMFSColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMFS" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setMirrorsEdgeColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMirrorsEdge" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -1729,6 +1734,17 @@ function setMassEffectLEMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MassEffectLEShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MassEffectLEMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MassEffectLERegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMFSMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MFSMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MFSMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MFSShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MFSMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MFSRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

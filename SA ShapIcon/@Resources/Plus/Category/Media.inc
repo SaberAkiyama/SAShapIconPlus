@@ -67,6 +67,18 @@ MouseLeaveAction=[!SetOption MeterPageAudibleText FontColor "255,255,255"][!Upda
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Audible')"]
 Hidden=#MediaPage1#
 
+[MeterPageCrunchyrollText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=MediaPage1
+Text=Crunchyroll
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageCrunchyrollText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageCrunchyrollText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Crunchyroll')"]
+Hidden=#MediaPage1#
+
 [MeterPageDisneyPlusText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -130,22 +142,22 @@ Hidden=#MediaPage1#
 [MeterPageMusicBeeText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=MediaPage1
+Group=MediaPage2
 Text=MusicBee
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageMusicBeeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMusicBeeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('MusicBee')"]
-Hidden=#MediaPage1#
+Hidden=#MediaPage2#
 
 [MeterPageNetflixText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=MediaPage2
 Text=Netflix
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageNetflixText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageNetflixText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMedia "setMedia('Netflix')"]

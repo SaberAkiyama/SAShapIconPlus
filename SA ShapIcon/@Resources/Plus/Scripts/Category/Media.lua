@@ -27,6 +27,12 @@ selectMedia = {
 		showPage1 = "0",
 		showPage2 = "1"
 	},
+	["Crunchyroll"] = {
+		iconName = "Crunchyroll",
+		iconMask = "Crunchyroll",
+		showPage1 = "0",
+		showPage2 = "1"
+	},
 	["Disney+"] = {
 		iconName = "Disney+",
 		iconMask = "DisneyPlus",
@@ -60,8 +66,8 @@ selectMedia = {
 	["MusicBee"] = {
 		iconName = "MusicBee",
 		iconMask = "MusicBee",
-		showPage1 = "0",
-		showPage2 = "1"
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Netflix"] = {
 		iconName = "Netflix",
