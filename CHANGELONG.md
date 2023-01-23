@@ -3,7 +3,7 @@
 ## **6.0.0** (January 27th, 2023)
 
 ### [SA ShapIcon on DeviantArt](https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293)
-* [Added] Dead Space (2023 Remake), Forspoken & Tekken 7 in the Gaming icon.
+* [Added] Dead Space (2023 Remake), Forspoken, and Tekken 7 in the Gaming icon.
 * [Added] Vault Hunters (Modpack) in the Minecraft icon.
 * [Added] Progressive Web App (PWA) in the Options page.
 * [Added] "Enable Snap Edges" in the Options page.
