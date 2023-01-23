@@ -4,7 +4,7 @@
 
 ### [SA ShapIcon on DeviantArt](https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293)
 * [Added] Dead Space (2023 Remake), Forspoken & Tekken 7 in the Gaming icon.
-* [Added] Vault Hunters in the Minecraft icon.
+* [Added] Vault Hunters (on Modpacks page) in the Minecraft icon.
 * [Added] Progressive Web App (PWA) in the Options page.
 * [Added] "Enable Snap Edges" in the Options page.
 * [Replaced] The background to black fill color.
