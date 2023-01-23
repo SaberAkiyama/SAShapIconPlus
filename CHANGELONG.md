@@ -13,5 +13,5 @@
 
 ### [SA ShapIcon+ on GitHub](https://github.com/SaberAkiyama/SAShapIconPlus/releases/latest)
 * [Added] Icon from the original SA ShapIcon in this post.
-* [Added] The Chameleon plugin & color type in the Options page.
+* [Added] The Chameleon plugin ,and color type in the Options page.
 * [Fixed] An issue with the Minecraft Modpack page won't select the Base color type.
