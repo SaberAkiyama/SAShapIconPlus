@@ -1,7 +1,5 @@
 # Update 6 Changelog
 
----
-
 ## **6.0.0** (January 27th, 2023)
 
 ### from SA ShapIcon on DeviantArt
