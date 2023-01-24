@@ -64,6 +64,10 @@ selectMinecraftModpack = {
 	["Valhelsia"] = {
         iconName = "Valhelsia",
 		iconMask = "Valhelsia"
+	},
+	["Vault Hunters"] = {
+		iconName = "Vault Hunters",
+		iconMask = "VaultHunters"
 	}
 }
 

@@ -21,6 +21,8 @@ MeterStyle=Mask#ZbrushShape#90
 MyFillGradient=#ShapeGradientAngle# | #ZbrushShapeGradient1Base#,255 ; 1.0 | #ZbrushShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#ZbrushMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #ZbrushMaskBase#
 ImageTint=#ZbrushMaskBase#
 X=0r
 Y=0r
-Hidden=#ZbrushRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImageZbrush]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#ZbrushMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#ZbrushShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#ZbrushShapeGradient1ChCode#],255 ; 1.0 | [Desktop#ZbrushShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#ZbrushMaskMeter#
+MeterStyle=Mask#ZbrushMaskStyle#90 | #ZbrushMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#ZbrushMaskChCode#]
+ImageTint=[Desktop#ZbrushMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChZbrush]
+Meter=Image
+MeterStyle=#ZbrushMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\Zbrush.png
+ImageTint=[Desktop#ZbrushMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -76,9 +112,20 @@ Text=#ZbrushMaskBase#
 LeftMouseUpAction=[!CommandMeasure LuaOther "setZbrushColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#ZbrushMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -98,6 +145,21 @@ Text=#ZbrushShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaOther "setZbrushColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#ZbrushShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -117,6 +179,21 @@ Text=#ZbrushShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaOther "setZbrushColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#ZbrushShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

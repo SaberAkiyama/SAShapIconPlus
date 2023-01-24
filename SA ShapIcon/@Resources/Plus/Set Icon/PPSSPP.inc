@@ -21,6 +21,8 @@ MeterStyle=Mask#PPSSPPShape#90
 MyFillGradient=#ShapeGradientAngle# | #PPSSPPShapeGradient1Base#,255 ; 1.0 | #PPSSPPShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#PPSSPPMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #PPSSPPMaskBase#
 ImageTint=#PPSSPPMaskBase#
 X=0r
 Y=0r
-Hidden=#PPSSPPRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImagePPSSPP]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#PPSSPPMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#PPSSPPShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#PPSSPPShapeGradient1ChCode#],255 ; 1.0 | [Desktop#PPSSPPShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#PPSSPPMaskMeter#
+MeterStyle=Mask#PPSSPPMaskStyle#90 | #PPSSPPMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#PPSSPPMaskChCode#]
+ImageTint=[Desktop#PPSSPPMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChPPSSPP]
+Meter=Image
+MeterStyle=#PPSSPPMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Emulator\PPSSPP.png
+ImageTint=[Desktop#PPSSPPMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -76,9 +112,20 @@ Text=#PPSSPPMaskBase#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setPPSSPPColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#PPSSPPMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -98,6 +145,21 @@ Text=#PPSSPPShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setPPSSPPColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#PPSSPPShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -117,6 +179,21 @@ Text=#PPSSPPShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setPPSSPPColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#PPSSPPShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

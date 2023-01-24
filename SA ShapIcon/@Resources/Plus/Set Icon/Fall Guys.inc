@@ -21,6 +21,8 @@ MeterStyle=Mask#FallGuysShape#90
 MyFillGradient=#ShapeGradientAngle# | #FallGuysShapeGradient1Base#,255 ; 1.0 | #FallGuysShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#FallGuysMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #FallGuysMaskBase#
 ImageTint=#FallGuysMaskBase#
 X=0r
 Y=0r
-Hidden=#FallGuysRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImageFallGuys]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#FallGuysMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#FallGuysShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#FallGuysShapeGradient1ChCode#],255 ; 1.0 | [Desktop#FallGuysShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#FallGuysMaskMeter#
+MeterStyle=Mask#FallGuysMaskStyle#90 | #FallGuysMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#FallGuysMaskChCode#]
+ImageTint=[Desktop#FallGuysMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChFallGuys]
+Meter=Image
+MeterStyle=#FallGuysMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Fall Guys.png
+ImageTint=[Desktop#FallGuysMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -76,9 +112,20 @@ Text=#FallGuysMaskBase#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setFallGuysColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#FallGuysMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -98,6 +145,21 @@ Text=#FallGuysShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setFallGuysColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#FallGuysShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -117,6 +179,21 @@ Text=#FallGuysShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaGaming "setFallGuysColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#FallGuysShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

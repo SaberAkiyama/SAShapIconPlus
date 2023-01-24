@@ -21,6 +21,8 @@ MeterStyle=Mask#DuckStationShape#90
 MyFillGradient=#ShapeGradientAngle# | #DuckStationShapeGradient1Base#,255 ; 1.0 | #DuckStationShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#DuckStationMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #DuckStationMaskBase#
 ImageTint=#DuckStationMaskBase#
 X=0r
 Y=0r
-Hidden=#DuckStationRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImageDuckStation]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#DuckStationMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#DuckStationShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#DuckStationShapeGradient1ChCode#],255 ; 1.0 | [Desktop#DuckStationShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#DuckStationMaskMeter#
+MeterStyle=Mask#DuckStationMaskStyle#90 | #DuckStationMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#DuckStationMaskChCode#]
+ImageTint=[Desktop#DuckStationMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChDuckStation]
+Meter=Image
+MeterStyle=#DuckStationMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Emulator\DuckStation.png
+ImageTint=[Desktop#DuckStationMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -76,9 +112,20 @@ Text=#DuckStationMaskBase#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setDuckStationColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#DuckStationMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -98,6 +145,21 @@ Text=#DuckStationShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setDuckStationColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#DuckStationShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -117,6 +179,21 @@ Text=#DuckStationShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaEmulator "setDuckStationColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#DuckStationShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

@@ -21,6 +21,8 @@ MeterStyle=Mask#WriterShape#90
 MyFillGradient=#ShapeGradientAngle# | #WriterShapeGradient1Base#,255 ; 1.0 | #WriterShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#WriterMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #WriterMaskBase#
 ImageTint=#WriterMaskBase#
 X=0r
 Y=0r
-Hidden=#WriterRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImageWriter]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#WriterMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#WriterShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#WriterShapeGradient1ChCode#],255 ; 1.0 | [Desktop#WriterShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#WriterMaskMeter#
+MeterStyle=Mask#WriterMaskStyle#90 | #WriterMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#WriterMaskChCode#]
+ImageTint=[Desktop#WriterMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChWriter]
+Meter=Image
+MeterStyle=#WriterMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\LibreOffice\Writer.png
+ImageTint=[Desktop#WriterMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -76,9 +112,20 @@ Text=#WriterMaskBase#
 LeftMouseUpAction=[!CommandMeasure LuaLibreOffice "setWriterColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#WriterMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -98,6 +145,21 @@ Text=#WriterShapeGradient1Base#
 LeftMouseUpAction=[!CommandMeasure LuaLibreOffice "setWriterColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#WriterShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -117,6 +179,21 @@ Text=#WriterShapeGradient2Base#
 LeftMouseUpAction=[!CommandMeasure LuaLibreOffice "setWriterColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#WriterShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

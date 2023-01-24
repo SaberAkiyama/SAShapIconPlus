@@ -277,6 +277,7 @@ function setSettingsGaming()
 	SKIN:Bang('!WriteKeyValue Variables GamingPage12 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage13 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage14 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage15 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -318,6 +319,7 @@ function setSettingsOther()
 	SKIN:Bang('!WriteKeyValue Variables OtherPage6 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage7 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage8 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OtherPage9 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -877,6 +879,35 @@ function setNextSetting(selectedHover)
 	SKIN:Bang('!SetOption ShapeNextCategory MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorNext'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
+    SKIN:Bang('!Redraw')
+
+end
+
+--; ============================================================
+
+hoverSettingsOptionSelect = {
+	["Over"] = {
+		colorTransparent = "Fill Color 255,255,255,128",
+		colorMisc = "Fill Color 255,255,255,128"
+	},
+	["Leave"] = {
+		colorTransparent = "Fill Color 0,0,0,1",
+		colorMisc = "Fill Color 0,0,0,1"
+	}
+}
+
+function setHVOptionTransparent(selectedHover)
+	SKIN:Bang('!SetOption MeterTransparentBgActive MyFillColor "' .. hoverSettingsOptionSelect[selectedHover]['colorTransparent'] .. '"')
+
+    SKIN:Bang('!UpdateMeter MeterTransparentBgActive')
+    SKIN:Bang('!Redraw')
+
+end
+
+function setHVOptionMisc(selectedHover)
+	SKIN:Bang('!SetOption MeterMiscellaneousBgActive MyFillColor "' .. hoverSettingsOptionSelect[selectedHover]['colorMisc'] .. '"')
+
+    SKIN:Bang('!UpdateMeter MeterMiscellaneousBgActive')
     SKIN:Bang('!Redraw')
 
 end

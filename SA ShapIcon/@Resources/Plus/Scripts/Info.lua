@@ -159,7 +159,7 @@ function setInfoAuthorDiscord(selectedHover)
 end
 
 function setInfoUpdate(selectedHover)
-	SKIN:Bang('!SetOption MeterUpdatePost2 FontColor "' .. hoverInfoSelect[selectedHover]['colorUpdate'] .. '"')
+	SKIN:Bang('!SetOption MeterUpdatePost3 FontColor "' .. hoverInfoSelect[selectedHover]['colorUpdate'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 

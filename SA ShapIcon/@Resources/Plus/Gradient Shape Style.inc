@@ -47,10 +47,12 @@ DynamicVariables=1
 UpdateDivider=-1
 
 [MaskCircle108]
-Shape=Ellipse 53.99999999999999,53.99999999999999,52.75 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Shape=Ellipse 54,54,54 | Fill LinearGradient MyFillGradient | StrokeWidth 0
 AntiAlias=1
 DynamicVariables=1
 UpdateDivider=-1
+
+; ============================================================
 
 [MaskHexagon64]
 Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
@@ -114,6 +116,73 @@ Path1=99.683,80.374 | LineTo 54,106.749 | LineTo 8.317,80.374 | LineTo 8.317,27.
 AntiAlias=1
 DynamicVariables=1
 UpdateDivider=-1
+
+; ============================================================
+
+[MaskParallelogram64]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=21.58,0.741 | LineTo 63.259,0.741 | LineTo 42.42,63.259 | LineTo 0.741,63.259 | LineTo 21.58,0.741 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram68]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=22.929,0.787 | LineTo 67.213,0.787 | LineTo 45.071,67.213 | LineTo 0.787,67.213 | LineTo 22.929,0.787 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram72]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=24.278,0.833 | LineTo 71.167,0.833 | LineTo 47.722,71.167 | LineTo 0.833,71.167 | LineTo 24.278,0.833 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram78]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=26.301,0.903 | LineTo 77.097,0.903 | LineTo 51.699,77.097 | LineTo 0.903,77.097 | LineTo 26.301,0.903 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram84]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=28.324,0.972 | LineTo 83.028,0.972 | LineTo 55.676,83.028 | LineTo 0.972,83.028 | LineTo 28.324,0.972 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram90]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=30.347,1.042 | LineTo 88.958,1.042 | LineTo 59.653,88.958 | LineTo 1.042,88.958 | LineTo 30.347,1.042 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram96]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=32.37,1.111 | LineTo 94.889,1.111 | LineTo 63.63,94.889 | LineTo 1.111,94.889 | LineTo 32.37,1.111 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram102]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=34.394,1.181 | LineTo 100.819,1.181 | LineTo 67.606,100.819 | LineTo 1.181,100.819 | LineTo 34.394,1.181 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+[MaskParallelogram108]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=36.417,1.25 | LineTo 106.75,1.25 | LineTo 71.583,106.75 | LineTo 1.25,106.75 | LineTo 36.417,1.25 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
+; ============================================================
 
 [MaskSquare64]
 Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0

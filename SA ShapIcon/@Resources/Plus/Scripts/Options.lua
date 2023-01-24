@@ -12,10 +12,33 @@ function openCLIArgument()
 
 end
 
+function openPWA()
+	SKIN:Bang('"#@#Progressive Web Apps.inc"')
+
+end
+
 function setOption(selectedOption)
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. selectOption[selectedOption]['iconName'] .. '" "#@#Plus\\Settings Variables.inc"')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionSnapOn()
+	SKIN:Bang('!WriteKeyValue Variables SnapText "Off" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SnapToggle "0" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!RefreshGroup SISnapEdge')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionSnapOff()
+	SKIN:Bang('!WriteKeyValue Variables SnapText "On" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SnapToggle "1" "#@#Plus\\Variables.inc"')
+
+	SKIN:Bang('!RefreshGroup SISnapEdge')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -210,6 +233,9 @@ hoverOptionSelect = {
 	["Over"] = {
 		colorFileLocation = "65,105,225",
 		colorCLIArgument = "65,105,225",
+		colorPWA = "65,105,225",
+		colorSnap = "65,105,225",
+		colorType = "65,105,225",
 		colorChromeType = "65,105,225",
 		colorHeightIcon = "65,105,225",
 		colorGradientAngleValue = "65,105,225",
@@ -224,6 +250,9 @@ hoverOptionSelect = {
 	["Leave"] = {
 		colorFileLocation = "255,255,255",
 		colorCLIArgument = "255,255,255",
+		colorPWA = "255,255,255",
+		colorSnap = "255,255,255",
+		colorType = "255,255,255",
 		colorChromeType = "255,255,255",
 		colorHeightIcon = "255,255,255",
 		colorGradientAngleValue = "255,255,255",
@@ -246,6 +275,27 @@ end
 
 function setHoverOptionCLIArgument(selectedHover)
 	SKIN:Bang('!SetOption MeterCLIArgumentActive FontColor "' .. hoverOptionSelect[selectedHover]['colorCLIArgument'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setHoverOptionPWA(selectedHover)
+	SKIN:Bang('!SetOption MeterPWAActive FontColor "' .. hoverOptionSelect[selectedHover]['colorPWA'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setHoverOptionSnapToggle(selectedHover)
+	SKIN:Bang('!SetOption MeterSnapToggleActive FontColor "' .. hoverOptionSelect[selectedHover]['colorSnap'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
+function setHoverOptionColorType(selectedHover)
+	SKIN:Bang('!SetOption MeterColorTypeActive FontColor "' .. hoverOptionSelect[selectedHover]['colorType'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
@@ -322,24 +372,48 @@ function setHoverOptionWhatsApp(selectedHover)
 end
 
 --; ============================================================
+--; Lua Color Type
+--; ============================================================
+
+function setOptionColorBase()
+	SKIN:Bang('!WriteKeyValue Variables ColorTypeName "Chameleon" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ColorType "Chameleon" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables BaseHidden "1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables BaseUpdate "-1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChameleonHidden "0" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChameleonUpdate "1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOptionColorChameleon()
+	SKIN:Bang('!WriteKeyValue Variables ColorTypeName "Base" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ColorType "Base" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables BaseHidden "0" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables BaseUpdate "1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChameleonHidden "1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChameleonUpdate "-1" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
 --; Lua Chrome System Type
 --; ============================================================
 
-chromeSTSelect = {
-	["x86"] = {
-		stVersionText = "x86",
-		stVersion = "Program Files (x86)"
-	},
-	["x64"] = {
-		stVersionText = "x64",
-		stVersion = "Program Files"
-	}
-}
+function setChrome64()
+	SKIN:Bang('!WriteKeyValue Variables ChromePFName "86" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromePFText "x86" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromePF "Program Files (x86)" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup SIChrome')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
 
-function setChromeST(selectedSTVersion)
-	SKIN:Bang('!WriteKeyValue Variables ChromePFText "' .. chromeSTSelect[selectedSTVersion]['stVersionText'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ChromePF "' .. chromeSTSelect[selectedSTVersion]['stVersion'] .. '" "#@#Plus\\Variables.inc"')
+end
 
+function setChrome86()
+	SKIN:Bang('!WriteKeyValue Variables ChromePFName "64" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromePFText "x64" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromePF "Program Files" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup SIChrome')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 

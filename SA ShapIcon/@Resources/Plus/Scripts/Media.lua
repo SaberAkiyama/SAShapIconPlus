@@ -117,6 +117,493 @@ end
 --; ============================================================
 
 --; ============================================================
+--; Lua Color Chameleon (Media)
+--; ============================================================
+
+colorChSelect = {
+	["Average"] = {
+		chamCode = "Avg",
+		chamName = "Average"
+	},
+	["Foreground 1"] = {
+		chamCode = "FG1",
+		chamName = "Foreground 1"
+	},
+	["Foreground 2"] = {
+		chamCode = "FG2",
+		chamName = "Foreground 2"
+	},
+	["Background 1"] = {
+		chamCode = "BG1",
+		chamName = "Background 1"
+	},
+	["Background 2"] = {
+		chamCode = "BG2",
+		chamName = "Background 2"
+	}
+}
+
+function setAIMPMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AIMPMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AIMPMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAIMPSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AIMPShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AIMPShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAIMPSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AIMPShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AIMPShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setAmazonMusicMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AmazonMusicMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AmazonMusicMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAmazonMusicSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AmazonMusicShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AmazonMusicShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAmazonMusicSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AmazonMusicShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AmazonMusicShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setAudibleMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AudibleMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AudibleMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAudibleSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AudibleShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AudibleShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAudibleSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AudibleShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AudibleShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setCrunchyrollMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setCrunchyrollSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setCrunchyrollSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CrunchyrollShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setDisneyPlusMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DisneyPlusMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DisneyPlusMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setDisneyPlusSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DisneyPlusShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DisneyPlusShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setDisneyPlusSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DisneyPlusShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DisneyPlusShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setFoobarMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables FoobarMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FoobarMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setFoobarSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables FoobarShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FoobarShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setFoobarSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables FoobarShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables FoobarShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setGPMusicMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables GPMusicMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GPMusicMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setGPMusicSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables GPMusicShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GPMusicShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setGPMusicSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables GPMusicShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GPMusicShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setHuluMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HuluMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HuluMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setHuluSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HuluShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HuluShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setHuluSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HuluShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HuluShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setiTunesMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables iTunesMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables iTunesMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setiTunesSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables iTunesShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables iTunesShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setiTunesSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables iTunesShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables iTunesShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setKodiMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables KodiMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables KodiMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setKodiSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables KodiShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables KodiShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setKodiSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables KodiShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables KodiShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setMusicBeeMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MusicBeeMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MusicBeeMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMusicBeeSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MusicBeeShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MusicBeeShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMusicBeeSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MusicBeeShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MusicBeeShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setNetflixMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables NetflixMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NetflixMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setNetflixSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables NetflixShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NetflixShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setNetflixSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables NetflixShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NetflixShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setPlexMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables PlexMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PlexMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setPlexSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables PlexShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PlexShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setPlexSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables PlexShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PlexShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setSpotifyMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SpotifyMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SpotifyMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSpotifySG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SpotifyShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SpotifyShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSpotifySG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SpotifyShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SpotifyShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setTwitchMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TwitchMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TwitchMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTwitchSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TwitchShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TwitchShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTwitchSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TwitchShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TwitchShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setVLCMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VLCMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VLCMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setVLCSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VLCShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VLCShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setVLCSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VLCShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VLCShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setWakanimMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WakanimMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WakanimMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWakanimSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WakanimShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WakanimShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWakanimSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WakanimShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WakanimShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setWinampMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WinampMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WinampMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWinampSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WinampShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WinampShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWinampSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WinampShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WinampShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setWMPMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WMPMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WMPMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWMPSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WMPShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WMPShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWMPSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WMPShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WMPShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setYouTubeMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables YouTubeMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables YouTubeMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setYouTubeSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables YouTubeShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables YouTubeShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setYouTubeSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables YouTubeShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables YouTubeShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+--; ============================================================
 --; Lua Mask (Media)
 --; ============================================================
 

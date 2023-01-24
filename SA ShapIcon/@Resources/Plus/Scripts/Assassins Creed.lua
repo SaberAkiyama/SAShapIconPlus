@@ -1,5 +1,5 @@
 --; ============================================================
---; Lua Color (Assassin's Creed)
+--; Lua Color Base (Assassin's Creed)
 --; ============================================================
 
 colorSelect = {
@@ -65,6 +65,259 @@ function setACValhallaColorManual(selectedCode)
 end
 
 --; ============================================================
+--; Lua Color Chameleon (Assassin's Creed)
+--; ============================================================
+
+colorChSelect = {
+	["Average"] = {
+		chamCode = "Avg",
+		chamName = "Average"
+	},
+	["Foreground 1"] = {
+		chamCode = "FG1",
+		chamName = "Foreground 1"
+	},
+	["Foreground 2"] = {
+		chamCode = "FG2",
+		chamName = "Foreground 2"
+	},
+	["Background 1"] = {
+		chamCode = "BG1",
+		chamName = "Background 1"
+	},
+	["Background 2"] = {
+		chamCode = "BG2",
+		chamName = "Background 2"
+	}
+}
+
+function setAssassinsCreedMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAssassinsCreedSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAssassinsCreedSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AssassinsCreedShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACRevelationsMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACRevelationsSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACRevelationsSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACRevelationsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setAC3MaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AC3MaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AC3MaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAC3SG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AC3ShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AC3ShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAC3SG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AC3ShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AC3ShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACRogueMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACRogueMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACRogueSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACRogueShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACRogueSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACRogueShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACRogueShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setAC4BlackFlagMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAC4BlackFlagSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setAC4BlackFlagSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables AC4BlackFlagShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACUnityMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACUnityMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACUnitySG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACUnityShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACUnitySG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACUnityShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACUnityShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACSyndicateMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACSyndicateSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACSyndicateSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACSyndicateShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACOriginsMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACOriginsSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACOriginsSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACOriginsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACOdysseyMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACOdysseySG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACOdysseySG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACOdysseyShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setACValhallaMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACValhallaSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACValhallaSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACValhallaShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
 
 --; ============================================================
 --; Lua Mask (Assassin's Creed)

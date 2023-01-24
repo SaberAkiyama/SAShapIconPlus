@@ -21,6 +21,8 @@ MeterStyle=Mask#AC4BlackFlagShape#90
 MyFillGradient=#ShapeGradientAngle# | #AC4BlackFlagShapeGradient1Base#,255 ; 1.0 | #AC4BlackFlagShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#AC4BlackFlagMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #AC4BlackFlagMaskBase#
 ImageTint=#AC4BlackFlagMaskBase#
 X=0r
 Y=0r
-Hidden=#AC4BlackFlagRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImageAC4BlackFlag]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#AC4BlackFlagMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#AC4BlackFlagShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#AC4BlackFlagShapeGradient1ChCode#],255 ; 1.0 | [Desktop#AC4BlackFlagShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#AC4BlackFlagMaskMeter#
+MeterStyle=Mask#AC4BlackFlagMaskStyle#90 | #AC4BlackFlagMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#AC4BlackFlagMaskChCode#]
+ImageTint=[Desktop#AC4BlackFlagMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChAC4BlackFlag]
+Meter=Image
+MeterStyle=#AC4BlackFlagMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Assassin's Creed\Assassins Creed IV Black Flag.png
+ImageTint=[Desktop#AC4BlackFlagMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -73,12 +109,23 @@ MeterStyle=IconActive
 X=0r
 Y=5R
 Text=#AC4BlackFlagMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaAssassinsCreed "setAC4BlackFlagColorManual('Mask')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming\Assassin's Creed "setAC4BlackFlagColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#AC4BlackFlagMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -95,9 +142,24 @@ Group=PageGradient
 X=0r
 Y=5R
 Text=#AC4BlackFlagShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaAssassinsCreed "setAC4BlackFlagColorManual('Gradient 1')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming\Assassin's Creed "setAC4BlackFlagColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#AC4BlackFlagShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -114,9 +176,24 @@ Group=PageGradient
 X=0r
 Y=5R
 Text=#AC4BlackFlagShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaAssassinsCreed "setAC4BlackFlagColorManual('Gradient 2')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming\Assassin's Creed "setAC4BlackFlagColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#AC4BlackFlagShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

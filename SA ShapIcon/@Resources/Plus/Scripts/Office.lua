@@ -62,6 +62,240 @@ end
 --; ============================================================
 
 --; ============================================================
+--; Lua Color Chameleon (Office)
+--; ============================================================
+
+colorChSelect = {
+	["Average"] = {
+		chamCode = "Avg",
+		chamName = "Average"
+	},
+	["Foreground 1"] = {
+		chamCode = "FG1",
+		chamName = "Foreground 1"
+	},
+	["Foreground 2"] = {
+		chamCode = "FG2",
+		chamName = "Foreground 2"
+	},
+	["Background 1"] = {
+		chamCode = "BG1",
+		chamName = "Background 1"
+	},
+	["Background 2"] = {
+		chamCode = "BG2",
+		chamName = "Background 2"
+	}
+}
+
+function setExcelMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ExcelMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ExcelMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setExcelSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ExcelShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ExcelShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setExcelSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ExcelShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ExcelShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setOneDriveMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OneDriveMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOneDriveSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OneDriveShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOneDriveSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OneDriveShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OneDriveShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setOneNoteMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OneNoteMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OneNoteMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOneNoteSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OneNoteShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OneNoteShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOneNoteSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OneNoteShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OneNoteShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setOutlookMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OutlookMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OutlookMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOutlookSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OutlookShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OutlookShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setOutlookSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables OutlookShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OutlookShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setPowerPointMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables PowerPointMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PowerPointMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setPowerPointSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables PowerPointShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PowerPointShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setPowerPointSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables PowerPointShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables PowerPointShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setSharePointMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SharePointMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SharePointMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSharePointSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SharePointShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SharePointShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSharePointSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SharePointShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SharePointShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setTeamsMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TeamsMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TeamsMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTeamsSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TeamsShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TeamsShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTeamsSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TeamsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TeamsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setWordMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WordMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WordMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWordSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WordShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WordShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWordSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WordShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WordShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setYammerMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables YammerMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables YammerMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setYammerSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables YammerShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables YammerShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setYammerSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables YammerShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables YammerShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+--; ============================================================
 --; Lua Mask (Office)
 --; ============================================================
 

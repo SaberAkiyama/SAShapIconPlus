@@ -72,6 +72,263 @@ end
 --; ============================================================
 
 --; ============================================================
+--; Lua Color Chameleon (Social)
+--; ============================================================
+
+colorChSelect = {
+	["Average"] = {
+		chamCode = "Avg",
+		chamName = "Average"
+	},
+	["Foreground 1"] = {
+		chamCode = "FG1",
+		chamName = "Foreground 1"
+	},
+	["Foreground 2"] = {
+		chamCode = "FG2",
+		chamName = "Foreground 2"
+	},
+	["Background 1"] = {
+		chamCode = "BG1",
+		chamName = "Background 1"
+	},
+	["Background 2"] = {
+		chamCode = "BG2",
+		chamName = "Background 2"
+	}
+}
+
+function setDiscordMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DiscordMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DiscordMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setDiscordSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DiscordShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DiscordShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setDiscordSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DiscordShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DiscordShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setGuildedMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables GuildedMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GuildedMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setGuildedSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables GuildedShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GuildedShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setGuildedSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables GuildedShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GuildedShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setMetaMessengerMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMetaMessengerSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMetaMessengerSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MetaMessengerShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setRedditMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables RedditMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables RedditMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setRedditSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables RedditShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables RedditShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setRedditSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables RedditShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables RedditShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setSignalMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SignalMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SignalMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSignalSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSignalSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setTeamSpeakMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTeamSpeakSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTeamSpeakSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TeamSpeakShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setTelegramMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TelegramMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TelegramMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTelegramSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TelegramShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TelegramShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTelegramSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TelegramShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TelegramShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setTwitterMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TwitterMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TwitterMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTwitterSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TwitterShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TwitterShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTwitterSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TwitterShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TwitterShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setWhatsAppMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWhatsAppSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setWhatsAppSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables WhatsAppShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setZoomMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ZoomMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ZoomMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setZoomSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ZoomShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ZoomShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setZoomSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ZoomShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ZoomShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+--; ============================================================
 --; Lua Mask (Social)
 --; ============================================================
 

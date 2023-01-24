@@ -12,6 +12,13 @@ AntiAlias=1
 DynamicVariables=1
 UpdateDivider=-1
 
+[MaskParallelogram90]
+Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
+Path1=30.347,1.042 | LineTo 88.958,1.042 | LineTo 59.653,88.958 | LineTo 1.042,88.958 | LineTo 30.347,1.042 | ClosePath 1
+AntiAlias=1
+DynamicVariables=1
+UpdateDivider=-1
+
 [MaskSquare90]
 Shape=Path Path1 | Fill LinearGradient MyFillGradient | StrokeWidth 0
 Path1=1.042,45 | LineTo 45,1.042 | LineTo 88.958,45 | LineTo 45,88.958 | LineTo 1.042,45 | ClosePath 1

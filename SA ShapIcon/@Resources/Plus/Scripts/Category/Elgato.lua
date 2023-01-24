@@ -40,5 +40,5 @@ function setElgato(selectedElgato)
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
-	
+
 end

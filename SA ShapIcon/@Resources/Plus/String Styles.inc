@@ -863,6 +863,34 @@ SolidColor=0,0,0,1
 FontSize=20
 AntiAlias=1
 
+[OptionPWAActive]
+StringAlign=CenterTop
+FontFace=Borda 12
+FontColor=255,255,255
+SolidColor=0,0,0,1
+FontSize=20
+AntiAlias=1
+
+[OptionTransparentActive]
+Shape=Rectangle 0,0,270,50 | Extend MyFillColor | Stroke Color 0,0,0,0 | StrokeWidth 0
+MyFillColor=Fill Color 0,0,0,1
+MouseOverAction=[!CommandMeasure LuaSettings "setHVOptionTransparent('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaSettings "setHVOptionTransparent('Leave')"]
+AntiAlias=1
+DynamicVariables=1
+Hidden=1
+UpdateDivider=-1
+
+[OptionMiscActive]
+Shape=Rectangle 0,0,270,50 | Extend MyFillColor | Stroke Color 0,0,0,0 | StrokeWidth 0
+MyFillColor=Fill Color 0,0,0,1
+MouseOverAction=[!CommandMeasure LuaSettings "setHVOptionMisc('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaSettings "setHVOptionMisc('Leave')"]
+AntiAlias=1
+DynamicVariables=1
+Hidden=1
+UpdateDivider=-1
+
 ; =============================================================
 ; =============================================================
 ; PAGE Plus

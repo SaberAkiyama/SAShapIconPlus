@@ -13,7 +13,8 @@ ScriptFile=#@#Plus\Scripts\Category\Minecraft.lua
 UpdateDivider=5
 
 [Variables]
-@include9="#@#Plus\Set Icon\#NameIcon#.inc"
+@include9=#@#Plus\Chameleon.inc
+@include10="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Minecraft Page
@@ -194,6 +195,18 @@ Y=20R
 MouseOverAction=[!SetOption MeterPageValhelsiaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageValhelsiaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraftModpack('Valhelsia')"]
+Hidden=#MinecraftPage2#
+
+[MeterPageVaultHuntersText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=MinecraftPage2
+Text=Vault Hunters
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageVaultHuntersText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageVaultHuntersText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryMinecraft "setMinecraftModpack('Vault Hunters')"]
 Hidden=#MinecraftPage2#
 
 ; ============================================================

@@ -9,7 +9,7 @@ ShapeAlphaIconHigh=255
 
 ShapeAlphaMask=255
 ShapeAlphaMaskInterval=15
-ShapeAlphaMaskLow=1
+ShapeAlphaMaskLow=128
 ShapeAlphaMaskHigh=255
 
 ShapeFade1=+
@@ -17,11 +17,11 @@ ShapeFade2=-
 
 ToggleActionIcon=Off
 TransIconDP=1
-TransIconHidden=0
+TransIconHidden=1
 
 ToggleActionMask=On
 TransMaskDP=0
-TransMaskHidden=1
+TransMaskHidden=0
 TransMaskInput=High
 
 [MeasureFaderIconShape]

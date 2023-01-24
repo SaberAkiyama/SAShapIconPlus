@@ -13,7 +13,8 @@ ScriptFile=#@#Plus\Scripts\Category\LibreOffice.lua
 UpdateDivider=5
 
 [Variables]
-@include8="#@#Plus\Set Icon\#NameIcon#.inc"
+@include9=#@#Plus\Chameleon.inc
+@include10="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; LibreOffice Page

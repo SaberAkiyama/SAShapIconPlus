@@ -1,11 +1,10 @@
 [Variables]
-@include8=#@#Plus\Measures\Action Timer Settings.inc
+@include9=#@#Plus\Measures\Action Timer Settings.inc
 
 [MeterSlideBox]
 Meter=Shape
 Group=Sliders
-Shape=Rectangle 0,0,#W1#,640 | Fill Color 0,0,0,128 | Stroke Color 0,0,0,0 | StrokeWidth 0
-SolidColor=0,0,0,1
+Shape=Rectangle 0,0,#W1#,640 | Fill Color 0,0,0,160 | Stroke Color 0,0,0,0 | StrokeWidth 0
 DynamicVariables=1
 UpdateDivider=-1
 
@@ -221,7 +220,7 @@ MeterStyle=ShapeOptionsStyle
 Group=Sliders
 X=0
 Y=540
-LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Options.ini"]
+LeftMouseUpAction=[!ToggleMeterGroup "ShowOptionSkin"][!Update]
 
 [ShapePlus]
 Meter=Shape
@@ -369,20 +368,12 @@ Y=50r
 Text=Other
 Hidden=#CategoryPage4#
 
-[MeterSpecialText]
-Meter=String
-MeterStyle=SettingActive
-Group=Sliders
-X=0r
-Y=515
-Text=Special
-
 [MeterOptionsText]
 Meter=String
 MeterStyle=SettingActive
 Group=Sliders
 X=0r
-Y=50r
+Y=565
 Text=Options
 
 [MeterPlusText]
@@ -392,3 +383,52 @@ Group=Sliders
 X=55
 Y=50r
 Text=Switch to Standard
+
+; ============================================================
+; Page Options
+; ============================================================
+
+[MeterSettingsBg2]
+Meter=Shape
+Group=ShowOptionSkin
+X=50
+Y=540
+Shape=Rectangle 0,0,270,100 | Fill Color 0,0,0,128 | Stroke Color 0,0,0,0 | StrokeWidth 0
+AntiAlias=1
+DynamicVariables=1
+Hidden=1
+UpdateDivider=-1
+
+[MeterTransparentBgActive]
+Meter=Shape
+MeterStyle=OptionTransparentActive
+Group=ShowOptionSkin
+X=50
+Y=540
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setOptionTransparent()"]
+
+[MeterMiscellaneousBgActive]
+Meter=Shape
+MeterStyle=OptionMiscActive
+Group=ShowOptionSkin
+X=0r
+Y=50r
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setOptionMiscellaneous()"]
+
+[MeterTransparentActive]
+Meter=String
+MeterStyle=SettingOptionActive
+Group=ShowOptionSkin
+X=60
+Y=565
+Text=Transparent
+Hidden=1
+
+[MeterMiscellaneousActive]
+Meter=String
+MeterStyle=SettingOptionActive
+Group=ShowOptionSkin
+X=0r
+Y=50r
+Text=Miscellaneous
+Hidden=1

@@ -21,6 +21,8 @@ MeterStyle=Mask#ACSyndicateShape#90
 MyFillGradient=#ShapeGradientAngle# | #ACSyndicateShapeGradient1Base#,255 ; 1.0 | #ACSyndicateShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
 Meter=#ACSyndicateMaskMeter#
@@ -29,7 +31,8 @@ MaskFillColorSetting=Fill Color #ACSyndicateMaskBase#
 ImageTint=#ACSyndicateMaskBase#
 X=0r
 Y=0r
-Hidden=#ACSyndicateRegularHidden#
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
 
 [MeterIconImageACSyndicate]
 Meter=Image
@@ -38,7 +41,40 @@ ImageTint=#ACSyndicateMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
-UpdateDivider=-1
+Hidden=#BaseHidden#
+UpdateDivider=#BaseHidden#
+
+; ============================================================
+
+[MeterMaskShapeCh]
+Meter=Shape
+MeterStyle=Mask#ACSyndicateShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#ACSyndicateShapeGradient1ChCode#],255 ; 1.0 | [Desktop#ACSyndicateShapeGradient2ChCode#],255 ; 0.0
+X=915
+Y=170
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterMaskImageCh]
+Meter=#ACSyndicateMaskMeter#
+MeterStyle=Mask#ACSyndicateMaskStyle#90 | #ACSyndicateMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#ACSyndicateMaskChCode#]
+ImageTint=[Desktop#ACSyndicateMaskChCode#]
+X=0r
+Y=0r
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
+
+[MeterIconImageChACSyndicate]
+Meter=Image
+MeterStyle=#ACSyndicateMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Assassin's Creed\Assassins Creed Syndicate.png
+ImageTint=[Desktop#ACSyndicateMaskChCode#]
+X=0r
+Y=0r
+AntiAlias=1
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================
@@ -47,7 +83,7 @@ UpdateDivider=-1
 Meter=String
 MeterStyle=IconText
 X=840
-Y=50R
+Y=310
 Text=Mask Shape
 
 [MeterMaskActive]
@@ -73,12 +109,23 @@ MeterStyle=IconActive
 X=0r
 Y=5R
 Text=#ACSyndicateMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaAssassinsCreed "setACSyndicateColorManual('Mask')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming\Assassin's Creed "setACSyndicateColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
 
-; ============================================================
-; ============================================================
+[MeterColorMaskChActive]
+Meter=String
+MeterStyle=IconActive
+X=0r
+Y=0r
+Text=#ACSyndicateMaskChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
+MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient1]
 Meter=String
@@ -95,9 +142,24 @@ Group=PageGradient
 X=0r
 Y=5R
 Text=#ACSyndicateShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaAssassinsCreed "setACSyndicateColorManual('Gradient 1')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming\Assassin's Creed "setACSyndicateColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient1ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#ACSyndicateShapeGradient1ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 [MeterColorShapeGradient2]
 Meter=String
@@ -114,9 +176,24 @@ Group=PageGradient
 X=0r
 Y=5R
 Text=#ACSyndicateShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaAssassinsCreed "setACSyndicateColorManual('Gradient 2')"]
+LeftMouseUpAction=[!CommandMeasure LuaGaming\Assassin's Creed "setACSyndicateColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#BaseHidden#
+UpdateDivider=#BaseUpdate#
+
+[MeterColorShapeGradient2ChActive]
+Meter=String
+MeterStyle=IconActive
+Group=PageGradient
+X=0r
+Y=0r
+Text=#ACSyndicateShapeGradient2ChName#
+LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
+MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+Hidden=#ChameleonHidden#
+UpdateDivider=#ChameleonUpdate#
 
 ; ============================================================
 ; ============================================================

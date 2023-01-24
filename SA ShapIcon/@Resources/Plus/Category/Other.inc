@@ -13,7 +13,8 @@ ScriptFile=#@#Plus\Scripts\Category\Other.lua
 UpdateDivider=5
 
 [Variables]
-@include8="#@#Plus\Set Icon\#NameIcon#.inc"
+@include9=#@#Plus\Chameleon.inc
+@include10="#@#Plus\Set Icon\#NameIcon#.inc"
 
 ; ============================================================
 ; Other Page
@@ -583,15 +584,15 @@ MouseLeaveAction=[!SetOption MeterPageNVIDIABroadcastText FontColor "255,255,255
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('NVIDIA Broadcast')"]
 Hidden=#OtherPage5#
 
-[MeterPageNVIDIAText]
+[MeterPageNVIDIAGeForceText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage5
 Text=NVIDIA GeForce Experience
 X=0r
 Y=20R
-MouseOverAction=[!SetOption MeterPageNVIDIAText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageNVIDIAText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+MouseOverAction=[!SetOption MeterPageNVIDIAGeForceText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageNVIDIAGeForceText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('NVIDIA GeForce Experience')"]
 Hidden=#OtherPage5#
 
