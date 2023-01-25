@@ -158,10 +158,10 @@ Added, Fixed & Improved skin Settings:
 Removed Icon(s):
 * [Gaming] Bethesda Launcher
 
-## v5.0.0 Open Beta 2 (April 6th, 2022)
+## 5.0.0 Open Beta 2 (April 6th, 2022)
 * [Added] Icon from the original SA ShapIcon in v4.2.6, v4.2.7 and 4.2.8
 * [Added] Gradient Color Presets and Transparent Color in Settings page
 
-## v5.0.0 Open Beta 1 (March 13th, 2022)
+## 5.0.0 Open Beta 1 (March 13th, 2022)
 * [Added] Vector Mask Shapes
 * [Added] Gradient Color and Shapes
