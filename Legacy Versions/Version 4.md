@@ -36,7 +36,7 @@
 * [Fixed] An issue didn't appear from all of icons in Other icon category.
 
 ## 4.2.0 (December 21st, 2021)
-### A minor update for added Elgato, replaced to sidebar, etc. Look on ## Updates in the description.
+### A minor update for added Elgato, replaced to sidebar, etc.
 
 Added Icons:
 * [Elgato (New)] 4K Capture Utility, Camera Hub, Control Center, Game Capture, Stream Deck, Video Capture and Wave Link.
@@ -106,7 +106,7 @@ Added, Fixed and Improved skin Settings:
 * [Fixed] An issue didn't select page number for all categories.
 
 ## 4.0.0 (October 25th, 2021)
-### A major update for added Special, new Category, etc. Look on ## Updates in the description.
+### A major update for added Special, new Category, etc. 
 
 Added and Replaced Icons:
 * [Browsing] Vivaldi Browser
