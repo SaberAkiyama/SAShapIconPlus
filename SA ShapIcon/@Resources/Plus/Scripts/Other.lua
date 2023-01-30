@@ -309,6 +309,11 @@ function setScrivenerColorManual(selectedCode)
 
 end
 
+function setSilhouetteStudioColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinSilhouetteStudio" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setSlackColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinSlack" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -341,6 +346,11 @@ end
 
 function setThunderbirdColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinThunderbird" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setTBHarmonyColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinTBHarmony" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1805,6 +1815,29 @@ end
 
 --; ============================================================
 
+function setSilhouetteStudioMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSilhouetteStudioSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSilhouetteStudioSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setSlackMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables SlackMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SlackMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -1960,6 +1993,29 @@ end
 function setThisPCSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables ThisPCShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ThisPCShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setTBHarmonyMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTBHarmonySG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setTBHarmonySG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -3116,6 +3172,17 @@ function setScrivenerMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setSilhouetteStudioMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SilhouetteStudioRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setSlackMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SlackMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SlackMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -3177,6 +3244,17 @@ function setThisPCMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ThisPCShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ThisPCMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ThisPCRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setTBHarmonyMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables TBHarmonyRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

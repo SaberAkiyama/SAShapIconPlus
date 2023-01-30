@@ -5530,6 +5530,21 @@ ScrivenerShapeGradient1ChName=Background 1
 ScrivenerShapeGradient2ChName=Average
 ScrivenerRegularHidden=1
 
+SilhouetteStudioShape=Hexagon
+SilhouetteStudioMaskMeter=Shape
+SilhouetteStudioMask=Regular Hexagon
+SilhouetteStudioMaskStyle=Blank
+SilhouetteStudioMaskBase=255,255,255
+SilhouetteStudioShapeGradient1Base=225,65,105
+SilhouetteStudioShapeGradient2Base=65,105,225
+SilhouetteStudioMaskChCode=FG1
+SilhouetteStudioShapeGradient1ChCode=BG1
+SilhouetteStudioShapeGradient2ChCode=Avg
+SilhouetteStudioMaskChName=Foreground 1
+SilhouetteStudioShapeGradient1ChName=Background 1
+SilhouetteStudioShapeGradient2ChName=Average
+SilhouetteStudioRegularHidden=1
+
 SlackShape=Hexagon
 SlackMaskMeter=Shape
 SlackMask=Regular Hexagon
@@ -5634,6 +5649,21 @@ ThunderbirdMaskChName=Foreground 1
 ThunderbirdShapeGradient1ChName=Background 1
 ThunderbirdShapeGradient2ChName=Average
 ThunderbirdRegularHidden=1
+
+TBHarmonyShape=Hexagon
+TBHarmonyMaskMeter=Shape
+TBHarmonyMask=Regular Hexagon
+TBHarmonyMaskStyle=Blank
+TBHarmonyMaskBase=255,255,255
+TBHarmonyShapeGradient1Base=225,65,105
+TBHarmonyShapeGradient2Base=65,105,225
+TBHarmonyMaskChCode=FG1
+TBHarmonyShapeGradient1ChCode=BG1
+TBHarmonyShapeGradient2ChCode=Avg
+TBHarmonyMaskChName=Foreground 1
+TBHarmonyShapeGradient1ChName=Background 1
+TBHarmonyShapeGradient2ChName=Average
+TBHarmonyRegularHidden=1
 
 UnityShape=Hexagon
 UnityMaskMeter=Shape
