@@ -5,7 +5,7 @@ SetUpdateDivider=1
 ; Options
 SnapToggle=0
 SnapText=Off
-IconHeight=108
+IconHeight=90
 BaseHidden=0
 BaseUpdate=1
 ChameleonHidden=1
@@ -2396,6 +2396,21 @@ HOTSMaskChName=Foreground 1
 HOTSShapeGradient1ChName=Background 1
 HOTSShapeGradient2ChName=Average
 HOTSRegularHidden=1
+
+HogwartsShape=Hexagon
+HogwartsMaskMeter=Shape
+HogwartsMask=Regular Hexagon
+HogwartsMaskStyle=Blank
+HogwartsMaskBase=255,255,255
+HogwartsShapeGradient1Base=225,65,105
+HogwartsShapeGradient2Base=65,105,225
+HogwartsMaskChCode=FG1
+HogwartsShapeGradient1ChCode=BG1
+HogwartsShapeGradient2ChCode=Avg
+HogwartsMaskChName=Foreground 1
+HogwartsShapeGradient1ChName=Background 1
+HogwartsShapeGradient2ChName=Average
+HogwartsRegularHidden=1
 
 HollowKnightShape=Hexagon
 HollowKnightMaskMeter=Shape

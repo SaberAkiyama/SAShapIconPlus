@@ -354,6 +354,11 @@ function setHOTSColorManual(selectedCode)
 
 end
 
+function setHogwartsColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinHogwarts" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setHollowKnightColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinHollowKnight" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -2331,6 +2336,29 @@ end
 function setHOTSSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables HOTSShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HOTSShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setHogwartsMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HogwartsMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setHogwartsSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HogwartsShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setHogwartsSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HogwartsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -5019,6 +5047,17 @@ function setHOTSMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables HOTSShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables HOTSMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables HOTSRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setHogwartsMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables HogwartsMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HogwartsRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
