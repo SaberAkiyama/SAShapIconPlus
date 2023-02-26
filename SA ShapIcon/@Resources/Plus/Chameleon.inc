@@ -371,6 +371,43 @@ DynamicVariables=1
 
 ; =============================================================
 
+[SpecialChameleonJetBrainsAvgStyle]
+ImagePath=#@#Plus\Image Shapes\Settings\Icon\JetBrains
+ImageTint=[DesktopAvg]
+H=90
+AntiAlias=1
+DynamicVariables=1
+
+[SpecialChameleonJetBrainsFG1Style]
+ImagePath=#@#Plus\Image Shapes\Settings\Icon\JetBrains
+ImageTint=[DesktopFG1]
+H=90
+AntiAlias=1
+DynamicVariables=1
+
+[SpecialChameleonJetBrainsFG2Style]
+ImagePath=#@#Plus\Image Shapes\Settings\Icon\JetBrains
+ImageTint=[DesktopFG2]
+H=90
+AntiAlias=1
+DynamicVariables=1
+
+[SpecialChameleonJetBrainsBG1Style]
+ImagePath=#@#Plus\Image Shapes\Settings\Icon\JetBrains
+ImageTint=[DesktopBG1]
+H=90
+AntiAlias=1
+DynamicVariables=1
+
+[SpecialChameleonJetBrainsBG2Style]
+ImagePath=#@#Plus\Image Shapes\Settings\Icon\JetBrains
+ImageTint=[DesktopBG2]
+H=90
+AntiAlias=1
+DynamicVariables=1
+
+; =============================================================
+
 [SpecialChameleonLibreOfficeAvgStyle]
 ImagePath=#@#Plus\Image Shapes\Settings\Icon\LibreOffice
 ImageTint=[DesktopAvg]

@@ -154,16 +154,6 @@ function setInkscapeColorManual(selectedCode)
 
 end
 
-function setJBPyCharmColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinJBPyCharm" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
-
-end
-
-function setJBRiderColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinJBRider" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
-
-end
-
 function setKritaColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinKrita" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -1096,52 +1086,6 @@ end
 function setInkscapeSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables InkscapeShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables InkscapeShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
---; ============================================================
-
-function setJBPyCharmMaskCh(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setJBPyCharmSG1Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setJBPyCharmSG2Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
---; ============================================================
-
-function setJBRiderMaskCh(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables JBRiderMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setJBRiderSG1Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables JBRiderShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setJBRiderSG2Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables JBRiderShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -2826,28 +2770,6 @@ function setInkscapeMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables InkscapeShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables InkscapeMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables InkscapeRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
-
-	SKIN:Bang('!UpdateGroup ShapeSettings')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-end
-
-function setJBPyCharmMask(selectedMask)
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBPyCharmRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
-
-	SKIN:Bang('!UpdateGroup ShapeSettings')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-end
-
-function setJBRiderMask(selectedMask)
-	SKIN:Bang('!WriteKeyValue Variables JBRiderMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables JBRiderRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

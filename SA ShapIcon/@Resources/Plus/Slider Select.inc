@@ -131,12 +131,20 @@ X=0
 Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Google')"]
 
+[ShapeJetBrains]
+Meter=Shape
+MeterStyle=ShapeJetBrainsStyle
+Group=CategoryPage3
+X=0
+Y=200
+LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('JetBrains')"][!CommandMeasure LuaSettings "setSettingsJetBrains()"]
+
 [ShapeLibreOffice]
 Meter=Shape
 MeterStyle=ShapeLibreOfficeStyle
 Group=CategoryPage3
 X=0
-Y=200
+Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('LibreOffice')"]
 
 [ShapeMedia]
@@ -158,9 +166,9 @@ LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Minecraft')"][!Comm
 [ShapeOffice]
 Meter=Shape
 MeterStyle=ShapeOfficeStyle
-Group=CategoryPage3
+Group=CategoryPage4
 X=0
-Y=50r
+Y=200
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Office')"]
 
 [ShapeSocial]
@@ -168,7 +176,7 @@ Meter=Shape
 MeterStyle=ShapeSocialStyle
 Group=CategoryPage4
 X=0
-Y=200
+Y=50r
 LeftMouseUpAction=[!CommandMeasure LuaSettings "setSettings('Social')"][!CommandMeasure LuaSettings "setSettingsSocial()"]
 
 [ShapeOther]
@@ -320,7 +328,7 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=0r
 Y=225
-Text=LibreOffice
+Text=JetBrains
 Hidden=#CategoryPage3#
 
 [MeterPage10]
@@ -329,7 +337,7 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=0r
 Y=50r
-Text=Media
+Text=LibreOffice
 Hidden=#CategoryPage3#
 
 [MeterPage11]
@@ -338,7 +346,7 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=0r
 Y=50r
-Text=Minecraft
+Text=Media
 Hidden=#CategoryPage3#
 
 [MeterPage12]
@@ -347,7 +355,7 @@ MeterStyle=SettingActive
 Group=CategoryPage3 | Sliders
 X=0r
 Y=50r
-Text=Office
+Text=Minecraft
 Hidden=#CategoryPage3#
 
 [MeterPage13]
@@ -356,6 +364,15 @@ MeterStyle=SettingActive
 Group=CategoryPage4 | Sliders
 X=0r
 Y=225
+Text=Office
+Hidden=#CategoryPage4#
+
+[MeterPage13]
+Meter=String
+MeterStyle=SettingActive
+Group=CategoryPage4 | Sliders
+X=0r
+Y=50r
 Text=Social
 Hidden=#CategoryPage4#
 

@@ -3707,6 +3707,190 @@ SlidesShapeGradient2ChName=Average
 SlidesRegularHidden=1
 
 ; ============================================================
+; JetBrains
+; ============================================================
+
+AquaShape=Hexagon
+AquaMaskMeter=Shape
+AquaMask=Regular Hexagon
+AquaMaskStyle=Blank
+AquaMaskBase=255,255,255
+AquaShapeGradient1Base=225,65,105
+AquaShapeGradient2Base=65,105,225
+AquaMaskChCode=FG1
+AquaShapeGradient1ChCode=BG1
+AquaShapeGradient2ChCode=Avg
+AquaMaskChName=Foreground 1
+AquaShapeGradient1ChName=Background 1
+AquaShapeGradient2ChName=Average
+AquaRegularHidden=1
+
+CLionShape=Hexagon
+CLionMaskMeter=Shape
+CLionMask=Regular Hexagon
+CLionMaskStyle=Blank
+CLionMaskBase=255,255,255
+CLionShapeGradient1Base=225,65,105
+CLionShapeGradient2Base=65,105,225
+CLionMaskChCode=FG1
+CLionShapeGradient1ChCode=BG1
+CLionShapeGradient2ChCode=Avg
+CLionMaskChName=Foreground 1
+CLionShapeGradient1ChName=Background 1
+CLionShapeGradient2ChName=Average
+CLionRegularHidden=1
+
+DataGripShape=Hexagon
+DataGripMaskMeter=Shape
+DataGripMask=Regular Hexagon
+DataGripMaskStyle=Blank
+DataGripMaskBase=255,255,255
+DataGripShapeGradient1Base=225,65,105
+DataGripShapeGradient2Base=65,105,225
+DataGripMaskChCode=FG1
+DataGripShapeGradient1ChCode=BG1
+DataGripShapeGradient2ChCode=Avg
+DataGripMaskChName=Foreground 1
+DataGripShapeGradient1ChName=Background 1
+DataGripShapeGradient2ChName=Average
+DataGripRegularHidden=1
+
+DataSpellShape=Hexagon
+DataSpellMaskMeter=Shape
+DataSpellMask=Regular Hexagon
+DataSpellMaskStyle=Blank
+DataSpellMaskBase=255,255,255
+DataSpellShapeGradient1Base=225,65,105
+DataSpellShapeGradient2Base=65,105,225
+DataSpellMaskChCode=FG1
+DataSpellShapeGradient1ChCode=BG1
+DataSpellShapeGradient2ChCode=Avg
+DataSpellMaskChName=Foreground 1
+DataSpellShapeGradient1ChName=Background 1
+DataSpellShapeGradient2ChName=Average
+DataSpellRegularHidden=1
+
+FleetShape=Hexagon
+FleetMaskMeter=Shape
+FleetMask=Regular Hexagon
+FleetMaskStyle=Blank
+FleetMaskBase=255,255,255
+FleetShapeGradient1Base=225,65,105
+FleetShapeGradient2Base=65,105,225
+FleetMaskChCode=FG1
+FleetShapeGradient1ChCode=BG1
+FleetShapeGradient2ChCode=Avg
+FleetMaskChName=Foreground 1
+FleetShapeGradient1ChName=Background 1
+FleetShapeGradient2ChName=Average
+FleetRegularHidden=1
+
+GoLandShape=Hexagon
+GoLandMaskMeter=Shape
+GoLandMask=Regular Hexagon
+GoLandMaskStyle=Blank
+GoLandMaskBase=255,255,255
+GoLandShapeGradient1Base=225,65,105
+GoLandShapeGradient2Base=65,105,225
+GoLandMaskChCode=FG1
+GoLandShapeGradient1ChCode=BG1
+GoLandShapeGradient2ChCode=Avg
+GoLandMaskChName=Foreground 1
+GoLandShapeGradient1ChName=Background 1
+GoLandShapeGradient2ChName=Average
+GoLandRegularHidden=1
+
+IntelliJShape=Hexagon
+IntelliJMaskMeter=Shape
+IntelliJMask=Regular Hexagon
+IntelliJMaskStyle=Blank
+IntelliJMaskBase=255,255,255
+IntelliJShapeGradient1Base=225,65,105
+IntelliJShapeGradient2Base=65,105,225
+IntelliJMaskChCode=FG1
+IntelliJShapeGradient1ChCode=BG1
+IntelliJShapeGradient2ChCode=Avg
+IntelliJMaskChName=Foreground 1
+IntelliJShapeGradient1ChName=Background 1
+IntelliJShapeGradient2ChName=Average
+IntelliJRegularHidden=1
+
+PhpStormShape=Hexagon
+PhpStormMaskMeter=Shape
+PhpStormMask=Regular Hexagon
+PhpStormMaskStyle=Blank
+PhpStormMaskBase=255,255,255
+PhpStormShapeGradient1Base=225,65,105
+PhpStormShapeGradient2Base=65,105,225
+PhpStormMaskChCode=FG1
+PhpStormShapeGradient1ChCode=BG1
+PhpStormShapeGradient2ChCode=Avg
+PhpStormMaskChName=Foreground 1
+PhpStormShapeGradient1ChName=Background 1
+PhpStormShapeGradient2ChName=Average
+PhpStormRegularHidden=1
+
+PyCharmShape=Hexagon
+PyCharmMaskMeter=Shape
+PyCharmMask=Regular Hexagon
+PyCharmMaskStyle=Blank
+PyCharmMaskBase=255,255,255
+PyCharmShapeGradient1Base=225,65,105
+PyCharmShapeGradient2Base=65,105,225
+PyCharmMaskChCode=FG1
+PyCharmShapeGradient1ChCode=BG1
+PyCharmShapeGradient2ChCode=Avg
+PyCharmMaskChName=Foreground 1
+PyCharmShapeGradient1ChName=Background 1
+PyCharmShapeGradient2ChName=Average
+PyCharmRegularHidden=1
+
+RiderShape=Hexagon
+RiderMaskMeter=Shape
+RiderMask=Regular Hexagon
+RiderMaskStyle=Blank
+RiderMaskBase=255,255,255
+RiderShapeGradient1Base=225,65,105
+RiderShapeGradient2Base=65,105,225
+RiderMaskChCode=FG1
+RiderShapeGradient1ChCode=BG1
+RiderShapeGradient2ChCode=Avg
+RiderMaskChName=Foreground 1
+RiderShapeGradient1ChName=Background 1
+RiderShapeGradient2ChName=Average
+RiderRegularHidden=1
+
+RubyMineShape=Hexagon
+RubyMineMaskMeter=Shape
+RubyMineMask=Regular Hexagon
+RubyMineMaskStyle=Blank
+RubyMineMaskBase=255,255,255
+RubyMineShapeGradient1Base=225,65,105
+RubyMineShapeGradient2Base=65,105,225
+RubyMineMaskChCode=FG1
+RubyMineShapeGradient1ChCode=BG1
+RubyMineShapeGradient2ChCode=Avg
+RubyMineMaskChName=Foreground 1
+RubyMineShapeGradient1ChName=Background 1
+RubyMineShapeGradient2ChName=Average
+RubyMineRegularHidden=1
+
+WebStormShape=Hexagon
+WebStormMaskMeter=Shape
+WebStormMask=Regular Hexagon
+WebStormMaskStyle=Blank
+WebStormMaskBase=255,255,255
+WebStormShapeGradient1Base=225,65,105
+WebStormShapeGradient2Base=65,105,225
+WebStormMaskChCode=FG1
+WebStormShapeGradient1ChCode=BG1
+WebStormShapeGradient2ChCode=Avg
+WebStormMaskChName=Foreground 1
+WebStormShapeGradient1ChName=Background 1
+WebStormShapeGradient2ChName=Average
+WebStormRegularHidden=1
+
+; ============================================================
 ; LibreOffice
 ; ============================================================
 
@@ -5079,36 +5263,6 @@ InkscapeMaskChName=Foreground 1
 InkscapeShapeGradient1ChName=Background 1
 InkscapeShapeGradient2ChName=Average
 InkscapeRegularHidden=1
-
-JBPyCharmShape=Hexagon
-JBPyCharmMaskMeter=Shape
-JBPyCharmMask=Regular Hexagon
-JBPyCharmMaskStyle=Blank
-JBPyCharmMaskBase=255,255,255
-JBPyCharmShapeGradient1Base=225,65,105
-JBPyCharmShapeGradient2Base=65,105,225
-JBPyCharmMaskChCode=FG1
-JBPyCharmShapeGradient1ChCode=BG1
-JBPyCharmShapeGradient2ChCode=Avg
-JBPyCharmMaskChName=Foreground 1
-JBPyCharmShapeGradient1ChName=Background 1
-JBPyCharmShapeGradient2ChName=Average
-JBPyCharmRegularHidden=1
-
-JBRiderShape=Hexagon
-JBRiderMaskMeter=Shape
-JBRiderMask=Regular Hexagon
-JBRiderMaskStyle=Blank
-JBRiderMaskBase=255,255,255
-JBRiderShapeGradient1Base=225,65,105
-JBRiderShapeGradient2Base=65,105,225
-JBRiderMaskChCode=FG1
-JBRiderShapeGradient1ChCode=BG1
-JBRiderShapeGradient2ChCode=Avg
-JBRiderMaskChName=Foreground 1
-JBRiderShapeGradient1ChName=Background 1
-JBRiderShapeGradient2ChName=Average
-JBRiderRegularHidden=1
 
 KritaShape=Hexagon
 KritaMaskMeter=Shape

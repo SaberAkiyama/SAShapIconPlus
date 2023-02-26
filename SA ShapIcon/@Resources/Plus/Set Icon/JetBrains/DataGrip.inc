@@ -5,39 +5,39 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterJBRiderText]
+[MeterDataGripText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=JetBrains Rider
+Text=DataGrip
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#JBRiderShape#90
-MyFillGradient=#ShapeGradientAngle# | #JBRiderShapeGradient1Base#,255 ; 1.0 | #JBRiderShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#DataGripShape#90
+MyFillGradient=#ShapeGradientAngle# | #DataGripShapeGradient1Base#,255 ; 1.0 | #DataGripShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 Hidden=#BaseHidden#
 UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
-Meter=#JBRiderMaskMeter#
-MeterStyle=Mask#JBRiderMaskStyle#90
-MaskFillColorSetting=Fill Color #JBRiderMaskBase#
-ImageTint=#JBRiderMaskBase#
+Meter=#DataGripMaskMeter#
+MeterStyle=Mask#DataGripMaskStyle#90
+MaskFillColorSetting=Fill Color #DataGripMaskBase#
+ImageTint=#DataGripMaskBase#
 X=0r
 Y=0r
 Hidden=#BaseHidden#
 UpdateDivider=#BaseHidden#
 
-[MeterIconImageJBRider]
+[MeterIconImageDataGrip]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\JetBrains Rider.png
-ImageTint=#JBRiderMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\JetBrains\DataGrip.png
+ImageTint=#DataGripMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -48,28 +48,28 @@ UpdateDivider=#BaseHidden#
 
 [MeterMaskShapeCh]
 Meter=Shape
-MeterStyle=Mask#JBRiderShape#90
-MyFillGradient=#ShapeGradientAngle# | [Desktop#JBRiderShapeGradient1ChCode#],255 ; 1.0 | [Desktop#JBRiderShapeGradient2ChCode#],255 ; 0.0
+MeterStyle=Mask#DataGripShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#DataGripShapeGradient1ChCode#],255 ; 1.0 | [Desktop#DataGripShapeGradient2ChCode#],255 ; 0.0
 X=915
 Y=170
 Hidden=#ChameleonHidden#
 UpdateDivider=#ChameleonUpdate#
 
 [MeterMaskImageCh]
-Meter=#JBRiderMaskMeter#
-MeterStyle=Mask#JBRiderMaskStyle#90 | #JBRiderMaskChCode#ImageStyle
-MaskFillColorSetting=Fill Color [Desktop#JBRiderMaskChCode#]
-ImageTint=[Desktop#JBRiderMaskChCode#]
+Meter=#DataGripMaskMeter#
+MeterStyle=Mask#DataGripMaskStyle#90 | #DataGripMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#DataGripMaskChCode#]
+ImageTint=[Desktop#DataGripMaskChCode#]
 X=0r
 Y=0r
 Hidden=#ChameleonHidden#
 UpdateDivider=#ChameleonUpdate#
 
-[MeterIconImageChJBRider]
+[MeterIconImageChDataGrip]
 Meter=Image
-MeterStyle=#JBRiderMaskChCode#ImageStyle
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Other\JetBrains Rider.png
-ImageTint=[Desktop#JBRiderMaskChCode#]
+MeterStyle=#DataGripMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\JetBrains\DataGrip.png
+ImageTint=[Desktop#DataGripMaskChCode#]
 X=0r
 Y=0r
 AntiAlias=1
@@ -91,7 +91,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#JBRiderMask#
+Text=#DataGripMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -108,8 +108,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#JBRiderMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setJBRiderColorManual('Mask')"]
+Text=#DataGripMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaJetBrains "setDataGripColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#BaseHidden#
@@ -120,7 +120,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=0r
-Text=#JBRiderMaskChName#
+Text=#DataGripMaskChName#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
 MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -141,8 +141,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#JBRiderShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setJBRiderColorManual('Gradient 1')"]
+Text=#DataGripShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaJetBrains "setDataGripColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#BaseHidden#
@@ -154,7 +154,7 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=0r
-Text=#JBRiderShapeGradient1ChName#
+Text=#DataGripShapeGradient1ChName#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -175,8 +175,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#JBRiderShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaOther "setJBRiderColorManual('Gradient 2')"]
+Text=#DataGripShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaJetBrains "setDataGripColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#BaseHidden#
@@ -188,7 +188,7 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=0r
-Text=#JBRiderShapeGradient2ChName#
+Text=#DataGripShapeGradient2ChName#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -198,7 +198,7 @@ UpdateDivider=#ChameleonUpdate#
 ; ============================================================
 ; ============================================================
 
-[MeterSkinJBRider]
+[MeterSkinDataGrip]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -208,6 +208,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables JBRiderMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#JBRiderMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables JBRiderShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#JBRiderShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables JBRiderShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#JBRiderShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables DataGripMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#DataGripMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables DataGripShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#DataGripShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables DataGripShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#DataGripShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]

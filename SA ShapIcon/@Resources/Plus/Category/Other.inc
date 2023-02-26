@@ -380,37 +380,13 @@ MouseLeaveAction=[!SetOption MeterPageInkscapeText FontColor "255,255,255"][!Upd
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Inkscape')"]
 Hidden=#OtherPage3#
 
-[MeterPageJBPyCharmText]
-Meter=String
-MeterStyle=IconTextPageName
-Group=OtherPage4
-Text=JetBrains PyCharm
-X=0r
-Y=100
-MouseOverAction=[!SetOption MeterPageJBPyCharmText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageJBPyCharmText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('JetBrains PyCharm')"]
-Hidden=#OtherPage4#
-
-[MeterPageJBRiderText]
-Meter=String
-MeterStyle=IconTextPageName
-Group=OtherPage4
-Text=JetBrains Rider
-X=0r
-Y=20R
-MouseOverAction=[!SetOption MeterPageJBRiderText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
-MouseLeaveAction=[!SetOption MeterPageJBRiderText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
-LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('JetBrains Rider')"]
-Hidden=#OtherPage4#
-
 [MeterPageKritaText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=OtherPage4
 Text=Krita
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageKritaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageKritaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Krita')"]
@@ -503,26 +479,26 @@ Hidden=#OtherPage4#
 [MeterPageThunderbirdText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage5
+Group=OtherPage4
 Text=Mozilla Thunderbird
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageThunderbirdText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageThunderbirdText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Mozilla Thunderbird')"]
-Hidden=#OtherPage5#
+Hidden=#OtherPage4#
 
 [MeterPageMSIText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage5
+Group=OtherPage4
 Text=MSI Afterburner
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageMSIText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMSIText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('MSI Afterburner')"]
-Hidden=#OtherPage5#
+Hidden=#OtherPage4#
 
 [MeterPageMyPhoneExplorerText]
 Meter=String
@@ -530,7 +506,7 @@ MeterStyle=IconTextPageName
 Group=OtherPage5
 Text=MyPhoneExplorer
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageMyPhoneExplorerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMyPhoneExplorerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('MyPhoneExplorer')"]
@@ -623,26 +599,26 @@ Hidden=#OtherPage5#
 [MeterPageOculusText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage6
+Group=OtherPage5
 Text=Oculus
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageOculusText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOculusText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Oculus')"]
-Hidden=#OtherPage6#
+Hidden=#OtherPage5#
 
 [MeterPageOutplayedText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage6
+Group=OtherPage5
 Text=Outplayed
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageOutplayedText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOutplayedText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Outplayed')"]
-Hidden=#OtherPage6#
+Hidden=#OtherPage5#
 
 [MeterPagePaintToolSAIText]
 Meter=String
@@ -650,7 +626,7 @@ MeterStyle=IconTextPageName
 Group=OtherPage6
 Text=PaintTool SAI
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPagePaintToolSAIText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPagePaintToolSAIText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('PaintTool SAI')"]
@@ -743,26 +719,26 @@ Hidden=#OtherPage6#
 [MeterPageScrivenerText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage7
+Group=OtherPage6
 Text=Scrivener
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageScrivenerText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageScrivenerText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Scrivener')"]
-Hidden=#OtherPage7#
+Hidden=#OtherPage6#
 
 [MeterPageSilhouetteStudioText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage7
+Group=OtherPage6
 Text=Silhouette Studio
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageSilhouetteStudioText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSilhouetteStudioText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Silhouette Studio')"]
-Hidden=#OtherPage7#
+Hidden=#OtherPage6#
 
 [MeterPageSlackText]
 Meter=String
@@ -770,7 +746,7 @@ MeterStyle=IconTextPageName
 Group=OtherPage7
 Text=Slack
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageSlackText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSlackText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Slack')"]
@@ -863,26 +839,26 @@ Hidden=#OtherPage7#
 [MeterPageUnrealText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage8
+Group=OtherPage7
 Text=Unreal Engine
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageUnrealText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageUnrealText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Unreal Engine')"]
-Hidden=#OtherPage8#
+Hidden=#OtherPage7#
 
 [MeterPageVirtualBoxText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage8
+Group=OtherPage7
 Text=VirtualBox
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageVirtualBoxText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVirtualBoxText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('VirtualBox')"]
-Hidden=#OtherPage8#
+Hidden=#OtherPage7#
 
 [MeterPageVisualStudioText]
 Meter=String
@@ -890,7 +866,7 @@ MeterStyle=IconTextPageName
 Group=OtherPage8
 Text=Visual Studio
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageVisualStudioText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVisualStudioText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Visual Studio')"]
@@ -983,26 +959,26 @@ Hidden=#OtherPage8#
 [MeterPageWindowsOSKText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage9
+Group=OtherPage8
 Text=Windows On-Screen Keyboard
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageWindowsOSKText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWindowsOSKText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Windows On-Screen Keyboard')"]
-Hidden=#OtherPage9#
+Hidden=#OtherPage8#
 
 [MeterPageWindowsTerminalText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage9
+Group=OtherPage8
 Text=Windows Terminal
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageWindowsTerminalText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWindowsTerminalText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Windows Terminal')"]
-Hidden=#OtherPage9#
+Hidden=#OtherPage8#
 
 [MeterPageWPSText]
 Meter=String
@@ -1010,7 +986,7 @@ MeterStyle=IconTextPageName
 Group=OtherPage9
 Text=WPS Office
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageWPSText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWPSText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('WPS Office')"]

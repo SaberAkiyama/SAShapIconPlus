@@ -553,6 +553,20 @@ DynamicVariables=1
 UpdateDivider=-1
 Hidden=#CategoryPage2#
 
+[ShapeJetBrainsStyle]
+Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape2=Path Path1 | Fill Color 255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
+Shape3=Path Path2 | StrokeWidth 0
+Shape4=Combine Shape2 | XOR Shape3
+Path1=10,10 | LineTo 40,10 | LineTo 40,40 | LineTo 10,40 | LineTo 10,10 | ClosePath 1
+Path2=12.588,34.375 | LineTo 23.838,34.375 | LineTo 23.838,36.25 | LineTo 12.588,36.25 | LineTo 12.588,34.375 | ClosePath 1
+MyFillGradient=0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0
+MouseOverAction=[!CommandMeasure LuaSettings "setPageJetBrains('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaSettings "setPageJetBrains('Leave')"]
+DynamicVariables=1
+UpdateDivider=-1
+Hidden=#CategoryPage3#
+
 [ShapeLibreOfficeStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
 Shape2=Path Path1 | Fill Color 255,255,255 | Stroke Color 0,0,0,0 | StrokeWidth 0
@@ -614,7 +628,7 @@ MouseOverAction=[!CommandMeasure LuaSettings "setPageOffice('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaSettings "setPageOffice('Leave')"]
 DynamicVariables=1
 UpdateDivider=-1
-Hidden=#CategoryPage3#
+Hidden=#CategoryPage4#
 
 [ShapeSocialStyle]
 Shape=Rectangle 0,0,#W1#,50 | Fill LinearGradient MyFillGradient | Stroke Color 0,0,0,0 | StrokeWidth 0
