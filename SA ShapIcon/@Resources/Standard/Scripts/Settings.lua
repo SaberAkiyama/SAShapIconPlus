@@ -95,6 +95,18 @@ settingSelect = {
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
+	["JetBrains"] = {
+		pageIcon = "Aqua",
+		pageIconMC = "Aqua",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
+		gamingPage1Hidden = "0",
+		gamingPage2Hidden = "1",
+		hiddenLine = "0",
+		updateDivider = "-1"
+	},
 	["LibreOffice"] = {
 		pageIcon = "Base",
 		pageIconMC = "Base",
@@ -136,8 +148,8 @@ settingSelect = {
 		pageIconMC = "Excel",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 		gamingPage1Hidden = "0",
 		gamingPage2Hidden = "1",
 		hiddenLine = "0",
@@ -276,10 +288,21 @@ function setSettingsGaming()
 	SKIN:Bang('!WriteKeyValue Variables GamingPage12 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage13 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage14 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage15 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage16 "1" "#@#Settings Variables.inc"')
 
 end
 
 --;function setSettingsGoogle()
+--;end
+
+function setSettingsJetBrains()
+    SKIN:Bang('!WriteKeyValue Variables JetBrainsPage1 "0" "#@#Settings Variables.inc"')
+    SKIN:Bang('!WriteKeyValue Variables JetBrainsPage2 "1" "#@#Settings Variables.inc"')
+
+end
+
+--;function setSettingsLibreOffice()
 --;end
 
 function setSettingsMedia()
@@ -400,6 +423,13 @@ settingCatrgory = {
 		showPage3 = "1",
 		showPage4 = "1",
 	},
+	["JetBrains"] = {
+		categoryName = "JetBrains",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "0",
+		showPage4 = "1",
+	},
 	["LibreOffice"] = {
 		categoryName = "LibreOffice",
 		showPage1 = "1",
@@ -425,8 +455,8 @@ settingCatrgory = {
 		categoryName = "Office",
 		showPage1 = "1",
 		showPage2 = "1",
-		showPage3 = "0",
-		showPage4 = "1",
+		showPage3 = "1",
+		showPage4 = "0",
 	},
 	["Social"] = {
 		categoryName = "Social",
@@ -648,6 +678,7 @@ hoverSettingsSelect = {
 		colorPage12 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage13 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPage14 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorPage15 = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPrevious = "315 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,215,0,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
@@ -665,6 +696,7 @@ hoverSettingsSelect = {
 		colorPage11 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage12 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage13 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorPage15 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPage14 = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPrevious = "315 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0",
 		colorNext = "225 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
@@ -734,15 +766,22 @@ function setPageGoogle(selectedHover)
 
 end
 
+function setPageJetBrains(selectedHover)
+	SKIN:Bang('!SetOption ShapeJetBrains MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
+	SKIN:Bang('!UpdateMeter *')
+	SKIN:Bang('!Redraw')
+
+end
+
 function setPageLibreOffice(selectedHover)
-	SKIN:Bang('!SetOption ShapeLibreOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage9'] .. '"')
+	SKIN:Bang('!SetOption ShapeLibreOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageMedia(selectedHover)
-	SKIN:Bang('!SetOption ShapeMedia MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage10'] .. '"')
+	SKIN:Bang('!SetOption ShapeMedia MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage11'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -750,7 +789,7 @@ function setPageMedia(selectedHover)
 end
 
 function setPageMinecraft(selectedHover)
-	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage11'] .. '"')
+	SKIN:Bang('!SetOption ShapeMinecraft MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage12'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -758,14 +797,14 @@ function setPageMinecraft(selectedHover)
 end
 
 function setPageOffice(selectedHover)
-	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage12'] .. '"')
+	SKIN:Bang('!SetOption ShapeOffice MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage13'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
 end
 
 function setPageSocial(selectedHover)
-	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage13'] .. '"')
+	SKIN:Bang('!SetOption ShapeSocial MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage14'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -773,7 +812,7 @@ function setPageSocial(selectedHover)
 end
 
 function setPageOther(selectedHover)
-	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage14'] .. '"')
+	SKIN:Bang('!SetOption ShapeOther MyFillGradient "' .. hoverSettingsSelect[selectedHover]['colorPage15'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')

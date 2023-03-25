@@ -1767,6 +1767,21 @@ DBDShapeGradient1ChName=Background 1
 DBDShapeGradient2ChName=Average
 DBDRegularHidden=1
 
+DeadCellsShape=Hexagon
+DeadCellsMaskMeter=Shape
+DeadCellsMask=Regular Hexagon
+DeadCellsMaskStyle=Blank
+DeadCellsMaskBase=255,255,255
+DeadCellsShapeGradient1Base=225,65,105
+DeadCellsShapeGradient2Base=65,105,225
+DeadCellsMaskChCode=FG1
+DeadCellsShapeGradient1ChCode=BG1
+DeadCellsShapeGradient2ChCode=Avg
+DeadCellsMaskChName=Foreground 1
+DeadCellsShapeGradient1ChName=Background 1
+DeadCellsShapeGradient2ChName=Average
+DeadCellsRegularHidden=1
+
 DeadSpaceRMShape=Hexagon
 DeadSpaceRMMaskMeter=Shape
 DeadSpaceRMMask=Regular Hexagon
@@ -2967,6 +2982,21 @@ RecRoomShapeGradient1ChName=Background 1
 RecRoomShapeGradient2ChName=Average
 RecRoomRegularHidden=1
 
+RE4RemakeShape=Hexagon
+RE4RemakeMaskMeter=Shape
+RE4RemakeMask=Regular Hexagon
+RE4RemakeMaskStyle=Blank
+RE4RemakeMaskBase=255,255,255
+RE4RemakeShapeGradient1Base=225,65,105
+RE4RemakeShapeGradient2Base=65,105,225
+RE4RemakeMaskChCode=FG1
+RE4RemakeShapeGradient1ChCode=BG1
+RE4RemakeShapeGradient2ChCode=Avg
+RE4RemakeMaskChName=Foreground 1
+RE4RemakeShapeGradient1ChName=Background 1
+RE4RemakeShapeGradient2ChName=Average
+RE4RemakeRegularHidden=1
+
 REVillageShape=Hexagon
 REVillageMaskMeter=Shape
 REVillageMask=Regular Hexagon
@@ -3356,6 +3386,21 @@ TCFMaskChName=Foreground 1
 TCFShapeGradient1ChName=Background 1
 TCFShapeGradient2ChName=Average
 TCFRegularHidden=1
+
+TLOUPart1Shape=Hexagon
+TLOUPart1MaskMeter=Shape
+TLOUPart1Mask=Regular Hexagon
+TLOUPart1MaskStyle=Blank
+TLOUPart1MaskBase=255,255,255
+TLOUPart1ShapeGradient1Base=225,65,105
+TLOUPart1ShapeGradient2Base=65,105,225
+TLOUPart1MaskChCode=FG1
+TLOUPart1ShapeGradient1ChCode=BG1
+TLOUPart1ShapeGradient2ChCode=Avg
+TLOUPart1MaskChName=Foreground 1
+TLOUPart1ShapeGradient1ChName=Background 1
+TLOUPart1ShapeGradient2ChName=Average
+TLOUPart1RegularHidden=1
 
 TW3Shape=Hexagon
 TW3MaskMeter=Shape
