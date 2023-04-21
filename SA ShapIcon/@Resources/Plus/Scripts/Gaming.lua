@@ -149,6 +149,11 @@ function setDeadCellsColorManual(selectedCode)
 
 end
 
+function setDeadIsland2ColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinDeadIsland2" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setDeadSpaceRMColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinDeadSpaceRM" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -616,6 +621,11 @@ end
 
 function setSoTColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinSoT" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setSekiroColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinSekiro" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1408,6 +1418,29 @@ end
 function setDeadCellsSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables DeadCellsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables DeadCellsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setDeadIsland2MaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2MaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2MaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setDeadIsland2SG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2ShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2ShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setDeadIsland2SG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2ShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2ShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -3576,6 +3609,29 @@ end
 
 --; ============================================================
 
+function setSekiroMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SekiroMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SekiroMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSekiroSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SekiroShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SekiroShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSekiroSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SekiroShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SekiroShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setStSMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables StSMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables StSMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -4685,6 +4741,17 @@ function setDeadCellsMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setDeadIsland2Mask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2Mask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2MaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables DeadIsland2RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setDeadSpaceRMMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables DeadSpaceRMMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables DeadSpaceRMMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -5714,6 +5781,17 @@ function setSoTMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SoTShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SoTMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SoTRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setSekiroMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SekiroMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SekiroMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SekiroShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SekiroMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SekiroRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

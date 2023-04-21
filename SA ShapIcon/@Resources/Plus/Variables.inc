@@ -1782,6 +1782,21 @@ DeadCellsShapeGradient1ChName=Background 1
 DeadCellsShapeGradient2ChName=Average
 DeadCellsRegularHidden=1
 
+DeadIsland2Shape=Hexagon
+DeadIsland2MaskMeter=Shape
+DeadIsland2Mask=Regular Hexagon
+DeadIsland2MaskStyle=Blank
+DeadIsland2MaskBase=255,255,255
+DeadIsland2ShapeGradient1Base=225,65,105
+DeadIsland2ShapeGradient2Base=65,105,225
+DeadIsland2MaskChCode=FG1
+DeadIsland2ShapeGradient1ChCode=BG1
+DeadIsland2ShapeGradient2ChCode=Avg
+DeadIsland2MaskChName=Foreground 1
+DeadIsland2ShapeGradient1ChName=Background 1
+DeadIsland2ShapeGradient2ChName=Average
+DeadIsland2RegularHidden=1
+
 DeadSpaceRMShape=Hexagon
 DeadSpaceRMMaskMeter=Shape
 DeadSpaceRMMask=Regular Hexagon
@@ -3192,6 +3207,21 @@ SoTShapeGradient1ChName=Background 1
 SoTShapeGradient2ChName=Average
 SoTRegularHidden=1
 
+SekiroShape=Hexagon
+SekiroMaskMeter=Shape
+SekiroMask=Regular Hexagon
+SekiroMaskStyle=Blank
+SekiroMaskBase=255,255,255
+SekiroShapeGradient1Base=225,65,105
+SekiroShapeGradient2Base=65,105,225
+SekiroMaskChCode=FG1
+SekiroShapeGradient1ChCode=BG1
+SekiroShapeGradient2ChCode=Avg
+SekiroMaskChName=Foreground 1
+SekiroShapeGradient1ChName=Background 1
+SekiroShapeGradient2ChName=Average
+SekiroRegularHidden=1
+
 StSShape=Hexagon
 StSMaskMeter=Shape
 StSMask=Regular Hexagon
@@ -4077,6 +4107,21 @@ MinecraftDungeonsMaskChName=Foreground 1
 MinecraftDungeonsShapeGradient1ChName=Background 1
 MinecraftDungeonsShapeGradient2ChName=Average
 MinecraftDungeonsRegularHidden=1
+
+MinecraftLegendsShape=Hexagon
+MinecraftLegendsMaskMeter=Shape
+MinecraftLegendsMask=Regular Hexagon
+MinecraftLegendsMaskStyle=Blank
+MinecraftLegendsMaskBase=255,255,255
+MinecraftLegendsShapeGradient1Base=225,65,105
+MinecraftLegendsShapeGradient2Base=65,105,225
+MinecraftLegendsMaskChCode=FG1
+MinecraftLegendsShapeGradient1ChCode=BG1
+MinecraftLegendsShapeGradient2ChCode=Avg
+MinecraftLegendsMaskChName=Foreground 1
+MinecraftLegendsShapeGradient1ChName=Background 1
+MinecraftLegendsShapeGradient2ChName=Average
+MinecraftLegendsRegularHidden=1
 
 BadlionShape=Hexagon
 BadlionMaskMeter=Shape

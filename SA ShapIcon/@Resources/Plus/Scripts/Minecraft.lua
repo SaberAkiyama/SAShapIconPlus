@@ -29,6 +29,11 @@ function setMinecraftDungeonsColorManual(selectedCode)
 
 end
 
+function setMinecraftLegendsColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMinecraftLegends" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setBadlionColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinBadlion" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -181,6 +186,29 @@ end
 function setMinecraftDungeonsSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables MinecraftDungeonsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MinecraftDungeonsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setMinecraftLegendsMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMinecraftLegendsSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMinecraftLegendsSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -636,6 +664,17 @@ function setMinecraftDungeonsMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MinecraftDungeonsShape "' .. maskMinecraftSelect[selectedMask]['minecraftMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MinecraftDungeonsMaskStyle "' .. maskMinecraftSelect[selectedMask]['minecraftMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MinecraftDungeonsRegularHidden "' .. maskMinecraftSelect[selectedMask]['minecraftRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMinecraftLegendsMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsMaskMeter "' .. maskMinecraftSelect[selectedMask]['minecraftMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsShape "' .. maskMinecraftSelect[selectedMask]['minecraftMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsMaskStyle "' .. maskMinecraftSelect[selectedMask]['minecraftMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MinecraftLegendsRegularHidden "' .. maskMinecraftSelect[selectedMask]['minecraftRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
