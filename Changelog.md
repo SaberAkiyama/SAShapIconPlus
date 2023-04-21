@@ -1,6 +1,6 @@
 # SA ShapIcon v6 Updates
 
-## 6.1.2 (March 28th, 2023)
+## 6.1.2 (April 21st, 2023)
 ### SA ShapIcon
 * [Added] Dead Island 2 & Sekiro: Shadows Die Twice in the Gaming icon.
 * [Added] Minecraft Legends in the Minecraft icon.
