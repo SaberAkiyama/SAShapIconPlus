@@ -92,6 +92,18 @@ MouseLeaveAction=[!SetOption MeterPageSignalText FontColor "255,255,255"][!Updat
 LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('Signal')"]
 Hidden=#SocialPage1#
 
+[MeterPageSlackText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=SocialPage1
+Text=Slack
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageSlackText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageSlackText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('Slack')"]
+Hidden=#SocialPage1#
+
 [MeterPageTeamSpeakText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -131,22 +143,22 @@ Hidden=#SocialPage1#
 [MeterPageWhatsAppText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=SocialPage1
+Group=SocialPage2
 Text=WhatsApp
-X=0r
-Y=20R
+X=320
+Y=100
 MouseOverAction=[!SetOption MeterPageWhatsAppText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageWhatsAppText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('WhatsApp')"]
-Hidden=#SocialPage1#
+Hidden=#SocialPage2#
 
 [MeterPageZoomText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=SocialPage2
 Text=Zoom
-X=320
-Y=100
+X=0r
+Y=20R
 MouseOverAction=[!SetOption MeterPageZoomText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageZoomText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategorySocial "setSocial('Zoom')"]

@@ -39,6 +39,11 @@ function setSignalColorManual(selectedCode)
 
 end
 
+function setSlackColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinSlack" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setTeamSpeakColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinTeamSpeak" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -207,6 +212,29 @@ end
 function setSignalSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SignalShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setSlackMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SlackMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SlackMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSlackSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setSlackSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -523,6 +551,17 @@ function setSignalMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SignalShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SignalMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SignalRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setSlackMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables SlackMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackMaskMeter "' .. maskSocialSelect[selectedMask]['socialMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackShape "' .. maskSocialSelect[selectedMask]['socialMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackMaskStyle "' .. maskSocialSelect[selectedMask]['socialMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables SlackRegularHidden "' .. maskSocialSelect[selectedMask]['socialRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

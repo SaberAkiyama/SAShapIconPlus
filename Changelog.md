@@ -1,5 +1,28 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.0 (June 6th, 2023)
+### SA ShapIcon
+* [Added] Frequently Asked Questions (FAQs) page in the Settings skin.
+* [Added] "Rotate Update" meter section on the Options page in the Settings skin.
+* [Added] Diablo IV & Street Fighter 6 in the Gaming icon.
+* [Added] Marmoset Toolbag, Marvelous Designer, NukeX & VSCodium in the Other icon.
+* [Improved] New logos for Mozilla Firefox & Slack icons.
+* [Replaced] Slack from Other to Social category icon.
+* [Fixed] An issue with VirtualBox that didn't select the Mask Shape.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon in this post.
+
+## 6.1.2 (April 21st, 2023)
+### SA ShapIcon
+* [Added] Dead Island 2 & Sekiro: Shadows Die Twice in the Gaming icon.
+* [Added] Minecraft Legends in the Minecraft icon.
+* [Improved] Minecraft category has been separated page in the Settings skin.
+* [Fixed] An issue with Minecraft (Bedrock & Java Edition) that didn't select the color code.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon in this post.
+
 ## 6.1.1 (March 28th, 2023)
 ### SA ShapIcon
 * [Added] Dead Cells, Resident Evil 4 (2023 Remake) & The Last of Us Part 1 in the Gaming icon.

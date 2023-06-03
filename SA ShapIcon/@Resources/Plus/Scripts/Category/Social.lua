@@ -39,6 +39,12 @@ selectSocial = {
 		showPage1 = "0",
 		showPage2 = "1"
 	},
+	["Slack"] = {
+		iconName = "Slack",
+		iconMask = "Slack",
+		showPage1 = "0",
+		showPage2 = "1"
+	},
 	["TeamSpeak"] = {
 		iconName = "TeamSpeak",
 		iconMask = "TeamSpeak",
@@ -60,8 +66,8 @@ selectSocial = {
 	["WhatsApp"] = {
 		iconName = "WhatsApp",
 		iconMask = "WhatsApp",
-		showPage1 = "0",
-		showPage2 = "1"
+		showPage1 = "1",
+		showPage2 = "0"
 	},
 	["Zoom"] = {
 		iconName = "Zoom",

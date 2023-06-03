@@ -179,6 +179,16 @@ function setManageRainmeterColorManual(selectedCode)
 
 end
 
+function setMarmosetColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMarmoset" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setMarvelousColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinMarvelous" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setMatlabColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinMatlab" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -221,6 +231,11 @@ end
 
 function setNotionColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinNotion" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setNukeXColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinNukeX" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -304,11 +319,6 @@ function setSilhouetteStudioColorManual(selectedCode)
 
 end
 
-function setSlackColorManual(selectedCode)
-	SKIN:Bang('!CommandMeasure "MeterSkinSlack" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
-
-end
-
 function setSoulSeekQtColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinSoulSeekQt" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -381,6 +391,11 @@ end
 
 function setVRoidStudioColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVRoidStudio" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setVSCodiumColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVSCodium" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -1207,6 +1222,52 @@ end
 
 --; ============================================================
 
+function setMarmosetMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MarmosetMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMarmosetSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MarmosetShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMarmosetSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MarmosetShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setMarvelousMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MarvelousMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMarvelousSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MarvelousShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setMarvelousSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables MarvelousShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setMatlabMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables MatlabMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables MatlabMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -1408,6 +1469,29 @@ end
 function setNotionSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables NotionShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NotionShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setNukeXMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables NukeXMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NukeXMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setNukeXSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables NukeXShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NukeXShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setNukeXSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables NukeXShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables NukeXShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -1782,29 +1866,6 @@ end
 
 --; ============================================================
 
-function setSlackMaskCh(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables SlackMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setSlackSG1Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
-function setSlackSG2Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables SlackShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-
-end
-
---; ============================================================
-
 function setSoulseekQtMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -2144,6 +2205,29 @@ end
 function setVRoidStudioSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables VRoidStudioShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables VRoidStudioShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setVSCodiumMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setVSCodiumSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setVSCodiumSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -2830,6 +2914,28 @@ function setManageRainmeterMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setMarmosetMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MarmosetMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarmosetRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setMarvelousMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables MarvelousMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables MarvelousRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setMatlabMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables MatlabMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables MatlabMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -2924,6 +3030,17 @@ function setNotionMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables NotionShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NotionMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables NotionRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setNukeXMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables NukeXMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NukeXMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NukeXShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NukeXMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables NukeXRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
@@ -3105,17 +3222,6 @@ function setSilhouetteStudioMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
-function setSlackMask(selectedMask)
-	SKIN:Bang('!WriteKeyValue Variables SlackMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables SlackMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables SlackShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables SlackMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
-	SKIN:Bang('!WriteKeyValue Variables SlackRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
-
-	SKIN:Bang('!UpdateGroup ShapeSettings')
-	SKIN:Bang('!RefreshGroup ShapeSettings')
-end
-
 function setSoulseekQtMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables SoulseekQtMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -3265,6 +3371,17 @@ function setVRoidStudioMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables VRoidStudioShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VRoidStudioMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables VRoidStudioRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVSCodiumMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VSCodiumRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
