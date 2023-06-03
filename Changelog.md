@@ -7,7 +7,7 @@
 * [Added] Diablo IV & Street Fighter 6 in the Gaming icon.
 * [Added] Marmoset Toolbag, Marvelous Designer, NukeX & VSCodium in the Other icon.
 * [Improved] New logos for Mozilla Firefox & Slack icons.
-* [Replaced] Slack from Other to Social category icon.
+* [Replaced] Slack with the Social category icon.
 * [Fixed] An issue with VirtualBox that didn't select the Mask Shape.
 
 ### SA ShapIcon+
