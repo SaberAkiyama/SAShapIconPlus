@@ -16,8 +16,8 @@ ShapeGradientAngle=0
 ChromePFName=64
 ChromePFText=x64
 ChromePF=Program Files
-GamingPG1Hidden=0
-GamingPG2Hidden=1
+GamingPG1Hidden=1
+GamingPG2Hidden=0
 
 ; Masks
 NameCategoryMask=Adobe
@@ -1376,6 +1376,21 @@ YuzuRegularHidden=1
 ; ============================================================
 ; Gaming
 ; ============================================================
+
+3DMarkShape=Hexagon
+3DMarkMaskMeter=Shape
+3DMarkMask=Regular Hexagon
+3DMarkMaskStyle=Blank
+3DMarkMaskBase=255,255,255
+3DMarkShapeGradient1Base=225,65,105
+3DMarkShapeGradient2Base=65,105,225
+3DMarkMaskChCode=FG1
+3DMarkShapeGradient1ChCode=BG1
+3DMarkShapeGradient2ChCode=Avg
+3DMarkMaskChName=Foreground 1
+3DMarkShapeGradient1ChName=Background 1
+3DMarkShapeGradient2ChName=Average
+3DMarkRegularHidden=1
 
 ADFIShape=Hexagon
 ADFIMaskMeter=Shape
@@ -3012,6 +3027,21 @@ RecRoomShapeGradient1ChName=Background 1
 RecRoomShapeGradient2ChName=Average
 RecRoomRegularHidden=1
 
+Remnant2Shape=Hexagon
+Remnant2MaskMeter=Shape
+Remnant2Mask=Regular Hexagon
+Remnant2MaskStyle=Blank
+Remnant2MaskBase=255,255,255
+Remnant2ShapeGradient1Base=225,65,105
+Remnant2ShapeGradient2Base=65,105,225
+Remnant2MaskChCode=FG1
+Remnant2ShapeGradient1ChCode=BG1
+Remnant2ShapeGradient2ChCode=Avg
+Remnant2MaskChName=Foreground 1
+Remnant2ShapeGradient1ChName=Background 1
+Remnant2ShapeGradient2ChName=Average
+Remnant2RegularHidden=1
+
 RE4RemakeShape=Hexagon
 RE4RemakeMaskMeter=Shape
 RE4RemakeMask=Regular Hexagon
@@ -3521,6 +3551,21 @@ UnrailedMaskChName=Foreground 1
 UnrailedShapeGradient1ChName=Background 1
 UnrailedShapeGradient2ChName=Average
 UnrailedRegularHidden=1
+
+UnverumShape=Hexagon
+UnverumMaskMeter=Shape
+UnverumMask=Regular Hexagon
+UnverumMaskStyle=Blank
+UnverumMaskBase=255,255,255
+UnverumShapeGradient1Base=225,65,105
+UnverumShapeGradient2Base=65,105,225
+UnverumMaskChCode=FG1
+UnverumShapeGradient1ChCode=BG1
+UnverumShapeGradient2ChCode=Avg
+UnverumMaskChName=Foreground 1
+UnverumShapeGradient1ChName=Background 1
+UnverumShapeGradient2ChName=Average
+UnverumRegularHidden=1
 
 VRisingShape=Hexagon
 VRisingMaskMeter=Shape
@@ -5083,6 +5128,21 @@ AsepriteMaskChName=Foreground 1
 AsepriteShapeGradient1ChName=Background 1
 AsepriteShapeGradient2ChName=Average
 AsepriteRegularHidden=1
+
+AudacityShape=Hexagon
+AudacityMaskMeter=Shape
+AudacityMask=Regular Hexagon
+AudacityMaskStyle=Blank
+AudacityMaskBase=255,255,255
+AudacityShapeGradient1Base=225,65,105
+AudacityShapeGradient2Base=65,105,225
+AudacityMaskChCode=FG1
+AudacityShapeGradient1ChCode=BG1
+AudacityShapeGradient2ChCode=Avg
+AudacityMaskChName=Foreground 1
+AudacityShapeGradient1ChName=Background 1
+AudacityShapeGradient2ChName=Average
+AudacityRegularHidden=1
 
 Autodesk3dsMaxShape=Hexagon
 Autodesk3dsMaxMaskMeter=Shape

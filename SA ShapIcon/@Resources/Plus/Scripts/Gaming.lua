@@ -14,6 +14,11 @@ colorSelect = {
 	}
 }
 
+function set3DMarkColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkin3DMark" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setADFIColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinADFI" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -559,6 +564,11 @@ function setRecRoomColorManual(selectedCode)
 
 end
 
+function setRemnant2ColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinRemnant2" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setRE4RemakeColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinRE4Remake" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -724,6 +734,11 @@ function setUnrailedColorManual(selectedCode)
 
 end
 
+function setUnverumColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinUnverum" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setVRisingColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVRising" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -812,6 +827,29 @@ colorChSelect = {
 		chamName = "Background 2"
 	}
 }
+
+function set3DMarkMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function set3DMarkSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function set3DMarkSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
 
 function setADFIMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables ADFIMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
@@ -3320,6 +3358,29 @@ end
 
 --; ============================================================
 
+function setRemnant2MaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables Remnant2MaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2MaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setRemnant2SG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables Remnant2ShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2ShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setRemnant2SG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables Remnant2ShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2ShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setRE4RemakeMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables RE4RemakeMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables RE4RemakeMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -4079,6 +4140,29 @@ end
 
 --; ============================================================
 
+function setUnverumMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables UnverumMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables UnverumMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setUnverumSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables UnverumShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables UnverumShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setUnverumSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables UnverumShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables UnverumShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setVRisingMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables VRisingMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables VRisingMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -4499,6 +4583,17 @@ maskGamingSelect = {
 		gamingRegularHidden = "0"
 	}
 }
+
+function set3DMarkMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables 3DMarkRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
 
 function setADFIMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ADFIMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
@@ -5699,6 +5794,17 @@ function setRecRoomMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setRemnant2Mask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables Remnant2Mask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2MaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2Shape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2MaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables Remnant2RegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setRE4RemakeMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables RE4RemakeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables RE4RemakeMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -6057,6 +6163,17 @@ function setUnrailedMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables UnrailedShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UnrailedMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UnrailedRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setUnverumMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables UnverumMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnverumMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnverumShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnverumMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables UnverumRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

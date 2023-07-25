@@ -1,5 +1,15 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.1 (July 25th, 2023)
+### SA ShapIcon
+* [Added] 3DMark, Remnant II & Unverum in the Gaming icon.
+* [Added] Audacity in the Other icon.
+* [Improved] New logos for the Mozilla Thunderbird icon.
+* [Improved] Opera GX is now directly to launching the web browser and removed the "Opera GX Version" in the Options page in Settings skin.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon in this post.
+
 ## 6.2.0 (June 6th, 2023)
 ### SA ShapIcon
 * [Added] Frequently Asked Questions (FAQs) page in the Settings skin.
