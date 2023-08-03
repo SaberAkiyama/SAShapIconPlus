@@ -16,8 +16,8 @@ ShapeGradientAngle=0
 ChromePFName=64
 ChromePFText=x64
 ChromePF=Program Files
-GamingPG1Hidden=1
-GamingPG2Hidden=0
+GamingPG1Hidden=0
+GamingPG2Hidden=1
 
 ; Masks
 NameCategoryMask=Adobe
@@ -1496,6 +1496,21 @@ AvenColonyMaskChName=Foreground 1
 AvenColonyShapeGradient1ChName=Background 1
 AvenColonyShapeGradient2ChName=Average
 AvenColonyRegularHidden=1
+
+BG3Shape=Hexagon
+BG3MaskMeter=Shape
+BG3Mask=Regular Hexagon
+BG3MaskStyle=Blank
+BG3MaskBase=255,255,255
+BG3ShapeGradient1Base=225,65,105
+BG3ShapeGradient2Base=65,105,225
+BG3MaskChCode=FG1
+BG3ShapeGradient1ChCode=BG1
+BG3ShapeGradient2ChCode=Avg
+BG3MaskChName=Foreground 1
+BG3ShapeGradient1ChName=Background 1
+BG3ShapeGradient2ChName=Average
+BG3RegularHidden=1
 
 BattleNetShape=Hexagon
 BattleNetMaskMeter=Shape

@@ -1,5 +1,15 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.2 (August 3rd, 2023)
+### SA ShapIcon
+* [Added] Baldur's Gate III in the Gaming icon.
+* [Fixed] An issue with Garry's Mod is missing the logo icon.
+* [Fixed] An issue with the Special icon didn't select the icon in any of the Mask Shapes.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
+* [Fixed] An issue with the Epic Games Store didn't select the Mask Shape, Color Code, etc.
+
 ## 6.2.1 (July 25th, 2023)
 ### SA ShapIcon
 * [Added] 3DMark, Remnant II & Unverum in the Gaming icon.
