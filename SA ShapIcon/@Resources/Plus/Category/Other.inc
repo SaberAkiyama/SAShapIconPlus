@@ -884,6 +884,18 @@ MouseLeaveAction=[!SetOption MeterPageUnrealText FontColor "255,255,255"][!Updat
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Unreal Engine')"]
 Hidden=#OtherPage8#
 
+[MeterPageVeadotubeText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=OtherPage8
+Text=Veadotube
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageVeadotubeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageVeadotubeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('Veadotube')"]
+Hidden=#OtherPage8#
+
 [MeterPageVirtualBoxText]
 Meter=String
 MeterStyle=IconTextPageName
@@ -971,14 +983,14 @@ Hidden=#OtherPage8#
 [MeterPageVSeeFaceText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=OtherPage8
+Group=OtherPage9
 Text=VSeeFace
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageVSeeFaceText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVSeeFaceText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('VSeeFace')"]
-Hidden=#OtherPage8#
+Hidden=#OtherPage9#
 
 [MeterPageVTubeStudioText]
 Meter=String
@@ -986,7 +998,7 @@ MeterStyle=IconTextPageName
 Group=OtherPage9
 Text=VTube Studio
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageVTubeStudioText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVTubeStudioText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryOther "setOther('VTube Studio')"]

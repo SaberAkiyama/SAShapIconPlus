@@ -18,8 +18,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -30,8 +28,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -42,8 +38,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -54,8 +48,6 @@ settingSelect = {
 		showPage2 = "0",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -66,8 +58,6 @@ settingSelect = {
 		showPage2 = "0",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -78,8 +68,6 @@ settingSelect = {
 		showPage2 = "0",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -90,8 +78,6 @@ settingSelect = {
 		showPage2 = "0",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -102,8 +88,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "0",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -114,8 +98,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "0",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -126,8 +108,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "0",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -138,8 +118,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "0",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -150,8 +128,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "0",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -162,8 +138,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "0",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -174,8 +148,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "0",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "0",
 		updateDivider = "-1"
 	},
@@ -186,10 +158,18 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "1",
 		updateDivider = "1"
+	},
+	["FAQs"] = {
+		pageIcon = "FAQs",
+		pageIconMC = "FAQs",
+		showPage1 = "0",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		hiddenLine = "0",
+		updateDivider = "-1"
 	},
 	["Options"] = {
 		pageIcon = "Options",
@@ -198,8 +178,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "1",
 		updateDivider = "-1"
 	},
@@ -210,8 +188,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "1",
 		updateDivider = "-1"
 	},
@@ -222,8 +198,6 @@ settingSelect = {
 		showPage2 = "1",
 		showPage3 = "1",
 		showPage4 = "1",
-		gamingPage1Hidden = "0",
-		gamingPage2Hidden = "1",
 		hiddenLine = "1",
 		updateDivider = "-1"
 	}
@@ -238,8 +212,10 @@ function setSettings(selectedSettings)
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "' .. settingSelect[selectedSettings]['showPage3'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage4 "' .. settingSelect[selectedSettings]['showPage4'] .. '" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "' .. settingSelect[selectedSettings]['pageIcon'] .. '" "#@#Settings Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "' .. settingSelect[selectedSettings]['gamingPage1Hidden'] .. '" "#@#Standard\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "' .. settingSelect[selectedSettings]['gamingPage2Hidden'] .. '" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "0" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "1" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OptionPG1Hidden "0" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OptionPG2Hidden "1" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "' .. settingSelect[selectedSettings]['hiddenLine'] .. '" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "' .. settingSelect[selectedSettings]['updateDivider'] .. '" "Settings.ini"')
 
@@ -290,6 +266,7 @@ function setSettingsGaming()
 	SKIN:Bang('!WriteKeyValue Variables GamingPage14 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage15 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage16 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage17 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -336,6 +313,7 @@ function setSettingsOther()
 	SKIN:Bang('!WriteKeyValue Variables OtherPage6 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage7 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables OtherPage8 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OtherPage9 "1" "#@#Settings Variables.inc"')
 
 end
 
@@ -353,9 +331,12 @@ function setSettingsAssassinsCreed()
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage1 "0" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage2 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables CategoryPage3 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CategoryPage4 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables NameIcon "Assassins Creed" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "0" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "1" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OptionPG1Hidden "0" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OptionPG2Hidden "1" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "0" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "-1" "Settings.ini"')
 
@@ -606,15 +587,17 @@ end
 hoverSettingsTextSelect = {
 	["Over"] = {
 		colorPageInfo = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
-		colorOptions = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorFAQs = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorSpecial = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
+		colorOptions = "0 | 0,0,0,1 ; 0.0 | 255,255,255,128 ; 1.0",
 		colorPlus = "0 | 0,0,0,1 ; 0.0 | 255,215,0,128 ; 1.0",
 		colorClose = "135 | 225,65,105,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	},
 	["Leave"] = {
 		colorPageInfo = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
-		colorOptions = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorFAQs = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorSpecial = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
+		colorOptions = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorPlus = "0 | 0,0,0,1 ; 0.0 | 0,0,0,1 ; 1.0",
 		colorClose = "135 | 255,255,255,128 ; 1.0 | 255,255,255,0 ; 0.0"
 	}
@@ -628,8 +611,8 @@ function setInfoSetting(selectedHoverText)
 
 end
 
-function setOptionSetting(selectedHoverText)
-	SKIN:Bang('!SetOption ShapeOptions MyFillGradient "' .. hoverSettingsTextSelect[selectedHoverText]['colorOptions'] .. '"')
+function setFAQSetting(selectedHoverText)
+	SKIN:Bang('!SetOption ShapeFAQs MyFillGradient "' .. hoverSettingsTextSelect[selectedHoverText]['colorFAQs'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -638,6 +621,14 @@ end
 
 function setSpecialSetting(selectedHoverText)
 	SKIN:Bang('!SetOption ShapeSpecial MyFillGradient "' .. hoverSettingsTextSelect[selectedHoverText]['colorSpecial'] .. '"')
+
+    SKIN:Bang('!UpdateMeter *')
+    SKIN:Bang('!Redraw')
+
+end
+
+function setOptionSetting(selectedHoverText)
+	SKIN:Bang('!SetOption ShapeOptions MyFillGradient "' .. hoverSettingsTextSelect[selectedHoverText]['colorOptions'] .. '"')
 
     SKIN:Bang('!UpdateMeter *')
     SKIN:Bang('!Redraw')
@@ -848,6 +839,8 @@ function closeSettings()
 	SKIN:Bang('!WriteKeyValue Variables NameIconMC "Acrobat" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG1Hidden "0" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPG2Hidden "1" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OptionPG1Hidden "0" "#@#Standard\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables OptionPG2Hidden "1" "#@#Standard\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HiddenLineInfo "1" "#@#Settings Variables.inc"')
     SKIN:Bang('!WriteKeyValue Variables SetUpdateDivider "1" "Settings.ini"')
 

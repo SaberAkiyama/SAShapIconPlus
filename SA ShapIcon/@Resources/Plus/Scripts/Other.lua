@@ -369,6 +369,11 @@ function setUnrealColorManual(selectedCode)
 
 end
 
+function setVeadotubeColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinVeadotube" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setVirtualBoxColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinVirtualBox" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -2101,6 +2106,29 @@ end
 
 --; ============================================================
 
+function setVeadotubeMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setVeadotubeSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setVeadotubeSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setVirtualBoxMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables VirtualBoxMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables VirtualBoxMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -3344,6 +3372,17 @@ function setUnrealMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables UnrealShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UnrealMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables UnrealRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setVeadotubeMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeMaskMeter "' .. maskOtherSelect[selectedMask]['otherMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeShape "' .. maskOtherSelect[selectedMask]['otherMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeMaskStyle "' .. maskOtherSelect[selectedMask]['otherMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables VeadotubeRegularHidden "' .. maskOtherSelect[selectedMask]['otherRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

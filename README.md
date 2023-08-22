@@ -78,7 +78,7 @@
 ## About The Project
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 -->
@@ -98,7 +98,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Step 1: Install the original SA ShapIcon 
 
-1. Download and install at [Rainmeter official website](https://rainmeter.net).
+1. Download and install at the [Rainmeter official website](https://rainmeter.net).
 2. Download the original [SA ShapIcon on DeviantArt](https://www.deviantart.com/saberakiyama/art/SA-ShapIcon-781074293).
     - must require login/signup your DeviantArt account and download again in this skin.
     - must require the latest version of Rainmeter and Windows 10 or later operating system.

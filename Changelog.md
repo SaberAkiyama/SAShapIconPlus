@@ -1,5 +1,14 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.3 (August 22nd, 2023)
+### SA ShapIcon
+* [Added] BattleBit Remastered & Immortals of Aveum in the Gaming icon.
+* [Added] Veadotube in the Other icon.
+* [Fixed] An issue with VirtualBox that didn't select the Mask Shape, Color Code, etc.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
+
 ## 6.2.2 (August 3rd, 2023)
 ### SA ShapIcon
 * [Added] Baldur's Gate III in the Gaming icon.

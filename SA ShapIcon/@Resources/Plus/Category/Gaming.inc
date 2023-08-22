@@ -164,6 +164,18 @@ MouseLeaveAction=[!SetOption MeterPageBattleNetText FontColor "255,255,255"][!Up
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Battle Net')"]
 Hidden=#GamingPage2#
 
+[MeterPageBattleBitText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=GamingPage2
+Text=BattleBit Remastered
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageBattleBitText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageBattleBitText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('BattleBit Remastered')"]
+Hidden=#GamingPage2#
+
 [MeterPageBF1Text]
 Meter=String
 MeterStyle=IconTextPageName
@@ -251,14 +263,14 @@ Hidden=#GamingPage2#
 [MeterPageCODMWText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage2
+Group=GamingPage3
 Text=Call of Duty: Modern Warfare (2019)
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageCODMWText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageCODMWText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Call of Duty: Modern Warfare (2019)')"]
-Hidden=#GamingPage2#
+Hidden=#GamingPage3#
 
 [MeterPageCODMW2Text]
 Meter=String
@@ -266,7 +278,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage3
 Text=Call of Duty: Modern Warfare II (2022)
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageCODMW2Text FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageCODMW2Text FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Call of Duty: Modern Warfare II (2022)')"]
@@ -371,14 +383,14 @@ Hidden=#GamingPage3#
 [MeterPageDBDText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage3
+Group=GamingPage4
 Text=Dead by Daylight
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageDBDText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageDBDText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Dead by Daylight')"]
-Hidden=#GamingPage3#
+Hidden=#GamingPage4#
 
 [MeterPageDeadCellsText]
 Meter=String
@@ -386,7 +398,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage4
 Text=Dead Cells
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageDeadCellsText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageDeadCellsText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Dead Cells')"]
@@ -491,14 +503,14 @@ Hidden=#GamingPage4#
 [MeterPageDOTA2Text]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage4
+Group=GamingPage5
 Text=DOTA 2
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageDOTA2Text FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageDOTA2Text FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('DOTA 2')"]
-Hidden=#GamingPage4#
+Hidden=#GamingPage5#
 
 [MeterPageOriginText]
 Meter=String
@@ -506,7 +518,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage5
 Text=EA Origin
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageOriginText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOriginText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Origin')"]
@@ -611,14 +623,14 @@ Hidden=#GamingPage5#
 [MeterPageFC3Text]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage5
+Group=GamingPage6
 Text=Far Cry 3
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageFC3Text FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageFC3Text FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Far Cry 3')"]
-Hidden=#GamingPage5#
+Hidden=#GamingPage6#
 
 [MeterPageFC3BDText]
 Meter=String
@@ -626,7 +638,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage6
 Text=Far Cry 3: Blood Dragon
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageFC3BDText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageFC3BDText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Far Cry 3: Blood Dragon')"]
@@ -731,14 +743,14 @@ Hidden=#GamingPage6#
 [MeterPageFNFText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage6
+Group=GamingPage7
 Text="Friday Night Funkin'"
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageFNFText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageFNFText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Friday Night Funkin')"]
-Hidden=#GamingPage6#
+Hidden=#GamingPage7#
 
 [MeterPageGModText]
 Meter=String
@@ -746,7 +758,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage7
 Text="Garry's Mod"
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageGModText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageGModText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Garrys Mod')"]
@@ -851,14 +863,14 @@ Hidden=#GamingPage7#
 [MeterPageGuiltyGearText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage7
+Group=GamingPage8
 Text=Guilty Gear -Strive-
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageGuiltyGearText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageGuiltyGearText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Guilty Gear Strive')"]
-Hidden=#GamingPage7#
+Hidden=#GamingPage8#
 
 [MeterPageHaloInfiniteText]
 Meter=String
@@ -866,7 +878,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage8
 Text=Halo Infinite
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageHaloInfiniteText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageHaloInfiniteText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Halo Infinite')"]
@@ -956,29 +968,41 @@ MouseLeaveAction=[!SetOption MeterPageHuntShowdownText FontColor "255,255,255"][
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Hunt: Showdown')"]
 Hidden=#GamingPage8#
 
-[MeterPageJWEvolutionText]
+[MeterPageIOAText]
 Meter=String
 MeterStyle=IconTextPageName
 Group=GamingPage8
-Text=Jurassic World Evolution
+Text=Immortals of Aveum
 X=0r
 Y=20R
+MouseOverAction=[!SetOption MeterPageIOAText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageIOAText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Immortals of Aveum')"]
+Hidden=#GamingPage8#
+
+[MeterPageJWEvolutionText]
+Meter=String
+MeterStyle=IconTextPageName
+Group=GamingPage9
+Text=Jurassic World Evolution
+X=0r
+Y=100
 MouseOverAction=[!SetOption MeterPageJWEvolutionText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageJWEvolutionText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Jurassic World Evolution')"]
-Hidden=#GamingPage8#
+Hidden=#GamingPage9#
 
 [MeterPageJWEvolution2Text]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage8
+Group=GamingPage9
 Text=Jurassic World Evolution 2
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageJWEvolution2Text FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageJWEvolution2Text FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Jurassic World Evolution 2')"]
-Hidden=#GamingPage8#
+Hidden=#GamingPage9#
 
 [MeterPageKovaakText]
 Meter=String
@@ -986,7 +1010,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage9
 Text="Kovaak's Aim Trainer"
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageKovaakText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageKovaakText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Kovaaks Aim Trainer')"]
@@ -1079,26 +1103,26 @@ Hidden=#GamingPage9#
 [MeterPageMirrorsEdgeText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage9
+Group=GamingPage10
 Text="Mirror's Edge"
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageMirrorsEdgeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMirrorsEdgeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Mirrors Edge')"]
-Hidden=#GamingPage9#
+Hidden=#GamingPage10#
 
 [MeterPageMHWorldText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage9
+Group=GamingPage10
 Text=Monster Hunter: World
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageMHWorldText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMHWorldText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Monster Hunter: World')"]
-Hidden=#GamingPage9#
+Hidden=#GamingPage10#
 
 [MeterPageMultiVersusText]
 Meter=String
@@ -1106,7 +1130,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage10
 Text=MultiVersus
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageMultiVersusText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageMultiVersusText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('MultiVersus')"]
@@ -1199,26 +1223,26 @@ Hidden=#GamingPage10#
 [MeterPageOriWWText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage10
+Group=GamingPage11
 Text=Ori and the Will of the Wisp
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageOriWWText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOriWWText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Ori and the Will of the Wisp')"]
-Hidden=#GamingPage10#
+Hidden=#GamingPage11#
 
 [MeterPageOsuText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage10
+Group=GamingPage11
 Text=Osu!
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageOsuText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOsuText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Osu')"]
-Hidden=#GamingPage10#
+Hidden=#GamingPage11#
 
 [MeterPageOutridersText]
 Meter=String
@@ -1226,7 +1250,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage11
 Text=Outriders
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageOutridersText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageOutridersText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Outriders')"]
@@ -1319,26 +1343,26 @@ Hidden=#GamingPage11#
 [MeterPageRSExtractionText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage11
+Group=GamingPage12
 Text=Rainbow Six Extraction
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageRSExtractionText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRSExtractionText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Rainbow Six Extraction')"]
-Hidden=#GamingPage11#
+Hidden=#GamingPage12#
 
 [MeterPageRSSiegeText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage11
+Group=GamingPage12
 Text=Rainbow Six Siege
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageRSSiegeText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRSSiegeText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Rainbow Six Siege')"]
-Hidden=#GamingPage11#
+Hidden=#GamingPage12#
 
 [MeterPageRecRoomText]
 Meter=String
@@ -1346,7 +1370,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage12
 Text=Rec Room
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageRecRoomText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRecRoomText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Rec Room')"]
@@ -1439,26 +1463,26 @@ Hidden=#GamingPage12#
 [MeterPageRockstarText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage12
+Group=GamingPage13
 Text=Rockstar Games Launcher
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageRockstarText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRockstarText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Rockstar Games Launcher')"]
-Hidden=#GamingPage12#
+Hidden=#GamingPage13#
 
 [MeterPageRollerChampionsText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage12
+Group=GamingPage13
 Text=Roller Champions
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageRollerChampionsText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRollerChampionsText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Roller Champions')"]
-Hidden=#GamingPage12#
+Hidden=#GamingPage13#
 
 [MeterPageRSIText]
 Meter=String
@@ -1466,7 +1490,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage13
 Text=RSI Launcher
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageRSIText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageRSIText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('RSI Launcher')"]
@@ -1559,26 +1583,26 @@ Hidden=#GamingPage13#
 [MeterPageSmiteText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage13
+Group=GamingPage14
 Text=Smite
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageSmiteText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSmiteText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Smite')"]
-Hidden=#GamingPage13#
+Hidden=#GamingPage14#
 
 [MeterPageSCBlacklistText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage13
+Group=GamingPage14
 Text=Splinter Cell: Blacklist
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageSCBlacklistText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageSCBlacklistText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Splinter Cell: Blacklist')"]
-Hidden=#GamingPage13#
+Hidden=#GamingPage14#
 
 [MeterPageStarCitizenText]
 Meter=String
@@ -1586,7 +1610,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage14
 Text=Star Citizen
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageStarCitizenText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageStarCitizenText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Star Citizen')"]
@@ -1679,26 +1703,26 @@ Hidden=#GamingPage14#
 [MeterPageTerrariaText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage14
+Group=GamingPage15
 Text=Terraria
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageTerrariaText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageTerrariaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Terraria')"]
-Hidden=#GamingPage14#
+Hidden=#GamingPage15#
 
 [MeterPageTETRIOText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage14
+Group=GamingPage15
 Text=TETR.IO
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageTETRIOText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageTETRIOText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('TETR.IO')"]
-Hidden=#GamingPage14#
+Hidden=#GamingPage15#
 
 [MeterPageTCFText]
 Meter=String
@@ -1706,7 +1730,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage15
 Text=The Cycle: Frontier
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageTCFText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageTCFText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('The Cycle: Frontier')"]
@@ -1799,26 +1823,26 @@ Hidden=#GamingPage15#
 [MeterPageValorantText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage15
+Group=GamingPage16
 Text=Valorant
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageValorantText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageValorantText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Valorant')"]
-Hidden=#GamingPage15#
+Hidden=#GamingPage16#
 
 [MeterPageVampireSurvivorsText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage15
+Group=GamingPage16
 Text=Vampire Survivors
 X=0r
 Y=20R
 MouseOverAction=[!SetOption MeterPageVampireSurvivorsText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVampireSurvivorsText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Vampire Survivors')"]
-Hidden=#GamingPage15#
+Hidden=#GamingPage16#
 
 [MeterPageVortexText]
 Meter=String
@@ -1826,7 +1850,7 @@ MeterStyle=IconTextPageName
 Group=GamingPage16
 Text=Vortex
 X=0r
-Y=100
+Y=20R
 MouseOverAction=[!SetOption MeterPageVortexText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageVortexText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Vortex')"]
@@ -1919,14 +1943,14 @@ Hidden=#GamingPage16#
 [MeterPageXboxText]
 Meter=String
 MeterStyle=IconTextPageName
-Group=GamingPage16
+Group=GamingPage17
 Text=Xbox
 X=0r
-Y=20R
+Y=100
 MouseOverAction=[!SetOption MeterPageXboxText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterPageXboxText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGaming('Xbox')"]
-Hidden=#GamingPage16#
+Hidden=#GamingPage17#
 
 ; ============================================================
 ; ============================================================
@@ -2077,7 +2101,7 @@ Hidden=#GamingPG1Hidden#
 Meter=String
 MeterStyle=IconPageText
 Group=GamingPG2
-X=220
+X=200
 Y=0r
 Text=11
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGamingPage11()"]
@@ -2143,6 +2167,18 @@ Text=16
 LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGamingPage16()"]
 MouseOverAction=[!CommandMeasure LuaCategoryGaming "setHoverGamingPage16('Over')"]
 MouseLeaveAction=[!CommandMeasure LuaCategoryGaming "setHoverGamingPage16('Leave')"]
+Hidden=#GamingPG2Hidden#
+
+[MeterPage17Text]
+Meter=String
+MeterStyle=IconPageText
+Group=GamingPG2
+X=40r
+Y=0r
+Text=17
+LeftMouseUpAction=[!CommandMeasure LuaCategoryGaming "setGamingPage17()"]
+MouseOverAction=[!CommandMeasure LuaCategoryGaming "setHoverGamingPage17('Over')"]
+MouseLeaveAction=[!CommandMeasure LuaCategoryGaming "setHoverGamingPage17('Leave')"]
 Hidden=#GamingPG2Hidden#
 
 ; ============================================================

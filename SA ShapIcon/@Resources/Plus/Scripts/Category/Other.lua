@@ -939,6 +939,19 @@ selectOther = {
 		showPage8 = "0",
 		showPage9 = "1"
 	},
+	["Veadotube"] = {
+		iconName = "Veadotube",
+		iconMask = "Veadotube",
+		showPage1 = "1",
+		showPage2 = "1",
+		showPage3 = "1",
+		showPage4 = "1",
+		showPage5 = "1",
+		showPage6 = "1",
+		showPage7 = "1",
+		showPage8 = "0",
+		showPage9 = "1"
+	},
 	["VirtualBox"] = {
 		iconName = "VirtualBox",
 		iconMask = "VirtualBox",
@@ -1040,8 +1053,8 @@ selectOther = {
 		showPage5 = "1",
 		showPage6 = "1",
 		showPage7 = "1",
-		showPage8 = "0",
-		showPage9 = "1"
+		showPage8 = "1",
+		showPage9 = "0"
 	},
 	["VTube Studio"] = {
 		iconName = "VTube Studio",

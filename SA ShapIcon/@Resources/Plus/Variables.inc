@@ -1527,6 +1527,21 @@ BattleNetShapeGradient1ChName=Background 1
 BattleNetShapeGradient2ChName=Average
 BattleNetRegularHidden=1
 
+BattleBitShape=Hexagon
+BattleBitMaskMeter=Shape
+BattleBitMask=Regular Hexagon
+BattleBitMaskStyle=Blank
+BattleBitMaskBase=255,255,255
+BattleBitShapeGradient1Base=225,65,105
+BattleBitShapeGradient2Base=65,105,225
+BattleBitMaskChCode=FG1
+BattleBitShapeGradient1ChCode=BG1
+BattleBitShapeGradient2ChCode=Avg
+BattleBitMaskChName=Foreground 1
+BattleBitShapeGradient1ChName=Background 1
+BattleBitShapeGradient2ChName=Average
+BattleBitRegularHidden=1
+
 BF1Shape=Hexagon
 BF1MaskMeter=Shape
 BF1Mask=Regular Hexagon
@@ -2531,6 +2546,21 @@ HuntShowdownMaskChName=Foreground 1
 HuntShowdownShapeGradient1ChName=Background 1
 HuntShowdownShapeGradient2ChName=Average
 HuntShowdownRegularHidden=1
+
+IOAShape=Hexagon
+IOAMaskMeter=Shape
+IOAMask=Regular Hexagon
+IOAMaskStyle=Blank
+IOAMaskBase=255,255,255
+IOAShapeGradient1Base=225,65,105
+IOAShapeGradient2Base=65,105,225
+IOAMaskChCode=FG1
+IOAShapeGradient1ChCode=BG1
+IOAShapeGradient2ChCode=Avg
+IOAMaskChName=Foreground 1
+IOAShapeGradient1ChName=Background 1
+IOAShapeGradient2ChName=Average
+IOARegularHidden=1
 
 JWEvolutionShape=Hexagon
 JWEvolutionMaskMeter=Shape
@@ -6103,6 +6133,21 @@ UnrealMaskChName=Foreground 1
 UnrealShapeGradient1ChName=Background 1
 UnrealShapeGradient2ChName=Average
 UnrealRegularHidden=1
+
+VeadotubeShape=Hexagon
+VeadotubeMaskMeter=Shape
+VeadotubeMask=Regular Hexagon
+VeadotubeMaskStyle=Blank
+VeadotubeMaskBase=255,255,255
+VeadotubeShapeGradient1Base=225,65,105
+VeadotubeShapeGradient2Base=65,105,225
+VeadotubeMaskChCode=FG1
+VeadotubeShapeGradient1ChCode=BG1
+VeadotubeShapeGradient2ChCode=Avg
+VeadotubeMaskChName=Foreground 1
+VeadotubeShapeGradient1ChName=Background 1
+VeadotubeShapeGradient2ChName=Average
+VeadotubeRegularHidden=1
 
 VirtualBoxShape=Hexagon
 VirtualBoxMaskMeter=Shape
