@@ -155,8 +155,8 @@ DreamweaverRegularHidden=1
 
 FramemakerShape=Hexagon
 FramemakerMaskMeter=Shape
-FramemakerMask=Regular Hexagon
-FramemakerMaskStyle=Blank
+FramemakerMask=Split Hexagon
+FramemakerMaskStyle=SplitHexagon
 FramemakerMaskBase=255,255,255
 FramemakerShapeGradient1Base=225,65,105
 FramemakerShapeGradient2Base=65,105,225
@@ -166,7 +166,7 @@ FramemakerShapeGradient2ChCode=Avg
 FramemakerMaskChName=Foreground 1
 FramemakerShapeGradient1ChName=Background 1
 FramemakerShapeGradient2ChName=Average
-FramemakerRegularHidden=1
+FramemakerRegularHidden=0
 
 FrescoShape=Hexagon
 FrescoMaskMeter=Shape
@@ -2532,6 +2532,21 @@ HonkaiImpactShapeGradient1ChName=Background 1
 HonkaiImpactShapeGradient2ChName=Average
 HonkaiImpactRegularHidden=1
 
+HSRShape=Hexagon
+HSRMaskMeter=Shape
+HSRMask=Regular Hexagon
+HSRMaskStyle=Blank
+HSRMaskBase=255,255,255
+HSRShapeGradient1Base=225,65,105
+HSRShapeGradient2Base=65,105,225
+HSRMaskChCode=FG1
+HSRShapeGradient1ChCode=BG1
+HSRShapeGradient2ChCode=Avg
+HSRMaskChName=Foreground 1
+HSRShapeGradient1ChName=Background 1
+HSRShapeGradient2ChName=Average
+HSRRegularHidden=1
+
 HuntShowdownShape=Hexagon
 HuntShowdownMaskMeter=Shape
 HuntShowdownMask=Regular Hexagon
@@ -3371,6 +3386,21 @@ StarCitizenMaskChName=Foreground 1
 StarCitizenShapeGradient1ChName=Background 1
 StarCitizenShapeGradient2ChName=Average
 StarCitizenRegularHidden=1
+
+StarfieldShape=Hexagon
+StarfieldMaskMeter=Shape
+StarfieldMask=Regular Hexagon
+StarfieldMaskStyle=Blank
+StarfieldMaskBase=255,255,255
+StarfieldShapeGradient1Base=225,65,105
+StarfieldShapeGradient2Base=65,105,225
+StarfieldMaskChCode=FG1
+StarfieldShapeGradient1ChCode=BG1
+StarfieldShapeGradient2ChCode=Avg
+StarfieldMaskChName=Foreground 1
+StarfieldShapeGradient1ChName=Background 1
+StarfieldShapeGradient2ChName=Average
+StarfieldRegularHidden=1
 
 SteamShape=Hexagon
 SteamMaskMeter=Shape
@@ -4975,10 +5005,10 @@ TelegramShapeGradient1ChName=Background 1
 TelegramShapeGradient2ChName=Average
 TelegramRegularHidden=1
 
-TwitterShape=Hexagon
+TwitterShape=Square
 TwitterMaskMeter=Shape
-TwitterMask=Regular Hexagon
-TwitterMaskStyle=Blank
+TwitterMask=Split Square
+TwitterMaskStyle=SplitSquare
 TwitterMaskBase=255,255,255
 TwitterShapeGradient1Base=225,65,105
 TwitterShapeGradient2Base=65,105,225
@@ -4988,7 +5018,7 @@ TwitterShapeGradient2ChCode=Avg
 TwitterMaskChName=Foreground 1
 TwitterShapeGradient1ChName=Background 1
 TwitterShapeGradient2ChName=Average
-TwitterRegularHidden=1
+TwitterRegularHidden=0
 
 WhatsAppShape=Hexagon
 WhatsAppMaskMeter=Shape

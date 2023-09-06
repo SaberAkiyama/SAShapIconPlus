@@ -399,6 +399,11 @@ function setHonkaiImpactColorManual(selectedCode)
 
 end
 
+function setHSRColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinHSR" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 function setHuntShowdownColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinHuntShowdown" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
@@ -676,6 +681,11 @@ end
 
 function setStarCitizenColorManual(selectedCode)
 	SKIN:Bang('!CommandMeasure "MeterSkinStarCitizen" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
+function setStarfieldColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinStarfield" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
 
 end
 
@@ -2614,6 +2624,29 @@ end
 
 --; ============================================================
 
+function setHSRMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HSRMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HSRMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setHSRSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HSRShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HSRShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setHSRSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables HSRShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables HSRShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
 function setHuntShowdownMaskCh(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables HuntShowdownMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables HuntShowdownMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
@@ -3896,6 +3929,29 @@ end
 function setStarCitizenSG2Ch(selectedColorCh)
 	SKIN:Bang('!WriteKeyValue Variables StarCitizenShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables StarCitizenShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
+
+function setStarfieldMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables StarfieldMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setStarfieldSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables StarfieldShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setStarfieldSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables StarfieldShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
@@ -5515,6 +5571,17 @@ function setHonkaiImpactMask(selectedMask)
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 end
 
+function setHSRMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables HSRMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HSRMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HSRShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HSRMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables HSRRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
 function setHuntShowdownMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables HuntShowdownMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables HuntShowdownMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
@@ -6126,6 +6193,17 @@ function setStarCitizenMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables StarCitizenShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables StarCitizenMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables StarCitizenRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setStarfieldMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables StarfieldMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldMaskMeter "' .. maskGamingSelect[selectedMask]['gamingMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldShape "' .. maskGamingSelect[selectedMask]['gamingMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldMaskStyle "' .. maskGamingSelect[selectedMask]['gamingMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables StarfieldRegularHidden "' .. maskGamingSelect[selectedMask]['gamingRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

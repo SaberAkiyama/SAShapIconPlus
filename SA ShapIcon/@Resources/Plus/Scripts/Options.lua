@@ -241,7 +241,6 @@ hoverOptionSelect = {
 		colorGradientAngleValue = "65,105,225",
 		colorBlenderVersion = "65,105,225",
 		colorDiscordVersion = "65,105,225",
-		colorOperaGXVersion = "65,105,225",
 		colorSlackVersion = "65,105,225",
 		colorVSName = "65,105,225",
 		colorVSEdition = "65,105,225",
@@ -258,7 +257,6 @@ hoverOptionSelect = {
 		colorGradientAngleValue = "255,255,255",
 		colorBlenderVersion = "255,255,255",
 		colorDiscordVersion = "255,255,255",
-		colorOperaGXVersion = "255,255,255",
 		colorSlackVersion = "255,255,255",
 		colorVSName = "255,255,255",
 		colorVSEdition = "255,255,255",
@@ -331,13 +329,6 @@ end
 
 function setHoverOptionDiscord(selectedHover)
 	SKIN:Bang('!SetOption MeterDiscordValue FontColor "' .. hoverOptionSelect[selectedHover]['colorDiscordVersion'] .. '"')
-	SKIN:Bang('!UpdateMeter *')
-	SKIN:Bang('!Redraw')
-
-end
-
-function setHoverOptionOperaGX(selectedHover)
-	SKIN:Bang('!SetOption MeterOperaGXValue FontColor "' .. hoverOptionSelect[selectedHover]['colorOperaGXVersion'] .. '"')
 	SKIN:Bang('!UpdateMeter *')
 	SKIN:Bang('!Redraw')
 
@@ -527,17 +518,12 @@ function setDiscordVersion()
 
 end
 
-function setOperaGXVersion()
+function setSlackVersion()
 	SKIN:Bang('!CommandMeasure "MeterSkinInputOptions" "ExecuteBatch 3"')
 
 end
 
-function setSlackVersion()
-	SKIN:Bang('!CommandMeasure "MeterSkinInputOptions" "ExecuteBatch 4"')
-
-end
-
 function setWhatsAppVersion()
-	SKIN:Bang('!CommandMeasure "MeterSkinInputOptions" "ExecuteBatch 5"')
+	SKIN:Bang('!CommandMeasure "MeterSkinInputOptions" "ExecuteBatch 4"')
 
 end
