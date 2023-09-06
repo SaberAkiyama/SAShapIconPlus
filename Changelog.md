@@ -5,6 +5,7 @@
 * [Added] Honkai: Star Rail & Starfield in the Gaming icon.
 
 ### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
 * [Fixed] An issue with Minecraft (Java Edition) is missing the logo icon.
 * [Fixed] An issue with Twitter (X) that didn't select the Mask Shape.
 
