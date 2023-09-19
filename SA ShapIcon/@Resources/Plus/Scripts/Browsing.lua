@@ -111,23 +111,23 @@ end
 
 --; ============================================================
 
-function setChormeMaskCh(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables ChormeMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ChormeMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+function setChromeMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ChromeMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromeMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
 
-function setChormeSG1Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables ChormeShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ChormeShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+function setChromeSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ChromeShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromeShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end
 
-function setChormeSG2Ch(selectedColorCh)
-	SKIN:Bang('!WriteKeyValue Variables ChormeShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ChormeShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+function setChromeSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ChromeShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ChromeShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
 	SKIN:Bang('!RefreshGroup ShapeSettings')
 
 end

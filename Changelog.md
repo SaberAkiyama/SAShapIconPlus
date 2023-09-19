@@ -1,10 +1,19 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.5 (September 19th, 2023)
+### SA ShapIcon
+* [Added] Lies of P, Mortal Kombat 1 & The Crew Motorfest in the Gaming icon.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
+* [Fixed] An issue with Google Chrome that didn't select both the Color Mask and Color Gradient.
+
 ## 6.2.4 (September 6th, 2023)
 ### SA ShapIcon
 * [Added] Honkai: Star Rail & Starfield in the Gaming icon.
 
 ### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
 * [Fixed] An issue with Minecraft (Java Edition) is missing the logo icon.
 * [Fixed] An issue with Twitter (X) that didn't select the Mask Shape.
 
