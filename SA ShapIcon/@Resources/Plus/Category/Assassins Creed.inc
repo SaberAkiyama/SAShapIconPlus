@@ -120,6 +120,16 @@ MouseOverAction=[!SetOption MeterPageACValhallaText FontColor "255,215,0"][!Upda
 MouseLeaveAction=[!SetOption MeterPageACValhallaText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 LeftMouseUpAction=[!CommandMeasure LuaCategoryAssassinsCreed "setAssassinsCreed('Assassins Creed: Valhalla')"]
 
+[MeterPageACMirageText]
+Meter=String
+MeterStyle=IconTextPageName
+Text=Assassin's Creed: Mirage
+X=0r
+Y=20R
+MouseOverAction=[!SetOption MeterPageACMirageText FontColor "255,215,0"][!UpdateMeter *][!Redraw]
+MouseLeaveAction=[!SetOption MeterPageACMirageText FontColor "255,255,255"][!UpdateMeter *][!Redraw]
+LeftMouseUpAction=[!CommandMeasure LuaCategoryAssassinsCreed "setAssassinsCreed('Assassins Creed: Mirage')"]
+
 ; ============================================================
 ; ============================================================
 

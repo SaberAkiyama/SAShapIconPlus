@@ -42,6 +42,10 @@ selectAssassinsCreed = {
 	["Assassins Creed: Valhalla"] = {
 		iconName = "Assassins Creed Valhalla",
 		iconMask = "ACValhalla"
+	},
+	["Assassins Creed: Mirage"] = {
+		iconName = "Assassins Creed Mirage",
+		iconMask = "ACMirage"
 	}
 }
 

@@ -64,6 +64,11 @@ function setACValhallaColorManual(selectedCode)
 
 end
 
+function setACMirageColorManual(selectedCode)
+	SKIN:Bang('!CommandMeasure "MeterSkinACMirage" "' .. colorSelect[selectedCode]['colorCode'] ..  '"')
+
+end
+
 --; ============================================================
 --; Lua Color Chameleon (Assassin's Creed)
 --; ============================================================
@@ -320,6 +325,29 @@ function setACValhallaSG2Ch(selectedColorCh)
 end
 
 --; ============================================================
+
+function setACMirageMaskCh(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACMirageMaskChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageMaskChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACMirageSG1Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACMirageShapeGradient1ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageShapeGradient1ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+function setACMirageSG2Ch(selectedColorCh)
+	SKIN:Bang('!WriteKeyValue Variables ACMirageShapeGradient2ChCode ' .. colorChSelect[selectedColorCh]['chamCode'] .. ' "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageShapeGradient2ChName "' .. colorChSelect[selectedColorCh]['chamName'] .. '" "#@#Plus\\Variables.inc"')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+
+end
+
+--; ============================================================
 --; Lua Mask (Assassin's Creed)
 --; ============================================================
 
@@ -569,6 +597,17 @@ function setACValhallaMask(selectedMask)
 	SKIN:Bang('!WriteKeyValue Variables ACValhallaShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ACValhallaMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
 	SKIN:Bang('!WriteKeyValue Variables ACValhallaRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
+
+	SKIN:Bang('!UpdateGroup ShapeSettings')
+	SKIN:Bang('!RefreshGroup ShapeSettings')
+end
+
+function setACMirageMask(selectedMask)
+	SKIN:Bang('!WriteKeyValue Variables ACMirageMask "' .. selectedMask .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageMaskMeter "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskMeter'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageShape "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskShape'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageMaskStyle "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedMaskStyle'] .. '" "#@#Plus\\Variables.inc" ')
+	SKIN:Bang('!WriteKeyValue Variables ACMirageRegularHidden "' .. maskAssassinsCreedSelect[selectedMask]['assassinsCreedRegularHidden'] .. '" "#@#Plus\\Variables.inc" ')
 
 	SKIN:Bang('!UpdateGroup ShapeSettings')
 	SKIN:Bang('!RefreshGroup ShapeSettings')

@@ -1,5 +1,13 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.6 (October 10th, 2023)
+### SA ShapIcon
+* [Added] Assassin's Creed: Mirage in the Gaming > Assassin's Creed folder icon.
+* [Added] Counter-Strike 2, FiveM (GTA V Mods) & Forza Motorsport (2023) in the Gaming icon.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
+
 ## 6.2.5 (September 19th, 2023)
 ### SA ShapIcon
 * [Added] Lies of P, Mortal Kombat 1 & The Crew Motorfest in the Gaming icon.
