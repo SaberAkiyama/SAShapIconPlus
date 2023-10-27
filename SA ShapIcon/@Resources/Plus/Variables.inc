@@ -1437,6 +1437,21 @@ AimlabShapeGradient1ChName=Background 1
 AimlabShapeGradient2ChName=Average
 AimlabRegularHidden=1
 
+AW2Shape=Hexagon
+AW2MaskMeter=Shape
+AW2Mask=Regular Hexagon
+AW2MaskStyle=Blank
+AW2MaskBase=255,255,255
+AW2ShapeGradient1Base=225,65,105
+AW2ShapeGradient2Base=65,105,225
+AW2MaskChCode=FG1
+AW2ShapeGradient1ChCode=BG1
+AW2ShapeGradient2ChCode=Avg
+AW2MaskChName=Foreground 1
+AW2ShapeGradient1ChName=Background 1
+AW2ShapeGradient2ChName=Average
+AW2RegularHidden=1
+
 AmongUsShape=Hexagon
 AmongUsMaskMeter=Shape
 AmongUsMask=Regular Hexagon
@@ -1721,6 +1736,21 @@ CelesteMaskChName=Foreground 1
 CelesteShapeGradient1ChName=Background 1
 CelesteShapeGradient2ChName=Average
 CelesteRegularHidden=1
+
+CitiesSkylines2Shape=Hexagon
+CitiesSkylines2MaskMeter=Shape
+CitiesSkylines2Mask=Regular Hexagon
+CitiesSkylines2MaskStyle=Blank
+CitiesSkylines2MaskBase=255,255,255
+CitiesSkylines2ShapeGradient1Base=225,65,105
+CitiesSkylines2ShapeGradient2Base=65,105,225
+CitiesSkylines2MaskChCode=FG1
+CitiesSkylines2ShapeGradient1ChCode=BG1
+CitiesSkylines2ShapeGradient2ChCode=Avg
+CitiesSkylines2MaskChName=Foreground 1
+CitiesSkylines2ShapeGradient1ChName=Background 1
+CitiesSkylines2ShapeGradient2ChName=Average
+CitiesSkylines2RegularHidden=1
 
 CloneHeroShape=Hexagon
 CloneHeroMaskMeter=Shape
@@ -2381,6 +2411,21 @@ GhostrunnerMaskChName=Foreground 1
 GhostrunnerShapeGradient1ChName=Background 1
 GhostrunnerShapeGradient2ChName=Average
 GhostrunnerRegularHidden=1
+
+Ghostrunner2Shape=Hexagon
+Ghostrunner2MaskMeter=Shape
+Ghostrunner2Mask=Regular Hexagon
+Ghostrunner2MaskStyle=Blank
+Ghostrunner2MaskBase=255,255,255
+Ghostrunner2ShapeGradient1Base=225,65,105
+Ghostrunner2ShapeGradient2Base=65,105,225
+Ghostrunner2MaskChCode=FG1
+Ghostrunner2ShapeGradient1ChCode=BG1
+Ghostrunner2ShapeGradient2ChCode=Avg
+Ghostrunner2MaskChName=Foreground 1
+Ghostrunner2ShapeGradient1ChName=Background 1
+Ghostrunner2ShapeGradient2ChName=Average
+Ghostrunner2RegularHidden=1
 
 GOWShape=Hexagon
 GOWMaskMeter=Shape

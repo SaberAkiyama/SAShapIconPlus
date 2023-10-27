@@ -1,5 +1,12 @@
 # SA ShapIcon v6 Updates
 
+## 6.2.7 (October 27th, 2023)
+### SA ShapIcon
+* [Added] Alan Wake II, Cities: Skylines II & Ghostrunner II in the Gaming icon.
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon.
+
 ## 6.2.6 (October 10th, 2023)
 ### SA ShapIcon
 * [Added] Assassin's Creed: Mirage in the Gaming > Assassin's Creed folder icon.

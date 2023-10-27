@@ -267,6 +267,7 @@ function setSettingsGaming()
 	SKIN:Bang('!WriteKeyValue Variables GamingPage15 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage16 "1" "#@#Settings Variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables GamingPage17 "1" "#@#Settings Variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables GamingPage18 "1" "#@#Settings Variables.inc"')
 
 end
 
