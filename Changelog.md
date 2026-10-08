@@ -1,11 +1,21 @@
 # SA ShapIcon v6 Updates
 
+## 6.3.0 (October 9th, 2023)
+### SA ShapIcon
+* [Added] 2XKO, Aniimo, Arknights: Endfield, Code Vein II, Crimson Desert, Forza Horizon 6, Invincible VS, Marathon, Marvel Rivals, MONGIL: Star Dive, MOUSE: P.I. for Hire, Resident Evil Requiem, Screamer, Unrailed 2: Back on Track!, Upload Labs, Valheim, and Zenless Zone Zero in the Gaming icon.
+* [Improved] "XBOX" title to upper cap.
+* [Removed] Overwatch 2, and MultiVersus icon(s).
+
+### SA ShapIcon+
+* [Added] Icon from the original SA ShapIcon in v6.3.0.
+
+
 ## 6.2.7 (October 27th, 2023)
 ### SA ShapIcon
 * [Added] Alan Wake II, Cities: Skylines II & Ghostrunner II in the Gaming icon.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon.
+* [Added] Icon from the original SA ShapIcon in v6.2.7.
 
 ## 6.2.6 (October 10th, 2023)
 ### SA ShapIcon
@@ -13,14 +23,14 @@
 * [Added] Counter-Strike 2, FiveM (GTA V Mods) & Forza Motorsport (2023) in the Gaming icon.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon.
+* [Added] Icon from the original SA ShapIcon in v6.2.6.
 
 ## 6.2.5 (September 19th, 2023)
 ### SA ShapIcon
 * [Added] Lies of P, Mortal Kombat 1 & The Crew Motorfest in the Gaming icon.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon.
+* [Added] Icon from the original SA ShapIcon in v6.2.5.
 * [Fixed] An issue with Google Chrome that didn't select both the Color Mask and Color Gradient.
 
 ## 6.2.4 (September 6th, 2023)
@@ -28,7 +38,7 @@
 * [Added] Honkai: Star Rail & Starfield in the Gaming icon.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon.
+* [Added] Icon from the original SA ShapIcon in v6.2.4.
 * [Fixed] An issue with Minecraft (Java Edition) is missing the logo icon.
 * [Fixed] An issue with Twitter (X) that didn't select the Mask Shape.
 
@@ -39,7 +49,7 @@
 * [Fixed] An issue with VirtualBox that didn't select the Mask Shape, Color Code, etc.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon.
+* [Added] Icon from the original SA ShapIcon in v6.2.3.
 
 ## 6.2.2 (August 3rd, 2023)
 ### SA ShapIcon
@@ -48,7 +58,7 @@
 * [Fixed] An issue with the Special icon didn't select the icon in any of the Mask Shapes.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon.
+* [Added] Icon from the original SA ShapIcon in v6.2.2.
 * [Fixed] An issue with the Epic Games Store that didn't select the Mask Shape, Color Code, etc.
 
 ## 6.2.1 (July 25th, 2023)
@@ -59,7 +69,7 @@
 * [Improved] Opera GX is now directly to launching the web browser and removed the "Opera GX Version" in the Options page in Settings skin.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon in this post.
+* [Added] Icon from the original SA ShapIcon in this post in v6.2.1.
 
 ## 6.2.0 (June 6th, 2023)
 ### SA ShapIcon
@@ -72,7 +82,7 @@
 * [Fixed] An issue with VirtualBox that didn't select the Mask Shape.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon in this post.
+* [Added] Icon from the original SA ShapIcon in this post v6.2.0.
 
 ## 6.1.2 (April 21st, 2023)
 ### SA ShapIcon
@@ -82,7 +92,7 @@
 * [Fixed] An issue with Minecraft (Bedrock & Java Edition) that didn't select the color code.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon in this post.
+* [Added] Icon from the original SA ShapIcon in this post in v6.1.2.
 
 ## 6.1.1 (March 28th, 2023)
 ### SA ShapIcon
@@ -91,7 +101,7 @@
 * [Fixed] An issue with the Rocket League title being misaligned on Page 12.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon in this post.
+* [Added] Icon from the original SA ShapIcon in this post in v6.1.1.
 
 ## 6.1.0 (March 1st, 2023)
 ### SA ShapIcon
@@ -101,7 +111,7 @@
 * [Fixed] The issue didn't hover over "4 Icons" & "5 Icons" in the Regular, Inline, Alter Square & Alter Square V2 mask shape in the Special page in the Settings skin.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon in this post.
+* [Added] Icon from the original SA ShapIcon in this post in v6.1.0.
 
 ## 6.0.3 (February 17th, 2023)
 ### SA ShapIcon
@@ -115,7 +125,7 @@
 * [Added] Hogwarts Legacy in the Gaming icon.
 
 ### SA ShapIcon+
-* [Added] Icon from the original SA ShapIcon in v6.0.1.
+* [Added] Icon from the original SA ShapIcon in v6.0.2.
 * [Fixed] An issue with the missing logo in the Visual Studio Code (Chameleon Plus) icon.
 
 ## 6.0.1 (February 1st, 2023)
