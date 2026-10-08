@@ -5,39 +5,39 @@ X=960
 Y=80
 Text=Current Icon
 
-[MeterXboxText]
+[MeterXBOXText]
 Meter=String
 MeterStyle=IconTextName
 X=0r
 Y=5R
-Text=Xbox
+Text=XBOX
 
 ; ============================================================
 ; ============================================================
 
 [MeterMaskShape]
 Meter=Shape
-MeterStyle=Mask#XboxShape#90
-MyFillGradient=#ShapeGradientAngle# | #XboxShapeGradient1Base#,255 ; 1.0 | #XboxShapeGradient2Base#,255 ; 0.0
+MeterStyle=Mask#XBOXShape#90
+MyFillGradient=#ShapeGradientAngle# | #XBOXShapeGradient1Base#,255 ; 1.0 | #XBOXShapeGradient2Base#,255 ; 0.0
 X=915
 Y=170
 Hidden=#BaseHidden#
 UpdateDivider=#BaseUpdate#
 
 [MeterMaskImage]
-Meter=#XboxMaskMeter#
-MeterStyle=Mask#XboxMaskStyle#90
-MaskFillColorSetting=Fill Color #XboxMaskBase#
-ImageTint=#XboxMaskBase#
+Meter=#XBOXMaskMeter#
+MeterStyle=Mask#XBOXMaskStyle#90
+MaskFillColorSetting=Fill Color #XBOXMaskBase#
+ImageTint=#XBOXMaskBase#
 X=0r
 Y=0r
 Hidden=#BaseHidden#
 UpdateDivider=#BaseHidden#
 
-[MeterIconImageXbox]
+[MeterIconImageXBOX]
 Meter=Image
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Xbox.png
-ImageTint=#XboxMaskBase#
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\XBOX.png
+ImageTint=#XBOXMaskBase#
 X=0r
 Y=0r
 AntiAlias=1
@@ -48,28 +48,28 @@ UpdateDivider=#BaseHidden#
 
 [MeterMaskShapeCh]
 Meter=Shape
-MeterStyle=Mask#XboxShape#90
-MyFillGradient=#ShapeGradientAngle# | [Desktop#XboxShapeGradient1ChCode#],255 ; 1.0 | [Desktop#XboxShapeGradient2ChCode#],255 ; 0.0
+MeterStyle=Mask#XBOXShape#90
+MyFillGradient=#ShapeGradientAngle# | [Desktop#XBOXShapeGradient1ChCode#],255 ; 1.0 | [Desktop#XBOXShapeGradient2ChCode#],255 ; 0.0
 X=915
 Y=170
 Hidden=#ChameleonHidden#
 UpdateDivider=#ChameleonUpdate#
 
 [MeterMaskImageCh]
-Meter=#XboxMaskMeter#
-MeterStyle=Mask#XboxMaskStyle#90 | #XboxMaskChCode#ImageStyle
-MaskFillColorSetting=Fill Color [Desktop#XboxMaskChCode#]
-ImageTint=[Desktop#XboxMaskChCode#]
+Meter=#XBOXMaskMeter#
+MeterStyle=Mask#XBOXMaskStyle#90 | #XBOXMaskChCode#ImageStyle
+MaskFillColorSetting=Fill Color [Desktop#XBOXMaskChCode#]
+ImageTint=[Desktop#XBOXMaskChCode#]
 X=0r
 Y=0r
 Hidden=#ChameleonHidden#
 UpdateDivider=#ChameleonUpdate#
 
-[MeterIconImageChXbox]
+[MeterIconImageChXBOX]
 Meter=Image
-MeterStyle=#XboxMaskChCode#ImageStyle
-ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\Xbox.png
-ImageTint=[Desktop#XboxMaskChCode#]
+MeterStyle=#XBOXMaskChCode#ImageStyle
+ImageName=#@#Plus\Image Shapes\Settings\Icon\Gaming\XBOX.png
+ImageTint=[Desktop#XBOXMaskChCode#]
 X=0r
 Y=0r
 AntiAlias=1
@@ -91,7 +91,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#XboxMask#
+Text=#XBOXMask#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus" "Set Mask Shapes.ini"]
 MouseOverAction=[!SetOption MeterMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -108,8 +108,8 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=5R
-Text=#XboxMaskBase#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setXboxColorManual('Mask')"]
+Text=#XBOXMaskBase#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setXBOXColorManual('Mask')"]
 MouseOverAction=[!SetOption MeterColorMaskActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#BaseHidden#
@@ -120,7 +120,7 @@ Meter=String
 MeterStyle=IconActive
 X=0r
 Y=0r
-Text=#XboxMaskChName#
+Text=#XBOXMaskChName#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Mask.ini"]
 MouseOverAction=[!SetOption MeterColorMaskChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorMaskChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -141,8 +141,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#XboxShapeGradient1Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setXboxColorManual('Gradient 1')"]
+Text=#XBOXShapeGradient1Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setXBOXColorManual('Gradient 1')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#BaseHidden#
@@ -154,7 +154,7 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=0r
-Text=#XboxShapeGradient1ChName#
+Text=#XBOXShapeGradient1ChName#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 1.ini"]
 MouseOverAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient1ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -175,8 +175,8 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=5R
-Text=#XboxShapeGradient2Base#
-LeftMouseUpAction=[!CommandMeasure LuaGaming "setXboxColorManual('Gradient 2')"]
+Text=#XBOXShapeGradient2Base#
+LeftMouseUpAction=[!CommandMeasure LuaGaming "setXBOXColorManual('Gradient 2')"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2Active FontColor "255,255,255"][!UpdateMeter *][!Redraw]
 Hidden=#BaseHidden#
@@ -188,7 +188,7 @@ MeterStyle=IconActive
 Group=PageGradient
 X=0r
 Y=0r
-Text=#XboxShapeGradient2ChName#
+Text=#XBOXShapeGradient2ChName#
 LeftMouseUpAction=[!ToggleConfig "#ROOTCONFIG#\Context\Plus\Set Chameleon" "Gradient 2.ini"]
 MouseOverAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,215,0"][!UpdateMeter *][!Redraw]
 MouseLeaveAction=[!SetOption MeterColorShapeGradient2ChActive FontColor "255,255,255"][!UpdateMeter *][!Redraw]
@@ -198,7 +198,7 @@ UpdateDivider=#ChameleonUpdate#
 ; ============================================================
 ; ============================================================
 
-[MeterSkinXbox]
+[MeterSkinXBOX]
 Measure=Plugin
 Plugin=InputText
 StringAlign=Center
@@ -208,6 +208,6 @@ W=140
 H=30
 AntiAlias=1
 FocusDismiss=1
-Command1=[!WriteKeyValue Variables XboxMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#XboxMaskBase#" [!RefreshGroup "ShapeSettings"]
-Command2=[!WriteKeyValue Variables XboxShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#XboxShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
-Command3=[!WriteKeyValue Variables XboxShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#XboxShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
+Command1=[!WriteKeyValue Variables XBOXMaskBase "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=332 DefaultValue="#XBOXMaskBase#" [!RefreshGroup "ShapeSettings"]
+Command2=[!WriteKeyValue Variables XBOXShapeGradient1Base "$UserInput$" "#@#Plus\Variables.inc"] X=772 Y=447 DefaultValue="#XBOXShapeGradient1Base#" [!RefreshGroup "ShapeSettings"]
+Command3=[!WriteKeyValue Variables XBOXShapeGradient2Base "$UserInput$" "#@#Plus\Variables.inc"] X=1012 Y=447 DefaultValue="#XBOXShapeGradient2Base#" [!RefreshGroup "ShapeSettings"]
